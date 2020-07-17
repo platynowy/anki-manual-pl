@@ -21,116 +21,54 @@ Anki opiera się na dwóch prostych koncepcjach - tzw. "active recall testing" (
 Active Recall Testing
 ---------------------
 
-'Active recall testing' means being asked a question and trying to
-remember the answer. This is in contrast to 'passive study', where we
-read, watch or listen to something without pausing to consider if we
-know the answer. Research has shown that active recall testing is far
-more effective at building strong memories than passive study. There are
-two reasons for this:
+Active recall testing polega na  odpytywaniu i udzielaniu odpowiedzi na dane pytanie, a następnie, w przypadku podania błędnej odpowiedzi użytkownik stara się zapamiętać tę poprawną. Metodę tę można określić mianem nauki aktywnej. Nauka pasywna polega na czytaniu, oglądaniu i słuchaniu bez przerw na udzielenie odpowiedzi lub zastanowienie czy znamy odpowiedź na dane pytanie. Badania wskazują, że active recall testing jest metodą bardzo efektywną i tworzy w pamięci silne związki pomiędzy informacjami, dużo mocniejsze niż w przypadku nauki metodami pasywnymi. Dwie główne przyczyny takiego stanu to:
 
--   The act of recalling something 'strengthens' the memory, increasing
-    the chances we’ll be able to remember it again.
+-   czynność przywoływania czegoś w pamięci wzmacnia ją, tym samym wzrasta szansa na przypomnienie sobie danej informacji w przyszłości
 
--   When we’re unable to answer a question, it tells us we need to
-    return to the material to review or relearn it.
+-   w przypadku, gdy potrafisz udzielić poprawnej odpowiedzi na zadane pytanie, zostanie ono zadane ponownie za jakiś czas
 
-You have probably encountered active recall testing in your school years
-without even realizing it. When good teachers give you a series of
-questions to answer after reading an article, or make you take weekly
-progress-check tests, they are not doing it simply to see if you
-understood the material or not. By testing you, they are increasing the
-chances you will be able to remember the material in the future.
+Całkiem możliwe, że nieświadomie używałeś już tej metody nauki w szkole. Przykładowo, gdy nauczyciel w szkole zadawał serię pytań do jakiegoś tekstu. Podobną rolę pełnią tradycyjne sprawdziany. Mają na celu nie tylko sprawdzenie postępów w nauce, ale również po raz kolejny przypomnienie pewnych informacji, tak ażeby łatwiej powrócić do nich w przyszłości.
 
-A good way to integrate active recall testing into your own studies is
-to use 'flashcards'. With traditional paper flashcards, you write a
-question on one side of a card, and the answer on the other side. By not
-turning the card over until you’ve thought about the answer, you can
-learn things more effectively than passive observation allows.
+Dobrym sposobem na włączenie metody Active recall testing do nauki jest zastosowanie fiszek. Na tradycyjnych, papierowych fiszkach z jednej strony piszesz pytanie, z drugiej zaś - odpowiedź. Fiszkę obraca się dopiero w momencie udzielenia odpowiedzi na zadane pytanie, tym samym nauka jest dużo bardziej efektywna niż zwykła pasywna obserwacja.
 
 Używaj lub porzuć
 -----------------
 
-Our brains are efficient machines, and they rapidly discard information
-that doesn’t seem useful. Chances are that you don’t remember what you
-had for dinner on Monday two weeks ago, because this information is not
-usually useful. If you went to a fantastic restaurant that day and spent
-the last two weeks telling people about how great it was, however,
-you’re likely to still remember in vivid detail.
+Mózg stara się pracować jak najwydajniej, dlatego też ignoruje informacje, które wydają się być bezużyteczne. Dlatego najpewniej nie pamiętasz co jadłeś na obiad tydzień temu w poniedziałek. Ta informacja jest po prostu zazwyczaj bezużyteczna. Jeśli jednak tego dnia byłeś w rewelacyjnej restauracji, a potem przez dwa tygodnie opowiadałeś o niej znajomym to dzisiaj będziesz pamiętał większość szczegółów związanych z tym wydarzeniem.
 
-The brain’s “use it or lose it” policy applies to everything we learn.
-If you spend an afternoon memorizing some science terms, and then don’t
-think about that material for two weeks, you’ll probably have forgotten
-most of it. In fact, studies show we forget about 75% of material learnt
-within a 48 hour period. This can seem pretty depressing when you need
-to learn a lot of information.
+Działanie mózgu "używaj lub porzuć" jest stosowane względem wszystkiego, czego się uczymy. Gdybyś dzisiaj spędził całe popołudnie bez przerwy zakuwając terminy naukowe do jutrzejszego egzaminu, ale przez następne dwa tygodnie w ogóle o nich nie myślał, prawdopodobnie zapomniałbyś już większość materiału. Badania wskazują, że w ciągu 48 godzin od nauki możemy zapomnieć nawet 75% poznanych wtedy informacji. Fakt ten jest tym bardziej przygnębiający, gdy trzeba nauczyć się jakiegoś obszernego materiału.
 
-The solution is simple, however: 'review'. By reviewing newly-learnt
-information, we can greatly reduce forgetting.
+Rozwiązanie tego problemu jest stosunkowo proste: powtórki. Poprzez powtarzanie nowo poznanych informacji jesteśmy w stanie znacząco ograniczyć proces zapominania.
 
-The only problem is that traditionally review was not very practical. If
-you are using paper flashcards, it’s easy to flick through all of them
-if you only have 30 of them to review, but as the number grows to 300 or
-3000, it quickly becomes unwieldy.
+Problemem w przypadku użycia papierowych fiszek jest zazwyczaj ich nieporęczność. Oczywiście talia posiadająca 30 kart nie sprawia żadnych trudności w użyciu. Jednak zazwyczaj nasza talia zaczyna szybko rosnąć i z 30 robi się 300, a potem 3000 kart.
 
 Spaced Repetition
 -----------------
 
-The 'spacing effect' was reported by a German psychologist in 1885. He
-observed that we tend to remember things more effectively if we spread
-reviews out over time, instead of studying multiple times in one
-session. Since the 1930s there have been a number of proposals for
-utilizing the spacing effect to improve learning, in what has come to be
-called 'spaced repetition'.
+"Efekt interwałów" został pierwszy raz opisany w 1885 roku przez niemieckiego psychologa Hermanna Ebbinghausa. W swoich badaniach zauważył on, że informacje zapamiętywane są efektywniej, gdy powtórki rozproszone są na przestrzeni czasu, zamiast skonsolidowane do jednej, ciągłej sesji nauki. Od lat 30. XX wieku powstało wiele różnych teorii na temat wykorzystania tego faktu do polepszenia procesu zapamiętywania. Najpopularniejszą metodą, która wykrystalizowała się jest "spaced repetition", czyli powtórki w interwałach.
 
-One example is in 1972, when a German scientist called Sebastian Leitner
-popularized a method of spaced repetition with paper flashcards. By
-separating the paper cards up into a series of boxes, and moving the
-cards to a different box on each successful or unsuccessful review, it
-was possible to see at a glance a rough estimate of how well a card was
-known and when it should be reviewed again. This was a great improvement
-over a single box of cards, and it has been widely adopted by
-computerized flashcard software. It is a rather rough approach however,
-as it can’t give you an exact date on which you should review something
-again, and it doesn’t cope very well with material of varying
-difficulty.
+W 1972 roku niemiecki naukowiec i publicysta Sebastian Leitner zasłynął dzięki opracowaniu naukowej systematyki psychodydaktycznej bazującej na papierowych fiszkach. Metoda ta polega na podziale fiszek pomiędzy osobne pudełka w zależności od stopnia opanowania danego pytania. Karty w każdym z pudełek powtarzane są w różnych interwałach. Dzięki takiemu podziałowi możliwa jest szybka, zgrubna ocena stopnia opanowania materiału. Takie rozwiązanie stanowiło duży postęp w stosunku do wcześniej stosowanego jednego pudełka i zostało ono szybko zaadoptowane i przekształcone do postaci prostego oprogramowania komputerowego. Wykorzystanie trzech pudełek jest jednak stosunkowo niedokładne i nie daje możliwości precyzyjnego określenia dnia, w którym powinna nastąpić kolejna powtórka oraz nie działa zbyt dobrze z materiałem o zróżnicowanym poziomie trudności.
 
-The biggest developments in the last 30 years have come from the authors
-of SuperMemo, a commercial flashcard program that implements spaced
-repetition. SuperMemo pioneered the concept of a system that keeps track
-of the ideal time to review material and optimizes itself based on the
-performance of the user.
+Na przestrzeni ostatnich 30 lat największy postęp w dziedzinie powtórek w interwałach dokonał się dzięki twórcom programu SuperMemo, płatnego oprogramowania do nauki fiszek z wykorzystaniem interwałów. SuperMemo wdrożyło system, który na bieżąco śledzi postęp w nauce każdej karty, określa dokładny czas, w którym powinna nastąpić powtórka oraz optymalizuje go w odniesieniu do wcześniejszych wyników w nauce.
 
-In SuperMemo’s spaced repetition system, every time you answer a
-question, you tell the program how well you were able to remember it –
-whether you forgot completely, made a small mistake, remembered with
-trouble, remembered easily, etc. The program uses this feedback to
-decide the optimal time to show you the question again. Since a memory
-gets stronger each time you successfully recall it, the time between
-reviews gets bigger and bigger – so you may see a question for the first
-time, then 3 days later, 15 days later, 45 days later, and so on.
+Za każdym razem, gdy powtarzasz informacje z wykorzystaniem SuperMemo określasz jak dobrze 
+je zapamiętałeś - całkowicie zapomniałeś, zrobiłeś mały błąd, zapamiętałeś, ale z pewną 
+trudnością czy zapamiętałeś bez żadnego problemu itd. Program przetwarza te informacje i 
+określa optymalny moment, w którym powinna zostać ponownie wyświetlona dana fiszka. Przy 
+każdej poprawnej odpowiedzi informacja coraz bardziej utrwala się w pamięci, a czas 
+pomiędzy kolejnymi powtórkami zwiększa się - najpierw widzisz fiszkę pierwszy raz, 
+następnie powtarzasz ją za 3 dni, potem za 15, 45 i tak dalej.
 
-This was a revolution in learning, as it meant material could be learnt
-and retained with the absolute minimum amount of effort necessary.
-SuperMemo’s slogan sums it up: with spaced repetition, you can 'forget
-about forgetting'.
+Takie podejście było swego rodzaju rewolucją w uczeniu. Ograniczało ono czas nauki i 
+zapamiętywania informacji do absolutnego minimum. Slogan SuperMemo to: ucz się szybko i 
+zapomnij o zapominaniu.
 
 Dlaczego właśnie Anki?
 ---------
 
-While there is no denying the huge impact SuperMemo has had on the
-field, it is not without its problems. The program is often criticized
-for being buggy and difficult to navigate. It only runs on Windows
-computers. It’s proprietary software, meaning end-users can’t extend it
-or access the raw data. And while very old versions are made available
-for free, they are quite limited for modern use.
+Na pewno nie można zaprzeczyć wielkiemu wkładowi SuperMemo do nauki z wykorzystaniem fiszek. Program ten jest jednak często krytykowany za błędy i skomplikowaną obsługę. Poza tym działa jedynie pod kontrolą systemu Windows. Jest to oprogramowanie komercyjne i zamknięte. Oznacza to, że użytkownik końcowy nie może w nim dokonywać zmian i nie ma dostępu do kodu źródłowego. Starsze wersje są co prawda darmowe jednak nie posiadają one wielu nowoczesnych funkcji, tym samym ograniczone jest ich zastosowanie.
 
-Anki addresses these issues. There are free clients for Anki available
-on many platforms, so struggling students and teachers with budgetary
-constraints are not left out. It’s open source, with an already
-flourishing library of add-ons contributed by end-users. It’s
-multi-platform, running on Windows, Mac OSX, Linux/FreeBSD, and some
-mobile devices. And it’s considerably easier to use than SuperMemo.
+W Anki uwzględnione zostały właśnie wspomniane kwestie. Program udostępniony jest za darmo, dla wielu systemów operacyjnych, bez żadnych dodatkowych opłat, więc uczniowie i nauczyciele z ograniczonym budżetem nie zostali pominięci. Dzięki licencji open-source możliwe było stworzenie całej biblioteki dodatków i rozszerzeń tworzonych przez użytkowników, które dodatkowo dostosowują Anki do ich konkretnych potrzeb. Anki działa pod kontrolą systemów Windows, Mac OSX, Linux/FreeBSD i na większości współczesnych urządzeń mobilnych - smartfonach oraz tabletach. W dodatku, jego obsługa jest o wiele prostsza niż SuperMemo.
 
-Anki’s spaced repetition system is based on an older version of the
-SuperMemo algorithm called [SM-2](faqs.md).
+System powtórek w interwałach użyty w Anki jest oparty na wcześniejszej wersji algorytmu Supermemo o nazwie [SM-2](faqs.md).
 
