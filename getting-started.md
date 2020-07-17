@@ -1,8 +1,8 @@
-# Zaczynamy
+# Jak zacząć?
 
 ## Filmy instruktażowe
 
-Aby szybko wejść do świata Anki obejrzyj te filmy instruktażowe. Zostały nagrane na poprzedniej wersji Anki, jednak podstawowe założenia dalej są aktualne. Filmy są dostępne w języku Angielskim. 
+Aby szybko wejść do świata Anki obejrzyj te filmy instruktażowe. Zostały nagrane na poprzedniej wersji Anki, jednak podstawowe założenia dalej są aktualne. Filmy są dostępne w języku angielskim. 
 
 -   [Udostępniane talie i podstawy powtórek
     ](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
@@ -14,7 +14,7 @@ Aby szybko wejść do świata Anki obejrzyj te filmy instruktażowe. Zostały na
 
 -   [Pisanie odpowiedzi w czasie powtórki](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-Jeśli Youtube nie jest dostępne w twoim kraju, możesz zamiast tego [pobrać te filmy](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
+Możesz również [pobrać te filmy](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/), jeśli Youtube nie jest dostępny w Twoim kraju.
 
 
 
@@ -64,7 +64,7 @@ Wyobraź sobie, że uczysz się francuskich słówek i na każdej tylnej stronie
     Odpowiedź: Cześć
        Strona 12
 
-Oraz:
+oraz:
 
     Pytanie: Cześć
     Odpowiedź: Bonjour
