@@ -6,7 +6,9 @@
 
 ## Tłumaczenia
 
-Ta instrukcja jest tłumaczona przez wolontariuszy na różne języki. Tłumaczenia nie zawsze moga być aktualne.
+Ta instrukcja jest tłumaczona przez wolontariuszy. Polskie tłumaczenie może być nieaktualne.
+
+Dostępne wersję językowe
 
 - [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
 
@@ -28,4 +30,4 @@ Ta instrukcja jest tłumaczona przez wolontariuszy na różne języki. Tłumacze
 
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
-Jeśli chciałbyś pomóć przetłumaczyć tę instrukcję na inny język zobacz [Dokumenty Tłumaczenia](https://translating.ankiweb.net/#/anki/manual).
+Jeśli chciałbyś pomóć przetłumaczyć tę instrukcję na inny język wejdź na stronę poradnikan o  [Tłumaczeniu Anki](https://translating.ankiweb.net/#/anki/manual).
