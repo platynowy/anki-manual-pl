@@ -1,31 +1,22 @@
-# Background
+# Wprowadzenie
 
-Anki is a program which makes remembering things easy. Because it is a
-lot more efficient than traditional study methods, you can either
-greatly decrease your time spent studying, or greatly increase the
-amount you learn.
+Anki jest programem, który sprawia, że zapamiętywanie różnych rzeczy staje się łatwe. Posługuje się on metodą nauki, która jest dużo bardziej wydajna niż metody tradycyjne i sprawi, że spędzisz na nauce dużo mniej czasu albo w tym samym czasie co dotąd nauczysz się dużo więcej.
 
-Anyone who needs to remember things in their daily life can benefit from
-Anki. Since it is content-agnostic and supports images, audio, videos
-and scientific markup (via LaTeX), the possibilities are endless. For
-example:
+Anki przeznaczone jest dla każdego, kto w codziennym życiu musi lub chce zapamiętać dużą ilość informacji. Anki potrafi przechowywać nie tylko tekst, ale także zdjęcia, dźwięki, filmy i dane w języku LaTeX, więc jego możliwości są tak naprawdę nieograniczone. Przykładowo:
 
--   learning a language
+-   nauka języków obcych
 
--   studying for medical and law exams
+-   nauka na egzamin z medycyny czy prawa,
 
--   memorizing people’s names and faces
+-   zapamiętywanie imion i twarzy nowopoznanych osób,
 
--   brushing up on geography
+-   nauka geografii,
 
--   mastering long poems
+-   nauka długich wierszy,
 
--   even practicing guitar chords!
+-   a nawet ćwiczenie akordów gitarowych!
 
-There are two simple concepts behind Anki: 'active recall testing' and
-'spaced repetition'. They are not known to most learners, despite having
-been written about in the scientific literature for many years.
-Understanding how they work will make you a more effective learner.
+Anki opiera się na dwóch prostych koncepcjach - tzw. "active recall testing" (aktywne przywoływanie) oraz "spaced repetition" (powtórki w interwałach). Koncepcje te nie są znane większości uczących się, pomimo tego, że zostały opisane w literaturze naukowej już wiele lat temu. Zrozumienie sposobu ich działania ułatwi Ci efektywną naukę.
 
 Active Recall Testing
 ---------------------
@@ -56,7 +47,7 @@ question on one side of a card, and the answer on the other side. By not
 turning the card over until you’ve thought about the answer, you can
 learn things more effectively than passive observation allows.
 
-Use It or Lose It
+Używaj lub porzuć
 -----------------
 
 Our brains are efficient machines, and they rapidly discard information
@@ -123,7 +114,7 @@ and retained with the absolute minimum amount of effort necessary.
 SuperMemo’s slogan sums it up: with spaced repetition, you can 'forget
 about forgetting'.
 
-Why Anki?
+Dlaczego właśnie Anki?
 ---------
 
 While there is no denying the huge impact SuperMemo has had on the
