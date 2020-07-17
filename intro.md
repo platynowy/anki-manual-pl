@@ -2,7 +2,7 @@
 
 ## Szybki Start
 
-Śpieszysz się? Zobacz [Jak zacząć?].(getting-started.md).
+Śpieszysz się? Zobacz [Jak zacząć?](getting-started.md).
 
 ## Tłumaczenia
 
