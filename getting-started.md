@@ -1,172 +1,104 @@
-# Getting Started
+# Zaczynamy
 
-## Videos
+## Filmy instruktażowe
 
-For a quick way to dive into Anki, please have a look at these intro
-videos. They were made with a previous Anki version, but the concepts
-are the same.
+Aby szybko wejść do świata Anki obejrzyj te filmy instruktażowe. Zostały nagrane na poprzedniej wersji Anki, jednak podstawowe założenia dalej są aktualne. Filmy są dostępne w języku Angielskim. 
 
--   [Shared Decks and Review
-    Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
+-   [Udostępniane talie i podstawy powtórek
+    ](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
--   [Switching Card
-    Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+-   [Zmiana kolejności kart
+    ](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
--   [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+-   [Zmiana wyglądu kart](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
--   [Typing in the
-    Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+-   [Pisanie odpowiedzi w czasie powtórki](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-If YouTube is unavailable in your country, you can [download the
-videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
-instead.
+Jeśli Youtube nie jest dostępne w twoim kraju, możesz zamiast tego [pobrać te filmy](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
 
 
-## Key Concepts
 
-### Cards
+## Podstawy
 
-A question and answer pair is called a 'card'. This is based on a paper
-flashcard with a question on one side and the answer on the back. In
-Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
+### Karty
 
-    Q: Chemical symbol for oxygen?
+Para odpowiedź - pytanie nazywa się kartą. Taka nazwa odnosi się do zwykłej, papierowej fiszki z pytaniem po jednej i odpowiedzią po drugiej stronie. W Anki karta nie ma wyglądu fizycznej kartki papieru, ale jeśli w czasie powtórki wyświetlisz pytanie i odpowiedź, to ich układ będzie przypominał właśnie taką papierową fiszkę. Przykładowo ucząc się podstaw chemii, możesz mieć następujące pytanie:
 
-After thinking about it, and deciding the answer is O, you click the
-show answer button, and Anki shows you:
+    Pytanie: Jaki jest symbol chemiczny tlenu?
 
-    Q: Chemical symbol for oxygen?
-    A: O
+Po namyśle, że prawidłową odpowiedzią jest O, klikniesz przycisk odpowiedzi a Anki wyświetli wtedy:
 
-After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
+    Pytanie: Jaki jest symbol chemiczny tlenu?
+    Odpowiedź: O
 
-### Decks
+Po wyświetleniu odpowiedzi ocenisz jak dobrze ją pamiętałeś. Na tej podstawie Anki samo określi czas za jaki ma być ponownie wyświetlona ta fiszka.
 
-A 'deck' is a group of cards. You can place cards in different decks to
-study parts of your card collection instead of studying everything at
-once. Each deck can have different settings, such as how many new cards
-to show each day, or how long to wait until cards are shown again.
+### Talie
 
-Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses “::” to show different levels. A deck called
-“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
-deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
-you select “Chinese” then all Chinese cards, including Hanzi cards, will
-be shown.
+Talia to zbiór kart. Karty można  umieszczać  w różnych taliach, co pozwala uczyć się jedynie wybranej części kart ze swojej kolekcji, zamiast uczyć się wszystkiego na raz. Każda talia może posiadać swoje własne ustawienia np. liczbę nowych kart w danym dniu, albo czas oczekiwania na ponowne pojawienie się karty jeśli na przykład popełniłeś błąd
 
-To place decks into a tree, you can either name them with “::” between
-each level, or drag and drop them from the deck list. Decks that have
-been nested under another deck (that is, that have at least one “::” in
-their names) are often called 'subdecks', and top-level decks are
-sometimes called 'superdecks' or 'parent decks'.
+Talie mogą zawierać w sobie inne talie, pozwoli ci to stworzyć strukturę drzewa. Aby tworzyć różne poziomy talii Anki używa podwójnego dwukropka "::". Talia o nazwie "Chiński::Hanzi" odnosi się do talii "Hanzi", która jest częścią talii "Chiński". Wybierając "Hanzi" przejrzysz tylko te karty, które należą bezpośrednio do niej. Jeśli wybierzesz talię "Chiński", będziesz wtedy przeglądał wszystkie karty tej talii włącznie z kartami z talii "Hanzi" lekcje. 
 
-Anki starts with a deck called “default”; any cards which have somehow
-become separated from other decks will go here. Anki will hide the
-default deck if it contains no cards and you have added other decks.
-Alternatively, you may rename this deck and use it for other cards.
+Aby stworzyć strukturę drzewa, możesz nazywać talię z wykorzystaniem znaku "::" na każdym z poziomów lub po prostu przesuwając talie kursorem metodą "chwyć i upuść". Talie które zostały umieszczona pod inną talia (te które zawierają co najmniej jeden podwójny dwukropek "::" w swojej nazwie) są często nazywane "podtaliami", a talie na najwyższym poziomie nazywa się często taliami nadrzednymi.
 
-Decks are best used to hold broad categories of cards, rather than
-specific topics such as “food verbs” or “lesson 1”. For more info on
-this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
+Pierwszą talią dostępną po instalacji Anki jest talia "Domyślna"; wszystkie karty, które w jakiś sposób nie zostały zaszeregowane do innych talii będą domyślnie zapisywane właśnie w tej talii. W sytuacji, gdy dodasz do Anki nowe talie, a talia domyślna nie będzie zawierała żadnych kart, zostanie ona przez Anki ukryta. Możesz także dowolnie dostosować nazwę talii domyślnej do własnych potrzeb i używać ją do innych kart.
 
-For information on how decks affect the order cards are displayed in,
-please see the [display order](studying.md#display-order) section.
+Talie służą do przechowywania jak najszerszego zakresu informacji, nie zaś po to, by przechowywać w nich specyficzne tematy np. "jedzenie rzeczowniki" lub "lekcja 1". Więcej informacji na ten temat znajduje się w rozdziale dotyczącym [prawidłowego używania talii](editing.md#using-decks-appropriately).
 
-### Notes & Fields
+Jeśli chcesz się dowiedzieć jak talie oddziaływują na kolejność wyświetlania kart, proszę zapoznaj się z [odpowiednim rozdziałem](studying.md#display-order).
 
-When making flashcards, it’s often desirable to make more than one card
-that relates to some information. For example, if you’re learning
-French, and you learn that the word “bonjour” means “hello”, you may
-wish to create one card that shows you “bonjour” and asks you to
-remember “hello”, and another card that shows you “hello” and asks you
-to remember “bonjour”. One card is testing your ability to recognize the
-foreign word, and the other card is testing your ability to produce it.
+### Notatki i pola
 
-When using paper flashcards, your only option in this case is to write
-out the information twice, once for each card. Some computer flashcard
-programs make life easier by providing a feature to flip the front and
-back sides. This is an improvement over the paper situation, but there
-are two major downsides:
+Podczas tworzenia fiszek, często niezbędne jest stworzenie więcej niż jednej karty, która będzie odnosiła się do tej samej informacji. Przykładowo, ucząc się francuskiego poznasz słowo "bonjour" oznaczające "cześć". W tym przypadku możesz chcieć stworzyć jedną kartę, która pokaże ci słowo "bonjour" i zapyta o jego tłumaczenie, oraz drugą kartę, pokazującą słowo "cześć" pytającą o tłumaczenie na język francuski. Jedna karta ćwiczy twoją zdolność rozpoznawania obcych słów, zaś druga, przeciwnie, na przypisywanie polskim słowom ich obcego znaczenia.
 
--   Because such programs don’t track your performance of recognition
-    and production separately, cards will tend not to be shown to you at
-    the optimum time, meaning you forget more than you’d like, or you
-    study more than is necessary.
+Używając do nauki papierowych fiszek jedynym sensownym rozwiązaniem jest napisanie tych samych informacji na dwóch osobnych kartach, tak żeby móc podzielić twoją naukę na tę związaną z rozpoznawaniem i przypisywaniem. Niektóre programy komputerowe do obsługi fiszek ułatwiają ten proces poprzez funkcję odwrócenia karty. Tym samym tworzona jest karta standardowa i odwrotna. Jest to co prawda postęp w stosunku do papierowej wersji, ale takie rozwiązanie posiada dwie podstawowe wady:
 
--   Reversing the question and answer only works when you want exactly
-    the same content on each side. This means it’s not possible to
-    display extra info on the back of each card for example.
+-   Karta standardowa i odwrotna będą posiadały takie same interwały powtórki, ze względu na brak ich rozgraniczenia. Oznacza to, że karty nie będą powtarzane w optymalnym czasie, będziesz  łatwiej zapomniał informacje albo uczył się danej informacji więcej razy niż to konieczne.
+-   Odwrócenie karty ma sens tylko, gdy na obu kartach- standardowej i odwrotnej, chcesz mieć dokładnie te same informacje. Oznacza to, że nie ma możliwości na dodanie jakichś dodatkowych informacji na którejś z kart.
 
-Anki solves these problems by allowing you to split the content of your
-cards up into separate pieces of information. You can then tell Anki
-which pieces of information you want on each card, and Anki will take
-care of creating the cards for you and updating them if you make any
-edits in the future.
+Anki rozwiązuje te problemy poprzez podział informacji zawartych w karcie na kawałki informacji. Możesz określić Anki które z tych kawałków mają być wyświetlane na każdej karcie. Program wygeneruje wtedy dokładnie taką kartę jaką określiłeś , a także zaktualizuje ją w przypadku wprowadzenia jakichkolwiek poprawek w przyszłości.
 
-Imagine we want to study French vocabulary, and we want to include the
-page number on the back of each card. We want our cards to look like
-this:
+Wyobraź sobie, że uczysz się francuskich słówek i na każdej tylnej stronie karty chcesz umieścić numer strony, z której pochodzi dane słówko. Karty standardowa i odwrotna będą wyglądały zatem w taki sposób:
 
-    Q: Bonjour
-    A: Hello
-       Page #12
+    Pytanie: Bonjour
+    Odpowiedź: Cześć
+       Strona 12
 
-And:
+Oraz:
 
-    Q: Hello
-    A: Bonjour
-       Page #12
+    Pytanie: Cześć
+    Odpowiedź: Bonjour
+       Strona 12
 
-In this example, we have three pieces of related information: a French
-word, an English meaning, and a page number. If we put them together,
-they’d look like this:
+W tym przykładzie mamy trzy kawałki powiązanych ze sobą informacji: słówko francuskie, znaczenie polskie oraz numer strony. Jeśli złożymy je razem będą prezentowane w następujący sposób:
 
-    French: Bonjour
-    English: Hello
-    Page: 12
+    Francuski: Bonjour
+    Polski: Cześć
+    Strona: 12
 
-In Anki, this related information is called a 'note', and each piece of
-information is called a 'field'. So we can say that this type of note
-has three fields: French, English, and Page.
+W Anki taki zbiór informacji nazywany jest notatką, a każdy z tych kawałków tworzących notatkę polem. Tak więc w tym typie notatki mamy utworzone trzy pola: Francuski, Polski i Strona.
 
-To add and edit fields, click the “Fields…​” button while adding or
-editing notes. For more information on fields, please see the
-[Customizing Fields](editing.md#customizing-fields) section.
+Aby dodawać i edytować pola, kliknij przycisk “Pola...​”  podczas dodawania lub edytowania notatek. Aby dowieszieć się wiecej o polach, zobacz rozdział o [dostosowywaniu pól](editing.md#customizing-fields).
 
-### Card Types
+### Typy kart
 
-In order for Anki to create cards based on our notes, we need to give it
-a blueprint that says which fields should be displayed on the front or
-back of each card. This blueprint is called a 'card type'. Each type of
-note can have one or more card types; when you add a note, Anki will
-create one card for each card type.
+Aby stworzyć karty, musimy zaprojektować pewien szablon, który wskaże jakie informacje mają być wyświetlane na przedniej i tylnej stronie każdej karty. Tym szablonem jest "typ karty". Każdy typ notatki może zawierać jedną lub więcej typów kart; kiedy dodajesz notatkę Anki stworzyjedną kartę dla każdego typu karty.
 
-Each card type has two 'templates', one for the question and one for the
-answer. In the above French example, we wanted the recognition card to
-look like this:
+Każdy typ karty ma dwa "szablony", jeden dla pytania i drugi dla odpowiedzi. W powyższym przykładzie z językiem francuskim chcieliśmy aby karta standardowa wyglądała w ten sposób:
 
-    Q: Bonjour
-    A: Hello
-       Page #12
+    Pytanie: Bonjour
+    Odpowiedź: Cześć
+       Strona 12
 
-To do this, we can set the question and answer templates to:
+Aby to zrobić, musimy stworzyć szablon pytania i odpowiedzi:
 
-    Q: {{French}}
-    A: {{English}}<br>
-       Page #{{Page}}
+    Pytanie: {{Francuski}}
+    Odpowiedź: {{Polski}}<br>
+       Strona {{Strona}}
 
-By surrounding a field name in double curly brackets, we tell Anki to
-replace that section with the actual information in the field. Anything
-not surrounded by curly brackets remains the same on each card. (For
-instance, we don’t have to type “Page \#” into the Page field when
-adding material – it’s added automatically to every card.) &lt;br&gt; is
-a special code that tells Anki to move to the next line; more details
-are available in the [templates](templates/intro.md) section.
+Nazwa pola umieszczona w nawiasie klamrowym jest sygnałem dla Anki, że w tym miejscu ma zostać wyświetlona informacja, która jest przechowywana w tym polu. Tekst znajdujący się poza nawiasami klamrowymi będzie taki sam na każdej karcie.  (na przykład nie musimy wpisywać "Strona X" w polu "Strona" kiedy dodajemy materiał do nauki - to pole jest dodawane automatycznie do każdej karty.) &lt;br&gt; To specjalny znak, który daje znać  Anki aby przeszło ono  do następnej linii; więcej szczegółów znajduje się w sekcji [szablony](templates/intro.md).
 
-The production card templates work in a similar way:
+Szablon karty odwrotnej tworzymy w bardzo podobny sposób co karty standardowej:
 
     Q: {{English}}
     A: {{French}}<br>
@@ -184,7 +116,7 @@ To add and edit card types, click the “Cards…​” button while adding or
 editing notes. For more information on card types, please see the [Cards
 and Templates](templates/intro.md) section.
 
-### Note Types
+### Typy notatek
 
 Anki allows you to create different types of notes for different
 material. Each type of note has its own set of fields and card types.
@@ -238,15 +170,14 @@ and these choices are completely independent of each other. You can also
 change the note type of some notes [after you’ve already created
 them](browsing.md).
 
-### Collection
+### Kolekcja
 
-Your 'collection' is all the material stored in Anki – your cards,
-notes, decks, note types, deck options, and so on.
+Twoja  'kolekcja' to cały materiał przechowywany w Anki all the material stored in Anki – twoje karty,
+notatki, talie, typy notatek, opcje talii i tak dalej.
 
-## Shared Decks
+## Udostępnione talie
 
-You can watch [a video about Shared Decks and Review
-Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
+Możesz zobaczyć [film o udostępnianiu talii i podstawach powtórek](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) na YouTube (w języku angielskim).
 
 The easiest way to get started with Anki is to download a deck of cards
 someone has shared:
