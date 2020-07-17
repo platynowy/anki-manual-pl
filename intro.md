@@ -2,7 +2,7 @@
 
 ## Szybki Start
 
-Śpieszysz się? Wejdź od razu tutaj: [Zaczynamy](getting-started.md).
+Śpieszysz się? Zobacz[Jak zacząć?](getting-started.md).
 
 ## Tłumaczenia
 
@@ -30,4 +30,4 @@ Dostępne wersję językowe
 
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
-Jeśli chciałbyś pomóć przetłumaczyć tę instrukcję na inny język wejdź na stronę poradnikan o  [Tłumaczeniu Anki](https://translating.ankiweb.net/#/anki/manual).
+Jeśli chciałbyś pomóć przetłumaczyć tę instrukcję na inny język wejdź na stronę poradnika o [Tłumaczeniu Anki](https://translating.ankiweb.net/#/anki/manual).
