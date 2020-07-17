@@ -1,6 +1,6 @@
 - [Wstęp](/)
-- [Background](background.md)
-- [Getting Started](getting-started.md)
+- [Wprowadzenie](background.md)
+- [Jak zacząć?](getting-started.md)
 - [Nauka](studying.md)
 - [Dodawanie/Edytowanie](editing.md)
 - [Szablony kart](templates/intro.md)
