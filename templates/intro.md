@@ -1,43 +1,26 @@
-# Card Templates
+# Szablony Kart
 
-Card templates tell Anki which fields should appear on the front and back of your card,
-and control which cards will be generated when certain fields have text in them.
-By adjusting your card templates, you can alter the design and styling of many of your
-cards at once.
+Szablony kart "mówią" Anki które pola powinny pojawić się z przodu, a które z tyłu karty i pozwala programowi kontrolować które karty zostaną wygenerowane gdy określone pola zawierają w sobie tekst. Poprzez dostosowanie swoich szablonów kart można zmienić wygląd wielu kart na raz.
 
-Card templates are covered in some of the intro videos:
+O szablonach kart można dowiedizeć się z niektórych filmów wprowadzających (język angielski):
 
--   [Switching Card
-    Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+-   [Zmiana kolejności kart](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
--   [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+-   [Zmiana wygladu kart](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
--   [Typing in the
-    Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+-   [Pisanie odpowiedzi w czasie powtórki](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-## The Templates Screen {docsify-ignore}
+## Okno szablonu {docsify-ignore}
 
-You can modify card templates by clicking the "Cards..." button inside the
-editing screen.
+Możesz modyfikować szablony kart klikając na przycisk "Karty..." wewnątrz okna edycji.
 
-On the top left is the front template, on the bottom left is the back
-template, and in between them is the card styling section.
+Na górze po lewej stronie znajduje się szablon przodu, pod nim sekcja stylizacji kart (pole "Styl"),a na samym dole znajduje się szablon tyłu.
 
-In Anki, templates are written in HTML, which is the language that web
-pages are written in. The styling section is CSS, which is the language
-used for styling web pages.
+Szablony w Anki są napisane w języku HTML, który jest jednym z podstawowych języków do tworzenia stron internetowych. Pole "Styl" korzysta z jezyka CSS, który służy do nadawania wyglądu treściom opisanym językiem HTML (czyli np stronom internetowym).
 
-On the right is a preview of the front and back of the currently
-selected card. If you opened the window while adding notes, the preview
-will be based on the text you had typed into the Add Notes window. If
-you opened the window while editing a note, the preview will be based on
-the content of that note. If you opened the window from Tools → Manage
-Note Types, Anki will display each field’s name in parentheses in place
-of content.
+Po prawej stronie widoczny jest podgląd przodu i tyłu wybranej karty. Jeśli otworzyłeś okno w czasie dodawania notatek, podgląd zostanie wyświetlony na podstawie tekstu, który wpisałes w oknie Dodaj Notatki. Jeśli otworzyłeś okno podczas edytowania notatki, podgląd zostanie wyświetlony na podstawie zawartości tej notatki. Jeśli zaś otworzyłeś poprzez Narzędza → Zarządzaj typami notatek, Anki wyświetli nazwe każdego pola w nawiasach klamrowych.
 
-At the top right of the window is an Options button that gives you
-options to rename or reorder the cards, as well as the following two
-options:
+U góry po prawej stronie znajduje się przycisk Opcji, po którego naciśnięciu można zmienić nazwę lub kolejność kart jak i również następujące opcje: 
 
 -   The 'Deck Override' option allows you to change the deck that cards
     generated from the current card type will be placed into. By
