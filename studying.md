@@ -72,7 +72,7 @@ Tak samo jak przy nauce nowych kart, możesz użyć przycisków 1-4 na klawiatur
 
 ## Liczba oczekujących i czas nastepnej powtórki
 
-W momencie pojawienia się karty z pytaniem na ekranie, u dołu wyświetlane są również trzy liczby np. 12 + 34 + 56. Reprezentują one: nowe karty, karty nienauczone oraz karty powtarzane. Jeśli chcesz, możesz ukryć te liczby w ustawieniach Anki.
+W momencie pojawienia się karty z pytaniem na ekranie, u dołu wyświetlane są również trzy liczby np. 12 + 34 + 56. Reprezentują one: nowe karty, karty uczone oraz karty powtarzane. Jeśli chcesz, możesz ukryć te liczby w ustawieniach Anki.
 
 W starym harmonogramie (wyznaczania powtórek), liczby pokazują liczbę _powtórek_ do ukończenia wszystkich kart w tej kolejce, a nie liczba samych _kart_. Jeśli ustawiłeś wielokrotną liczbę kroków, numer będzie się zwiekszał o więcej niż jeden, gdy odpowiesz "Powtórz", ponieważ ta karta musi być pokazana wiele razy.
 
@@ -100,7 +100,7 @@ buried.
 
 Zawieś kartę / notatkę
 Ukrywa kartę lub wszystkie karty danej notatki. Nie będą one wyświetlane aż do momentu ręcznego odwieszenia notatki przez użytkownika (poprzez wybranie notatki i klikniecie na przycisk Zawieś w oknie przeglądarki). Użyteczne, gdy chcesz wyłączyć na jakiś czas pokazywanie danej notatki, ale nie chcesz jej usuwać.
- Jesli karty były kartami "Uczonymi", gdy zostały zawieszone, są ustawiane do kolejki nowych lub powtarzanych kart przed zakopaniem.
+Jeśli karty były kartami "Uczonymi", gdy zostały zawieszone, są ustawiane do przed zakopaniem kolejki nowych lub powtarzanych kart.
 
 Usuń notatkę
 Usuwa notatkę i wszystkie jej karty.
@@ -119,94 +119,40 @@ Odtwórz swój nagrany głos (raczej użyjesz tej opcji po pokazaniu odpowiedzi)
 
 ## Kolejność wyświetlania
 
-Studying will show cards from the selected deck and any decks it
-contains. Thus, if you select your “French” deck, the subdecks
-“French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
-well.
+W czasie nauki zostaną wyświetlone karty z aktualnie wybranej talii oraz talii, które znajdują się pod nią. Jeżeli wybierzesz talię "Francuski", do której należą talie "Francuski::Słówka" oraz "Francuski::Mój Podręcznik::Lekcja 1" to także one zostaną wyświetlone w czasie nauki.
 
-For new cards and reviews, Anki fetches cards from the decks in
-alphabetical order. So in the above example, you would get cards first
-from “French”, then “My Textbook”, and finally “Vocab”. You can use this
-to control the order cards appear in, placing high priority cards in
-decks that appear higher in the list. When computers sort text
-alphabetically, the “-” character comes before alphabetical characters,
-and “\\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “~My Textbook” to
-force it to appear after everything else.
+Jeżeli posiadasz talie zorganizowane w strukturze drzewa to powtórka i nauka zawartego w nich materiału będzie przebiegać w kolejności alfabetycznej według nazw tych talii. Dla powyższego przykładu w pierwszej kolejności pojawią się karty talii "Francuski", następnie "Mój podręcznik", a na końcu "Słówka". Opisana zasada może zostać wykorzystana do prioretyzowania poszczególnych talii, wstawiając karty o wysokim priorytecie do talii, które wyświetlane są wyżej. Do tego celu można również użyć symbolu myślnika "-", który interpretowany jest przed znakami liter oraz symboli “\\~” interpretowanych znakach liter. Jeśli zatem talię nazwiesz "-Słówka" to karty w niej zawarte zostaną wyświetlone jako pierwsze, zaś talia "~Mój Podręcznik" będzie w takim przypadku wyświetlona jako ostatnia. 
 
-New cards and reviews are fetched separately, and Anki won’t wait until
-both queues are empty before moving on to the next deck, so it’s
-possible you’ll be exposed to new cards from one deck while seeing
-reviews from another deck, or vice versa. If you don’t want this, click
-directly on the deck you want to study instead of one of the parent
-decks.
+Nowe karty i karty powtarzane zużywane są niezależnie w trakcie powtórki. Oznacza to, że w jej trakcie możesz natrafić na nową kartę, która będzie pochodzić z kolejnej talii, gdy nowe karty z talii aktualnej zostały już wykorzystane. Sposobem na to aby karty nowe i powtarzane były wyświetlane jedynie w ramach powtórki tej samej talii jest nauka bezpośrednio tej szczególnej talii, zamiast wykorzystywania do tego celu rodzica (talii nadrzędnej).
 
-Since cards in learning are somewhat time-critical, they are fetched
-from all decks at once and shown in the order they are due.
+Karty uczone, to znaczy takie które zostały wyświetlone po raz pierwszy i/lub oznaczone jako Powtórz, są wyświetlane niezależnie od aktualnie powtarzanej talii, zgodnie z przypisaną im przerwą.
 
-To control the order reviews from a given deck appear in, or change new
-cards from ordered to random order, please see the [deck
-options](deck-options.md). For more fine-grained ordering of new cards, you
-can change the order in the [browser](browsing.md).
+Aby ustawić kolejność powtórek jaka wyświetla się z danej talii lub wyświetlać nowe karty losowo, zobacz [Opcje talii](deck-options.md). Aby uzyskać bardziej szczegółowe uporzadkowanie nowych kart, możesz zmienić ich kolejność w [przeglądarce kart](browsing.md).
 
-## Siblings and Burying
+## Bliźnięta i zakopywanie
 
-Recall from [the basics](getting-started.md) that Anki can create more than one
-card for each thing you input, such as a front→back card and a
-back→front card, or two different cloze deletions from the same text.
-These related cards are called 'siblings'.
+Z [podstaw](getting-started.md) przypomnij sobie, że z jednej notatki Anki może stworzyć wiele kart, np. Przód→Tył i Tył-Przód, albo dwie różne luki w tym samym tekście. Karty, które powstają w ten sposób nazywają się bliźniętami. 
 
-When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically 'burying'
-them. Buried cards are hidden from review until the clock rolls over to
-a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
-will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the [deck override](templates/intro.md) feature).
+Aby zapobiec pokazaniu bliźniaka w czasie tej samej powtórki Anki automatycznie zakopuje bliźniaczą kartę. Zakopana karta nie będzie wyświetlana do kolejnego dnia lub do momentu kiedy sam ją ręcznie odblokujesz przy pomocy przycisku "Odkop", widocznego na dole okna po otwarciu [ekranu głównego](studying.md#study-overview) talii. Anki zakopuje bliźniaków, nawet jeśli znajdują się w innych taliach, na przykład gdy użyjesz [nadpisywania talii](templates/intro.md).
 
-You can enable burying from the [deck options](deck-options.md) screen -
-there are separate settings for new cards and reviews.
+Jeżeli jednak w czasie powtórki chcesz widzieć więcej niż jedną kartę z danej notatki, możesz zatrzymać zakopywanie bliźniaczych kart w [opcjach talii](deck-options.md). Możesz ustawić osobne opcje dla nowych kart i dla powtórek.
 
-Anki will only bury siblings that are new or review cards. It will not
-hide cards in learning, as time is of the essence for those cards. On
-the other hand, when you study a learning card, any new/review siblings
-will be buried.
+Anki zakopie jedynie bliźnięta kart nowych i powtarzanych. Nie zakopie za to kart uczonych. Z drugiej strony, jeśli przeglądasz kartę nauczoną, wszelkie nowe/powtarzane bliźnięta zostaną zakopane.
 
-## Keyboard Shortcuts
+## Skróty klawiszowe
 
-Most of the common operations in Anki have keyboard shortcuts. Most of
-them are discoverable in the interface: menu items list their shortcuts
-next to them, and hovering the mouse cursor over a button will generally
-show its shortcut in a tooltip.
+Większość z operacji wykonywanych w Anki posiada przypisane do siebie skróty klawiszowe. Większość z tych skrótów widoczna jest bezpośrednio w oknie Anki np. w rozwijanych menu kontekstowych obok nazwy funkcji lub po najechaniu na dany przycisk kursorem myszy.
 
-When studying, either space or enter will show the answer. When the
-answer is shown, you can use space or enter to select the Good button.
-You can use the 1-4 keys to select a specific ease button. Many people
-find it convenient to answer most cards with space and keep one finger
-on 1 for when they forget.
+Najczęściej używanym skrótem klawiszowym w czasie powtórki jest przycisk spacji lub Enter, które wyświetlają odpowiedź na zadane pytanie. Kolejne kliknięcie spacji lub klawisza Enter spowoduje przypisanie do karty oceny Dobra. Wszystkie oceny dostępne są pod klawiszami 1-4, w kolejności rosnącej od Powtórz. Wiele osób używa jedynie dwóch klawiszy - spacji dla oceny Dobra i w celu wyświetlenia odpowiedzi oraz 1 jeżeli odpowiedź została zapomniana.
 
-The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the '/' key. When
-opened, it will display all of your decks and show a filter area at the
-top. As you type characters, Anki will display only decks matching the
-characters you type. You can add a space to separate multiple search
-terms, and Anki will show only decks that match all the terms. So “ja 1”
-or “on1 ja” would both match a deck called “Japanese::Lesson1”.
+Przydatnym skrótem klawiszowym może okazać się też przycisk ukośnika "/", po wybraniu którego wyświetlane jest okno "Nauka tali…" dostępne standardowo w menu Narzędzia. W oknie tym pokazane są wszystkie talie w twojej kolekcji oraz pole filtrowania u góry. Po wpisaniu tekstu w polu filtrowania, poniżej wylistowane zostaną tylko te talie, które spełniają jego warunki. Co więcej, za pomocą spacji możesz nadawać kolejne warunki dla filtru. W ten sposób wyświetlą się tylko te talie, które spełniają wszystkie wstawione warunki. Przykładowo zarówno "ja 1" jak i "ad1 ja" wskażą na talię o nazwie "Japoński::Wykład1".
 
-## Falling Behind
+## Zaległości
 
-If you fall behind in your reviews, Anki will prioritize cards that have
-been waiting the longest. It does this by taking the the cards that have
-been waiting the longest and showing them to you in a random order up
-until your daily review limit. This ordering ensures that no cards will
-be left waiting indefinitely, but it means that if you introduce new
-cards, their reviews won’t appear until you’ve gotten through your
-backlog.
+Jeżeli z czasem zaczynasz zostawać w tyle z powtórkami, Anki będzie nadawał najwyższy priorytet tym kartom, które oczekują najdłużej na powtórkę. Karty te  w trakcie powtórki będą wyświetlane w sposób losowy do momentu wyczerpania dziennego limitu powtórek. Taka procedura gwarantuje, że żadna z kart nie będzie oczekiwała na wyświetlenie w nieskończoność. Jeśli jednak postanowisz wprowadzić nowe karty, ich powtórki nie będą one pokazywane do momentu, w którym nie powtórzysz wszystkich zaległych kart.
 
-If you wish to change the order of the overdue reviews, you can do so by
-creating a [filtered deck](filtered-decks.md).
+Jeśli chcesz zmienić kolejność długo oczekujących kart poprzez utworzenie [talii filtrowanej](filtered-decks.md).
 
-When you answer cards that have been waiting for a while, Anki factors
-in that delay when determining the next time a card should be shown.
-Please see the section on Anki’s spaced-repetition
-[algorithm](faqs.md) for more information.
+Gdy przeglądasz karty, które oczekiwały już jakiś czas na powtórkę, Anki uwzględnia to oczekiwanie w przyszłym harmonogramowaniu powtórek karty.
+Zobacz rozdział o [algorytmie](faqs.md) spaced-repetition, aby dowiedzieć się wiecej.
+ 
