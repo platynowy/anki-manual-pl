@@ -1,163 +1,88 @@
-# Studying
+# Nauka
 
-When you have found a deck you like or entered some notes in, it’s time
-to start studying.
+Czas zacząć naukę pobranej lub samodzielnie stworzonej talii.
 
-## Decks
+## Talie
 
-Study in Anki is limited to the currently selected deck as well as any
-subdecks it contains.
+W Anki można uczyć się jednocześnie tylko jednej talii oraz talii, które wchodzą w jej skład.
 
-On the decks screen, your decks will be displayed in a list. There are
-two number columns, 'due' and 'new'. 'Due' is the count of waiting
-reviews and cards currently in learning. 'New' is the number of new
-cards that are ready to be learnt that day.
+W oknie głównym talie wyświetlane są w formie listy. Są tam widoczne dwie kolumny Oczekujące oraz Nowe. W kolumnie Oczekujące pokazana jest liczba kart do nauki w poszczególnych taliach. W kolumnie Nowe wyświetlana jest liczba nowych kart oczekujących na naukę tego dnia.
 
-When you click on a deck, it will become the 'current deck', and Anki
-will change to the study screen. You can return to the deck list to
-change the currently selected deck at any time by clicking on “Decks” at
-the top of the main window. (You can also use the Study
-Deck action in the menu to select a new deck from the keyboard, or you
-can press the ‘s’ key to study the currently selected deck.)
+Po kliknięciu na nazwę danej talii w oknie głównym pojawi się ekran nauki. Aby zmienić obecnie wybraną talię możesz powrócić do listy talii klikająć "Talie" u góry głównego okna (Mozesz również uzyć opcji Ucz się Talii w menu, aby wybrać nową talię uzywając klawiatury. Naciskając klawisz "s" włączysz naukę obecnie wybranej talii).
 
-You can click the gears button to the right of a deck to rename or
-delete a deck, change its options, or [export](exporting.md) it.
+Aby zmienić nazwę talii, usunąć talię, dostosować jej ustawienia lub ją [wyeksportować](exporting.md), wybierz przycisk koła zębatego po prawej stronie nazwy talii w oknie Talie.
 
-When a deck has subdecks, the cards will appear from [each deck in
-turn](studying.md#display-order).
+Jeśli talia posiada podtalie, karty będą wyświetlane [z każdej talii po kolei](studying.md#display-order).
 
-## Study Overview
+## Powtórka
 
-After clicking on a deck to study, you’ll see a screen that shows you
-how many cards are due today. This is called the 'deck overview' screen.
-The cards are split into three types:
+Po kliknięciu na nazwę talii, której chcesz się uczyć, wyświetli się ekran pokazujący liczbę kart oczekujących dzisiaj do nauki. Są ich trzy typy:
 
-- **New** refers to cards that you have downloaded or entered in, but
-  have never been studied before.
+- **Nowe**, czyli karty pobrane lub samodzielnie wprowadzone, których jeszcze nigdy się nie uczyłeś.
 
-- **Learning** refers to cards that were seen for the first time
-  recently, and are still being learnt.
+- **Uczone** to karty, które widziałeś po raz pierwszy, ale jeszcze się ich nie nauczyłeś.
 
-- **To Review** refers to cards that were previously learnt, and now
-  need to be reviewed so you don’t forget them.
+- **Do przejrzenia** to karty, których się już uczyłeś, a teraz będą powtarzane, abyś ich nie zapomniał.
 
-To start a study session, click the **Study Now** button. Anki will
-proceed to show you cards until the cards to be shown for the day have
-run out.
+Aby rozpocząć naukę kliknij przycisk Ucz się teraz. Anki rozpocznie wyświetlanie kart. Nauka będzie trwała do momentu wyczerpania się wszystkich kart przeznaczonych do nauki danego dnia.
 
-While studying, you can return to the overview by pressing the “s” key
-on your keyboard.
+Podczas nauki możesz cofnąć się do ekranu z liczbą kart naciskając klawisz "s" na klawiaturze.
 
-## Questions
+## Pytania
 
-When a card is shown, only the question is shown at first. After
-thinking about the answer, either click the **Show Answer** button, or
-press the spacebar. The answer will then be shown. It’s okay if it takes
-you a little while to recall the answer, but as a general rule if you
-can’t answer within about 10 seconds, it’s probably better to give up
-and show the answer than keep struggling to remember.
+W momencie wyświetlenia karty, jako pierwsze pokazywane jest pytanie. Po tym jak pomyślisz o odpowiedzi możesz albo kliknąć przycisk **Pokaż odpowiedź** albo nacisnąć spację. Zostanie wtedy wyświetlona odpowiedź. Normalną sytuacją jest, że przypomnienie sobie odpowiedzi na dane pytanie wymaga chwili namysłu, jeśli jednak po 10 sekundach dalej nie będziesz umiał podać prawidłowej odpowiedzi lepiej jest się poddać i wyświetlić odpowiedź niż w nieskończoność próbować ją wymyślić.
 
-When the answer is shown, you should compare the answer you thought of
-with the answer which is shown and tell Anki how well you remembered. If
-you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
-just showing it to you.
+Po wyświetleniu odpowiedzi porównaj z nią swoją odpowiedź, a następnie oceń jak dobrze ci poszło. Jeśli nie jesteś pewien swoich odpowiedzi w myślach, możesz tak ustawić Anki, żeby odpowiedzi były przez ciebie [wpisywane](templates/fields.md#checking-your-answer), a nie tylko pokazywane.
 
-The number of buttons available for grading depends on whether the card
-is being 'learnt' or 'reviewed'.
+Liczba przycisków do oceny twojej odpowiedzi zależna jest od tego czy karta była już wcześniej przeglądana.
 
-## Learning
+## Nauka nowych kart
 
-When learning new cards, or when relearning cards that you have
-forgotten, Anki will show you the cards one or more times to help you
-memorize them. Each time is called a 'learning step'. By default there
-are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](deck-options.md).
+Podczas uczenia się nowych kart lub takich, które już wcześniej widziałeś, ale zapomniałeś ich odpowiedzi, Anki wyświetli je raz lub kilka razy, w pewnych odstępach czasu - tzw. interwałach. Standardowo dla takich kart są ustawione dwa interwały: 1 minuta oraz 10 minut. Możesz zmienić ich liczbę oraz wartości w  [Opcjach talii](deck-options.md).
 
-There are three rating buttons when learning:
+Standardowo dla nowych kart w Anki wyświetlane są trzy przyciski oceny:
 
-**Again** moves the card back to the first step.
+**Powtórz** cofa kartę do pierwszego kroku
 
-**Good** moves the card to the next step. If the card was on the final
-step, the card is converted into a review card (it 'graduates'). By
-default, once the card has reached the end of the learning steps, the
-card will be shown again the next day, then at increasingly long delays
-(see the next section).
+**Dobra** przenosi kartę do nastepnego kroku. Jeżeli w poprzednim kroku karta została już wcześniej oceniona jako Dobra, to w tym kroku stanie się ona kartą powtórkową ("absolwentem"). By
+default.Domyślnie zostanie ona wyświetlona następnego dnia, a potem co pewien narastający czas.
+(zobacz nastepną sekcję)).
 
-**Easy** immediately converts the card into a review card, even if there
-were steps remaining. By default, the card will be shown again 4 days
-later, and then at increasingly long delays. The easy button will not be
-shown if you are in relearning mode and it would give the same interval
-as “good.”
+**Łatwa** natychmiast przekształca nową kartę w kartę powtórkową, nawet jeśli nie zostały dla niej wykonane inne kroki. Domyślnie karta ta zostanie wyświetlona za 4 dni, a potem co pewien narastający czas. Przycisk tej odpowiedzi nie będzie dostępny jeśli uczysz się kart, na które nie znałeś odpowiedzi lub odpowiedziałeś niepoprawnie, ponieważ przerwa byłaby taka sama jak przy odpowiedzi "Dobra".
 
-When cards are seen for the first time, they start at step one. This
-means answering **Good** on a card for the first time will show it one
-more time in 10 minutes, and the initial 1 minute step will be skipped.
-If you push Again, though, the card will come back in 1 minute.
+Karta wyświetlana po raz pierwszy znajduje się w pierwszym kroku (1 minuta). Dla takiej karty odpowiedź **Dobra** będzie oznaczać, że zostanie ona wyświetlona za 10 minut, a początkowy krok - 1 minuta - zostanie pominięty.Jesli jednak przy drugim kroku (10 minut) naciśniesz "Powtórz", karta zostanie pokazana ponownie w ciągu jednej minuty.
 
-You can use the 1, 2 and 3 keys on your keyboard to select a particular
-button, where 1 is **Again**. Pressing the spacebar will select
-**Good**.
+Do oceny karty możesz również używać przycisków 1, 2 oraz 3 znajdujących się na klawiaturze, przy czym 1 = **Powtórz**. Wybranie spacji wybierze odpowiedź **Dobra**.
 
-If there are no other cards to show you, Anki will show learning cards
-again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in the
-[preferences](preferences.md).
+W sytuacji, gdy danego dnia nie ma już innych kart do nauki Anki domyślnie pokaże nowe karty, nawet wtedy, gdy nie upłynął jeszcze na nie czas oczekiwania. Jeśli jednak chciałbyś czekać pełen czas na kartę, to możesz zmienić ich zachowanie w [ustawieniach](preferences.md).
 
-## Reviewing
+## Powtórka znanych kart
 
-When a card has been previously learnt and is ready to be reviewed
-again, there are four buttons to rate your answer:
+Jeżeli karta została już kiedyś wyświetlona w którejś z wcześniejszych powtórek będzie ona posiadała cztery przyciski oceny:
 
-**Again** marks your answer as incorrect and asks Anki to show the card
-more frequently in the future. The card is said to have 'lapsed'. Please
-see the [lapses](deck-options.md) section for more information about how lapsed
-reviews are handled.
+**Powtórz** oznacza, że podana odpowiedź była błędna, a w przyszłości Anki będzie częściej pokazywał tę kartę. Zobacz rozdział o [powtórkach](deck-options.md) aby dowiedzieć się wiecej na temat obsługi kart na które udzielono błędnej odpowiedzi.
 
-**Hard** shows the card at a slightly longer delay than last time, and
-tells Anki to show the card more frequently in the future.
+**Trudna** karta zostanie wyświetlona po czasie niewiele dłuższym od tego przy ocenie Powtórz. W przyszłości Anki będzie ostrożniej harmonogramowało powtórki tej karty.
 
-**Good** tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the default starting
-easiness, the card will be shown again approximately 2 1/2 times longer
-than the previous time, so if you had waited 10 days to see the card
-previously, the next delay would be about 25 days.
+**Dobra** oznacza dla Anki, że ostatnio ustawiony interwał powtórki był bliski poprawnego i łatwość karty nie powinna być zmieniana ani w górę ani w dół. Przy standardowym, początkowym stopniu łatwości karta zostałaby pokazana po 2,5-krotnie dłuższym odstępie czasowym niż dotąd. Co dla karty z przerwą 10 dni oznacza kolejną powtórkę za około 25 dni.
 
-**Easy** tells Anki you found the delay too short. The card will be
-scheduled further into the future than 'Good', and Anki will schedule
-the card less frequently in the future. Because 'Easy' rapidly increases
-the delay, it’s best used for only the easiest of cards. Usually you
-should find yourself answering 'Good' instead.
+**Łatwa** oznacza, karta jest dla użytkownika zbyt łatwa i należy zdecydowanie wydłużyć przerwę w  powtórkach. Karta otrzyma przerwę dłuższą niż w przypadku oceny Dobra, a Anki w przyszłym harmonogramowaniu karty będzie rzadziej ją pokazywał. Ponieważ ocena Łatwa gwałtownie wpływa na zwiększenie się odstepu czasowego powtórki najlepszym rozwiązaniem jest stosowanie jej tylko względem kart co do których jesteśmy w 100% pewni. W przypadku prawidłowej odpowiedzi najczęściej stosowaną oceną powinna być Dobra.
 
-As with learning cards, you can use 1-4 on the keyboard to select an
-answer. Pressing the spacebar will select 'Good'.
+Tak samo jak przy nauce nowych kart, możesz użyć przycisków 1-4 na klawiaturze, aby wybrać odpowiedź. Naciśniecie spacji wybierze opcję "Dobra".
 
-## Due Counts
+## Liczba oczekujących i czas nastepnej powtórki
 
-When only the question is shown, Anki shows three numbers like 12 + 34 +
-56 at the bottom of the screen. These represent the new cards, cards in
-learning, and cards to review. If you’d prefer not to see the numbers,
-you can turn them off in Anki’s preferences.
+W momencie pojawienia się karty z pytaniem na ekranie, u dołu wyświetlane są również trzy liczby np. 12 + 34 + 56. Reprezentują one: nowe karty, karty nienauczone oraz karty powtarzane. Jeśli chcesz, możesz ukryć te liczby w ustawieniach Anki.
 
-In the old scheduler, the numbers count _reviews_ needed to finish all the
-cards in that queue, not the number of _cards_. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.
+W starym harmonogramie (wyznaczania powtórek), liczby pokazują liczbę _powtórek_ do ukończenia wszystkich kart w tej kolejce, a nie liczba samych _kart_. Jeśli ustawiłeś wielokrotną liczbę kroków, numer będzie się zwiekszał o więcej niż jeden, gdy odpowiesz "Powtórz", ponieważ ta karta musi być pokazana wiele razy.
 
-In the new scheduler, the numbers count _cards_, so the number will always
-increase by one regardless of the steps remaining.
+W nowym harmonogramie (wyznaczania powtórek), liczby pokazują liczbę _kart_. Oznacza to, że liczby zawsze będą zwiększały się o jeden, niezależnie od liczby pozostałych kroków.
 
-When the answer is shown, Anki shows an estimate of the next time a card
-will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s [preferences](preferences.md).
+Po wyświetleniu odpowiedzi Anki pokaże również przybliżony, szacowany czas kolejnej powtórki danej karty. Jeśli chcesz, możesz ukryć ten wskaźnik w [ustawieniach](preferences.md) Anki.
 
-Anki additionally adds a small amount of random variation to the next
-due times, in order to prevent cards that were introduced together and
-always rated the same from always staying next to each other. This
-variation is not shown on the time estimates but will be applied after
-selecting the button.
+Anki dodatkowo dodaje do czasu kolejnej powtórki pewną niewielką, losową liczbę, aby nowowprowadzone karty nie pojawiały się przy okazji kolejnych powtórek obok siebie. Ta losowość nie jest pokazywana w szacowanym czasie kolejnej powtórki danej karty, ale mimo tego algorytm Anki ją uwzględnia. 
 
-## Editing and More
+## Przyciski Edytuj i Więcej
 
 You can click the **Edit** button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
