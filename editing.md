@@ -1,128 +1,58 @@
-Adding/Editing
+Dodawanie/Edytowanie
 ===============
 
-Adding Cards and Notes
+Dodawanie kart i notatek
 ----------------------
 
-Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the main window,
-and the Add Notes window will appear.
+Jak zostało to opisane w rozdziale na temat [podstaw](getting-started.md), w Anki użytkownik tworzy notatki, a na ich podstawie program generuje automatycznie karty. Aby dodać nową notatkę  naciśnij przycisk "Dodaj" w oknie głównym. Pojawi się wtedy nowe okno "Dodaj Notatki.
 
-The top left of the window shows us the current note type. If it does
-not say “Basic,” then you may have added some note types when you
-downloaded a shared deck. The text below assumes that “Basic” is
-selected.
+W lewym górnym rogu okna "Dodaj" znajduje się informacja o aktualnie używanym typie notatki. Jeśli widnieje tam inna nazwa niż "Podstawowy" (czyli podstawowy typ notatki) to prawdopodobnie poprzez import którejś z udostępnionych talii dodałeś nowy typ notatki. W dalszej części tego opisu będziemy omawiać tylko typ "Podstawowy".
 
-The top right of the window shows us the deck cards will be added to. If
-you’d like to add cards to a new deck, you can click on the deck name
-button and then click “Add”.
+W prawym górnym rogu okna "Dodaj" wyświetlana jest nazwa talii do której zostanie dodana notatka. Żeby dodać notatkę do innej tali, wystarczy kliknąć przycisk z nazwą obecnej talii a następnie wybrać "Dodaj".
 
-Below the note type, you’ll see some buttons, and an area labeled
-“Front” and “Back”. Front and Back are called 'fields', and you can add,
-remove and rename them by clicking the “Fields…​” button above.
+Poniżej przycisku z typem notatki znajdują się dwa pola tekstowe o nazwie "Przód" oraz "Tył". Przód i Tył to właśnie pola notatki, możesz dodawać nowe pola, usuwać je i zmieniać ich nazwy. Aby wykonać, którąś z tych czynności wybierz przycisk “Pola…​”, który znajduje się pod przyciskiem z typem notatki.
 
-Below the fields is another area labelled “Tags”. Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
+Poniżej pól notatki znajduje się pole tekstowe oznaczone jako "Etykiety" są to tzw. tagi. Etykiety to słowa, które będą charakteryzowały notatki w celu ich lepszej organizacji lub po to by ułatwić ich wyszukiwanie. Dana notatka może być scharakteryzowana przez więcej niż jedną etykietę. Nadawanie etykiet notatkom nie jest obowiązkowe, to pole może pozostać puste. Etykiety oddzielane są znakiem spacji. Przykładowo jeśli nadamy notatce etykiety:
 
-    vocab check_with_tutor
+    słownictwo do_sprawdzenia
 
-…​then the note you add would have two tags.
+…​wtedy notatka będzie posiadałą dwie etykiety
 
-When you’ve entered text into the front and back, you can click the
-“Add” button or press Ctrl+Enter (Command+Enter on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you’d like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
+Aby dodać notatkę do kolekcji wypełnij najpierw pola Przód i Tył, a następnie wybierz przycisk Dodaj (u dołu okna) lub naciśnij Ctrl + Enter (Command + Enter na komputerach Mac). Razem z notatką wygeneruje się karta, która zostanie umieszczona we wcześniej wybranej przez ciebie talii. Aby edytować wcześniej dodaną kartę, wystarczy że klikniesz przycisk Historia, co otworzy [przeglądarkę](browsing.md).
 
-Anki checks the first field for uniqueness, so it will warn you if you
-enter two cards with a Front field of “apple” (for example). The
-uniqueness check is limited to the current note type, so if you’re
-studying multiple languages, two cards with the same Front would not be
-listed as duplicates as long as you had a different note type for each
-language.
+Pamiętaj, pierwsze pole notatki nigdy nie może pozostać puste, a jego treść musi być niepowtarzalna - nie można na przykład stworzyć dwóch notatek, które w polu Przód będą zawierały słowo "jabłko". Ta niepowtarzalność treści jest jednak ograniczona tylko do jednego typu notatki, przykładowo: jeśli uczysz się wielu języków i dla każdego z nich stworzony jest inny typ notatki, to dane słowo w polu Przód może się powtarzać o ile notatki z tym słowem należą do różnych typów. 
 
-Anki doesn’t check for duplicates in other fields automatically for
-efficiency reasons, but the browser has a “Find Duplicates” function
-which you can run periodically.
+Anki w czasie dodawania notatki, ze względu na wydajność programu, nie sprawdza innych pól pod kątem niepowtarzalności. Jednakże w przeglądarce kart znajduje się przycisk "Znajdź duplikaty…" (Przeglądaj>Notatki>Znajdź duplikaty…). Funkcja ta przeszukuje wszystkie pola wszystkich notatek pod względem duplikatów. Warto jest od czasu do czasu takie przeszukanie wykonać.
 
-For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
+Aby dowiedzieć się więcej na temat przycisków, które znajdują się pomiędzy polami notatki a przyciskiem typu notatki zajrzyj do rozdziału na temat [edytora](editing.md).
 
-Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this
-article](http://www.supermemo.com/articles/20rules.htm) on the SuperMemo
-site. In particular:
+Kart można się uczyć w różny sposób, jednak  zawsze należy pamiętać o pewnych ogólnych zasadach. Dobre wprowadzenie stanowi [artykuł](http://www.supermemo.com/articles/20rules.htm) na stronie SuperMemo. Zasadniczo:
 
--   **Keep it simple**: The shorter your cards, the easier they are to
-    review. You may be tempted to include lots of information “just in
-    case,” but reviews will quickly become painful.
+-   **Pamiętaj o prostocie**: Im prostsze są karty tym łatwiej jest się ich uczyć. Czasami może cię kusić, żeby dodać więcej treści do jednej karty, tak na wszelki wypadek, jednak w takim przypadku bardzo szybko nauka stanie się męczarnią.
 
--   **Don’t memorize without understanding**: If you’re studying a
-    language, try to avoid large lists of words. The best way to learn
-    languages is in context, which means seeing those words used in a
-    sentence. Likewise, imagine you’re studying a computer course. If
-    you attempt to memorize the mountain of acronyms, you’ll find it
-    very difficult to make progress. But if you take the time to
-    understand the concepts behind the acronyms, learning the acronyms
-    will become a lot easier.
+-   **Nie ucz się rzeczy których nie rozumiesz**: Jeśli uczysz się języka obcego unikaj tworzenia długich list wyrazów w jednej karcie. Najlepszym sposobem nauki języka obcego jest wstawienie wyrazów w pewien kontekst, który pokaże słowa w ich prawidłowym zastosowaniu (np. w zdaniu). Jeśli będziesz starał się zapamiętać całą górę znaczeń różnych skrótów, bardzo szybko zauważysz jak trudno jest zrobić jakikolwiek postęp przy takim sposobie nauki. Ale jeśli włożysz trochę więcej pracy i postarasz się zrozumieć co tak naprawdę stoi za tymi skrótami, nauka będzie wtedy dużo prostsza i efektywniejsza.
 
-Adding a Note Type
+Dodawanie typu notatki
 ------------------
 
-While basic note types are sufficient for simple cards with only a word
-or phrase on each side, as soon as you find yourself wanting to include
-more than one piece of information on the front or back, it’s better to
-split that information up into more fields.
+Podstawowy typ notatki w zupełności wystarcza do tworzenia prostych kart z jednym słowem lub zdaniem po każdej ze stron karty. Jednak jeśli stwierdzisz, że chciałbyś umieścić w notatce więcej niż jedną informację na przodzie i tyle karty, to najlepszym wyjściem jest podzielenie takiej informacji na więcej pól.
 
-You may find yourself thinking "but I only want one card, so why can’t I
-just include the audio, a picture, a hint and the translation in the
-Front field?" If you’d prefer to do that, that’s fine. But the
-disadvantage of that approach is that all the information is stuck
-together. If you wanted to sort your cards by the hint, you wouldn’t be
-able to do that as it’s mixed in with the other content. You also
-wouldn’t be able to do things like move the audio from the front to the
-back, except by laboriously copying and pasting it for every note. By
-keeping content in separate fields, you make it much easier to adjust
-the layout of your cards in the future.
+Możesz sobie jednak pomyśleć "przecież ja chcę tylko jedną kartę, umieszczę obrazek, podpowiedź i wymowę słowa na przodzie karty, a na tylnej stronie odpowiedź". Oczywiście bez problemu możesz stworzyć taką kartę. Jednak takie podejście ma jedną główną wadę, wszystkie informacje są zbite w jedno pole. W takiej sytuacji nie ma możliwości np. posortowania kart pod kątem treści podpowiedzi albo treści pytania. Nie da się wtedy przenieść np. pliku audio z przodu karty na jej tył, no chyba że ręcznie kopiując go w każdej notatce. Trzymanie informacji w osobnych polach sprawia, że zmiana układu karty w przyszłośco będzie znacznie prostsza.
 
-To create a new type of note, choose Tools → Manage Note Types from the
-main Anki window. Then click “Add” to add a new type of note. You’ll now
-see another screen that gives you a choice of note types to base the new
-type on. “Add” means to base the newly created type on one that comes
-with Anki. “Clone” means to base the newly created type on one that is
-already in your collection. For instance, if you’d created a French
-vocab type already, you might want to clone that when creating a German
-vocab type.
+Aby utworzyć nowy typ notatki wybierz Narzędzia → Zarządzaj typami notatek z okna głównego Anki. Kliknij "Dodaj" aby dodać nowy typ notatki. Pojawi się teraz następne okno, które pokaże Ci typy notatek na podstawie których możesz stworzyć nowy typ notatki. "Dodaj" tworzy nowy typ notatki na podstawie, któregoś ze standardowych typów Anki. "Klonuj" odnosi się do typów notatek stworzonych wcześniej przez użytkownika. Przykładowo na tym samym typie notatki możesz uczyć się zarówno francuskiego jak i niemieckiego.
 
-After choosing OK, you’ll be asked to name the new type. The subject
-material you’re studying is a good choice here – things like “Japanese”,
-”Trivia”, and so on. Once you’ve chosen a name, close the Note Types
-window, and you’ll return to the adding window.
+Po wybraniu przycisku "OK" Anki poprosi o podanie nazwy dla nowego typu notatki. Dobrze wybrać nazwę, która wprost odnosi się do materiału, do nauki którego będzie wykorzystywany dany typ notatki np. japoński lub geografia. Po nadaniu nazwy nowemu typowi notatki można zamknąć okno Typy notatek i powrócić do okna dodawania notatki. 
 
-Customizing Fields
+Dostosowywanie pól
 ------------------
 
-To customize fields, click the “Fields…​” button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
+Aby dostosować pola do własnych potrzeb kliknij przycisk “Pola…​” podczas dodawania lub edycji notatki lub gdy typ notatki jest wybrany w oknie "Zarządzaj typami notatek".
 
-You can add, remove, or rename fields by clicking the appropriate
-buttons. To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter “1”.
+Możesz dodawać, usuwać lub zmieniać nazwy pól po klikając odpowiednie przyciski po prawej stronie okna. Aby zmienić kolejność, w której pola pokazywane są w oknie dodawania notatki użyj przycisku "Zmień pozycję". Pojawi się okno, w którym zostaniesz poproszony o podanie kolejności w formie numerów. Przykładowo, jeśli chcesz aby dane pole w oknie dodawania notatki wyświetlane było jako pierwsze wpisujesz po prostu "1".
 
-Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
+Nie używaj "Tags", "Type", "Deck", "Card", lub 'FrontSide' jako nazw pól, ponieważ są to [pola specjalne](templates/fields.md#special-fields) i nie będą działać poprawnie.
 
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is *not* where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
+Opcje zlokalizowane w dolnej części okna "Pola…" pozwalają na dodatkową edycję ustawień pól, ale tylko w oknie dodawania notatki. *Nie jest* to miejsce, w którym dostosujesz sposób wyświetlania pól na karcie podczas nauki. Te ustawienia opisane sa w sekcji [szablony](templates/intro.md).
 
 **Editing Font** allows you to customize the font and size used when
 editing notes. This is useful if you want to make unimportant
