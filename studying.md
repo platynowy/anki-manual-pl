@@ -14,7 +14,7 @@ Aby zmienić nazwę talii, usunąć talię, dostosować jej ustawienia lub ją [
 
 Jeśli talia posiada podtalie, karty będą wyświetlane [z każdej talii po kolei](studying.md#display-order).
 
-## Powtórka
+## Ekran główny talii
 
 Po kliknięciu na nazwę talii, której chcesz się uczyć, wyświetli się ekran pokazujący liczbę kart oczekujących dzisiaj do nauki. Są ich trzy typy:
 
@@ -26,7 +26,7 @@ Po kliknięciu na nazwę talii, której chcesz się uczyć, wyświetli się ekra
 
 Aby rozpocząć naukę kliknij przycisk Ucz się teraz. Anki rozpocznie wyświetlanie kart. Nauka będzie trwała do momentu wyczerpania się wszystkich kart przeznaczonych do nauki danego dnia.
 
-Podczas nauki możesz cofnąć się do ekranu z liczbą kart naciskając klawisz "s" na klawiaturze.
+Podczas nauki możesz cofnąć się do ekranu głównego talii naciskając klawisz "s" na klawiaturze.
 
 ## Pytania
 
@@ -84,65 +84,40 @@ Anki dodatkowo dodaje do czasu kolejnej powtórki pewną niewielką, losową lic
 
 ## Przyciski Edytuj i Więcej
 
-You can click the **Edit** button in the bottom left to edit the current
-note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the [add notes](editing.md) screen.
+W czasie nauki, w celu edycji notatki możesz kliknąć przycisk **Edytuj**, który znajduje się po lewej stronie ekranu nauki. Po ukończeniu edycji powrócisz od razu do poprzedniego ekranu. Okno edytowania aktualnej karty jest bardzo podobne do standardowego okna [dodawania notatki](editing.md).
 
-At the bottom right of the review screen is a button labeled **More**.
-This button provides some other operations you can do on the current
-card or note:
+W prawym dolnym rogu ekranu nauki znajduje się przycisk **Więcej**, za pomocą którego możliwe jest wykonanie na danej karcie lub notatce dodatkowych operacji:
 
-Flag Card  
-Adds a colored marker to the card, or toggles it off. Flags will appear during
-study, and you can search for flagged cards in the Browse screen. This is useful
-when you want to take some action on the card at a later date, such as looking
-up a word when you get home.
+Dodaj flagę do karty 
+Dodaje kolorowe wyróżnienie do karty lub je wyłącza. Flagi będa się pojawiały podczas nauki. Możesz szukać kart, do których dodano flagę w oknie przeglądania kart.  Opcja ta jest użyteczna jeśli chcesz w późniejszym czasie na tej szczególnej notatce wykonać jakąś czynność np. poszukanie danego słowa w słowniku kiedy wrócisz do domu.
 
-Mark Note  
-Adds a “marked” tag to the current note, so it can be easily found in the
-browser. This is similar to flagging individual cards, but works with a tag
-instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead - marking is
-mainly left around for compatibility with older Anki versions.
+Wyróżnij notatkę 
+Dodaje etykietę "marked" do aktualnej notatki. Jest to opcja podobna do dodawania flag do kart, ale w przeciwieństwie do niej działa na podstawie etykiet, więc jeśli notatka ma kilka kart, wszystkie te karty pojawią się w poszukiwaniu etykiety "marked". Większość użytkowników bedzie preferowała używanie flag - wyróżnianie jest dalej dostępne głównie po to, aby zapewnić kompatybilność ze wcześniejszymi wersjami Anki.
 
-Bury Card / Note  
-Hides a card or all of the note’s cards from review until the next day.
-(If you want to unbury cards before then, you can click the “unbury”
-button on the [deck overview](studying.md#study-overview) screen.) This is useful if
-you cannot answer the card at the moment or you want to come back to it
-another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
-cards of the same note. If cards were in learning when they are buried,
-they are moved back to the new card queue or review queue prior to being
+Zakop kartę / notatkę  
+Ukrywa kartę lub wszystkie karty danej notatki do momentu "odkopania" na [ekranie głównym talii](studying.md#study-overview) oraz automatycznie kolejnego dnia. Opcja ta jest użyteczna gdy nie możemy w danej chwili odpowiedzieć na kartę lub niedługo chcemy wrócić do niej wrócić. Zakopywanie może także odbywać się [automatycznie](studying.md#siblings-and-burying) podczas powtórki kart pochodzących z tej samej notatki. Jesli karty były kartami "Uczonymi", gdy zostały zakopane, są ustawiane do kolejki nowych lub powtarzanych kart przed zakopaniem.
 buried.
 
-Suspend Card / Note  
-Hides a card or all of the note’s cards from review until they are
-manually unsuspended (by clicking the suspend button in the browser).
-This is useful if you want to avoid reviewing the note for some time,
-but don’t want to delete it. If cards were in learning when they are
-suspended, they are moved back to the new card queue or review queue
-prior to being suspended.
+Zawieś kartę / notatkę
+Ukrywa kartę lub wszystkie karty danej notatki. Nie będą one wyświetlane aż do momentu ręcznego odwieszenia notatki przez użytkownika (poprzez wybranie notatki i klikniecie na przycisk Zawieś w oknie przeglądarki). Użyteczne, gdy chcesz wyłączyć na jakiś czas pokazywanie danej notatki, ale nie chcesz jej usuwać.
+ Jesli karty były kartami "Uczonymi", gdy zostały zawieszone, są ustawiane do kolejki nowych lub powtarzanych kart przed zakopaniem.
 
-Delete Note  
-Deletes the note and all of its cards.
+Usuń notatkę
+Usuwa notatkę i wszystkie jej karty.
 
-Options  
-Edit the options for the current deck.
+Opcje 
+Edycja ustawień obecnej talii
 
-Replay Audio  
-If the card has audio on the front or back, play it again.
+Odwtwórz dźwięk  
+Odtwarza dźwięk, jeśli notatka posiada go na stronie tylnej lub przedniej.
 
-Record Own Voice  
-Record from your microphone for the purposes of checking your
-pronunciation. This recording is temporary and will go away when you
-move to the next card. If you want to add audio to a card permanently,
-you can do that in the edit window.
+Nagraj własny głos
+Nagrywa swój głos w celu sprawdzenia wymowy. Nagranie to jest tymczasowe i zostanie skasowane po przejściu do kolejnej karty. Aby dodać do  karty nagranie na stałe musisz wykorzystać funkcję nagrywania w oknie Edycji.
 
-Replay Own Voice  
-Replay the previous recording of your voice (presumably after showing
-the answer).
+Odtwórz swój głos  
+Odtwórz swój nagrany głos (raczej użyjesz tej opcji po pokazaniu odpowiedzi).
 
-## Display Order
+## Kolejność wyświetlania
 
 Studying will show cards from the selected deck and any decks it
 contains. Thus, if you select your “French” deck, the subdecks
