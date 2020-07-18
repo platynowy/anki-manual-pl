@@ -126,7 +126,7 @@ Podstawowy (z opcjonalną odwrotną kartą)
 Tworzy kartę Przód→Tył i opcjonalnie karta Tył→Przód. Aby włączyć kartę Tył→Przód należy wpisać jakikolwiek znak lub słowo do ostatniego pola "Dodaj rewers". Więcej informacji na ten temat znajdziesz w rozdziale [Karty i szablony](templates/intro.md).
 
 Luka
-Typ notatki który ułatwia wybór tekstu i zamianę go na tekst z luką  (np. “Człowiek wylądował ksieżycu w \[…​\]” roku → “Człowiek wylądował na księżycu w
+Typ notatki który ułatwia wybór tekstu i zamianę go na tekst z luką  (np. “Człowiek wylądował na księżycu w \[…​\]” roku → “Człowiek wylądował na księżycu w
 1969 roku”). Wiecej informacji na ten temat znajdiesz w rozdziale [Wypełnianie luki](editing.md#cloze-deletion).
 
 Aby dodać własny typ notatki lub zmodyfikować już istniejący wybierz menu Narzędzia>Zarządzaj typami notatek, w oknie głównym Anki.
