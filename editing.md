@@ -82,7 +82,7 @@ Lepszym pomysłem od tworzenia wielu małych talii jest użycie Etykiet czyli tz
 
 Dla tych którzy chcą mieć wszystko naprawdę dobrze zorganizowane - do tego celu przeznaczyć można również pola notatek. Stwórz pole o nazwie "książka" lub "strona" i dodawaj w nich tytuły książek i numery stron z których pochodzą dane informacje. Takie działanie jest możliwe bo Anki w pełni wspiera przeszukiwanie pól, co oznacza że możesz przeszukiwać talię na przykład w taki sposób: "książka:"moja książka" strona:63" i natychmiast znajdziesz to czego szukasz.
 
-Szczególnie użyteczne są funkcje ["Nauka własna" oraz "talia filtrowana"], przy użyciu których możesz tworzyć tymczasowe talie na podstawie określonych kryteriów przeszukiwania. Funkcje te pozwalają na naukę różnego rodzaju informacji wymieszanych ze sobą w jedną talię, ale mogą również tworzyć bardzo szczegółowe talie, kiedy musisz przygotować się z jakiegoś konkretnego zakresu materiału, np. przed egazminem. Ogólna zasada jest taka, że jeżeli danych informacji chcesz zawsze uczyć się oddzielnie, powinny one być zebrane w jednej talii. Jeżeli jednak tych informacji chcesz uczyć się tylko od czasu do czasu oddzielnie (np. mając zaległości z jakiegoś materiału do testu) to do tego celu powienieneś wykorzystać etykiety/pola i talie filtrowane.
+Szczególnie użyteczne są funkcje ["Nauka własna" oraz "talia filtrowana"](filtered-decks.md), przy użyciu których możesz tworzyć tymczasowe talie na podstawie określonych kryteriów przeszukiwania. Funkcje te pozwalają na naukę różnego rodzaju informacji wymieszanych ze sobą w jedną talię, ale mogą również tworzyć bardzo szczegółowe talie, kiedy musisz przygotować się z jakiegoś konkretnego zakresu materiału, np. przed egazminem. Ogólna zasada jest taka, że jeżeli danych informacji chcesz zawsze uczyć się oddzielnie, powinny one być zebrane w jednej talii. Jeżeli jednak tych informacji chcesz uczyć się tylko od czasu do czasu oddzielnie (np. mając zaległości z jakiegoś materiału do testu) to do tego celu powienieneś wykorzystać etykiety/pola i talie filtrowane.
 
 Funkcje
 --------
@@ -135,7 +135,7 @@ Jeśli dodasz powyższą notatkę do talii, Anki wygeneruje dwie karty. Pierwsza
 
     Mieszko I przyjął chrzest Polski w [...] roku
 
-…​…jako pytanie, a jako odpowiedź - pełne zdanie z uzupełnionym rokiem. Pytanie drugiej karty będzie wyglądało tak:
+…​jako pytanie, a jako odpowiedź - pełne zdanie z uzupełnionym rokiem. Pytanie drugiej karty będzie wyglądało tak:
 
     [...] przyjął chrzest Polski w 966 roku.
 
