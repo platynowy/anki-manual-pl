@@ -54,7 +54,7 @@ Nie używaj "Tags", "Type", "Deck", "Card", lub 'FrontSide' jako nazw pól, poni
 
 Opcje zlokalizowane w dolnej części okna "Pola…" pozwalają na dodatkową edycję ustawień pól, ale tylko w oknie dodawania notatki. *Nie jest* to miejsce, w którym dostosujesz sposób wyświetlania pól na karcie podczas nauki. Te ustawienia opisane sa w sekcji [szablony](templates/intro.md).
 
-**Czcionka edycji** pozwala na wybranie czcionki, która będzie wykorzystywana w polu podczas dodawania i edycji notatki. W ten sposób mniej istotne informacje w notatce mogą być pisane mniejszą czcionką, a te ważniejsze jak np. trudne do odczytania znaki języka japońskiego - większą. Zauważ, że nie mówimy tutaj o rozmiarze tekstu w karcie, tylko o rozmiarze tekstu podczas wprowadzania informacji do notatki w oknie "Dodaj" (to znaczy, że nie zauważysz zmian na karcie podczas nauki). Aby zmienić rozmiar tekstu w karcie, zobacz rozdział [Szablony](templates/intro.md) .Jeśli jednak włączyłeś funkcję pisanie w odpowiedzi, to odpowiedź zostanie wyświetlona właśnie przy pomocy ustawionej tutaj czcionki. (Aby dowiedzieć się więcej jak zmienić czcionkę używaną podczas pisania odpowiedzi, zobacz rozdział [sprawdzanie odpowiedzi](templates/fields.md#checking-your-answer)).
+**Czcionka edycji** pozwala na wybranie czcionki, która będzie wykorzystywana w polu podczas dodawania i edycji notatki. W ten sposób mniej istotne informacje w notatce mogą być pisane mniejszą czcionką, a te ważniejsze jak np. trudne do odczytania znaki języka japońskiego - większą. Zauważ, że nie mówimy tutaj o rozmiarze tekstu w karcie, tylko o rozmiarze tekstu podczas wprowadzania informacji do notatki w oknie "Dodaj" (to znaczy, że nie zauważysz zmian na karcie podczas nauki). Aby zmienić rozmiar tekstu w karcie, zobacz rozdział [Szablony](templates/intro.md). Jeśli jednak włączyłeś funkcję pisanie w odpowiedzi, to odpowiedź zostanie wyświetlona właśnie przy pomocy ustawionej tutaj czcionki. (Aby dowiedzieć się więcej jak zmienić czcionkę używaną podczas pisania odpowiedzi, zobacz rozdział [sprawdzanie odpowiedzi](templates/fields.md#checking-your-answer)).
 
 **Sortuj w przeglądarce według tego pola​** mówi Anki, że to pole powinno znajdować się w kolumnie Pole sortowania w przeglądarce. Karty w przeglądarce mogą być sortowane jednocześnie tylko według jednego pola.
 
@@ -139,89 +139,57 @@ Jeśli dodasz powyższą notatkę do talii, Anki wygeneruje dwie karty. Pierwsza
 
     [...] przyjął chrzest Polski w 966 roku.
 
-You can also elide multiple sections on the same card. In the above
-example, if you change c2 to c1, only one card would be created, with
-both Canberra and 1913 hidden. If you hold down alt (option on a Mac)
-while creating a cloze, Anki will automatically use the same number
-instead of incrementing it.
+Możliwe jest też pominięcie stopniowego ujawniania luk tzn. zarówna pierwsza jak i druga luka mogą zostać zakryte i odkryte równocześnie. Jeśli na powyższym przykładzie zmienimy c2 na c1, stworzymy tylko jedną kartę z dwoma ukrytymi słowami Mieszko I i 966. Gdy podczas tworzenia luki naciśniesz klawisz Alt (Option na komputerach Mac) Anki nie będzie wtedy zwiększał numeracji kolejnych luk i uzyskasz opisany wyżej efekt jednoczesnego ujawnienia kilku luk.
 
-Cloze deletions don’t need to fall on word boundaries, so if you select
-“anberra” rather than “Canberra” in the above example, the question
-would appear as “C\[…​\] was founded in 1913”, giving you a hint.
+Luki nie muszą się jednak ograniczać do całych słów. W słowie Mieszko I możesz wybierać tylko "ieszko I", a na powyższym przykładzie pojawi się luka w postaci "M\[…​\] przyjął chrzest Polski w 966 roku.", dając ci tym samym podpowiedź.
 
-You can also give yourself hints that don’t match the text. If you
-replace the original sentence with:
+Możesz także ustawić takie podpowiedzi, które nie będą bezpośrednio odnosić się do słowa, ale jedynie sugerować jakiego rodzaju jest to słowo:
 
-    Canberra::city was founded in 1913
+    Mieszko I::książę przyjął chrzest Polski w 966 roku.
 
-…​and then press \[…​\] after selecting "Canberra::city", Anki will
-treat the text after the two colons as a hint, changing the text into:
+…​następnie zaznacz kursorem Mieszko I::książę i wybierz przycisk \[…​\]. Słowo po podwójnym dwukropku zostanie przez Anki zinterpretowane jako podpowiedź:
 
-    {{c1::Canberra::city}} was founded in 1913
+    {{c1::Mieszko I::książę}} przyjął chrzest Polski w 966 roku.
 
-When the card comes up for review, it will appear as:
+ W czasie powtórki karta będzie wyglądała w następujący sposób:
 
-    [city] was founded in 1913.
+    [ksiażę] przyjął chrzest Polski w 966 roku.
 
-For information on testing your ability to type in a cloze deletion
-correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
+Jeśli chcesz dowiedzieć się więcej na temat możliwości wpisywania odpowiedzi do luki zajrzyj do rozdziału [pisanie odpowiedzi](templates/fields.md#checking-your-answer).
 
-Please note that overlapping clozes are not supported. For example, the
-following field is invalid:
+Zauważ, że w Anki nie ma możliwości wkładania luk jednej w drugą. Przykładowo błędem jest następująca konstrukcja:
 
-    {{c1::Canberra was {{c2::founded}}}} in 1913
+    {{c1:Mieszko I przyjął chrzest {{c2::Polski}}}} w 966 roku.
 
-If you need to create clozes from overlapping text, add another Text
-field to your cloze, add it to the [template](templates/intro.md), and then when
-creating notes, paste the text into two separate fields, like so:
+Najprostszym rozwiązaniem na ominięcie braku możliwości wkładania luk jednej w drugą jest dodanie do notatki nowego pola, następnie dodanie go do [szablonu](templates/intro.md) karty, a potem podczas tworzenia notatki, wklejenie tekstu w dwa osobne pola, jak niżej:
 
-    Text1 field: {{c1::Canberra was founded}} in 1913
+    Pole Tekst1: {{c1::Mieszko I przyjął chrzest}} Polski w 966 roku
 
-    Text2 field: {{c2::Canberra}} was founded in 1913
+    Pole Tekst2: {{{c2::Mieszko I}} przyjął chrzest Polski w 966 roku.
 
-The default cloze note type has a second field called Extra, that is
-shown on the answer side of each card. It can be used for adding some
-usage notes or extra information.
+Domyślnie typ notatki Luka posiada pole o nazwie Dodatkowe, którego treść wyświetlana jest po każdej ze stron karty. Może ono zostać wykorzystane jako miejsce na dodatkowe notatki na temat przechowywanej informacji.
 
-The cloze note type is treated specially by Anki, and cannot be created
-based on a regular note type. If you wish to customize it, please make
-sure to clone the existing Cloze type instead of another type of note.
-Things like formatting can be customized, but it is not possible to add
-extra card templates to the cloze note type.
+Typ notatki "Luka" jest traktowany przez Anki w specjalny sposób przez co wypełniania luki nie można stworzyć w zwykłym typie notatki. Jeśli chcesz go dostosować upewnij się, że klonujesz istniejąca Lukę zamiast innego typu notatki. W Luce rzeczy takie jak formatowanie można zmienić, jednak nie jest możliwe dodanie dodatkowych szablonów kart.
 
 
-Inputting Foreign Characters and Accents
+Wstawianie obcych symboli i akcentów
 ----------------------------------------
 
-All modern computers have built in support for typing accents and
-foreign characters, and multiple ways to go about it. The method we
-recommend is using a keyboard layout for the language you want to learn.
+Wszystkie obecne komputery posiadają wbudowaną, rozbudowaną obsługę wpisywania akcentów i obcych znaków. Metoda, którą my polecamy, to ustawienie odpowiedniego rozkładu klawiatury dla uczonego języka.
 
-Languages with a separate script like Japanese, Chinese, Thai and so on
-have their own layouts specifically for that language.
+Języki z osobnymi znakami jak japoński,chiński czy tajski posiadają swoje własne układy klawiatury. 
 
-European languages that use accents may have their own layout, but can
-often by typed on a generic "international keyboard" layout. These work
-by typing the accent, then the character you want accented - eg an
-apostrophe (') then the letter a (a) gives á.
+Języki europejskie, które uzywają akcentów mogą mieć własne układy klawiatury, ale często znaki te mogą być zapisane na "międzynarodowej" klawiaturze. Działa to na zasadzie wybrania akcentu, a nastepnie litery, która ma ten akcent posiadać, na przykład naciśnięcie apostrofu ('), a potem litery a (a) sprawi, ze pojawi się litera á.  
 
-To add the international keyboard on Windows machines, please see
-<https://support.microsoft.com/en-au/kb/306560>
+Aby dowiedzieć się jakdodać miedzynrodową klawiaturę na komputerach z systemem Windows, zobacz poniższy link:
+<https://support.microsoft.com/pl-pl/help/306560/how-to-use-the-united-states-international-keyboard-layout-in-windows>
 
-To add it on Macs, please see
+Jak zrobić to samo na Makach dowiesz się z tego linku:
 <http://www.macworld.com/article/1147039/os-x/accentinput.html>
 
-Keyboards for a specific language are added in a similar way, but we can
-not cover them all here. For more information, please try searching
-Google for "input Japanese on a mac", "type Chinese on Windows 10", and
-so on.
+Klawiatury dla określonego języka dodaje się w podobny sposób, jednak nie jestesmy w stanie opisać tutaj ich wszystkich. Aby dowiedzieć się więcej na ten temat wpisz w Google coś w rodzaju "japońska klawiatura windows" albo "niemiecka klawiatura windows".
 
-If you’re learning a right to left language, there are lots of other
-things to consider. Please see [this
-page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
-information.
+Jeżeli uczysz się języków z pisownią od prawej do lewej strony, musisz wziąć pod uwagę wiele innych ustawień. Zapoznaj się [tą
+stroną](http://dotancohen.com/howto/rtl_right_to_left.html), aby dowiedzieć się więcej.
 
-The toolkit Anki is built on has trouble dealing with a few input
-methods, such as holding down keys to select accented characters on Mac
-OS X, and typing characters by holding down the alt key and typing a
-numeric code on Windows.
+Pakiet narzędziowy (toolkit), na którym jest zbudowany Anki nie radzi sobie zbyt dobrze z kilkoma metodami wprowadzania, jak przytrzymywanie klawiszy na systemie Mac OS X, aby wybrać akcent lub, na Windowsie, pisanie znaków poprzez przytrzymywanie klawisza alt i pisanie kodu numerycznego.
