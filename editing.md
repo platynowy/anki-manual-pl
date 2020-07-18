@@ -54,177 +54,90 @@ Nie używaj "Tags", "Type", "Deck", "Card", lub 'FrontSide' jako nazw pól, poni
 
 Opcje zlokalizowane w dolnej części okna "Pola…" pozwalają na dodatkową edycję ustawień pól, ale tylko w oknie dodawania notatki. *Nie jest* to miejsce, w którym dostosujesz sposób wyświetlania pól na karcie podczas nauki. Te ustawienia opisane sa w sekcji [szablony](templates/intro.md).
 
-**Editing Font** allows you to customize the font and size used when
-editing notes. This is useful if you want to make unimportant
-information smaller, or increase the size of foreign characters which
-are hard to read. The changes you make here do not affect how cards
-appear when reviewing: to do that, please see the
-[templates](templates/intro.md) section. If you have enabled the “type in the
-answer” function, however, the text you type will use the font size
-defined here. (For information about how to change the actual font face
-when typing the answer, please see the [checking your
-answer](templates/fields.md#checking-your-answer) section.)
+**Czcionka edycji** pozwala na wybranie czcionki, która będzie wykorzystywana w polu podczas dodawania i edycji notatki. W ten sposób mniej istotne informacje w notatce mogą być pisane mniejszą czcionką, a te ważniejsze jak np. trudne do odczytania znaki języka japońskiego - większą. Zauważ, że nie mówimy tutaj o rozmiarze tekstu w karcie, tylko o rozmiarze tekstu podczas wprowadzania informacji do notatki w oknie "Dodaj" (to znaczy, że nie zauważysz zmian na karcie podczas nauki). Aby zmienić rozmiar tekstu w karcie, zobacz rozdział [Szablony](templates/intro.md) .Jeśli jednak włączyłeś funkcję pisanie w odpowiedzi, to odpowiedź zostanie wyświetlona właśnie przy pomocy ustawionej tutaj czcionki. (Aby dowiedzieć się więcej jak zmienić czcionkę używaną podczas pisania odpowiedzi, zobacz rozdział [sprawdzanie odpowiedzi](templates/fields.md#checking-your-answer)).
 
-**Sort by this field…​** tells Anki to show this field in the Sort Field
-column of the browser. You can use this to sort cards by that field.
-Only one field can be the sort field at once.
+**Sortuj w przeglądarce według tego pola​** mówi Anki, że to pole powinno znajdować się w kolumnie Pole sortowania w przeglądarce. Karty w przeglądarce mogą być sortowane jednocześnie tylko według jednego pola.
 
-When **Remember last input…​** is checked, Anki will not clear out this
-field’s content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful.
+Zaznaczając opcję  **Zapamiętuj ostatnią wartość przy dodawaniu​** przy dodawaniu kolejnej notatki Anki pozostawi w polach informacje z poprzednio dodanej notatki. Jest to funkcja użyteczna przy dodawaniu wielu notatek, które w którymś z pól posiadają tę samą informację.
 
-**Reverse text direction** is useful if you are studying languages that
-display text from right to left (RTL), such as Arabic or Hebrew. This
-setting currently only controls editing; to make sure the text displays
-correctly during review, you’ll need to adjust your
-[template](templates/styling.md).
+Opcja **Odwrotny kierunek tekstu** służy do wprowadzania tekstu pisanego z prawej do lewej strony (np. w językach arabskim lub hebrajskim). Jak zostało to wspomniane powyżej, opisywane tutaj ustawienia służą jedynie do kontroli wyświetlanego tekstu podczas edycji lub dodawania nowej notatki. W celu ustawienia czcionki wyświetlanej w kartach, należy edytować ustawienia [szablonów](templates/styling.md).
 
-After you’ve added fields, you’ll probably want to add them to the front
-or back of your cards. For more information on that, please see the
-[templates](templates/intro.md) section.
+Po dodaniu wszystkich pól będziesz chciał najpewniej dodać te pola do przedniej lub tylnej strony karty. Więcej informacji na ten temat znajduje się w sekcji dotyczącej [szablonów](templates/intro.md).
 
-Changing Deck / Note Type
+Zmiana talii/typu notatki
 -------------------------
 
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
+Aby zmienić talię lub typ notatki podczas dodawania notatki kliknij w oknie "Dodaj" odpowiednio prawy górny lub lewy górny przycisk. Okno zmiany talii i zmiany typu notatki pozwalają również na utworzenie nowej talii lub nowego typu notatki, a także na zarządzanie już istniejącymi.
 
-Using Decks Appropriately
+Prawidłowe używanie talii
 -------------------------
 
-Decks are designed to divide your content up into broad categories that
-you wish to study separately, such as English, Geography, and so on. You
-may be tempted to create lots of little decks to keep your content
-organized, such as “my geography book chapter 1”, or “food verbs”, but
-this is not recommended, for the following reasons:
+Celem talii jest przede wszystkim oddzielenie od siebie dużych zakresów tematycznych np. języka angielskiego, geografii itd. Tworząc talie możesz stwierdzić, że chciałbyś mieć każdy z mniejszych tematów w osobnej talii, dla lepszej organizacji np. "mój podręcznik geografii rozdział 1" albo "angielski zwierzęta", wbrew pozorom taki układ kolekcji nie jest dobrym rozwiązaniem, przynajmniej z trzech powodów:
 
--   Lots of little decks mean you end up reviewing cards in a
-    recognizable order. Whether it’s because you’re clicking on each
-    deck in turn (which is slow) or you’ve added a number of decks under
-    a single parent deck, you’ll end up seeing all the “chapter 1” or
-    “food verb” cards together. This makes it easier to answer the
-    cards, as you can guess them from the context, which leads to weaker
-    memories. When you need to recall the word or phrase outside Anki,
-    you won’t have the luxury of being shown related content first!
+-   Wiele małych talii oznacza, że nauka będzie odbywała się w pewnej kolejności. Choćby ze względu na to, że będziesz klikał po kolei poszczególne talie, albo nawet, gdy talie będą uporządkowane w strukturze drzewa to talie prezentowane będą w całości tzn. wszystkie karty z talii "angielski zwierzęta", a następnie z talii "…rozdział 1". Takie przeglądanie kart znacząco ułatwia naukę, co z kolei ma wpływ na jakość zapamiętanych informacji. W sytuacji, w której będziesz zmuszony przypomnieć sobie daną informację nie będziesz miał przecież możliwości przywołania w głowie kolejności, w której ta karta pojawiła się podczas nauki.
 
--   Anki was not designed to handle many decks (more than several
-    dozen), and it will slow down as you add more – especially if you’re
-    studying on a mobile client. A few extra decks is not going to make
-    a noticeable difference, but if you have many decks the delays will
-    start to add up.
+-   Anki nie jest zaprojektowane do obsługi bardzo wielu talii (więcej niż kilku tuzinów) i może dojść do spowolnienia całego programu - szczególnie jeśli uczysz się na kliencie mobilnym. Kilka dodatkowych talii nie sprawi wielkiej różnicy, jednak jeżeli stworzysz ich zbyt dużo opóźnienie może stać się odczuwalne.
 
-Instead of creating lots of little decks, it’s a better idea to use tags
-and/or fields to classify your content. Instead of creating a “food
-verbs” decks for example, you could add those cards to your main
-language study deck, and tag the cards with “food” and “verb”. Each card
-can have multiple tags, which means you can do things like search for
-all verbs, or all food-related vocabulary, or all verbs that are related
-to food.
+Lepszym pomysłem od tworzenia wielu małych talii jest użycie Etykiet czyli tzw. tagów i/lub pól do klasyfikacji zawartości kolekcji. Przykładowo zamiast tworzyć talię "angielski zwierzęta", możesz dodać te notatki do głównej talii "angielski" i otagować je jako "zwierzęta" i "rzeczowniki". Notatki mogą posiadać wiele różnych tagów, co w przyszłości, po szybkim przefiltrowaniu zwartości talii lub nawet całej kolekcji umożliwi ci np. naukę tylko rzeczowników albo tylko nazw zwierząt lub rzeczowników związanych ze zwierzętami.
 
-For those who like to stay very organized, you can add fields to your
-notes to classify your content, such as “book”, “page”, and so on. Anki
-supports searching in specific fields, which means you can do a search
-for “book:'my book' page:63” and immediately find what you’re looking
-for.
+Dla tych którzy chcą mieć wszystko naprawdę dobrze zorganizowane - do tego celu przeznaczyć można również pola notatek. Stwórz pole o nazwie "książka" lub "strona" i dodawaj w nich tytuły książek i numery stron z których pochodzą dane informacje. Takie działanie jest możliwe bo Anki w pełni wspiera przeszukiwanie pól, co oznacza że możesz przeszukiwać talię na przykład w taki sposób: "książka:"moja książka" strona:63" i natychmiast znajdziesz to czego szukasz.
 
-Anki’s [custom study and filtered deck](filtered-decks.md) features make this
-especially powerful, as you can create temporary decks out of search
-terms. This allows you to review your content mixed together in a single
-deck most of the time (for optimum memory), but also create temporary
-decks when you need to focus on particular material, such as before a
-test. The general rule is that if you always want to be able to study
-some content separately, it should be in a normal deck, and if you only
-occasionally need to be able to study it separately (for a test, when
-under a backlog, etc), tags/fields and filtered decks are better.
+Szczególnie użyteczne są funkcje ["Nauka własna" oraz "talia filtrowana"], przy użyciu których możesz tworzyć tymczasowe talie na podstawie określonych kryteriów przeszukiwania. Funkcje te pozwalają na naukę różnego rodzaju informacji wymieszanych ze sobą w jedną talię, ale mogą również tworzyć bardzo szczegółowe talie, kiedy musisz przygotować się z jakiegoś konkretnego zakresu materiału, np. przed egazminem. Ogólna zasada jest taka, że jeżeli danych informacji chcesz zawsze uczyć się oddzielnie, powinny one być zebrane w jednej talii. Jeżeli jednak tych informacji chcesz uczyć się tylko od czasu do czasu oddzielnie (np. mając zaległości z jakiegoś materiału do testu) to do tego celu powienieneś wykorzystać etykiety/pola i talie filtrowane.
 
-Features
+Funkcje
 --------
 
-The editor is shown when [adding notes](editing.md), [editing a
-note](studying.md) during reviews, or [browsing](browsing.md).
+Okno edycji jest wyświetlane podczas [dodawania notatek](editing.md), [edytowania notatek](studying.md) w czasie powtórki lub w [przeglądarce](browsing.md).
 
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
-[cards](templates/intro.md) windows.
+W jego górnym lewym rogu znajdują się dwa przyciski, które otwierają okna [pola](editing.md#customizing-fields) oraz [karty](templates/intro.md).
 
-On the right are buttons that control formatting. Bold, italic and
-underline work like they do in a word processing program. The next two
-buttons allow you to subscript or superscript text, which is useful for
-chemical compounds like H<sub>2</sub>O or simple math equations like
-x<sup>2</sup>.
+Po prawej stronie umieszczone są przyciski edycji (formatowania) tekstu. Pogrubienie, kursywa oraz podkreślenie działają dokładnie w ten sam sposób co w standardowych edytorach tekstu. Kolejne dwa przyciski pozwalają na dodanie przypisu dolnego i górnego, które są szczególnie przydatne w czasie wpisywania wzorów chemicznych w postaci sumarycznej np. H<sub>2</sub>O lub prostych wzorów matematycznych np. x<sup>2</sup>.
 
-The Fx button clears any formatting in the currently selected text. This
-includes colours, bold, etc.
+Przycisk Fx jest odpowiedzialny za czyszczenie formatowania aktualnie zaznaczonego tekstu, włącznie z kolorem, pogrubieniem itd.
 
-The next two buttons allow you to change text colour.
+Następne dwa przyciski pozwalają na zmiane koloru tekstu.
 
-The \[…​\] button is visible when a cloze note type is selected.
+Przycisk \[…​\] jest widoczny gdy wybrana jest notatka typu "Luka".
 
-You can use the paperclip button to select audio, images and videos from
-your computer’s hard drive to attach to your notes. Alternatively, you
-can copy the media onto your computer’s clipboard (for instance, by
-right-clicking an image on the web and choosing 'Copy Image') and paste
-it into the field that you want to place it in. For more information
-about media, please see the [media](media.md) section.
+Spinacz służy do dodawania nagrań audio, obrazów oraz plików wideo do notatek z dysku twardego. Możesz również skopiować pliki multimedialne do schowka twojego komputera (na przykład poprzez kliknięcie prawym przyciskiem na obrazku w przeglądarce  internetowej i wybierając "Kopiuj obraz") i wkleić je do wybranego przez Ciebie pola. Aby dowiedzieć się więcej o plikach, zobacz rozdział [pliki](media.md).
 
-The microphone icon allows you to record from your computer’s microphone
-and attach the recording to the note.
+Ikona mikrofonu pozwala nagranie dźwieku z mikrofonu i dodanie go do notatki.
 
-The last button shows more advanced features, such as editing the
-underlying HTML of a field, and shortcuts to add MathJax or
-[LaTeX](math.md) to your notes.
+Ostatni przycisk umożliwia dodanie do notatki zaawansowanych równań matematycznych (oraz ich edycję) przy użyciu języka znaczników [LaTeX](math.md) lub MathJax oraz edycję kodu HTML danego pola.
 
-Most of the buttons have shortcut keys. You can hover the mouse cursor
-over a button to see its shortcut.
+Większość z opisanych tutaj przycisków posiada własne skróty klawiszowe. Aby je zobaczyć wystarczy, że najdziesz kursorem myszy na dany przycisk. 
 
-When pasting text, Anki will strip most formatting by default. If you
-hold down the shift key while pasting, Anki will preserve more
-formatting.
+Wklejając tekst Anki domyślnie usunie większość formatowania. Jesli podczas tej czynności przytrzymasz przycisk shift, Anki postara się zatrzymać wiecej formatowania.
 
-Cloze Deletion
+Wypełnianie luki
 --------------
 
-'Cloze deletion' is the process of hiding one or more words in a
-sentence. For example, if you have the sentence:
+Wypełnianie luki polega na ukryciu jednego lub większej liczby słów w zdaniu. Przykładowe zdanie:
 
-    Canberra was founded in 1913.
+    Mieszko I przyjął chrzest Polski w 966 roku.
 
-…​and you create a cloze deletion on “1913”, then the sentence would
-become:
+…​Teraz tworzymy lukę dla roku 966. Zdanie będzie wyglądało następująco:
 
-    Canberra was founded in [...].
+    Mieszko I przyjał chrzest Polski w [...] roku.
 
-Sometimes sections that have been removed in this fashion are said to be
-'occluded'.
+Aby dowiedzieć się więcej o tym dlaczego warto używać wypełniana luki, zobacz zasadę numer 5 [tutaj](http://www.supermemo.com/articles/20rules.htm).
 
-For more information on why you might want to use cloze deletion, see
-rule number 5 [here](http://www.supermemo.com/articles/20rules.htm).
-
-Anki provides a special cloze deletion type of note, to make creating
-clozes easy. To create a cloze deletion note, select the Cloze note
-type, and type some text into the "Text" field. Then drag the mouse over
-the text you want to hide to select it, and click the \[…​\] button.
+Anki posiada wbudowany typ notatki o nawie Luka, dzięki któremu możliwe jest łatwe tworzenie luki w notatce. Aby stworzyć taką właśnie notatkę, w oknie Dodaj wybierz typ notatki Luka i w polu Tekst wpisz jakieś zdanie. Następnie zaznacz myszą słowo lub słowa, które chcesz ukryć i naciśnij przycisk \[…​\]  znajdujący się na belce edycji tekstu. Anki zastąpi tym samym zaznaczony tekst w następującą formułą:
 Anki will replace the text with:
 
-    Canberra was founded in {{c1::1913}}.
+    Mieszko I przyjął chrzest Polski w {{c1::966}} roku.
 
-The “c1” part means that you’ve created one cloze deletion on the
-sentence. You can create more than one deletion if you’d like. For
-example, if you select Canberra and click \[…​\] again, the text will
-now look like:
+Symbol "c1" oznacza, że stworzyłeś w tym zdaniu jedną lukę. Możesz oczywiście stworzyć ich więcej. Przykładowo jeśli wybierzesz słowo "Mieszko" i znowu naciśniesz \[…​\], zdanie to będzie wyglądało tak:
 
-    {{c2::Canberra}} was founded in {{c1::1913}}.
+    {{c2::Mieszko I}} przyjął chrzest Polski w {{c1::966}} roku.
 
-When you add the above note, Anki will create two cards. The first card
-will show:
+Jeśli dodasz powyższą notatkę do talii, Anki wygeneruje dwie karty. Pierwsza z nich to:
 
-    Canberra was founded in [...].
+    Mieszko I przyjął chrzest Polski w [...] roku
 
-…​on the question, with the full sentence on the answer. The other card
-will have the following on the question:
+…​…jako pytanie, a jako odpowiedź - pełne zdanie z uzupełnionym rokiem. Pytanie drugiej karty będzie wyglądało tak:
 
-    [...] was founded in 1913.
+    [...] przyjął chrzest Polski w 966 roku.
 
 You can also elide multiple sections on the same card. In the above
 example, if you change c2 to c1, only one card would be created, with
