@@ -1,17 +1,17 @@
-Frequently Asked Questions
+FAQ (najcześciej zadawane pytania)
 ==========================
 
-Please see https://faqs.ankiweb.net
+Zobacz: https://faqs.ankiweb.net (język angielski)
 
-Can I do multiple-choice questions?
+Czy mogę stworzyć tekst wielokrotnego wyboru?
 -----------------------------------
 
 
-Can I link cards together? Add dependencies? How should I handle synonyms?
+Czy mogę łączyć karty? Albo dodawać zależności pomiędzy nimi? Jak obchodzić się z synonimami?
 --------------------------------------------------------------------------
 
 
-Can I give my notes an arbitrary number of fields?
+Czy mogę umieścić w notatkach dowolną ilość pól?
 --------------------------------------------------
 
 Notes are designed to represent 'closely' related information, and to
@@ -74,23 +74,17 @@ relationships in notes:
 in different ways, and different dialects may read the same word
 differently, but that is not relevant to the discussion.
 
-Can I host my own AnkiWeb?
+Czy mogę zainstalować AnkiWeb na swoim własnym serwerze?
 --------------------------
 
-Sorry, AnkiWeb is only available as a hosted service.
+Nie, niestety nie ma takiej mozliwości.
 
-Why is the Android version free when the iPhone version isn’t?
+Dlaczego wersja na Androida jest darmowa a na Iphone'a płatna?
 --------------------------------------------------------------
 
-Working on Anki desktop, AnkiWeb and AnkiMobile is my full time job, and
-I need some way of paying the bills. Since I make the desktop & web
-versions available for free, I rely on sales of the iPhone app in order
-to finance development.
+Twórcą Anki jest Damien Elmes. Praca nad Anki, AnkiWeb oraz AnkiMobile jest jego głównym zajęciem i jak każdy człowiek także i on musi po prostu płacić rachunki. Oznacza to także, że dochód pochodzący ze sprzedaży AnkiMobile na iPhone finansuje rozwój programu, tak żeby mógł on stawać się coraz lepszy.
 
-AnkiDroid is written by a separate group of volunteers. Since they based
-it on the free desktop version I make available (and rely on AnkiWeb in
-order to synchronize decks), they decided to make it freely available as
-well.
+AnkiDroid został napisany przez osobną grupę wolontariuszy. Wersja na Androida w dużej mierze bazuje na wersji na komputery PC (i AnkiWeb w celu synchronizacji talii), która jest darmowa. Stąd też darmowa dystrybucja aplikacji na Andoida.
 
 What spaced repetition algorithm does Anki use?
 -----------------------------------------------
