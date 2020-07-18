@@ -116,7 +116,7 @@ Wypełnianie luki polega na ukryciu jednego lub większej liczby słów w zdaniu
 
     Mieszko I przyjął chrzest Polski w 966 roku.
 
-…​Teraz tworzymy lukę dla roku 966. Zdanie będzie wyglądało następująco:
+…​teraz tworzymy lukę dla roku 966. Zdanie będzie wyglądało następująco:
 
     Mieszko I przyjał chrzest Polski w [...] roku.
 
