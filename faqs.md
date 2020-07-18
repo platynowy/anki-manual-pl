@@ -86,6 +86,6 @@ Twórcą Anki jest Damien Elmes. Praca nad Anki, AnkiWeb oraz AnkiMobile jest je
 
 AnkiDroid został napisany przez osobną grupę wolontariuszy. Wersja na Androida w dużej mierze bazuje na wersji na komputery PC (i AnkiWeb w celu synchronizacji talii), która jest darmowa. Stąd też darmowa dystrybucja aplikacji na Andoida.
 
-What spaced repetition algorithm does Anki use?
+Jakiego algorytmu nauki "spaced repetition" używa Anki?
 -----------------------------------------------
 
