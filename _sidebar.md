@@ -22,7 +22,7 @@
 - [Matematyka i Symbole (ang)](math.md)
 - [Pijawki (ang)](leeches.md)
 - [Dodatki (ang)](addons.md)
-- [Różne (ang)](misc.md)
+- [Różne](misc.md)
 - [Współtworzenie](contrib.md)
 - [Częste pytania](faqs.md)
 - [Zasoby](resources.md)
