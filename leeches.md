@@ -1,49 +1,26 @@
-Leeches
+Pijawki
 =======
 
-Leeches are cards that you keep on forgetting. Because they require so
-many reviews, they take up a lot more of your time than other cards.
+Pijawki to karty, które w kółko powtarzasz. Pomimo tego nie możesz się ich nauczyć, a ich powtórki zabierają ci dużo więcej czasu niż inne karty.
 
-Anki can help you identify leeches. Each time a review card 'lapses' (is
-failed while it is review mode), a counter is increased. When that
-counter reaches 8, the note is tagged as a leech, and the card is
-suspended. The threshold, and whether to suspend or not, can be adjusted
-in the [deck options](deck-options.md).
+Anki pomogą użytkownikowi w rozpoznaniu pijawek. Jeżeli na dane pytanie udzieliłeś błędnej odpowiedzi Anki zarejestruje ten fakt. Po 8 błędnych odpowiedziach karta otrzyma etykietę Leech (z angielskiego - pijawka) i zostanie zawieszona. Liczbę błędnych odpowiedzi, po której karta otrzymuje tę etykietę oraz to, czy karta ma zostać zawieszona można dowolnie dostosować w [ustawieniach talii](deck-options.md).
 
-Anki will continue to issue leech warnings periodically for a difficult
-card. The warning interval is half the initial leech threshold. That is,
-if you have Anki configured to warn at 8 lapses, future warnings will
-happen every 4 lapses. (12, 16, etc)
+Anki dalej bedzie co jakiś dawać komunikaty o pijawkach dla kart, które w kółko powtarzasz. Jego czestotliwość wynosi połowę liczby błędnych odpowiedzi (ustawionej w opcjach), po której karta staje się pijawką. Przykładowo, jeśli Anki ustawione jest na ostrzeganie po 8 pomyłkach, przyszłe komunikaty bedą miały miejsce co 4 pomnyłki.
 
-Once a leech is found, there are a number of ways you can handle it.
+Po wykryciu pijawki jest kilka różnych sposoób na rozprawienie się z nią.
 
-Waiting
+Oczekiwanie
 -------
 
-Some leeches are caused by 'interference'. For example, an English
-learner may have recently learnt the words "disappoint" and "disappear".
-As they look similar, the learner may find themselves confusing the two
-when trying to answer. In these situations, it’s often productive to
-concentrate on just one idea. When that idea is firmly ingrained in your
-mind, you can then return to learning the other idea. So in these
-situations, you may want to leave one of the words suspended until you
-have learnt the other one well, and then unsuspend it in the browser.
+Niektóre pijawki są spowodowane przez "interferencję". Przykładowo, jeśli ktoś uczy się angielskiego i niedawno poznał słowa "dissapoint" i disappear". Jako, że są ona bardzo podobne, uczeń może je mylić ze sobą podczas odpowiedzi. W takich sytuacjach często dobrą opcją jest skoncentrowanie się tylko na jednej rzeczy. Kiedy już tą jedną rzecz uda nam się w wystarczającym stopniu przyswoić, możemy przejść do nauki drugiego elementu. W tym przykładzie warto by było zawiesić jedno ze słów dopóki nie przyswoi się dobrze drugiego słowa, a następnie dowieszenie go w przeglądarce kart.
 
-Deleting
+Usunięcie
 --------
 
-Another way to manage leeches is to delete them. Consider if the
-material you’re struggling with is important enough to make it worth
-your while. By selectively deleting difficult and obscure items, you can
-dedicate more time to learning other material, and studying becomes a
-lot more fun.
+Innym sposobem radzenia sobie z pijawkami jest ich usuwanie. Zastanów się, czy rzeczywiście materiał z którym masz problemy jest taki ważny, aby poświęcać na niego tyle czasu. Poprzez selektywne usuwanie trudnych i niejasnych zagadnień można poświęcić więcej czasu na naukę innego materiału, przez co nauka staje się przyjemniejsza.
 
-Editing
+Edytowanie
 -------
 
-Another approach is to change the way the information is presented.
-Perhaps the cards you have created have too much information on them, or
-perhaps you’re trying to memorize something without fully understanding
-it. Sometimes spending some time changing the way the card is phrased
-can help. It’s also a good time to think about making a mnemonic to help
-you remember.
+Jeszcze innym sposobem jest zmiana sposobu prezentowania informacji.
+Może karty, które stworzyłeś zaiwerają w sobie zbyt dużo informacji lub próbujesz zapamiętać jakies zagadnienie bez jego zrozumienia? Czasami wygospodarowanie trochę czasu na to, aby zmienić to jak karta przedstawia informacje (na przykład napisanie czegoś innymi słowami) może pomóc w nauce. Warto też pomyślec o skorzystaniu z technik pamięciowych lub mapy myśli co pomoże Ci zapamiętywać informacie.
