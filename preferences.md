@@ -22,7 +22,7 @@ Opcja **Nowy dzień zaczyna się..**  określa kiedy Anki powinno pokazywać kar
 Opcja **Limit nauki z wyprzedzeniem** ustala, jak Anki ma się zachowywać gdy talii nie zostały żadne karty do nauki oprócz kart uczonych. Domyślna opcja ustawiona jest na 20 minut, co oznacza, że karty są pokazywane wcześniej jeśli ich czas do nastepnej powtórki wynosi mniej niż 20 minut i nie ma innych kart do nauki. Jeśli 
 ustawisz w tej opcji 0, Anki pokaże kartę dopiero, gdy nadejdzie jej czas,pokazując w miedzyczasie stronę z gratulacjami aż do momentu powtórki pozostałych kart.  
 
-Opcja **timebox time limit** bazuje na technice, która pozwala na podzielenie dłuższej aktywności (np 30 minutowa sesję nauki) na krótsze sesje. Jeśli wpisesz w tej opcji liczbę inną niż 0, Anki będzie co jakiś czas pokazywało Ci ile kart udało Ci się przejrzeć w ciagu ustalonego czasu.
+Opcja **Limit czasowy na sesję** bazuje na technice, która pozwala na podzielenie dłuższej aktywności (np 30 minutowa sesję nauki) na krótsze sesje. Jeśli wpisesz w tej opcji liczbę inną niż 0, Anki będzie co jakiś czas pokazywało Ci ile kart udało Ci się przejrzeć w ciagu ustalonego czasu.
 
 ## Sieć
 
