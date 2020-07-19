@@ -1,71 +1,40 @@
-Contributing
+Współtworzenie
 ============
 
-Sharing Decks Publicly
+Udostępnianie talii publicznie
 ----------------------
 
-To share decks with the general public, [synchronize](syncing.md) them
-with AnkiWeb, then log into AnkiWeb and click on "Share" from the menu
-next to the deck you wish to share.
+Aby udostępnić talię innym osobom najpierw należy ją [zsynchronizować](syncing.md) z Ankiweb. Następnie zaloguj się do AnkiWeb i naciśnij przycisk "Share" z menu obok talii, którą chciałbyś udostępnić.
 
-If you shared a deck previously (including with previous versions of
-Anki), you can update it by clicking "Share" as above. Updating a shared
-deck will not reset the download counts or ratings. You can delete a
-shared deck that you have uploaded using the Delete button on the shared
-deck’s page.
+Jeżeli udostępniałeś już wcześniej swoją talię (także dla wcześniejszych wersji Anki), możesz ją zaktualizować poprzez ponowne udostępnienie jej przy pomocy AnkiWeb. Aktualizacja udostepnionej talii nie zresetuje liczby pobrań ani ocen. Możesz usunąć udostępnioną talię poprzez naciśnięcie przycisku "Delete" na stronie udostępnionej talii w Ankiweb. Pamiętaj jednak, żeby nazwa talii była dokładnie taka sama jak poprzednio importowanej. W przeciwnym razie zamiast zaktualizować, utworzysz nową talię. 
 
-When updating a deck, AnkiWeb expects the deck to be at the same
-location as before. If you shared a deck when it was called "Korean
-Verbs" for example, and then renamed it to "Korean::Korean Verbs",
-resharing will not be able to update the existing copy. If you’ve
-forgotten the original name, please contact support.
+Pamiętaj jednak, żeby nazwa talii była dokładnie taka sama jak poprzednio importowanej. Przykładowo, jeśli udostepniłeś talię, gdy nazywała się "koreański czasowniki", a następnie zmieniłeś jej nazwę na "koreański::koreański czasowniki", nie będzie można zaktualizować już udostepnionej talii. Jeśli zapomniałeś nazsy talii gdy ją udostepniałeś, skontaktuj się ze wsparciem.
 
-When you update a shared deck, users who downloaded the deck previously
-will not automatically receive updates. If they download the deck again
-and re-import it, newly added material will be imported without altering
-their existing study progress, provided neither you nor the user has
-altered the note type since the first import.
+Kiedy aktualizujesz udostepnioną talię, użytkownicy którzy pobrali ją wcześniej nie otrzymają automatycznych aktualizacji. Jeśli pobiorą talię jeszcze raz i zaimportują ją, nowo dodany materiał będzie dodany bez konfliktu z ich dotychczasowym postępem w nauce (zakładając, że ani ty ani uzytkownik nie zmienili nic w typie notatki od pierwszego zaimportowania).
 
-Sharing Decks Privately
+Udostępnianie talii prywatnie
 -----------------------
 
-If you’d like to share decks with a limited group of people (such as a
-study group or class) rather than the general public, you can do so by
-sharing them outside of AnkiWeb.
+Jeśli zamiast udostępniać talie publicznie chciałbyś podzielić się nimi z niewielką grupą osób (np z grupą na studiach lub klasą w szkole) to możesz to zrobić udostępniając je poza AnkiWeb.
 
-To share a deck privately, go to the File menu and choose Export. Select
-a single deck (not "All Decks"), and turn off "include scheduling
-information". This will produce an .apkg file which you can share with
-others.
+Aby udostępnić talię prywatnie, przejdź do menu "Plik" a nastepnie wybierz "Eksportuj". Wybierz jedną talie (nie "Wszystkie talie") i wyłącz opcję "dołącz informacje o planowaniu". Takim sposobem stworzysz plik .apkg, którym będziesz mógł podzielić się z innymi.
 
-You can share the .apkg file by emailing it to people, placing it on a
-website or shared folder, or using a free file sharing service like
-Dropbox or Google Drive and sending people a link.
+Możesz dzielić się plikiem .apkg poprzez wysyłanie go e-mailem, wstawiając go na stronę internetową lub na darmową platformę udostępniania plików jak dropbox czy Google Drive wysyłając innym link do pobrania.
 
-Both the computer version and mobile clients make it easy to import from
-an apkg file simply by clicking or tapping on it. AnkiWeb does not have
-the ability to import apkg files however, so the recipients of your deck
-will need to have the computer version or Anki on their mobile device.
+Importowanie z pliku apkg jest proste zarówno w wersji komputerowej, jak i mobilnej- wystarczy kliknąć na plik, lub go nacisnąć. W AnkiWeb nie ma jednak możliwości importowania plików apkg, więc osoby które otrzymały twoja talią będą musiały zaimportować ją poprzez wersję komputerowa lub mobilną.
 
-When a user imports an .apkg file, cards that already exist in their
-collection will be ignored and any new cards will be added. As long as
-they use the same note type, modified cards will also be updated. To
-prevent data loss, cards that have been deleted in the new apkg file
-will not be deleted in the user’s collection, so if you need to delete
-cards from users' decks for whatever reason, you will need to contact
-them about it.
+Gdy użytkownik importuje plik .apkg, karty, które już istnieją w jego kolekcji zostaną zignorowane, dodane zostaną zaimportowane karty Jeśli karty używają tego samego typu notatki, zmodyfikowane karty równiez zostana zaktualizowane. Aby zapobiec utracie danych, karty, które zostały usunięte w nowym pliku .apkg nie są usuwane w kolekcji użytkownika, więc jeśli z jakiegoś powodu musisz usunąć karty z talii użytkowników to musisz sam się z nimi skontaktować.
 
-## Sharing Add-ons
+## Udostępnianie dodatków
 
-Please see https://addon-docs.ankiweb.net/#/sharing
+Zobacz: https://addon-docs.ankiweb.net/#/sharing
 
-## Translating Anki
+## Tłumaczenie Anki
 
-Please see https://translating.ankiweb.net
+Zobacz: https://translating.ankiweb.net
 
-## Contributing Code
+## Współtworzenie kodu
 
-Anki’s source code is available at <https://github.com/ankitects/anki>
+Kod źródłowy Anki jest dostępny na stronie <https://github.com/ankitects/anki>
 
-Before contributing, please see the README.contributing file in that
-repo.
+Przed wnoszeniem swoich poprawek zobacz w tym repozytorium plik README.contributing.
