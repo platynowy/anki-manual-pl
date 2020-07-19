@@ -1,6 +1,6 @@
-# Szablony Kart
+# Szablony kart
 
-Szablony kart "mówią" Anki które pola powinny pojawić się z przodu, a które z tyłu karty i pozwala programowi kontrolować które karty zostaną wygenerowane gdy określone pola zawierają w sobie tekst. Poprzez dostosowanie swoich szablonów kart można zmienić wygląd wielu kart na raz.
+Szablony kart informują Anki, które pola powinny pojawić się z przodu, a które z tyłu karty i pozwala programowi kontrolować które karty zostaną wygenerowane, gdy określone pola zawierają w sobie tekst. Poprzez dostosowanie swoich szablonów kart można zmienić wygląd wielu kart na raz.
 
 O szablonach kart można dowiedizeć się z niektórych filmów wprowadzających (język angielski):
 
@@ -22,18 +22,6 @@ Po prawej stronie widoczny jest podgląd przodu i tyłu wybranej karty. Jeśli o
 
 U góry po prawej stronie znajduje się przycisk Opcji, po którego naciśnięciu można zmienić nazwę lub kolejność kart jak i również następujące opcje: 
 
--   The 'Deck Override' option allows you to change the deck that cards
-    generated from the current card type will be placed into. By
-    default, cards are placed into the deck you provide in the Add Notes
-    window. If you set a deck here, that card type will be placed into
-    the deck you specified, instead of the deck listed in the Add Notes
-    window. This can be useful if you want to separate cards into
-    different decks (for instance, when studying a language, to put
-    production cards in one deck and recognition cards in another). You
-    can check which deck the cards are currently going to by choosing
-    Deck Override again.
+-   Opcja "Nadpisz talię" pozwala na zmianę talii, do której trafią karty generowane z wybranego typu karty. Domyślnie karty trafiają do talii, którą podajesz w oknie "Dodaj Notatki". Jeśli ustawisz talię tutaj, ten typ karty trafi do talii, którą podałeś, zamiast do talii podanej w oknie "Dodaj Notatki". Może się to przydać jeśli będziesz chciał oddzielic karty do różnych talii (na przykład jeśli podczas nauki języka będziesz chciał dodać karty z nauką pasywną do jednej talii, a z aktywną do drugiej). Możesz sprawdzić do której talii trafiają karty wybierając "Nadpisz Talię" ponownie.
 
--   The 'Browser Appearance' option allows you to set different (perhaps
-    simplified) templates for display in the Question and Answer columns
-    of the browser; see [browser appearance](templates/styling.md#browser-appearance) for more
-    information.
+-   Opcja "Wygląd w przeglądarce" pozwola ci ustawić inne (np. mniej skomplikowane) szablony, który wyświetlają się w kolumnach Pytanie i Odpowiedź w przeglądarce. Zobacz [wygląd w przegladarce](templates/styling.md#browser-appearance), aby dowiedzieć się więcej. 
