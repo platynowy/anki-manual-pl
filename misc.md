@@ -1,49 +1,32 @@
-Miscellanea
+Różne
 ===========
 
-Menu Shortcuts
+Skróty w menu
 --------------
 
-On Windows/Linux you can hold down the alt key and press a highlighted
-letter to activate a particular menu.
+Aby wyświetlić skróty klawiszowe do poszczególnych menu w systemie Windows/Linus przytrzymaj klawisz alt. W nazwach menu podświetlą się wtedy litery.
 
-OS X doesn’t support this feature, but it does allow you to assign
-shortcuts to specific menu items instead. Please see
-<http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program>
-for more information.
+Funkcja ta nie jest dostępnach w systemie OS X, ale w opcjach systemu możliwe jest przypisanie własnych skrótów klawiszych do poszczególnych pozycji w menu kontekstowym Zobacz <http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program>, aby dowiedzieć się więcej.
 
-Debug Console
+Wiersz poleceń
 -------------
 
-Sometimes you may be asked to use the debug console to change a setting
-or check something. Unless asked to enter text in the "debug console",
-you will probably not need this. Advanced users may like to read more
-about it in the add-ons page, linked below.
+Czasami program może wyświetlić komunikat z prośbą o użycie wiersza poleceń w celu zmiany jakichś ustawień. Wiedza ta raczej nie będzie ci potrzebna, chyba że zostaniesz poproszony przez zespół wsparcia  o wpisanie jakiegoś tekstu. Zaawansowani użytkownicy znajdą więcej informacji na ten temat w stronie dotyczącej Dodatków, do której link znajduje się w poniżej.
 
-When asked to enter text into the "debug console", please start Anki,
-and in the main window, press
+Jeśli zostaniesz poproszony,aby w Anki uruchomić wiersz poleceń, naciśnij przyciski
 
 Ctrl+Shift+;
 
-(the control key, shift key, and semi-colon key at the same time)
+(klawisz control, klawisz shift oraz średnik w tym samym czasie)
 
-On a Mac, press
+Aby zrobić to na Maku, naciśnij
 
 Command+Shift+;
 
-(the command key, shift key, and semi-colon key at the same time)
+(klawisz command, klawisz shift oraz and średnik w tym samym czasie)
 
-On some non-English keyboards, you may need to press ":" or "+" instead
-of ";".
+Na niektórych  klawiaturach innych niż polska i angielska będziesz musiał nacisnąć ":" lub "+" zamiast ";".
 
-In the window that has popped up, please paste the text you were asked
-to paste in the top section. When you’ve done so, please press
-Ctrl+Return (Command+Return on a Mac), and some text should appear in
-the bottom section. If you’ve been asked to paste the resulting output,
-please copy it from the bottom area, and paste it back to the support
-person.
+W oknie wiersza poleceń wklej tekst, o podanie którego zostałeś poproszony. Następnie wybierz Ctrl+Enter (Command+Return w systemie macOS). W dolnej części okna wyświetlą się pewne informacje. Są one szczególne przydatne np. w sytuacji niespodziewanych błędów. Możesz ich wtedy użyć w prośbie o pomoc na forum Anki.
 
-If you press Ctrl+Shift+Return instead of just Ctrl+Return, Anki will
-try to print the result rather than doing what you asked it to. If you
-are getting unexpected errors, please make sure you’re not holding down
-the Shift key.
+Jeśli naciśniesz Ctrl+Shift+Return zamiast Ctrl+Return, Anki będzie próbowało wydrukować informacje zamiast robić to, czego oczekiwałeś. Jeśli wyskakuja nieoczekiwane błędy upewnij się, że nie ptrzytrzymujesz klawisza Shift.
