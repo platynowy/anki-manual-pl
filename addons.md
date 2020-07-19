@@ -1,19 +1,11 @@
-# Add-ons
+# Dodatki
 
-Anki’s capabilities can be extended with add-ons. Add-ons can provide
-features like extra support for specific languages, extra control over
-scheduling, and so on.
+Funkcjonalność Anki może być zmieniana i ulepszana przy pomocy dodatków (nazywanych czasem rozszerzeniami). Mogą one przykładowo dodawać obsługę nowych języków, dodatkowe funkcje kontroli harmonogramowania powtórek i tak dalej.
 
-To browse the list of available add-ons, select the Tools>Add-ons
-menu item, then click on Get Add-ons.
+Aby przejrzeć liste dostępnych dodatków, wybierz w menu pozycję Narzedzia>Dodatki, a nastepnie naciśnij "Pobierz Dodatki".
 
-Many add-on authors include their email address in the add-on, so if you
-need to get in touch with the author, editing the add-on and looking at
-the top of the file may help.
+Wielu autorów dodatków złącza na podstronie z dodatkiem swój adres e-mail. Dlatego, jeżeli masz jakiekolwiek pytania czy wątpliwości najlepiej będzie jeżeli skontaktujesz się bezpośrednio z nimi.
 
-If you have downloaded an add-on that is not working properly, or if you
-accidentally made a mistake when editing an add-on, you can use the
-"Delete" option in the menu to remove it.
+Jeżeli którykolwiek z zainstalowanych przez ciebie dodatków nie działa poprawnie, powoduje błędy, albo przez przypadek w czasie jego edycji popełniłeś jakiś błąd, zawsze masz możliwość usunięcia dodatku z Anki i ewentualnej ponownej instalacji. Aby usunąc dodatek naciśnij przycisk "Usuń" w menu z dodatkami.
 
-To learn how to write your own add-ons, please see the [add-on writing
-guide](https://addon-docs.ankiweb.net).
+Aby dowiedzieć się jak pisac swoje własne dodatki, zobacz [poradnik tworzenia dodatków](https://addon-docs.ankiweb.net) (język angielski).
