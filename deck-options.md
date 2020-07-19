@@ -1,71 +1,30 @@
-Deck Options
+Opcje talii
 ============
 
-Deck options are accessed by selecting a deck on the 'Decks' screen, and
-then clicking 'Options' at the bottom of the screen.
+Opcje talii dostępne są po wybraniu odpowiedniej talii w oknie głównym, pod przyciskim Opcje na dole ekranu.
 
-Anki allows you to share options between different decks, to make
-updating options in many decks at once easy. To do this, options are
-grouped into an 'options group'. By default, all newly created decks use
-the same options group, and decks imported from previous versions of
-Anki have separate option groups. If you’d like to alter the settings on
-one deck but not other decks, click the gears icon in the top right and
-add a new options group.
+Anki umożliwia na wspóldzielenie tych samych opcji pomiędzy różnymi taliami. Dzięki temu możliwa jest zmiana ustawień wielu talii poprzez jednokrotnę zmianę opcji. Aby to zrobić, opcje umieszczone są w grupach opcji. Domyślnie, wszystkie nowopowstałe talie używają tej samej grupy opcji, zaś talie zaimportowane z poprzedniej wersji Anki będą posiadały oddzielne grupy opcji. Aby zmienić ustawienia tylko jednej talii, ale nie innych, kliknij ikonę koła zębatego w prawnym górnym rogu okna i dodaj nową grupę opcji.
 
-Please only change options that you fully understand, as inappropriate
-adjustments may render Anki less effective.
+Pamiętaj, żeby dokonywać zmian tylko w ustawieniach, których działanie w pełni rozumiesz. Nieodpowiednie ustawienia mogą doprowadzić do zmniejszenia efektywności nauki.
 
-Options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed prior to
-changing the option will have the old delay, not the new one.
+Opcje programu nie działają wstecznie. Jeśli zmienisz opcję, która określa po jakim czasie karta ma być wyświetlona po błędnej odpowiedzi, a następnie powrócisz do dawnych ustawień, to karty z poprzednim ustawieniem zachowają nadany im już wcześniej czas oczekiwania.
 
-New Cards
+Nowe katy
 ---------
 
-**Steps** controls the number of learning repetitions, and the delay
-between them. Please see the [learning](studying.md#learning) section for an
-overview of how the steps work.
+**Kroki** kontrolują liczbę wyświetleń nauki nowej karty i opóźnienie pomiędzy tymi wyświetleniami. Aby dowiedzieć się więcej o tym, jak działają kroki, zajrzyj do rozdziału o [nauce](studying.md#learning).
 
-Steps over a day (1440 minutes) are supported as well - if you want, you
-can define a schedule like 10 minutes, 1 day, 3 days and then finally 7
-days before the card becomes a review card.
+Domyślnie jednostką kroków jest minuta, możliwe jest jednak ustawienie kroków wyrażonych w dniach, a więc nie tylko: 10 minut, ale również 1 dzień (1440 minut), trzy dni (4320 minut) lub 7 dni itd.
 
-If there’s nothing else to study, Anki will show cards up to 20 minutes
-early by default. The amount of time to look ahead is configurable in
-the [preferences](preferences.md). One thing to be aware of is that the
-due counts will differ between the deck screen and study screens in this
-case. The deck screen will not count cards that are not ready, but the
-study screen will. This is done so that you can tell which decks need
-your attention.
+Jeśli nie ma nic innego do nauki, Anki pokazuje karty z wyprzedzeniem niż ich wyznaczony czas powtórki (domyślnie limit nauki z wyprzedzeniem ustawiony jest na 20 minut). Czas nauki z wyprzedzeniem można zmienić w [ustawieniach](preferences.md). Warto być świadomym tego, że w tym przypadku liczba kart oczekujacych będzie się różnić między ekranem talii a ekranem nauki. Ekran talii nie będzie liczył kart, które nie będą jeszcze gotowe, podczas gdy ekran nauki będzie brał je pod uwagę. Zostało to zrobione w ten sposób abyś wiedział, która talia wymaga twojej uwagi.
 
-Anki treats small steps and steps that cross a day boundary differently.
-With small steps, the cards are shown as soon as the delay has passed,
-in preference to other waiting cards like reviews. This is done so that
-you can answer the card as closely to your requested delay as possible.
-In contrast, cards that cross a day boundary are scheduled on a per-day
-basis like reviews are. When you return to study the next day, the
-per-day learning cards will not be shown first, as that can make the
-first half of a review session frustratingly difficult. Instead, the
-cards will be shown after reviews are completed. They are included in
-the review count rather than the learning count, due to the way they are
-handled internally.
+Anki traktuje inaczej małe kroki oraz kroki, które przekraczają granice jednego dnia. Jeśli chodzi o małe kroki, karty są pokazywane tak szybko jak nadejdzie ich pora, faworyzując inne czekające karty jak powtórki. Jest to zrobione w taki sposób abyś mógł odpowiedzieć na karty jak najbliżej chwili, kiedy powinny one zostac planowo pokazane. Inaczej sytuacja wygląda w przypadku kart przekraczających jeden dzień. Ich pokazanie jest planowane na zasadzie dni (tak samo jak jest to z powtórkami). Gdy powrócisz do nauki w dniu nastepnym, karty uczone, które są planowano na zasadzie dni nie beda pokazane jako pierwsze. Zostało to zrobione w ten sposób aby pierwsza połowa sesji powtórek nie była z byt frustrująca. Zamiast tego karty są pokazywane po tym jak powtórki zostaną przejrzane. Ze względu na sposób w jaki kroki przekraczające granice jednego dnia są traktowane przez program, są one uwzględniane w liczniku powtórek, a nie uczonych kart.
 
-**Order** controls whether Anki should add new cards into the deck
-randomly, or in order. When you change this option, Anki will re-sort
-the decks using the current option group. One caveat with random order
-mode: if you review many of your new cards and then add more new cards,
-the newly added material is statistically more likely to appear than the
-previously remaining cards. To correct this, you can change the order to
-ordered mode and back again to force a re-sort.
+**Kolejność** to funkcja, która kontroluje sposób wyświetlania nowych kart w trakcie powtórki. Mogą być one pokazywane w losowej kolejności lub według kolejności ich dodania do talii. Gdy zmienisz tę opcję nowe karty zostaną "przetasowane" przy użyciu aktualnej grupy opcji. W przypadku kiedy wybierzesz opcję "Pokaż nowe karty w kolejności losowej", a do swoich talii dodajesz dużo nowych kart, to karty najnowsze, będą wyświetlane trochę częściej niż te wcześniej dodane. Wyjściem z tej sytuacji jest zmiana ustawienia na "Pokaż nowe karty w kolejności losowej", a następnie powrót do opcji "Pokaż nowe karty w kolejności losowej". Nastąpi wtedy ponowne "przetasowanie" nowych kart.
 
-When you select random order, Anki will randomize your notes, keeping
-the cards of a given note close together. The cards of a given note are
-shown in the order their card types appear in, so that siblings are
-introduced consistently - otherwise you could end up in a state where
-some notes had all their cards introduced and other notes had only one
-or two. Please see the "bury related" option below for more info.
+Gdy wybierasz kolejność losową, Anki przesortuje twoje notatki, zachowując karty danej notatki blisko siebie. Karty danej notatki są pokazywane w kolejnosci w jakiej wyświetlane są jej typy kart aby bliźnięta były wprowadzane konsekwentnie. W przeciwnym przypadku karty niektórych notatek byłyby już pokazane, podczas gdy inne notatki miałyby pokazane tylko jedną lub dwie karty. Zobacz na dole opcję "zakop powiazane", aby dowiedzieć się więcej.
 
-**New cards/day** tells Anki how many new cards you’d like introduced on
+**Nowe karty/dzień** tells Anki how many new cards you’d like introduced on
 each day you open the program. Missed days will not cause the cards to
 pile up. The limit applies to the current deck and subdecks. This means
 if "French" has a limit of 20 cards and "French::Lesson 1" and
@@ -140,15 +99,14 @@ drawing conclusions about your retention rate.
 On the SuperMemo website, they suggest that you can find an appropriate
 multiplier for a desired retention rate. Their formula boils down to:
 
-    log(desired retention%) / log(current retention%)
+    log(docelowe zapamiętanie%) / log(obecne zapamiętanie%)
 
 Imagine we have a current retention rate of 85% and we want to increase
 it to 90%. We’d calculate the modifier as:
 
     log(90%) / log(85%) = 0.65
 
-You can use Google to [calculate
-it](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)) for you.
+Do obliczen możesz [użyć Google](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)) for you.
 
 If you plug the resulting 65% into the interval modifier, you should
 find over time that your retention moves closer to your desired
