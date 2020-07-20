@@ -1,8 +1,7 @@
 # Profile
 
-Jeżeli Anki na danym komputerze jest używane przez więcej niż jedną osobę, możliwe jest utworzenie dla każdej osobny osobnego profilu. Każdy profil będzie posiadał własną kolekcję ustawienia programu. Zarządzanie profilami użytkowników możliwe jest w menu Plik>Zmień profil….
-Profiles are primariy intended to be used by different people, and are not
-recommended for splitting up your own content.
+Jeżeli Anki na danym komputerze jest używane przez więcej niż jedną osobę, możliwe jest utworzenie dla każdej osobny osobnego profilu. Każdy profil będzie posiadał własną kolekcję ustawienia programu. Zarządzanie profilami użytkowników możliwe jest w menu Plik>Zmień profil…. Profile zostały stworzone głównie z myślą o innych osobach i nie jest polecane rozdzielanie własniej zawartości między nimi.
+P.
 
 **Tylko jeden profil może być synchronizowany z danym kontem AnkiWeb.** Jeśli spróbujesz połączyć więcej niż jeden profil do tego samego konta AnkiWeb, nadpiszesz dane jednego profilu danymi z drugiego proflu.
 
