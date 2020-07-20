@@ -72,25 +72,33 @@ only if a field is empty or not empty. An example:
     This text is always shown.
 
     {{#FieldName}}
-    This text is only shown if FieldName has text in it
+        This text is only shown if FieldName has text in it
     {{/FieldName}}
 
     {{^FieldName}}
-    This text is only shown if FieldName is empty
+        This text is only shown if FieldName is empty
     {{/FieldName}}
 
 A real life example is only showing a label if the field is not empty:
 
-    {{#Tags}}Tags: {{Tags}}{{/Tags}}
+    {{#Tags}}
+        Tags: {{Tags}}
+    {{/Tags}}
 
 Or say you want to display a specific field in blue on the front of your
 card if there are extra notes on the back (perhaps the fact that there
 are notes serves as a reminder that you should spend more time thinking
 about the answer). You can style the field as follows:
 
-    {{#Notes}}<span style="color:blue;">{{/Notes}}
+    {{#Notes}}
+        <span style="color:blue;">
+    {{/Notes}}
+    
     {{FieldToFormat}}
-    {{#Notes}}</span>{{/Notes}}
+    
+    {{#Notes}}
+        </span>
+    {{/Notes}}
 
 You can also use conditional replacement to control which cards are
 generated. This works since Anki will not generate
@@ -105,18 +113,18 @@ field had text in it. If you only wanted a card generated if expression
 was not empty, then you could change the template to this:
 
     {{#Expression}}
-    {{Expression}}
-    {{Notes}}
+        {{Expression}}
+        {{Notes}}
     {{/Expression}}
 
 And if you wanted to require both fields, you could use two conditional
 replacements:
 
     {{#Expression}}
-    {{#Notes}}
-    {{Expression}}
-    {{Notes}}
-    {{/Notes}}
+        {{#Notes}}
+            {{Expression}}
+            {{Notes}}
+        {{/Notes}}
     {{/Expression}}
 
 Keep in mind that this only works when you place the
@@ -128,32 +136,51 @@ the conditional replacement; for instance, the following would not work
 as expected:
 
     {{#Expression}}
-    {{Expression}}
+        {{Expression}}
     {{/Expression}}
     {{Notes}}
 
-The default behaviour can be thought of as an "OR" condition - cards are
-created if the first field is non-empty, OR the second field is
-non-empty, and so on. The behaviour above can be thought of as an "AND"
-condition - cards are created if the first field is non-empty AND the
-second field is non-empty, and so on.
+## Limitations in older Anki versions
 
-A caveat: Anki is not currently able to mix AND and OR conditions. Thus
-the following template, which says "require expression and notes, or
-field 3", would not work:
+The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.
 
-    {{#Expression}}
-    {{#Notes}}
-    {{Expression}}
-    {{Notes}}
-    {{/Notes}}
-    {{/Expression}}
+Older Anki versions can not used negated conditionals for card generation.
+ For example, on Anki 2.1.28, the following would add a card if a field
+ called AddIfEmpty is empty, and Front is non-empty:
 
-    {{Field 3}}
+     {{^AddIfEmpty}}
+         {{Front}}
+     {{/AddIfEmpty}}
 
-Another caveat is that negated expressions can not be used to control
-card generation. That is, wrapping a template in `{{^Field}}` will not
-do what you expect.
+ On earlier Anki versions, the negated conditional is ignored, and card
+ generation will depend only on Front being non-empty.
+
+ Mixing **AND** and **OR** conditions can also cause problems on older versions.
+ For example, the following ("add the card if A **OR** B **OR** C is non-empty)
+ is fine:
+
+     {{A}}
+     {{B}}
+     {{C}}
+
+ And the following ("add the card if A **AND** B **AND** C are non-empty") is fine:
+
+     {{#A}}
+         {{#B}}
+             {{#C}}
+                 {{A}}
+             {{/C}}
+         {{/B}}
+     {{/A}}
+
+But the following ("add the card if A **OR** (B **AND** C) are non-empty") will not work properly:
+
+     {{A}}
+     {{#B}}
+         {{#C}}
+             {{B}}
+         {{/C}}
+     {{/B}}
 
 Cloze Templates
 ---------------
@@ -168,13 +195,13 @@ As mentioned in the card generation section above, generation of regular
 cards depends on one or more fields on the question being non-empty.
 Cloze deletion note types are generated differently:
 
--   Anki looks on the front template for one or more cloze replacements,
+-  Anki looks on the front template for one or more cloze replacements,
     like {{cloze:FieldName}}.
 
--   It then looks in the FieldName field for all cloze references, like
+-  It then looks in the FieldName field for all cloze references, like
     {{c1::text}}.
 
--   For each separate number, a card will be generated.
+-  For each separate number, a card will be generated.
 
 Because card generation functions differently for cloze deletion cards,
 {{cloze:…​}} tags can not be used with a regular note type - they
