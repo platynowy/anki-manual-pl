@@ -10,7 +10,7 @@ Gdy wpiszesz coś w wyszkiwarce Anki wyszukuje we wszystkich polach notatek, ale
 wyszukuje słowa "lot" - wyniki wyświetlą również słówka takie jak "lotem" oraz "nalot".
 
 `lot kot`  
-wyszukuje notatki, w których znajdują się zarówno słowa "lot" i kot" np. "Kot udaje się w daleki lot".
+wyszukuje notatki, w których znajdują się zarówno słowa "lot" i "kot" np. "Kot udaje się w daleki lot".
 
 `lot or kot`  
 wyszukuje notatki ze słowem "lot" lub "kot".
@@ -45,7 +45,7 @@ wyszukuje "lot" tylko w granicach słowa - wyszuka "lot", ale nie "lotem" ani "n
 `w:lot*`  
 wyszukuje "lot" oraz "lotem", ale nie "nalot".
 
-`w:*dog`  
+`w:*lot`  
 wyszukuje "lot" oraz "nalot", ale nie "lotem".
 
 Z powyższych przykładów wynika, że:
