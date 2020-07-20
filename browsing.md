@@ -133,7 +133,11 @@ Searching for:
 
     <img src="(.+?)" />
 
-And replacing with the regexp:
+and on Anki 2.1.28, replacing with:
+
+     ${1}
+
+ on older Anki versions, replacing with:
 
     \1
 
@@ -142,9 +146,7 @@ Will change the card to:
     pic.jpg
 
 A full discussion on regular expressions is outside the scope of this
-document. There are a number of tutorials available on the web. Please
-see <http://docs.python.org/library/re.html> for the particular format
-Anki uses.
+document. document. There are a number of tutorials available on the web. For a syntax guide, on Anki 2.1.28+ please see <https://docs.rs/regex/1.3.9/regex/#syntax>. For older Anki versions, please see <http://docs.python.org/library/re.html>.
 
 Finding Duplicates
 ------------------
