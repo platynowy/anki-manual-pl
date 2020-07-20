@@ -1,5 +1,5 @@
-FAQ (najcześciej zadawane pytania)
+FAQ (często zadawane pytania)
 ==========================
 
-Zobacz: https://faqs.ankiweb.net (dostępne obecnie tylko w języku angielskim).
+Zobacz stronę: https://faqs.ankiweb.net (dostępna obecnie tylko w języku angielskim).
 
