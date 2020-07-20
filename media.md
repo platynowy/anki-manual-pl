@@ -1,27 +1,8 @@
-Media
+Pliki
 =====
 
-Anki stores the sounds and images used in your notes in a folder next to
-the collection. For more on the folder location, please see the [file
-locations](files.md) section. When you add media within Anki, either by
-using the paperclip icon in the [editor](editing.md) or by pasting it into
-a field, Anki will copy it from its original location into the media
-folder. This makes it easy to back up your collection’s media or move it
-to another computer.
+Dźwięki i obrazy używne w twoich notatkach są przechowywane w folderze notatek koło folderu kolekcji. Aby dowiedzieć się więcej o lokacjach folderów, zobacz rozdział [Lokacje plików](files.md) section. Gdy dodajesz pliki poprzez Anki, poprzez użycie spinacza w [edytorze](editing.md)  lub wstawienie pliku bezpośrednio do pola, Anki skopiuje go z jego początkowej lokacji do folderu z plikami. Dzieki temu łatwo jest utworzyć kopię zapasową plików używanych w kolekcji lub przeniesienie ich do innego komputera.
 
-You can use the Tools&gt;Check Media menu option to scan your notes and
-media folder. It will generate a report of files in the media folder
-that are not used by any notes, and media referenced in notes but
-missing from your media folder. It does not scan question or answer
-templates, which is why you can’t place media references to fields in
-the template. If you need a static image or sound on every card, name it
-with a leading \_ (e.g., '\_dog.jpg') to tell Anki to ignore it when
-checking for media. If you delete media using the unused media check,
-Anki will move it into your operating system’s trash folder, so you can
-recover if you accidentally delete media that shouldn’t have been
-deleted.
+Możesz użyć Narzędzia&gt;Sprawdź pliki w menu, aby zeskanować swoje notatki i folder z plikami. Wygeneruje to raport plików w folderze z plikami, które nie są uzywane przez żadne notatki oraz pokaże wspomniane w notatkach pliki, których brakuje w folderze z plikami. Opcja ta nie skanuje szablonów pytania i odpowiedzi. Dlatego własnie nie możesz wstawiać odniesien do plików do pól w szablonie. Jesli chcesz wstawić stały obraz lub dźwięk do każdej karty nazwij go rozpoczynając od \_ (np. "\_pies.jpg"), aby Anki ignorowało go podczas sprawdzania plików. Jeśli usuniesz pliki używając opcji "sprawdź pliki", Anki przeniesie je do kosza w twoim systemie operacyjnym, abyś mógł je odzyskać, jeśli przez przypadek usuniesz pliki.
 
-Anki uses a program called mplayer in order to support sounds and
-videos. A wide variety of file formats are supported, but not all of
-these formats will work on AnkiWeb and the mobile clients. MP3 audio and
-MP4 video seems to be the most universally supported.
+Anki używa programu mplayer, aby umożliwiać odtwarzanie dźwieków i klipów wideo. Wspierana jest duża ilośc formatów, ale nie wszystkie z nich bedą działac na urządzeniach moblinych lub w AnkiWeb. Pliki audio MP3 i video MP4 wydają się być najlepiej wspieranymi plikami.
