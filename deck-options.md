@@ -16,7 +16,7 @@ Nowe katy
 
 Domyślnie jednostką kroków jest minuta, możliwe jest jednak ustawienie kroków wyrażonych w dniach, a więc nie tylko: 10 minut, ale również 1 dzień (1440 minut), trzy dni (4320 minut) lub 7 dni itd.
 
-Jeśli nie ma nic innego do nauki, Anki pokazuje karty z wyprzedzeniem niż ich wyznaczony czas powtórki (domyślnie limit nauki z wyprzedzeniem ustawiony jest na 20 minut). Czas nauki z wyprzedzeniem można zmienić w [ustawieniach](preferences.md). Warto być świadomym tego, że w tym przypadku liczba kart oczekujacych będzie się różnić między ekranem talii a ekranem nauki. Ekran talii nie będzie liczył kart, które nie będą jeszcze gotowe, podczas gdy ekran nauki będzie brał je pod uwagę. Zostało to zrobione w ten sposób abyś wiedział, która talia wymaga twojej uwagi.
+Jeśli nie ma nic innego do nauki Anki pokazuje karty z wyprzedzeniem (domyślnie limit nauki z wyprzedzeniem ustawiony jest na 20 minut). Czas nauki z wyprzedzeniem można zmienić w [ustawieniach](preferences.md). Warto być świadomym tego, że w tym przypadku liczba kart oczekujacych będzie się różnić między ekranem talii a ekranem nauki. Ekran talii nie będzie liczył kart, które nie będą jeszcze gotowe, podczas gdy ekran nauki będzie brał je pod uwagę. Zostało to zrobione w ten sposób abyś wiedział, która talia wymaga twojej uwagi.
 
 Anki traktuje inaczej małe kroki oraz kroki, które przekraczają granice jednego dnia. Jeśli chodzi o małe kroki, karty są pokazywane tak szybko jak nadejdzie ich pora, faworyzując inne czekające karty jak powtórki. Jest to zrobione w taki sposób abyś mógł odpowiedzieć na karty jak najbliżej chwili, kiedy powinny one zostac planowo pokazane. Inaczej sytuacja wygląda w przypadku kart przekraczających jeden dzień. Ich pokazanie jest planowane na zasadzie dni (tak samo jak jest to z powtórkami). Gdy powrócisz do nauki w dniu nastepnym, karty uczone, które są planowano na zasadzie dni nie beda pokazane jako pierwsze. Zostało to zrobione w ten sposób aby pierwsza połowa sesji powtórek nie była z byt frustrująca. Zamiast tego karty są pokazywane po tym jak powtórki zostaną przejrzane. Ze względu na sposób w jaki kroki przekraczające granice jednego dnia są traktowane przez program, są one uwzględniane w liczniku powtórek, a nie uczonych kart.
 
@@ -24,197 +24,83 @@ Anki traktuje inaczej małe kroki oraz kroki, które przekraczają granice jedne
 
 Gdy wybierasz kolejność losową, Anki przesortuje twoje notatki, zachowując karty danej notatki blisko siebie. Karty danej notatki są pokazywane w kolejnosci w jakiej wyświetlane są jej typy kart aby bliźnięta były wprowadzane konsekwentnie. W przeciwnym przypadku karty niektórych notatek byłyby już pokazane, podczas gdy inne notatki miałyby pokazane tylko jedną lub dwie karty. Zobacz na dole opcję "zakop powiazane", aby dowiedzieć się więcej.
 
-**Nowe karty/dzień** tells Anki how many new cards you’d like introduced on
-each day you open the program. Missed days will not cause the cards to
-pile up. The limit applies to the current deck and subdecks. This means
-if "French" has a limit of 20 cards and "French::Lesson 1" and
-"French::Lesson 2" both have limits of 15 cards, you’ll get 15 cards
-from lesson 1 but only 5 cards from lesson 2.
+**Nowe karty/dzień** określa ile nowych kart będzie pokazywanych każdego dnia, kiedy otwierasz program. Jeżeli któregoś dnia ominiesz powtórkę, liczba nowych kart do nauki nie wzrośnie, codziennie pozostaje na tym samym poziomie. Limit odnosi się do talii i podtalii. To oznacza, że jeżeli talia "Francuski" posiada limit 20 nowych kart dziennie, zaś "Francuski::Lekcja 1" oraz "Francuski::Lekcja 2" limit 15 nowych kart dziennie to ucząc się talii "Francuski" otrzymasz 15 kart z lekcji pierwszej i 5 kart z lekcji drugiej.
 
-Studying new cards will temporarily increase the number of reviews you
-need to do a day, as freshly learnt material needs to be repeated a
-number of times before the delay between repetitions can increase
-appreciably. If you are consistently learning 20 new cards a day, you
-can expect your daily reviews to be roughly about 200 cards/day. You can
-decrease the reviews required by introducing fewer new cards each day,
-or by turning off new card display until your review burden decreases.
-More than one Anki user has excitedly studied hundreds of new cards over
-their first few days of using the program, and then become overwhelmed
-by the reviews required.
 
-**Graduating interval** is the delay between answering 'Good' on a card
-with no steps left, and seeing the card again.
+Nauka nowych kart spowoduje tymczasowy wzrost liczby kart w dziennej powtórce. Świeży materiał musi być powtarzany częściej, w późniejszym okresie odstępy czasowe staną się dłuższe. Jeżeli każdego dnia uczysz się 20 nowych kart, możesz oczekiwać, że do codziennej powtórki będzie ok 200 kart. Liczbę tę możesz zmniejszyć wprowadzając mniejszą liczbę nowych kart lub w ogóle wyłączyć wprowadzanie nowych kart do momentu gdy spadnie liczba kart powtarzanych. Niektórzy użytkownicy Anki próbowali uczyć się setek nowych kart podczas pierwszych ich dni nauki z programem, przez co zostali przytłoczeni przez nadchodzące powtórki.
 
-**Easy interval** is the delay between answering 'easy' on a learning
-card and seeing it in review mode for the first time.
+**Przerwa kart absolwentów** to czas do następnego pokazania karty po odpowiedzi "Dobra" na karcie, która wykonała wszystkie kroki.
 
-**Starting ease** controls the easiness that cards start out with. It is
-set when a card graduates from learning for the first time. It defaults
-to 250%, meaning that once you’ve finished learning a card, answering
-"Good" on subsequent reviews will increase the delay by approximately
-2.5x (eg if the last delay was 10 days, the next delay would be 25
-days). Based upon how you rate the card in subsequent reviews, the
-easiness may increase or decrease from what it starts out as.
+**Przerwa dla Łatwych** to czas do pierwszego pokazania karty jako powtórki po odpowiedzi "Łatwa" na uczonej karcie.
 
-Turning off **bury related…​** will prevent Anki from [burying
-siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
-siblings directly after one another in the same session. For this to
-work, your new cards/day setting needs to be large enough for the cards
-of multiple notes to be included.
+**Początkowa łatwość**  kontroluje łatwość z jaką karty są tworzone. Jest ona ustalana gdy karta uczona po raz pierwszy przechodzi do puli powtórek. Domyślnie jest ustawiona na 250% co oznacza, że gdy skończyłeś uczyć się karty, odpowiedź "Dobra" na kolejne powtórki zwiększy odstęp czasowy o około 2,5 razy (np. jeśli ostatnia przerwa wynosiła 10 dni, następna będzie wynosić już 25 dni). Łatwość może wzrosnąć lub zmniejszyć się na podstawie tego jak ocenisz karte w następnych powtórkach  
 
-Reviews
+Wyłączając opcje **zakop powiązane…​**, sprawisz że [bliźnięta nie będą zakopywane](studying.md#siblings-and-burying). Zamiast tego Anki będzie starało się odsuwać pokazywanie bliźniaczych kart w czasie, ale jeszcze w czasie tej samej powtórki. Aby ta funkcja zadziałała liczba nowych kart na dzień musi być odpowiednio duża, tak żeby możliwe było odpowiednie rozsunięcie kart.
+
+Powtórki
 -------
 
-**Maximum reviews/day** allows you to set an upper limit on the number
-of reviews to show each day. When this limit is reached, Anki will not
-show any more review cards for the day, even if there are some waiting.
-If you study consistently, this setting can help to smooth out
-occasional peaks in due card counts, and can save you from a heart
-attack when returning to Anki after a week off. When reviews have been
-hidden due to this option, a message will appear in the congratulations
-screen, suggesting you consider increasing the limit if you have time.
+**Maksymalnie powtórek/dzień** pozwala na ustawienie dziennego limitu powtarzanych kart. Kiedy limit zostanie osiągnięty Anki nie pokaże następnych kart do powtórki tego dnia, nawet jeśli są karty oczekujące. Funkcja ta jest przydatna przy systematycznej nauce, gdyż pomaga uniknąć tzw. górek, czyli nagromadzenia się dużej liczby kart do powtórki jednego dnia. Dzięki tej funkcji również po powrocie z wakacji nie zaczynasz od odkopywania się z ogromnej liczby zaległych kart. Jeżeli po ukończeniu powtórki pozostają jakieś karty oczekujące, to informacja o tym zostanie wyświetlona na ekranie z gratulacjami po skończonej powtórce, gdzie pojawi się sugestia zwiekszenia limitu jeeśli starczy nam jeszcze czasu na powtórki. 
 
-**Easy bonus** allows you to set the difference in intervals between
-answering 'Good' and 'Easy' on a card. For instance, with the default
-value of 130%, Easy will give an interval that is 1.3 times the Good
-interval.
+**Premia odpowiedzi Łatwa** pozwala na ustalenie różnicy w przerwie pomiędzy odpowiedziami "Dobra" i "Łatwa". Na przykład w domyślnej wartości 130% odpowiedź "Łatwa" nada przerwę wynosząca 1,3 raza odpowiedzi "Dobra"(czyli Łatwa = 1,3xDobra)
 
-**Interval modifier** allows you to apply a multiplication factor to the
-intervals Anki generates. At its default of 100% it does nothing; if you
-set it to 80% for example, intervals will be generated at 80% of their
-normal size (so a 10 day interval would become 8 days). You can thus use
-the multiplier to make Anki present cards more or less frequently than
-it would otherwise, trading study time for retention or vice versa.
+**Modyfikator przerw** pozwala na ustawienie mnożnika przerw. Domyślnie ustawiona jest wartość 100%, która nie modyfikuje w żaden sposób długości przerwy. Jeżeli modyfikator będzie miał wartość 80% to przerwa będzie wynosiła 80% czasu standardowej (zamiast 10 dni przerwy będzie to 8 dni). Zmieniając to ustawienie żonglujemy odstępami w pokazywaniu kart np. pokazując je cześciej w zamian za lepsze zapamiętywanie i dłuższy czas nauki.
 
-For moderately difficult material, the average user should find they
-remember approximately 90% of mature cards that come up for review. You
-can find out your own performance by opening the graphs/statistics for a
-deck and looking at the Answer Buttons graph - mature retention is the
-correct% on the right side of the graph. If you haven’t been studying
-long you may not have any mature cards yet. As performance with new
-cards and younger cards can vary considerably, it’s a good idea to wait
-until you have a reasonable amount of mature reviews before you start
-drawing conclusions about your retention rate.
+Przeciętny użytkownik uczący się materiału o umiarkowanej trudności powinien zapamiętywać około 90% dojrzałych kart. Swój własny wynik w powtórce dojrzałych kart możesz znaleźć w statystykach danej talii na wykresie Przyciski odpowiedzi - procentowa skuteczność odpowiedzi udzielonych do potwórki kart dojrzałych pokazana jest na czterech kolumnach po prawej stronie. Jeżeli nie uczysz się danej talii dostatecznie długo, możesz jeszcze nie mieć żadnych dojrzałych kart. Analizę wyników warto jednak odłożyć na pewien czas, gdy uzbiera się już odpowiednia liczba wyników, które będą w reprezentatywny sposób określały stan twojej wiedzy.
 
-On the SuperMemo website, they suggest that you can find an appropriate
-multiplier for a desired retention rate. Their formula boils down to:
+Twórcy SuperMemo sugerują użycie wzoru do obliczenia oczekiwanego przez użytkownika poziomu zapamiętywania. Wzór sprowadza się do:
 
     log(docelowe zapamiętanie%) / log(obecne zapamiętanie%)
 
-Imagine we have a current retention rate of 85% and we want to increase
-it to 90%. We’d calculate the modifier as:
+Wyobraź sobie, że obecne zapamiętanie to 85% i chcemy je zwiększyć do 90%. Policzmy zatem modyfikator:
 
     log(90%) / log(85%) = 0.65
 
-Do obliczen możesz [użyć Google](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)) for you.
+Do obliczeń możesz [użyć Google](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)).
 
-If you plug the resulting 65% into the interval modifier, you should
-find over time that your retention moves closer to your desired
-retention.
+Zatem jeśli ustawisz modyfikator przerw na poziomie 65% po pewnym czasie twoje zapamiętywanie powinno zbliżyć się do zakładanego, docelowego poziomu.
 
-One important thing to note however is that the tradeoff between time
-spent studying and retention is not linear: we can see here that to
-increase our retention by 5 percentage points, we’d have to study 35%
-more frequently. If the material you are learning is very important then
-it may be worth the extra effort – that’s something you’ll need to
-decide for yourself. If you’re simply worried that you’re forgetting too
-much, you may find investing more time into the initial learning stage
-and/or making mnemonics gives you more gain for less effort.
+Zauważ, że zależność pomiędzy czasem spędzonym przy nauce a poprawą zapamiętania jest nieliniowa: zapamiętanie poprawiasz o 5%, zaś wzrost częstotliwości nauki to aż 35%. Jeżeli uczysz się czegoś ważnego, to dodatkowy wysiłek rzeczywiście może się opłacić - sam musisz zdecydować. Jeżeli jednak jesteś po prostu niezadowolony z faktu, że dużo zapominasz, to będzie dla ciebie lepiej jeśli spędzisz więcej czasu nad początkowym etapem nauki i/lub do nauki wykorystasz mnemotechniki.
 
-One final thing to note is that Anki forces a new interval to be at
-least 1 day longer than it was previously so that you don’t get stuck
-reviewing with the same interval forever. If your goal is to repeat a
-card once a day for multiple days, you can do that by setting more
-learning mode steps instead of by adjusting this modifier.
+Ostatnią rzecza wartą wspomnienia jest fakt, że Anki wymusza nową przerwę, która jest co najmniej o 1 dzień dłuższa niż poprzednia, abyś nie utknął powtarzając kart w kółko z tą samą przerwą. Jesli twoim celem jest powtarzanie karty raz dziennie przez kilka dni, możesz to zrobić ustawiając więcej kroków zamiast zmieniać modyfikator przerw.
 
-**Maximum interval** allows you to place an upper limit on the time Anki
-will wait to reshow a card. The default is 100 years; you can decrease
-this to a smaller number if you’re willing to trade extra study time for
-higher retention.
+**Maksymalna przerwa** określa górny limit czasu między powtórkami w danej talii. Wartość domyślna to 100 lat. Możesz go jednak zmniejszyć, aby dodać więcej powtórek i uzyskać tym samym lepsze zapamiętywanie kosztem dłuzszego czasu nauki.
 
-**Hard interval** specifies what the next interval will be when you
-press the Hard button. The percentage is relative to the previous
-interval, eg with a default 120%, a card with a 10 day interval will be
-given 12 days. This option is only available when the experimental
-scheduler is enabled in the preferences.
+**Przerwa dla Trudnych** określa jak długa bedzie następna przerwa po naciśnieciu przycisku "Trudna". Procent jest zależny od poprzedniej przerwy, np. w przypadku domyślnej opcji 120%, karta, której przerwa wynosi 10 dni otrzyma przerwę wynoszącą 12 dni. Ta opcja jest dostepna tylko wtedy gdy w ustawieniach włączony  eksperymentalny harmonogram.
 
-Turning off **bury related…​** will prevent Anki from [burying
-siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
-siblings directly after one another in the same session.
+Wyłączając opcje **zakop powiązane…​**  spowoduje, że [bliźnięta nie będa zakopywane](studying.md#siblings-and-burying), a Anki postara się nie pokazywać bliźniaków po sobie w tej samej sesji nauki.
 
-Review cards are always shown in random order. If you wish to see them
-in a different order, you can use a [filtered deck](filtered-decks.md). More
-specifically, Anki randomizes reviews by grabbing batches of 50 cards in
-the order that they exist in the database, randomizing each batch, then
-putting them together. This means that there is a slight bias towards
-older cards being shown first, but it prevents individual cards from
-showing up in a predictable order.
+Kartry powtórkowe są zawsze pokazywane w losowej kolejności. Jeśli chcesz je przejrzec w innej kolejności, możesz uzyć [talii filtrowanej](filtered-decks.md). W szczegółach - Anki losuje powtórki poprzez zbieranie pakietów po 50 kart w kolejności w jakiej występują w bazie danych, mieszając każdy pakiet, a następnie wszystkie je łączy. Oznacza to, że istnieja lekka skłonność do pokazywania najpierw starszych kart, jednak dzięki temu karty nie są pokazywane w przewidywanej kolejności.
 
-Lapses
+Pomyłki
 ------
 
-When you forget a review card, it is said to have 'lapsed'. The default
-behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
-due tomorrow), and put it in the learning queue for a refresher in 10
-minutes. This behaviour can be customized with the options listed below.
+Jeżeli podczas powtórki nie będziesz potrafił odpowiedź na zadane pytanie i ocenisz kartę jako "Powtórz" zostanie ona określona jako pomyłka. Domyślnym zachowaniem pomyłek jest zresetowanie ich interwału powtórki do 1 i wrzucenie ich do kolejki kart do ponownej nauki za 10 minut. To zachowanie może zostać zmodyfikowane poprzez zastosowanie opisanych poniżej opcji.
 
-If you leave the steps blank, Anki will not place the card back in the
-learning queue, and it will be rescheduled as a review with its new
-interval determined by the settings below.
+Jeśli pozostawisz pole z krokami puste, Anki nie umieści karty z powrotem w kolejce ponownie uczonych kart i będzie rozplanowana jako powtórka według ustawień znajdujących się poniżej.
 
-The new interval is determined when you answer "Again" to a review card,
-not when the card finishes its relearning steps. For this reason, the
-"Good" and "Easy" buttons during relearing do not alter the interval
-again - they only control which step you are on. If there is only a
-single step (the default), the "Easy" button will be hidden, since it
-would accomplish the same thing as the "Good" button. If you have 2 or
-more steps, "Easy" is not hidden, to allow you to graduate cards from
-the queue before all of their steps are finished.
+Nowa przerwa jest ustalana, gdy odpowiadasz "Powtórz" na kartę powtórkową, a nie kiedy karta ukończy kroki ponownej nauki. z tego powodu odpowiedzi "Dobra" i "Łatwa" nie są mają wpływu na przerwę podczas, gdy karty są uczone ponownie - kontroluja tylko ile zostało ci kroków. Jeśli jest tylko jeden krok (domyślna opcja), przycisk "Łatwa" zostanie ukryty, jako że pełniłby taką samą funkcję jak odpowiedź "Dobra". Jeśli masz ustawionych 2 lub więcej kroków, odpowiedź "Łatwa" nie jest ukryta, aby umożliwić ci ukończenie nauki kart przed przejściem przez wszystkie kroki 
 
-'New interval' controls how much Anki should reduce the previous
-interval. It reduces the previous interval to the percentage you
-specify. If a card had a 200 day interval, the default of 0% would
-reduce the interval to 0 (but see the next option). If you set this
-option to 50%, the card would have its interval reduced to 100 days
-instead.
+"Przerwa nowej karty" kontrolujen jak bardzo Anki powinno zmniejszyć poprzednią przerwę. Robi to wykorzystując, który został w tej opcji ustawiony. Jeśli karta miała przerwę w ilości 200 dni, domyślna opcja 0% sprawi, że przerwa będzie wynosić 0 (ale spójrz na akapit poniżej) Jesli za to ustawisz tę opcję na 50%, wtedy karta przerwa karty zostałaby obniżona do 100 dni.
 
-'Minimum interval' allows you to apply a minimum limit to the above
-option. The default setting says that lapses should be reviewed one day
-later. The interval must be 1 day or more.
+"Minimalna przerwa" pozwala ustawić minimalny limit dla opcji powyżej. Domyslna opcja ustala, że pomyłki powinny być powtarzane jeden dzień później. Przrerwa musi wynosic co najmniej 1 dzień.
 
-The leech options control the way Anki handles leeches. Please see the
-leech section for more information.
+Opcja "Pijawki" ustala, co Anki ma zrobić z wykrytymi pijawkami. Zobacz rozdział o pijawkach, aby dowiedzieć się wiecej.
 
-General
+Ogólne
 -------
 
-Anki monitors how long it takes you to answer each question so that it
-can show you how long was spent studying each day. The time taken does
-not influence scheduling. If you take longer than 60 seconds, Anki
-assumes you have walked away from your computer or have been distracted,
-and limits the recorded time to 60 seconds, so that you don’t end up
-with inaccurate statistics. The 'ignore answer times…​' option allows
-you to adjust the cutoff threshold. The minimum cutoff is 30 seconds.
+Anki monitoruje czas twojej odpowiedzi, pozwala to między innymi na obliczenie czasu jaki spędzasz powtarzając i ucząc się kart każdego dnia. Czas ten nie wpływa na harmonogram powtórek. Jeżeli nie udzielisz odpowiedzi na kartę w ciągu 60 sekund Anki przyjmuje, że odszedłeś od komputera lub rozproszyłeś się na tyle, że nie jesteś w stanie udzielić poprawnej odpowiedzi. Twoja ocena w takim przypadku nie zostaje uznana i nie wpłynie niekorzystanie na statystki powtórki. "Ignoruj odpowiedzi z czasem dłuższym niż…​" pozwala na kontrolę czasu po którym odpowiedzi nie będa brane pod uwagę do statystyki powtórki. Minimalnie wynosi ona 30 sekund.
 
-If 'show answer timer' is checked, Anki will display the current time
-taken for each card in the study area.
+Jeżeli zaznaczona jest opcja Pokaż czas odpowiedzi, Anki będzie wyświetlał aktualny czas, spędzony na danej karcie.
 
-By default, Anki automatically plays audio on the front and back of
-cards. If you uncheck 'automatically play audio', Anki will not play
-audio until you press the replay audio key, `r` or `F5`.
+Domyślanie Anki automatycznie odtwarza pliki audio zarówno na przodzie jaki i tyle karty. Jeżeli odznaczysz "Automatycznie odtwórz pliki audio", Anki odtworzy plik audio dopiero w przypadku kiedy naciśniesz przycisk powtórz dźwiek, `r` lub `F5`.
 
-The 'when answer shown, replay both question and answer audio' option
-controls what happens when you choose to replay audio while the answer
-is shown. Please note that it does not control what happens when you
-show the answer; for that please see [this section](templates/fields.md#special-fields).
+"Kiedy widoczna odpowiedź, odtwórz pytanie i odpowiedź" - opcja ta określa co dzieje się kiedy naciśniesz przycisk powtórz dźwięk, gdy pokazana jest odpowiedź. Opcja ta nie kontroluje tego co dzieje się po pokazaniu odpowiedzi; więcej informacji na ten temat znajduje się [tym rozdziale](templates/fields.md#special-fields).
 
-Description
+Opis
 -----------
 
-This section allows you to edit the deck description, which is shown in
-the study overview. The description is automatically set when
-downloading shared decks. You can delete all the text in the description
-if you no longer want to see it in the study overview area.
+Możesz tu edytować opis talii, który będzie pokazywany po wejściu do danej talii w oknie głównym Anki. Opis pobierany jest automatycznie z taliami udostępnionymi przez społeczność Anki. Opis można w każdej chwili dowolnie edytować lub usunąć, również w przypadku talii udostępnionych.
 
-You can also use HTML in the description—anything that works on a note
-should be valid.
+W opisie możesz również używać HTML - wszystko co działa w notatce powinno działać również i tutaj.
