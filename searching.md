@@ -61,231 +61,204 @@ Z powyższych przykładów wynika, że:
 - Jeśli twoje wyszukiwanie zawiera spację lub nawias, zamknij je w cytatach. Możesz w nich umieścić
   `"całe:wyszukiwanie"`, lub tylko `część:"po dwókropku"`.
 
-- You can group search terms by placing them in parentheses, as in the
-  **dog (cat or mouse)** example. This becomes important when
-  combining OR and AND searches — in the example, with the
-  parentheses, it matches either 'dog cat' or 'dog mouse', whereas
-  without them it would match either 'dog and cat' or 'mouse'.
+- Możesz grupowac pojecia, które wyszukujes poprzez wstawianie ich do nawiasów, tak jak w przykładzie **lot (kot or mysz)**. Jest to dosć istotne podczas łączenia wyszukiwań OR oraz AND - w przykładzie z nawiasami zostaną wyszukane "lot kot" lub "lot mysz", podczas gdy bez tych Anki szukałoby "lot and kot" lub "mysz". 
 
-- Anki is only able to search within formatting in the [sort
-  field](editing.md#customizing-fields) you’ve configured. For example, if you add
-  "**exa**mple" to one of your fields, this will not be matched when
-  searching for "example" unless that field is the sort field. If a
-  word is not formatted, or the formatting does not change in the
-  middle of the word, then Anki will be able to find it in any field.
+- Anki jest w stanie wyszukiwać uwzględniając formatowaniem tylko w skonfigurowanym [polu sortowania](editing.md#customizing-fields). Jeśli na przykład dodasz "**przy**kład" do jednego z twoich pól, nie zostanie ono znalezione podczas wyszukiwania "przykład", chyba że to pole jest polem sortowania. Jesli słowo nie jest sformatowane lub formatowanie nie zmienia się w środku słowa Anki będzie w stanie je znaleźć niezaleznie od pola. 
 
-## Limiting to a field
+## Zawężanie wyszukiwania do pola
 
-You can also ask Anki to match only if a particular field contains some
-text. Unlike the searches above, searching on fields requires an 'exact
-match' by default.
+Możesz równiez wyszukać tak, aby wyniki zostały znalezione tylko jeśli określone pole zawiera jakiś tekst. W przeciwieństwie do wyszukiwań u góry, szukanie po polu domyślnie wymaga "ścisłego dopasowania".
 
-`front:dog`  
-find notes with a Front field of exactly "dog". A field that says "a
-dog" will not match.
+`przód:kot`  
+wyszukuje notatki z polem Przód, w którym znajduje się dokładnie "kot". Pole, w którym znajduje sie "ten kot" nie zostanie znalezione.
 
-`front:*dog*`  
-find notes with Front field containing dog somewhere
+`przód:*kot*`  
+wyszukuje notatki z polem Przód, które zawiera gdzieś słowo "kot".
 
-`front:`  
-find notes that have an empty Front field
+`przód:`  
+wyszukuje notatki, które zawierają puste pole o nazwie Przód
 
-`front:_*`  
-find notes that have a non-empty Front field
+`przód:_*`  
+wyszukuje notatki, które zawierają pole Przód, które nie jest puste.
 
-`front:*`  
-find notes that have a Front field, empty or not
+`przód:*`  
+wyszukuje notatki, które zawierają Pole przód, niezalznie czy jest coś w nim napisane 
 
-`fr*:text`
-find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.
+`pr*:text`
+wyszukuje notatki w polu zaczynającym sie na "pr". Wymaga Anki 2.1.24+ lub AnkiMobile 2.1.60+.
 
-## Tags, decks, cards and notes
+## Etykiety, talie, karty i notatki
 
-`tag:animal`  
-find notes with the tag "animal"
+`tag:zwierze`  
+wyszukuje notatki z etykietą "zwierze"
 
 `tag:none`  
-find notes with no tags
+wyszukuje notatki bez etykiet
 
-`tag:ani*`  
-find notes with tags starting with ani
+`tag:zwi*`  
+wyszukuje notastki z etykietami, które zaczynają się na zwi-.
 
-`deck:french`  
-find cards in a French deck, or subdecks like French::Vocab
+`deck:francuski`  
+wyszukuje karty w talii Francuski lub jej podtaliach np. Francuski::Słownictwo.
 
-`deck:french -deck:french::*`  
-find cards in French, but not subdecks
+`deck:francuski -deck:francuski::*`  
+znajdź karty w talii Francuski, ale nie wyszukuj w podtaliach.
 
-`deck:"french vocab"`  
-searching when a deck has a space
+`deck:"francuski słownictwo"`  
+używane, gdy w nazwie talii jest spacja
 
 `"deck:french vocab"`  
-also ok
+też działa
 
 `deck:filtered`  
-filtered decks only
+tylko talie filtrowane
 
 `-deck:filtered`  
-normal decks only
+tylko talie niefiltrowane
 
 `card:forward`  
-search for Forward cards
+wyszukuje karty przednich
 
 `card:1`  
-search for cards by template number - eg, to find the second cloze
-deletion for a note, you’d use card:2
+wyszukuje karty po numerze szablonu np. aby znaleźć drugie wypełnianie dla karty, wpisałbyś card:2
 
 `note:basic`  
-search for cards with a Basic note type
+wyszukuje kart z podstawowym typem notatki
 
-## Ignoring accents/combining characters
+## Ignorowanie akcentów/łączenie znaków
 
-Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.
+Wymaga Anki 2.1.24+ lub AnkiMobile 2.0.60+.
 
-You can use `nc:` to remove combining characters ("no combining"). For example:
+Możesz użyć `nc:` aby usunąć łączenie znaków. Przykładowo:
 
 `nc:uber`  
-matches notes with "uber", "über", "Über" and so on.
+wyszukuje notatki  "uber", "über", "Über" i tak dalej.
 
 `nc:は`  
-matches "は", "ば", and "ぱ"
+wyszukuje "は", "ば", oraz "ぱ"
 
-Searches that ignore combining characters are slower than regular searches.
+Wyszukiwania, które ignorują łączenie znaków są wolniejsze niż standardowe wyszukiwania.
 
-## Regular expressions
+## Wyrażenia regularne
 
-Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular expressions",
-a standard and powerful way of searching in text.
+Anki 2.1.24+ oraz AnkiMobile 2.0.60+ umozliwiają wyszukiwanie w notatkach za pomocą "wyrazeń regularnych", standardowy i skuteczny sposób wyszukiwania informacji w tekście.
 
-Start a search with `re:` to search by regular expression. Some examples:
+Zaczanij wyszukiwanie od `re:`,aby wyszukac przy pomocy wyrażenia regularnego. Kilka przykładów:
 
-`"re:(some|another).*thing"`  
-find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
+`"re:(niektóre|inne).*rzecz"`  
+wyszukuje notatki zawierające "niektóre" lub "inne", po nich znajdujące się 0 lub więcej znaków, a nastepnie "rzecz".
 
 `re:\d{3}`  
-find notes that have 3 digits in a row
+wyszukuje notatki, które są złożone z 3 cyfr w rzędzie.
 
-Regular expressions can also be limited to a specific field. Please note that unlike the normal searches
-in a specific field, regular expressions in fields don't require an exact match. Eg:
+Wyrażenia regularne moga również być limitowane do określonego pola. Zauważ, że w odróżnieniu od normalnych wyszukiwań w określonym polu, wyrażenia regularne wnie wymagają w polach ścisłego dopasowania. Przykładowo:
 
-`front:re:[a-c]1`  
-matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" field
+`przód:re:[a-c]1`  
+wyszukuje duże jak i małe litery a1, B1 lub c1, która pojawiają sie gdziekolwiek w polu "Przód".
 
-`front:re:^[a-c]1$`  
-like the above, but will not match if any other text falls before or after a1/b1/c1.
+`przód:re:^[a-c]1$`  
+jak wyżej, ale nie wyszukają, jeśli przed a1/b1/c1 pojawi się jakikolwiek tekst.
+Możesz dowiedzieć się więcej o wyrażeniach regularnych tutaj:https://regexone.com/lesson/introduction_abcs.
 
-You can learn more about regular expressions here: https://regexone.com/lesson/introduction_abcs
+Kilka rzeczy, na które trzeba zwrócic uwagę:
 
-Some things to be aware of:
+- Wyszukiwanie domyślnie nie bierze pod uwage wielkość liter; użyj (?-i) na początku, aby brac pod uwagę wielkość liter w wyszukiwaniach.
+- Niektóry tekst jak spacje albo nowe linie mogą być pokazane inaczej w HTML - możesz użyć edytora HTML w oknie edycji aby zobaczyć niewidoczną zawartość HTML
+- Aby dowiedzieć się szczegółów o wsparciu Anki dla wyrażeń regularnych, zobacz nastepujaca dokumentację: https://docs.rs/regex/1.3.9/regex/#syntax
 
-- The search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
-- Some text like spaces and newlines may be represented differently in HTML - you can
-  use the HTML editor in the editing screen to see the underlying HTML contents.
-- For the specifics of Anki's regex support, please see the regex crate documentation: https://docs.rs/regex/1.3.9/regex/#syntax
-
-## Card state
+## Stan karty
 
 `is:due`  
-review cards and learning cards waiting to be studied
+karty powtórkowe i karty uczone oczekujące na naukę
 
 `is:new`  
-new cards
+nowe karty
 
 `is:learn`  
-cards in learning
+karty uczone
 
 `is:review`  
-reviews (both due and not due) and lapsed cards
+powtórki (zarówno oczekujące jak i nieoczekujące) oraz pomyłki
 
 `is:suspended`  
-cards that have been manually suspended
+karty, które zostały ręcznie zawieszone
 
 `is:buried`  
-cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
-manually
+karty, które zostały zakopane [automatycznie](studying.md#siblings-and-burying) lub ręcznie.
 
-Cards that have lapsed fall into several of these categories, so it may
-be useful to combine them to get more precise results:
+Karty - pomyłki zliczają się do kilku z tych kategorii więc może okazac się przydatne połączenie tych wyszukiwań aby otrzymać bardziej precyzyjne wyniki:
 
 `is:learn is:review`  
-cards that have lapsed and are awaiting relearning
+pomyłki oraz karty oczekujące na ponowną naukę 
 
 `-is:learn is:review`  
-review cards, not including lapsed cards
+powtórki bez pomyłek
 
 `is:learn -is:review`  
-cards that are in learning for the first time
+karty, które sa uczone po raz pierwszy.
 
-## Card properties
+## Własciwości karty
 
 `prop:ivl>=10`  
-cards with interval of 10 days or more
+karty z przerwą 10 dni lub więcej
 
 `prop:due=1`  
-cards due tomorrow
+karty na jutro
 
 `prop:due=-1`  
-cards due yesterday that haven’t been answered yet
+karty wczorajsze, na które jeszcze nie odpowiedziano
 
 `prop:due>-1 prop:due<1`  
-cards due between yesterday and tomorrow
+karty oczekujące pomiedzy dniem dzisiejszym a jutrzejszym
 
 `prop:reps<10`  
-cards that have been answered less than 10 times
+karty, na które odpowiedziano mniej niż 10 razy
 
 `prop:lapses>3`  
-cards that have moved into relearning more than 3 times
+karty, które były uczone ponownie więcej niż 3 razy.
 
 `prop:ease!=2.5`  
-cards easier or harder than default
+karty łatwiejsze lub trudniejsze niż domyślna wartość
 
-Note that due only matches review cards and learning cards with an
-interval of a day or more: cards in learning with small intervals like
-10 minutes are not included.
+Miej na uwadzę, że  "due" wyszukuje tylko karty powtórkowe i karty uczone z przerwą wynosząca jeden dzień lub wiecej: karty uczone z mniejszymi przerwami takimi jak 10 minut nie są uwzgledniane.
 
-## Recently added
+## Ostatnio dodane
 
 `added:1`  
-cards added today
+karty dodane dzisiaj
 
 `added:7`  
-cards added in last week
+karty dodane w ciągu ostatniego tygodnia
 
-The check is made against card creation time rather than note creation
-time, so cards that were generated within the time frame will be
-included even if their notes were added a long time ago.
+Data dodania jest sprawdzana na podstawie daty utworzenia karty a nie daty utworzenia notatki, więc karty, które zostały wygenerowane w określonym będa brane pod uwagę nawet jeśli ich notatki zostały dodane dawno temu
 
-## Recently answered
+## Ostatnio powtarzane
 
 `rated:1`  
-cards answered today
+karty, naktóre odpowiedziano dzisiaj
 
 `rated:1:2`  
-cards answered Hard (2) today
+karty, na które odpowiedziano dzisiaj Trudna (2) 
 
 `rated:7:1`  
-cards answered Again (1) over the last 7 days
+karty, na które odpowiedziano Powtórz (1) w ciągu ostatnich 7 dni
 
 `rated:31:4`  
-cards answered Easy (4) in the last month
+karty, na które odpowiedziano Łatwa (4) w ciągu ostatniego miesiąca
 
-For speed, rating searches are limited to 31 days.
+Ze względu na szybkość, wyszukiwania ze względu na ocene są limitowane do 31 dni.
 
-## Object IDs
+## Numery ID objeku
 
 `nid:123`  
-all cards of the note with note id 123
+wszystkie karty notatki z numerem ID notatki 123
 
 `cid:123`  
-the card with card id 123
+karta z numerem ID karty 123
 
 `mid:123`  
-find note types with note type id 123
+wyszukuje typy notatek z typem notatki z numerem ID 123.
 
-Note and card IDs can be found in the [card info](stats.md) dialog in the
-browser. Note type IDs can be found by clicking on a note type in the
-Browse screen. These searches may also be helpful when doing add-on
-development or otherwise working closely with the database.
+numery ID notatek i kart możesz znaleźć w oknie [informacji o karcie](stats.md) w przeglądarce. Numery ID typów notatek możesz znaleźć klikając na typ notatki w oknie przeglądarki. Te wyszukiwania moga być równiez przydatne podczas tworzenia dodatku lub innej czynności wymagającej ścisłej pracy z bazą danych.
 
-Object IDs will not work in the mobile clients, and are not intended to
-be used in filtered decks at the moment.
+numery ID objektów nie działają w aplikacjach mobilnym i nie są obecnie stworzone do używania z taliami filtrowanymi. 
