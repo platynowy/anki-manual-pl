@@ -1,24 +1,13 @@
-# Profiles
+# Profile
 
-If more than one person wants to use Anki on your computer, you can set
-up a separate profile for each user. Each user profile has their own
-collection, and own program settings. Profiles are configured by going
-to the File menu and choosing "Switch Profile".
-
+Jeżeli Anki na danym komputerze jest używane przez więcej niż jedną osobę, możliwe jest utworzenie dla każdej osobny osobnego profilu. Każdy profil będzie posiadał własną kolekcję ustawienia programu. Zarządzanie profilami użytkowników możliwe jest w menu Plik>Zmień profil….
 Profiles are primariy intended to be used by different people, and are not
 recommended for splitting up your own content.
 
-**Only a single profile can be synced to an AnkiWeb account.** If you attempt
-to link two or more profiles to the same AnkiWeb account, you will overwrite
-the data from one profile with the data from the other.
+**Tylko jeden profil może być synchronizowany z danym kontem AnkiWeb.** Jeśli spróbujesz połączyć więcej niż jeden profil do tego samego konta AnkiWeb, nadpiszesz dane jednego profilu danymi z drugiego proflu.
 
-AnkiDroid does not support profiles.
+AnkiDroid nie obsługuje profili.
 
-If you have created multiple profiles for yourself, the best option is to
-merge them into a single profile. You can do so by exporting one deck from
-profile A, and then importing it into profile B, repeating for any other decks
-in profile A, until everything is in profile B.
+Jeśli utworzyłeś kilka profili dla siebie najlepszą opcją jest połączyć je w jeden profil. Możesz to zrobić eksportując jedną talię z profilu A, a następnie zaimportować ją do profilu B, powtarzając to dla wszystkich talii z profilu A, dopóki nie znajdą się one w profilu B.
 
-If you have different users on your computer, each user will need to set up a
-separate AnkiWeb account for their profile. Attempting to sync different
-profiles with the same AnkiWeb account will result in lost data.
+Jeśli w Anki utowrzonych jest kilka profili, każdy użytkownik bedzie musiał założyć własne konto AnkiWeb dla własnego profilu. Próba synchronizacji różnych profili z tym samym kontem AnkiWeb doprowadzi do utraty danych
