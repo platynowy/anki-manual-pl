@@ -1,79 +1,65 @@
-# Searching
+# Wyszukiwanie
 
-Anki's Browse screen and the Filtered Deck feature use a common method
-of searching for specific cards/notes.
+Zarówno przeglądarka jak i talie filtrowane używają w anki wspólnej metody wyszukiwania określonych kart/notatek.
 
-## Simple searches
+## Proste wyszukiwania 
 
-When you type some text into the search box, Anki finds matching notes
-and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (see later in this section for how to search
-for tags). Some examples:
+Gdy wpiszesz coś w wyszkiwarce Anki wyszukuje we wszystkich polach notatek, ale nie w atykietach (później w tej cześci nauczysz się jak wyszukiwać etykiety) Kilka przykładów:
 
-`dog`  
-search for "dog" - will match words like "doggy" and "underdog" too.
+`lot`  
+wyszukuje słowa "lot" - wyniki wyświetlą również słówka takie jak "lotem" oraz "nalot".
 
-`dog cat`  
-finds notes that have both "dog" and "cat" on them, such as "raining
-cats and dogs"".
+`lot kot`  
+wyszukuje notatki, w których znajdują się zarówno słowa "lot" i kot" np. "Kot udaje się w daleki lot".
 
-`dog or cat`  
-finds notes with either "dog" or "cat".
+`lot or kot`  
+wyszukuje notatki ze słowem "lot" lub "kot".
 
-`dog (cat or mouse)`  
-finds notes with dog and cat, or dog and mouse.
+`lot (kot or mysz)`  
+wyszukuje notatki ze słowami "lot" i "kot" lub "lot" i "mysz".
 
-`-cat`  
-finds notes without the word "cat".
+`-kot`  
+wyszukuje notatki nie zawierające słowa "kot".
 
-`-cat -mouse`  
-finds notes with neither "cat" nor "mouse".
+`-kot -mysz`  
+wyszukuje notatki bez słów "kot" oraz "mysz".
 
-`-(cat or mouse)`  
-same as the above.
+`-(kot or mysz)`  
+jak wyżej.
 
-`"a dog"`  
-finds notes with the exact sequence of characters "a dog" on them, such
-as "atta dog", but not "dog a" or "adog".
+`"ten kot"`  
+wyszukuje notatki, które zawierają w sobie dokładnie takie wyrażenie -> "ten kot" funkcja wyszuka np. "tamten kot", jednak nie pojawią wyniki takie jak "kot tamten".
 
-`-"a dog"`  
-finds notes without the exact phrase "a dog"
+`-"ten kot"`  
+wyszukuje notatki, które nie zawierają w sobie dokładnie takiego wyrażenua -> "ten kot".
 
-`d_g`  
-finds notes with d, &lt;a letter&gt;, g, like dog, dig, dug, and so on.
+`k_t`  
+wyszukuje notatki z k, &lt;dowolną literą&gt;, t, takie jak kit, kat, kot, i tak dalej.
 
-`d*g`  
-finds notes with d, &lt;zero or more letters&gt;, g, like dg, dog, dung,
-etc.
+`k*t`  
+wyszukuje notatki ze słowami rozpoczynającymi się od litery k i kończącymi się literą t, takie jak koloryt lub kapitanat.
 
-`w:dog`  
-search for "dog" on a word boundary - will match "dog", but not "doggy"
-or "underdog". Requires Anki 2.1.24+ or AnkiMobile 2.1.61+.
+`w:lot`  
+wyszukuje "lot" tylko w granicach słowa - wyszuka "lot", ale nie "lotem" ani "nalot". Wymaga Anki 2.1.24+ lub AnkiMobile 2.1.61+. 
 
-`w:dog*`  
-will match "dog" and "doggy", but not "underdog".
+`w:lot*`  
+wyszukuje "lot" oraz "lotem", ale nie "nalot".
 
 `w:*dog`  
-will match "dog" and "underdog", but not "doggy".
+wyszukuje "lot" oraz "nalot", ale nie "lotem".
 
-Things to note from the above:
+Z powyższych przykładów wynika, że:
 
-- Search terms are separated by spaces.
+- Szukane słowa zawsze są oddzielone spacją
 
-- When multiple search terms are provided, Anki looks for notes that
-  match all of the terms - an implicit 'and' is inserted between each
-  term. On Anki 2.1.24+ and AnkiMobile 2.0.60+ you can be explicit
-  if you like ("dog and cat" is the same as "dog cat"), but older
-  Anki versions will treat "and" as just another word to search for.
+- Kiedy podanych zostanie kilka warunków wyszukiwania, Anki bedzie szukać notatek, które spełniają wszystkie warunki (niewidoczne "and" pomiędzy każdym wyrażeniem). W Anki 2.1.24+ oraz AnkiMobile 2.0.60+ możesz te ukryte "and" wpisywać, jeśli chcesz - "lot and kot" jest tym samym co "lot kot". Starsze wersje anki traktują "and" jako normalne słowo do wyszukania. 
 
-- You can use "or" if you only need one of the terms to match.
+- Możesz używać "or" jeśli potrzebujesz, zeby tylko jedno z wyrażeń zostało znalezione.
 
-- You can prepend a minus sign to a term to find notes that don’t
-  match.
+- Możesz dodać przed wyrażeniem znak minus, aby znaleźć notatki, które nie spełniają kryteriów.
 
-- If you want to search for something including a space or
-  parenthesis, enclose it in double quotes. You can quote either the
-  `"entire:term"`, or just the `part:"after a colon"`.
+- Jeśli twoje wyszukiwanie zawiera spację lub nawias, zamknij je w cytatach. Możesz w nich umieścić
+  `"całe:wyszukiwanie"`, lub tylko `część:"po dwókropku"`.
 
 - You can group search terms by placing them in parentheses, as in the
   **dog (cat or mouse)** example. This becomes important when
