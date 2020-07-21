@@ -1,61 +1,40 @@
-# Math and Symbols
+# Matematyka i symbole
 
 ## MathJax
 
-[MathJax](https://www.mathjax.org) is a modern, browser-based
-typesetting system, useful for mathematical and chemical equations. It
-does not require the installation of any extra software, so it is easy
-to use, and it is recommended for most users.
+[MathJax](https://www.mathjax.org) to nowoczesny, oparty na przeglądarce 
+system składu tekstu, przydatny przy równaniach matematycznych i chemicznych. Nie wymaga instalacji żadnego dodatkowego programu, przez co jest łatwy w użyciu i polecany dla większości użytkowników.
 
-MathJax is supported out of the box on Anki 2.1+, AnkiMobile, and
+MathJax dostepny jest od razu po instalacjii Anki 2.1+, AnkiMobile, i
 AnkiDroid 2.9+.
 
-To try it out:
+Aby go wypróbować:
 
-1.  Type the following in a field:
+1.  Wpisz poniższy tekst w polu:
 
         \sqrt{x}
 
-2.  Select the text you just typed.
+2.  Zaznacz ten tekst.
 
-3.  Click the rightmost button in the editor, and choose "MathJax
-    inline" from the menu. Anki will change the text so it reads:
+3.  Klknij w edytorze przycisk pierwszy po prawej i wybierz z menu "liniowy MathJax". Anki zmieni tekst, przez co będzie wyglądał tak:
 
         \(\sqrt{x}\)
 
-4.  If you click the Cards…​ button, you’ll see a preview of how the
-    equation will appear when the card is reviewed.
+4.  Jesli naciśniesz przycisk Karty…​, zobaczysz podgląd tego, jak równanie pojawi się na karcie podczas nauki.
 
-Anki’s MathJax support expects content in TeX format. If you’re not
-familiar with TeX formatting, please see [this
-cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-Please note that point 2 does not apply in Anki - Anki uses `\(` and
-`\)` for inline equations, and `\[` and `\]` for display equations.
+Anki oczekuje użycie zawartości MathJax w formacie TeX. Jeśli nie jesteś zaznajomiony z formatowaniem TeX, zobacz [tę ściągawkę](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference). Zauważ, że punkt 2 nie ma zastosowania w Anki - program używa `\(` oraz `\)` dla równań liniowych oraz `\[` i `\]` dla równań wyświetlanych.
 
-If you want to use newlines in a MathJax expression, please use
-Shift+Enter instead of just Enter, as a normal newline will prevent
-MathJax from working correctly.
+Jeśli chcesz wstawiać nowe linie w MathJax, używaj Shift+Enter zamiast samego klawisza Enter (przejście do nowej linii tylko enterem spowoduje, że nowa linia uniemożliwi poprawne działanie MathJax).
 
-Anki includes built in support for mhchem for rendering chemical
-equations. Please see the 'chemical equations' section and the following
-sections for more information:
-<https://mhchem.github.io/MathJax-mhchem/>
+W Anki można używać mhchem, aby renderować równaia chemiczne. Zobacz sekcję "chemical equations" jak i następne sekcje, aby dowiedzieć się więcej:<https://mhchem.github.io/MathJax-mhchem/>
 
-## LaTeX
+## LaTeX 
 
-LaTeX is a powerful typesetting system, useful for entering mathematical
-formulas, chemical formulas, musical notation and so on. Anki provides
-some support for LaTeX, allowing you to enter LaTeX code in your notes.
-When you review a card, Anki will call LaTeX and display the generated
-image instead.
+LaTeX to systen składu tekstu, przydatny do wprowadzania równań na przykład matematycznych, chemicznych lub notatcji muzycznej. W Anki oferuje w pewnym stopniu wsparcie dla LaTeX, przez co możesz wpisywac kod LaTeX w swoich kartach. Kiedy powtarzasz karte Anki odczyta LaTeX i pokaże wygenerowany obraz.
 
-LaTeX is more work to set up, and images can only be generated with the
-computer version of Anki - though once generated, the images can be
-displayed by mobile clients. Because of the extra complexity LaTeX
-brings, it is only recommended for users that need more features than
-MathJax provides.
+Jeśli chodzi o LaTeX, trzeba się bardziej wysilić przy jego konfigurowaniu, a obrazy mogą być generowane tylko na komputerowej wersji Anki. Jednak jeśli już raz zostaną one wygenerowane, mogą być pokazywane również na urządzeniach mobilnych. LaTeX jest o wiele bardziej skomplikowany, dlatego jest polecany tylko tym  użytkownikom, którym nie wystarczają funkcjonalności MathJax. Instrukcja użytkowania LaTeX w Anki jest obecnie dostępna tylko w jezyki angielskim.
 
-### Assumed Knowledge
+### Oczekiwana wiedza (język angielski)
 
 Anki’s LaTeX support is not turn-key: it is assumed that you know how to
 use LaTeX already, and that you have it installed. If you have no
@@ -84,7 +63,7 @@ path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
 If you are not using the above LaTeX packages, you will need to use the
 "edit LaTeX" add-on to specify the full path to latex and dvipng.
 
-### Web/Mobile
+### AnkiWeb/urządzenia mobilne (język angielski)
 
 When you review a card with LaTeX on it, Anki will generate an image for
 that LaTeX and place the image in your collection’s media folder for
@@ -97,7 +76,7 @@ you. To generate all the images, please go to Tools&gt;Check Media.
 After that, syncing should upload the generated media to AnkiWeb and the
 other clients.
 
-### Example
+### Przykład (język angielski)
 
 The most general way to input LaTeX content is to surround it with
 \[latex\]\[/latex\] tags. There’s a shortcut button for this documented
@@ -154,7 +133,7 @@ and
 
 respectively.
 
-### Packages
+### Pakiety (język angielski)
 
 Anki allows you to customize the LaTeX preamble so you can import custom
 packages for chemistry, music and so on. For example, imagine you find
@@ -212,7 +191,7 @@ your Anki cards:
 
     [latex]\ethene{H}{H$_3$C}{CH$_3$}{Br}[/latex]
 
-### Template Conflicts
+### Konflikty z szablonami (język angielski)
 
 As of Anki 2.1.20 / AnkiMobile 2.0.56, this workaround is no longer
 required, as `{{field}}` text inside fields no longer causes problems.
@@ -238,7 +217,7 @@ conflict:
     {{=<% %>=}}
     <%latex field%>
 
-### Cloze Conflicts
+### Konflikty z lukami (język angielski)
 
 Cloze deletions are terminated with `}}`, which can conflict with a `}}`
 appearing in your LaTeX. To prevent LaTeX from being interpreted as a closing
@@ -265,7 +244,7 @@ following note text will read `[type] in C++ is a type-safe union`:
 
     {{c1::std:<!-- -->:variant::~type~}} in C++ is a {{c2::type-safe union}}
 
-### Unsafe commands
+### Niebezpieczne polecenia (język angielski)
 
 Anki prohibits certain commands like \\input or \\def from being used on
 cards or in templates, because allowing them could allow malicious
