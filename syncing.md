@@ -1,102 +1,50 @@
-# Syncing with AnkiWeb
+# Synchronizacja z AnkiWeb
 
-AnkiWeb is a service that allows you to keep your collection
-synchronized across multiple devices, and to study online. Please sign
-up for a [free account](https://ankiweb.net/) before following the steps
-below.
+Ankiweb to usługa, która pozwala na synchronizację twojej kolekcji pomiędzy wieloma urządzeniami, a tym samym umożliwia posiadanie zawsze aktualnej talii na każdym z tych urządzeń. Założ [darmowe konto](https://ankiweb.net/)  zanim przejdziesz do dalszej lektury tego rozdziału.
 
-## Setup
+## Konfiguracja
 
-To start syncing your collection across devices, click the sync button
-(the top right one on the main screen), or press 'y' on your keyboard.
-You’ll be prompted for your AnkiWeb ID and password, which you created
-in the signup process.
+Aby rozpocząć synchronizację kolekcji, naciśnij przycisk Synchronizuj znajdujący się w prawym górnym rogu głownego okna Anki lub naciśnij klawisz "y" na klawiaturze. Zostaniesz poproszony o swoj identyfikator AnkiWeb ID oraz hasło, które określiłeś w procesie rejestracji.
 
-When you synchronize your collection for the first time, Anki will ask
-you if you want to upload or download. If you have cards on your
-computer and your AnkiWeb account is empty, choose "upload" to send your
-data to AnkiWeb. If you have cards on AnkiWeb from another device, and
-no cards on your computer, choose "download" to replace the empty local
-collection with the cards that are on AnkiWeb. If you have different
-cards on both devices, [more work is required](#merging-conflicts) to
-avoid losing data.
+Podczas pierwszej synchronizacji kolekcji, Anki nie będzie w stanie połączyć danych znajdujących się na Ankiweb z tymi, które masz na swoim komputerze, dlatego zostaniesz poproszony o wybranie czychcesz pobrać, czy przesłać dane. Jeśli posiadasz karty z innego urządzenia w AnkiWeb, a na komputerze nie masz żadnych kart wybierz "pobierz", aby zastąpić pustą lokalną kolekcję kartami pobranymi z AnkiWeb. Jeśli masz różne karty na obu urządzeniach, [wymagane jest wiecej pracy](#merging-conflicts), aby uniknąć utraty danych
+avoid losing data.  Po tym kroku Anki bez problemu będzie mogło łączyć zmiany w talii pochodzące z różnych lokalizacji, z kilkoma wyjątkami.
 
-Once the initial one way sync is completed, Anki will be able to merge
-changes from multiple locations with a few exceptions.
+Po pierwszej synchronizacji Anki będzie w stanie łączyć zmiany z różnych urządzeń (z kilkoma wyjątkami).
 
-If you have multiple people using Anki on one machine and have created a
-profile for each user, each user will need to create their own AnkiWeb
-account to sync with. If you attempt to synchronize multiple profiles
-with a single AnkiWeb account, you will lose data.
+Jeśli kilka osób używa Anki na jednym urządzeniu, i dla każdej z tych osób został utworzony profil, wszyscy beda musieli utworzyć swoje własne konto AnkiWeb, aby móc synchronizować. Zsynchronizowanie różnych profili z jednym kontem AnkiWeb doprowadzi do do utraty danych. 
 
-## Automatic Syncing
+## Automatyczna synchronizacja
 
-Once syncing is enabled, Anki will automatically sync each time your
-collection is closed or opened. If you would prefer to synchronize
-manually, you can disable automatic syncing in Anki’s preferences.
+Po pierwszej synchronizacji, każda kolejna wykonywana będzie automatycznie po otwarciu lub zamknięciu kolekcji. Jeżeli jednak chcesz synchronizować kolekcję ręcznie, wyłącz opcję automatycznego sychronizowania w ustawieniach Anki.
 
-## Media
+## Pliki
 
-Anki will synchronize any sounds and images used by your notes. It will
-notice when media has been added or removed from your media folder, but
-will not notice if you have edited some existing files without adding or
-removing any. To get your edits noticed, you need to add or remove a
-file as well.
+Anki synchronizuje dźwieki i obrazy używane przez twoje notatki. Zauważy, gdy pliki zostana dodane lub usunięte z folderu plików., jednak nie zauważy edycji istniejacych plików bez dodawania lub usuwania żadnych innych. Jesli chcesz, Aby anki zauwazyło zmiano, musisz dodać lub usunąć co najmniej jeden plik.
 
-If you’re running Anki off a USB flash drive, you should use an NTFS
-file system, as Anki may not be able to detect media changes on a FAT32
-filesystem.
+Jesli uruchamiasz anki z pamieci USB, powinieneś uzywać systemu plików NTFS poniewaz Anki może nie wykryć zmian plików w systemie plików FAT32.
 
-## Conflicts
 
-Under normal circumstances, reviews and note edits can be merged, so if
-you review or edit on two different devices before syncing, Anki will
-preserve your changes from both locations. If the same card has been
-reviewed in two different locations, both reviews will be marked in the
-revision history, and the card will be kept in the state it was when it
-was most recently answered.
+## Konflikty
 
-There are certain changes that Anki is unable to merge. These mainly
-relate to the format of notes: things like adding a new field, or
-removing a card template. When you perform an operation that can’t be
-merged, Anki will warn you, and give you the option of aborting the
-operation. If you choose to continue, you’ll be asked to choose whether
-to keep the local copy or the copy on AnkiWeb when your collection is
-next synchronized.
+W normalnych okolicznosciach powtórki i edycje notatek mogą zostać złączone, więc jeśli powtarzasz lub edytujesz na dwóch róznych urządzeniach przed synchronizacją, Anki zachowa twoje zmiany z obu lokacji. Jesli taka sama karta zostanie powtórzona w dwóch różnych lokacjach, obie powtórki zostaną zaznaczone w historce powtórek, a przerwą karty będzie najnowsza powtórka.
 
-If certain problems are detected while syncing, it will also force a one
-way sync. If you find this consistently happens, please post on our
-support site.
+Są pewne zmiany, których Anki nie jest w stanie połączyć. Są to głównie zmiany powiązane z formatem notatek. Jeśli zrobisz coś, co nie można połączyć dostaniesz ostrzeżenie, a Anki umożliwi ci opcje przerwania operacji. Jeśli będziesz ją kontynuował, podczas następnej synchronizacji zostaniesz zapytany czy zatrzymać lokalną kolekcję, czy kopię na AnkiWeb.
 
-When a one way sync is required, you need to choose whether you wish to
-keep the collection on your local device, or the collection on AnkiWeb.
-If changes have been made on both ends, only changes on one end can be
-preserved.
+Jeśli podczas synchronizacji zostaną wykryte określone problemy, anki wymusi synchronizację jednokierunkową. Jeśli zauwazysz, ze dzieje sie to często, daj nam znac na stronie wsparcia Anki.
 
-If you choose Upload, the content on your local device will be sent to
-AnkiWeb. You then need to sync your other devices, and choose "Download"
-to have them grab a copy of that content.
+Gdy wymagana jest jednokierunkowa synchronizacja, musisz wybrać, czy chcesz zachowac kolekcję na urządzeniu, czy w Ankiweb. Jeśli zmiany zostały dokonane w obu miejscach, tylko po jednej stronie bedzie można zachować zmiany.
 
-If you choose Download, it will replace any local changes you’ve made
-with the data that is on AnkiWeb.
+Jeśli wybierzesz "Prześlij", zawartość na twoim urządzeniu zostanie wysłana do AnkiWeb. Nastepnie musisz zsynchronizować pozostałe urządzenia i wybrać "Pobierz", aby również i na nich była dostepna ta zawartość.
 
-Once all devices are in sync, future syncs will return to the normal
-behaviour of merging changes from both ends.
+Jeśli wybierzesz "Pobierz", Anki zastapi twoja lokalną kolekcję danymi z AnkiWeb.
 
-If you wish to force a full upload or download (for example, because you
-accidentally deleted a deck on one side and want to restore the deck
-rather than having its deletion synchronized), you can check the "On
-next sync, force changes in one direction" box in
-Tools&gt;Preferences&gt;Network, then sync as usual. (You’ll be given
-the option to choose which side you want to use.)
+Po tym jak wszystkie urządzenia zostały zsynchronizowane, przyszłe synchronizację będą zachoywały sie normalnie, łącząc zmiany z obu miejsc.
 
-Forcing a one way sync only affects card syncing - media is synced as
-normal. If you have files that you want to remove from AnkiWeb, please
-ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (eg via the Check Media function) will be removed
-from AnkiWeb on the following sync.
+Jeśli chcesz wymusić pełne przesłanie lub pobieranie ( na przykład ponieważ przez przypadek usunąłeś talię po jednej stronie i chcesz go odzyskac zamiast synchronizować jego usunięcie), możesz zaznaczyć opcję "podczas następnej synchronizacji wymuś zmiany w jednym kierunku", znajdujaca sie w Narzędzia&gt;Ustawienia&gt;Sieć, a następnie zsynchronizuj jak zawsze (pojawi się opcja, aby wybrać stornę, po której zachowac zmiany).
 
-## Merging Conflicts
+Wymuszanie synchronizacji jednokierunkowej ma wpływ tylko na synchronizację kart - pliki sa synchronizowane normalnie. Jeśli posiadasz pliki, które chcesz usunąć z AnkiWeb upewnij się, najpierw, że twoja kolekcja jest w pełni zsynchronizowana. Gdy kolekcja jest aktualna, jakiekolwiek pliki, które zostaną usunięte (np poprzez funkcję "Sprawdz pliki"), zostaną również usunięte z AnkiWeb podczas nastepnej synchronizacji.
+
+## Konflikty (język angielski) 
 
 Because the [first sync](#setup) can only sync changes in one
 direction, if you have added different content to different devices or
@@ -133,7 +81,7 @@ You can now use File&gt;Import to import the .apkg files you exported
 earlier, which will merge the exported content with the existing
 content, so everything will be in one place.
 
-## Firewalls
+## Firewall (język angielski)
 
 Anki needs to be able to make outbound HTTPS connections to sync. At a
 minimum it must be able to connect to ankiweb.net, sync.ankiweb.net and
@@ -147,7 +95,7 @@ Anki. If you are on a work or school network, please contact your
 network administrator for assistance - it is not something we can help
 you with.
 
-## Proxies
+## Połączenie przez proxy
 
 If you need a proxy to access the internet, Anki should automatically
 pick up your system proxy settings if you’re on Windows or OS X, and
