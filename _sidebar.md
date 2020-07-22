@@ -8,7 +8,7 @@
  - [Generowanie kart](templates/generation.md)
  - [Stylizowanie i HTML](templates/styling.md)
 - [Ustawienia](preferences.md)
-- [Opcje Talii](deck-options.md)
+- [Opcje talii](deck-options.md)
 - [Synchronizacja z Ankiweb](syncing.md)
 - [Profile](profiles.md)
 - [Przeglądarka](browsing.md)
