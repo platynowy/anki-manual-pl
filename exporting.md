@@ -1,65 +1,35 @@
-# Exporting
+# Eksportowanie
 
-Exporting allows you to save part of your collection as a text file or
-packaged Anki deck. To export, click the File menu and choose 'Export'.
+Eksportowanie umożliwia zapisane części kolekcji jako pliku tekstowego lub w formacie "packaged Anki deck". Aby wyeksportować, naciśnij w menu "Plik" i wybierz "Eksportuj".
 
-## Text Files
+## Pliki tekstowe
 
-If you choose "Notes in Plain Text", Anki will write the contents of the
-notes into a text file. Each field is separated by a tab. If you edit
-the resulting file and don’t modify the first field, you can later
-import that file back into Anki and Anki will update your notes based on
-your edits, provided you import back into the same note type.
+Jeśli wybierzesz "Notes in Plan Text" Anki zapisze zawatość notatek w pliku tekstowym. Każde pole jest od siebie odseparowane tabulatorem. Jeśli zedytujesz wyeksportowany plik, ale nie zmienisz pierwszego pola, będziesz mógł później zaimportować ten plik spowrotem do Anki, a Anki zaktualizuje twoje notatki na podstawie twoich zmian. Zadziała to jeśli zaimportujesz z powrotem do tego samego typu notatki
 
-If you find yourself needing to edit the first field as well, you’ll
-need to change the format of your note type so that the first field is
-an ID number rather than actual text. (You can install the "Add note id"
-plugin to make this easier.)
+Jeśli stwierdzisz, ze musisz zedytować również pierwsze pole, będziesz musiał zmienic format twojego typu notatki tak, aby pierwszym polem było numer ID, a nie tekst (możesz zainstalować dodatek "Add note id", aby zrobić to łatwiej)
 
-In order for formatting to be preserved when you import text back in,
-the text is exported with all the HTML formatting embedded in it.
+Tekst jest eksportowany z osadzonym w nim całym formatowaniem HTML po to, abyformatowanie zostało zachowane gdy importujesz tekst z powrotem.
 
-## Packaged Decks
+## Spakowane talie
 
-A 'packaged deck' consists of cards, notes, note types and any sounds or
-images bundled up into a file ending with .apkg or .colpkg. You can use
-packaged decks to transfer cards between people, or for backing up parts
-of your collection.
+"Spakowana talia" składa się z kart, notatek, typów notatek oraz wszelkich dźwięków lub obrazów osadzonych w jednym pliku o końcówce .apkg lub .colpkg. Możesz używać spakowanych talii, aby przenosić karty pomiędzy różnymi osobami. Moga one też służyć jako kopie zapasowe cześci twojej kolekcji.
 
-There are two different kinds of packaged decks.
+Sa dwa różne typy spakowanych talii.
 
-### Collection (.colpkg)
+### Kolekcja (.colpkg)
 
-When you export all decks with scheduling included, this is called a
-'collection package'. Anki will copy your entire collection into a file
-ending in .colpkg, and place it on your desktop. A collection package is
-used to back up your collection, or copy it to another device.
+Kiedy eksportujesz wszystkie talie razem z planowaniem, to nazywa się to "pakietem kolekcji (collection package)". Anki skopiuje całą twoją kolekcję do pliku z koncówką .colpkg.i umieści go na twoim pulpicie. Pakiet kolekcji jest używany jako kopia zapasowa, lub aby skopiować dane na inne urządzenie.
 
-Collection packages created with previous versions of Anki were called
-collection.apkg.
+Pakiety kolekcji utworzone na poprzednich wersjach Anki były nazywane w ten sposób: collection.apkg.
 
-When this file is later imported, Anki will delete all the current cards
-in the collection, and replace the collection with the items in the
-file. This is useful for copying your collection back and forth between
-devices.
+Kiedy ten plik jest później zaimportowany, Anki usuwa wszystkie obecne karty w kolekcji i zastępuje je treścią z pliku. Jesto to przydatne do kopiowania twojej kolekcji miedzy urządzeniami.
 
-Existing media in your collection is not deleted when you import a
-collection package. To delete unused media, use Tools&gt;Check Media.
+Istniejące pliki w twojej kolekcji nie zostaną usuniete, kiedy importujesz pakiet kolekcji. Aby usunać nieuzywane pliki, użyj Narzędzia&gt;Sprawdź pliki
 
-### Deck (.apkg)
+### Talia (.apkg)
 
-Deck packages contain a single deck (and any child decks it may have).
-They have a filename ending with .apkg, but a filename other than
-collection.apkg. When you import a deck package, Anki will add the
-contents into your collection, rather than overwriting your collection.
+Pakiety talii zawierają pojedyńczą talię (oraz każdą z jej podtalii, jeśli jakąś posiada). Końcówka ich pliku to .apkg, a sama nazwa pliku jest inna niż collection.apkg. Kiedy importujesz pakiet talii, Anki doda zawartość do twojej kolekcji zamiast ja nadpisywać
 
-If some notes in the deck package have previously been imported, Anki
-will keep the version with the most recent modification time. So if you
-download an updated deck, the edits that have been made in the updated
-version will be made in your collection as well, but if you re-import an
-unchanged deck after making edits in your collection, the changes in
-your collection will be kept.
+Jeśli niektóre notatki w pakiecie talii zostały wcześniej zaimportowane, Anki zostawi najnowsza wersję. Więc jesli pobierzesz zaktualizowana talię, modyfikacje poczynione w zaktualizowanej wersji przeniosa się do twojej kolekcji, ale jeśli zaimportujesz niezmienioną talię po dokonaniu zmian w twojej kolekcji, zmiany w twojej kolekcji zostaną zachowane.
 
-If you choose not to include scheduling information, Anki will assume
-that you are sharing the deck with other people, and will remove marked
-and leech tags so that they will have a clean copy of it.
+Jeśli zdecydujesz nie zawierrac informacji o planowaniu, Anki założy, że udostepniasz talię innym osobom i usunie etykiety "marked (wyróżniona)" i "leech (pijawka)" tak, aby osoby uczące się posiadały "czystą" talię.
