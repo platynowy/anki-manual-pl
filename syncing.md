@@ -44,89 +44,51 @@ Jeśli chcesz wymusić pełne przesłanie lub pobieranie ( na przykład poniewa�
 
 Wymuszanie synchronizacji jednokierunkowej ma wpływ tylko na synchronizację kart - pliki sa synchronizowane normalnie. Jeśli posiadasz pliki, które chcesz usunąć z AnkiWeb upewnij się, najpierw, że twoja kolekcja jest w pełni zsynchronizowana. Gdy kolekcja jest aktualna, jakiekolwiek pliki, które zostaną usunięte (np poprzez funkcję "Sprawdz pliki"), zostaną również usunięte z AnkiWeb podczas nastepnej synchronizacji.
 
-## Konflikty łącznia 
+## Konflikty łączenia 
 
 Jako, że [pierwsza synchronizacja](#setup) może synchronizować zmiany tylko w jednym kierunku, jeśli dodałeś inną zawartość do innych urządzeń lub profili przed synchronizacją, zawartość na jednym z urządzeń zostanie utracona, jeśli nadpiszesz ją zawartością z innego urządzenia. Jest możliwe również ręczne dodanie danych do pojedyńczej kolekcji. 
 
-Start by taking a backup on each device/profile, in case something goes
-wrong. With the computer version you can use File&gt;Export to export
-"all decks" with scheduling information and media files included, and
-save the file somewhere safe. In AnkiMobile, the Add/Export button on
-the decks list screen will let you export all decks with media.
+Najpierw utwórz kopię zapasową na każdym urządzeniu/profilu w razie gdyby coś poszło nie tak. Na wersji komputerowej możesz to zrobić używając Plik&gt;Eksportuj , aby wyeksportować "wszystkie talie" razem z informacją o planowaniu oraz plikami. Plik zapisz gdzieś w bezpiecznym miejscu. W AnkiMobile, plik Dodaj/Eksportuj na ekranie z listą talii pozwoli ci wyeksportować wszystkie talie razem z plikami.
 
-Next, if one of your devices is a mobile device, synchronize it first.
-If there’s a conflict, choose "upload" to overwrite any existing data on
-AnkiWeb with the data from your mobile device. If both devices/profiles
-are on your computer, synchronize the device/profile with the most
-number of decks first.
+Nastepnie, jesli jedno z twoich urządzeń jest urządzeniem mobilnym, zsynchronizuj je. Jeśli powstanie konflikt, wybierz "prześlij", aby nadpisać dane na AnkiWeb danymi z twojego urządzenia. Jeśli oba urządzenia/profile znajdują się na kompueterze, najpierw zsynchronizuj urządzenie/profil z większą ilością talii.
 
-Now return to the other device/profile. If automatic syncing is enabled,
-a message may pop up asking if you want to upload or download. Click the
-cancel button - we don’t want to sync yet.
+Teraz powróć do pierwszego profilu/urządzenia. Jeśli automatyczna synchronizacja jest włączona, może pojawic się okno, które zapyta, czy chcesz pobrać, czy przesłac dane. Kliknij przycisk anuluj - jeszcze nie pora na synchronizację.
 
-Once you’re looking at the deck list, click the cog icon next to the
-first deck, and choose "export". Export the content with scheduling
-information and media included, and save the .apkg file somewhere. Now
-you’ll need to repeat this for each top-level deck.
+Na ekranie z listą talii naciśnij koła zębatego przy pierwszej talii, a nastepnie naciśnij "eksportuj". Wyeksportuj zawartość z informacją o planowaniu i plikami i zapisz gdzieś jako plik .apkg. Teraz musisz powtórzyć tę czynność dla każdej talii (oprócz talii podrzędnych).
 
-Once all top-level decks have been exported, click the sync button at
-the top right, and choose "download", which will overwrite the local
-content with the content you synced from your other device.
+Po tym jak wszystkie główne talie zostały wyeksportowane, nacisnij przycisk "synchronizuj" na ekranie głównym (u góry po prawej) i wybierz "pobierz", co nadpisze lokalną zawartość zawartością, którą zsynchronizowałeś z drugiego urządzenia.
 
-You can now use File&gt;Import to import the .apkg files you exported
-earlier, which will merge the exported content with the existing
-content, so everything will be in one place.
+Możesz teraz użyć opcji Plik&gt;Importuj, aby zaimportować pliki .apkg, które wyeksportowałeś wcześniej, co złączy wyeksportowana zawartosć z istniejącą. Dzieki temu wszystko znajduje się w jednym miejscu.
 
-## Firewall (język angielski)
+## Firewall
 
-Anki needs to be able to make outbound HTTPS connections to sync. At a
-minimum it must be able to connect to ankiweb.net, sync.ankiweb.net and
-syncN.ankiweb.net, where N is number between 2 and 6. These domains may
-change over time, and the IP addresses they point to may also change, so
-we recommend you allow wildcard access to \*.ankiweb.net to reduce the
-chance of the firewall rules needing to be updated in the future.
+Anki musi mieć możliwość tworzenia wychodzących połączen HTTPS, aby móc synchronizować. Musi co najmniej móc połączyć się z ankiweb.net, sync.ankiweb.net i
+syncN.ankiweb.net. W tym ostatnim N jest numerem między 2, a 6. Te domeny moga zmienić się z czasem tak samo jak ich adresy IP, więc zalecamyna dostęp z użyciem symboli wieloznacznych z \*.ankiweb.net, aby obniżyć szansę na  konieczność aktualizowania firewalla w przyszłości.
 
-If you have a firewall on your machine, you should add an exception for
-Anki. If you are on a work or school network, please contact your
-network administrator for assistance - it is not something we can help
-you with.
+Jeśli masz firewall na twoim sprzecie, powinieneś dodać wyjątek dla Anki. Jeśli korzystasz z internetu w pracy/w szkole, skontaktuj się z administratorem twojej sieci i poproś o wsparcie - tutaj nasza możliwość pomocy się końcy.
 
 ## Połączenie przez proxy
 
-If you need a proxy to access the internet, Anki should automatically
-pick up your system proxy settings if you’re on Windows or OS X, and
-will honour the HTTP_PROXY environment variable if you’re on another
-platform.
+Jeśli potrzebujesz proxy, aby mięć dostęp do internetu Anki na systemach Windows lub OS X powinno automatycznie użyć twoich ustawień systemowych oraz będzie uznawać środowisko HTTP_PROXY, jeśli korzystasz z Anki na innej platformie. 
 
-Anki will only be able to pick up your system settings if a proxy is
-manually configured, and does not require a password. If your system
-uses automatic proxy setup, or uses a proxy that requires a username and
-password, you will need to manually tell Anki the proxy configuration.
+Anki będzie w stanie użyć ustawień systemowych jeśli proxy jest skonfigurowana ręcznie i nie wymaga hasła. Jesli twój system ma automatycznie skonfigurowane proxy lub proxy wymaga nazwy użytkownika i hasła, będziesz musiał sam poprowadzić w Anki konfigurację proxy.
 
-To tell Anki your proxy settings, define a HTTPS_PROXY environmental
-variable that points to the proxy server. It will look like:
+Aby ustawić twoje ustawienia proxy w Anki,zdefiniuj zmienne środowisko HTTPS_PROXY, które wskazuje na serwer proxy. Bedzie to wyglądało w ten sposób: 
 
     http://user:pass@proxy.company.com:8080
 
-If your username or password contains an @ (eg <user@workdomain.com>),
-you need to change it to %40, like so:
+Jeśli nazwa użytkownika i hasło zawierają małpę (@) (np. <user@workdomain.com>), musisz zamiast niej wpisać %40, jak poniżej:
 
     http://user%40workdomain.com:pass@proxy.company.com:8080
 
-Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
+Anki 2.0 szuka HTTP_PROXY, zamiast HTTPS_PROXY.
 
-To set environmental variables on Windows, please see
+Aby ustawić zmienne środowiska na systemie Windows, zobacz:
 <https://www.google.com/search?q=windows+set+environmental+variable>
 
-If you’re on a Mac, please see
+Jeśli za to korzystasz z Maka, zobacz:
 <http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
 
-Heavily locked down networks that intercept secure connections and
-present their own certificate instead may cause Anki to throw up SSL
-errors. In such environments, you may be able to work around the errors
-with <https://ankiweb.net/shared/info/878367706>
+Silnie zamknięte sieci, które przechwycują bezpieczne połączenia i okazuja swój własny certyfikat mogą powodować, że w Anki pojawią się błędy SSL. W takich środowiskach możesz spróbować obejść te błędy, używając <https://ankiweb.net/shared/info/878367706>.
 
-An alternative solution is to install a local proxy server, and point
-that proxy server at your normal proxy server. You can then tell Anki to
-use the local proxy, which will redirect requests to the proxy you
-normally use.
+Alternatywnym sposobem jest instalacja lokalnego serwera proxy i skierowanie go do twojego zwykłego serwera proxy. NAstępnie możesz ustawić w Anki, aby używało lokalnego proxy, które skieruje połączenie do proxy, którego zwykle używasz.
