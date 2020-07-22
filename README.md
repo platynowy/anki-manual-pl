@@ -5,3 +5,5 @@ Niniejsza instrukcja jest objęta licencją CC BY-SA 4:
 https://creativecommons.org/licenses/by-sa/4.0/
 
 Twój wkład jest mile widziany. O ile nie zdecydujesz inaczej, każda zgłoszona zmiana będzie podlegała powyższej licencji.
+
+Źródłowa instrukcja angielska: https://github.com/ankitects/anki-manual
