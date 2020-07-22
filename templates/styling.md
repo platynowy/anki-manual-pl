@@ -1,133 +1,95 @@
-Card Styling
+Stylizowanie kart
 ------------
 
-You can watch [a video about styling
-cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) on YouTube.
-The video shows Anki 2.0’s interface, but the concepts are largely the
-same.
+Możesz obejrzeć [film o stylizowaniu kart](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)(w języku angielskim) na YouTube.
+Ten film używa interfesju Anki 2.0, ale główne założenia pozostąły  takie same.
 
-In between the front and back template in the Cards screen is the card
-styling area. In that section, you can change the background colour of
-the card, the default font, the text alignment, and so on.
+Pomiędzy obszarem edycji szablonu przodu i tyłu znajduje się obszar Styl. Możesz w nim zmieniać kolor tła karty, standardową czcionkę, wyrównanie tekstu i tak dalej.
 
-The standard options available to you are:
+Podstawowe dostępne polecenia to:
 
 **font-family**  
-The name of the font to use on the card. If your font has spaces in it
-like "MS Unicode", then you need to surround the font name in double
-quotes as in this sentence. It is also possible to use multiple fonts on
-one card; for information on that, please see below.
+Nazwa czcionki, którą będą wyświetlane informacje na karcie podczas powtórki. Jeżeli czcionka w nazwie posiada spację np. "MS Unicode", jej nazwę należy ująć w cudzysłów. Możliwe jest także użycie wielu różnych czcionek na jednej karcie. Informacje na ten temat znajdują się poniżej.
 
 **font-size**  
-The size of the font in pixels. When changing it, make sure you leave px
-at the end.
+Rozmiar czcionki określany w liczbie pikseli. Zmieniając rozmiar upewnij się, że po liczbie określiłeś jednostkę "px".
 
 **text-align**  
-Whether the text should be aligned in the center, left, or right.
+Wyrównanie tekstu: wycentrowanie (center), do lewej (left), do prawej (right).
 
 **color**  
-The color of the text. Simple color names like 'blue', 'lightyellow',
-and so on will work, or you can use HTML color codes to select arbitrary
-colors. Please see [this webpage](http://htmlcolorcodes.org/) for more
-information.
+Kolor tekstu. Może być określony po prostu przez wpisanie angielskich nazw kolorów podstawowych np. blue (niebieski), lightyellow (jasno żółty) itd. Możliwe jest także użycie kodów kolorów wedłóg modelu RGB. Kody kolorów zapisane w tej postaci odnaleźć można na [tej stronie](http://htmlcolorcodes.org/).
 
 **background-color**  
-The color of the card background.
+Kolor tła karty,
 
-Any CSS can be placed in the styling section – advanced users may wish
-to do things like add a background image or gradient, for example. If
-you’re wondering how to get some particular formatting, please search
-the web for information about how to do it in CSS, as there is a great
-deal of documentation available.
+Jakakolwiek komenda CSS może byc wpisana w oknie stylizacji - użytkownicy zaawansowani mogą dodać rzeczy takie jak tło lub gradient. Jeśli zastanawiasz się jak uzyskac określone formatowanie, poszukaj w internecie informacji jak wpisac je w CSS. W sieci znajduje się wiele informacji na ten temat.
 
-The styling is shared between all cards, which means that when you make
-an adjustment it will affect all cards for that note type. It is also
-possible to specify card-specific styling, however. The following
-example will use a yellow background on all cards except the first one:
+Dany styl nadawany jest jednocześnie wszystkim kartom należącym do tego samego typu notatki. Możliwe jest jednak nadawanie wyjątków. Przykładowo poniższy kod nada wszystkim kartom tło koloru żółtego, z wyjątkiem pierwszej karty, która będzie miała tło niebieskie:
 
 ```css
 .card { background-color: yellow; }
 .card1 { background-color: blue; }
 ```
     
-## Image Resizing
+## Zmiana wielkości obrazów
 
-Anki shrinks images to fit the screen by default. You can change this by adding
-the following to the bottom of your styling section (outside of the default
-`.card { ... }`): 
+Anki domyslnie zmniejsza obrazy, aby pasowały one do ekranu. Możesz to zmienić dodając następujący tekst do okna stylizacji (poza domyślnym `.card { ... }`): 
 
 ```css
 img { max-width: none; max-height: none; }
 ```
 
-AnkiDroid sometimes has [trouble scaling images to fit the
-screen](https://github.com/ankidroid/Anki-Android/issues/3612). Setting maximum
-image dimensions using css should fix this, but seems to be ignored as of
-AnkiDroid 2.9. A fix is to append `!important` to each style directive, for
-example: 
+AnkiDroid czasami ma [problemy ze skalowaniem obrazów, aby dopasowały się do ekranu](https://github.com/ankidroid/Anki-Android/issues/3612). Ustawienie maksymalnych wymiarów obrazu używając CSS powinno to naprawić, ale jest to ignorowane w wersji AnkiDroid 2.9. Naprawić to można dodając `!important` do każdej dyrektywy stylu, na przykład:
 
 ```css
 img { max-width: 300px !important; max-height: 300px !important; }
 ```
 
-If you try to change the style for images and find that the star that
-appears on marked cards is affected (for instance, it becomes way too
-large), you can target it with the following:
-
+Jeśli spróbujesz zmienić styl obrazów i zobaczysz, że gwiazdka, która pojawia się przy wyróżnionych kartach nie wyświetla się poprawnie (np. jest zbyt duża), to możesz to naprawić nastepującym tekstem:
 
 ```css
 img#star { ... }
 ```
 
-You can explore the styling of cards interactively by using Chrome:
+Możesz interaktywnie ekslorować stylizowanie kart używając Chrome:
 
 <https://ankitects.github.io/addon-docs/#/porting2.0?id=webview-changes>
 
-Field Styling
+Stylizowanie pól
 -------------
 
-The default styling applies to the whole card. You can also make certain
-fields or part of the card use a different font, color, and so on. This
-is particularly important when studying foreign languages, as Anki will
-sometimes be unable to correctly display characters unless an
-appropriate font has been chosen.
+Domyślnie stylizowanie ustawione w szablonie obejmuje całą zawartość karty. Możliwe jest jednak nadanie poszczególnym polom ich własnych stylów czcionki, koloru itd. Funkcja ta jest szczególnie istotna podczas nauki języków obcych, kiedy dla danego tekstu musi zostać użyta specyficzna czcionka np. hebrajska lub arabska, gdyż w przeciwnym razie tekst nie zostanie poprawnie wyświetlony.
 
-Say you have an “Expression” field, and you want to give it the OSX Thai
-font “Ayuthaya”. Imagine your template already reads:
+Powiedzmy, że masz w notatce pole o nazwie "Wyrażenie" i chcesz aby jego treść na karcie była wyświetlana przy pomocy tajskiej czcionki "Ayuthaya" (działa tylko na systemach Mac OSX). Twój szablon wygląda na razie w taki sposób:
 
-    What is {{Expression}}?
+    Co oznacza {{Wyrażenie}}?
 
-    {{Notes}}
+    {{Notatki}}
 
-What we need to do is wrap the text we want to style in some HTML. We
-will put the following in front of the text:
+Pierwszym krokiem będzie umieszczenie zawartości szablonu przodu w znacznikach HTML. Przed tekstem umieścimy:
 
-    <div class=mystyle1>
+    <div class=mojstyl1>
 
-And the following behind it:
+A po nim:
 
     </div>
 
-By wrapping the text like the above, we tell Anki to style the wrapped
-text with a custom style called “mystyle1”, which we will create later.
+Zastosowanie tych znaczników mówi Anki, żeby w stosunku do zawartego pomiędzy nimi tekstu został zastosowany jakiś styl, w tym przypadku o nazwie "mojstyl1". Styl ten utworzymy za chwilę.
 
-Thus if we wanted the entire “What is …​?” expression to use the Thai
-font, we would use:
+Jeśli chcemy, żeby cały tekst Przodu posiadał dany styl to nasz szablon przodu będzie wyglądał następująco:
 
-    <div class=mystyle1>What is {{Expression}}?</div>
+    <div class=mojstyl1>Co oznacza {{Wyrażenie}}?</div>
 
-    {{Notes}}
+    {{Notatki}}
 
-And if we wanted only the expression field itself to use the Thai font,
-we’d use:
+A jeśli chcemy, żeby tylko nasze pole "Wyrażenie" posiadało dany styl czy daną czcionkę to użyjemy takiego kodu:
 
-    What is <div class=mystyle1>{{Expression}}</div>?
+    Co oznacza <div class=mojstyl>{{Wyrażenie}}</div>?
 
-    {{Notes}}
+    {{Notatki}}
 
-After we’ve edited the template, we now need to move to the Styling
-section between the templates. Before editing it, it should look
-something like:
+Po edycji Szablonu przodu musimy przejść teraz do środkowego obszaru Styl, zlokalizowanego pomiędzy obszarami Szablon przodu i Szablon tyłu. Standardowo zawartość obszaru Styl powinna wyglądąć tak:
 
 ```css
 .card {
@@ -139,7 +101,7 @@ something like:
 }
 ```
 
-Add your new style to the bottom, so it looks like:
+Na dole tego kodu dodaj trzy linijki twojego stylu, jak poniżej:
 
 ```css
 .card {
@@ -150,38 +112,30 @@ Add your new style to the bottom, so it looks like:
  background-color: white;
 }
 
-.mystyle1 {
+.mojstyl1 {
  font-family: ayuthaya;
 }
 ```
 
-You can include any styling you want in the style. If you wanted to
-increase the font size too, you’d change the mystyle1 section to look
-like:
+Do stylu możesz oczywiście dodawać dowolny kod zgodny z językiem CSS. Jeśli chciałbyś np. zwiększyć rozmiar czcionki w nowo powstałym stylu, dodaj kolejna linijkę kodu:
 
 ```css
-.mystyle1 {
+.mojstyl1 {
  font-family: ayuthaya;
  font-size: 30px;
 }
 ```
 
-It’s also possible to bundle custom fonts with your deck, so you don’t
-need to install them on your computer or mobile device. Please see the
-installing fonts section for more info.
+Możliwa jest również wykorzystywanie zewnętrznych czcionek bez konieczności ich instalacji na komputerze czy urządzeniu mobilnym. Więcej informacji na ten temat znajduje się w rozdziale na temat instalacji czcionek.
 
-Audio Replay Buttons
+Przyciski ponownego odtwarzania dźwieku
 --------------------
 
-When audio or text to speech is included on your cards, Anki will show
-buttons you can click on to replay the audio.
+Kiedy dźwięk lub tekst na mowę (TTS) znajduje sie w twoich kartach, Anki pokaże przyciski, na które możesz kliknąc, aby ponownie dotworzyć dźwięk. 
 
-If you prefer not to see the buttons, you can hide them in the
-preferences screen.
+Jeśli wolisz nie widzieć tych przycisków, możesz je ukryć na ekranie ustawień.
 
-You can customize their appearance in your card styling, for example, to
-make them smaller and coloured, you could use the following:
-
+Możesz zmienić ich wygląd w obsarze stylowania, na przykład jeśli chcesz, aby były one mniejsze i pokolorowane możesz wpisać nastepujący tekst:
 
 ```css
 .replay-button svg { width: 20px; height: 20px; }
@@ -189,36 +143,22 @@ make them smaller and coloured, you could use the following:
 .replay-button svg path { stroke: white; fill: green; }
 ```
 
-Other HTML
+Kod HTML
 ----------
 
-Your templates can contain arbitrary HTML, which means that all the
-layout possibilities used on internet web pages can also be used on your
-cards. Things like tables, lists, images, links to external pages and so
-on are all supported. With tables for example, you could change the
-layout so that the front and back of a card appear on the left and right
-instead of the top and bottom.
+Szablony kart obsługują znaczniki języka HTML. Oznacza to, że wygląd kart może być dostosowany w ten sam sposób, w którym pisane są strony internetowe. Wspierane są tabele, listy, obrazy i odnośniki do zewnętrznych stron internetowych. Przykładowo, stosując odpowiedni układ tabeli możesz stworzyć szablon, w którym pytanie wyświetlane będzie po lewej stronie karty, zaś odpowiedź po prawej, zamiast standardowo na górze i na dole.
 
-Covering all of HTML’s features is outside the scope of this manual, but
-there are plenty of good introductory guides to HTML available on the
-web if you’d like to learn more.
+Nie ma sensu opisywać w tej instrukcji wszystkich możliwych zastosowań języka HTML, gdyż w internecie znaleźć możesz  wiele bardzo dobrych kursów na ten tema, jeśli chcesz dowiedzieć się więcej.
 
-Browser Appearance
+Wygląd w przeglądarce
 ------------------
 
-If your card templates are complex, it may be difficult to read the
-question and answer columns (called "Front" and "Back") in the [card
-list](browsing.md). The "browser appearance" option allows you to define a
-custom template to be used only in the browser, so you can include only
-the important fields and change the order if you desire. The syntax is
-the same as in standard card templates.
+Jeśli twoje szablony kart są skomplikowane, może być trudno odczytać kolumny "pytanie" i "odpowiedź" (nazwane "Przód" i "Tył") w [liście kart]. Opcja "wygląd w przeglądarce" pozwala określić własny szablon, uzywany tlyko w przeglądarce, więc jeśli chceszmożesz dodać tylko ważne pola i zmienić ich kolejność. Składnia jest taka sama jak w standardowych szablonach kart.
 
-Platform-Specific CSS
+CSS dla określonych platform
 ---------------------
 
-Anki defines some special CSS classes that allow you to define different
-styling for different platforms. The example below shows how to vary the
-font depending on where you’re reviewing:
+Anki posiada wbudowane klasy CSS, które pozwalają na różne wyświetlanie symboli japońskich w zależności od systemu operacyjnego. Przykład poniżej pokazuje jak uzależnić czcionkę od systemu w oknie nauki:
 
 ```css
 .win .jp { font-family: "MS Mincho"; }
@@ -227,19 +167,17 @@ font depending on where you’re reviewing:
 .mobile .jp { font-family: "Hiragino Mincho ProN"; }
 ```
 
-And in the template:
+A w szablonie karty należy wpisać:
 
 ```
 <div class=jp>{{Field}}</div>
 ```
 
-For different iOS devices, you can use '.iphone' and '.ipad'.
+Dla różnych urządzeń iOS możesz użyć "iphone" i ".ipad".
 
-You can also use properties like .gecko, .opera, and .ie to select
-particular browsers when using AnkiWeb. Please see
-<http://rafael.adm.br/css_browser_selector/> for a full list of options.
+Możliwe jest również zastosowanie takich klas jak .gecko, .opera oraz .ie, które będą wyświetlane w zależności od użytej przeglądarki dla AnkiWeb. Więcej funkcji opisanych jest na stronie: <http://rafael.adm.br/css_browser_selector/>
 
-Installing Fonts
+Instalowanie czcionek
 ----------------
 
 If you’re using Anki on a work or school computer where you don’t have
