@@ -1,57 +1,31 @@
-# Card Generation
+# Generowanie kart
 
-Reverse Cards
+Karty odwrotne
 -------------
 
-You can watch [a video about reversing
-cards](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on) on YouTube.
+Możesz obejrzeć [film o odwracaniu kart](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on) na YouTube.
 
-If you want to create cards that go in both directions (e.g., both
-“ookii”→“big” and “big”→“ookii”), you have several options. The simplest
-is to select the “Basic (and reversed card)” built-in note type. This
-will generate two cards, one in each direction.
+Jeżeli chcesz stworzyć notatkę, która będzie cię odpytywać w dwóch kierunkach (np. zarówno "ookii"→"duży" oraz "duży"→"ookii") masz kilka możliwości, by to zrobić. Najprostszym sposobem jest wykorzystanie wbudowanego typu notatki Podstawowy (z odwrotną kartą). Typ ten automatycznie wygeneruje dwie karty, każdą w jednym kierunku.
 
-If you want to generate reverse cards for only some of your material
-(perhaps you only want to take the time to study reverses for the most
-important material, or some of your cards don’t make sense reversed),
-you can select the “Basic (optional reversed card)” note type. This note
-type generates a forward-only card when you fill in only the first two
-fields; if you additionally enter something in the “Add Reverse” field
-(like a 'y'), Anki will generate a reverse card as well. The contents of
-this field will never be displayed on a card.
+Jeśli chcesz wygenerować karty odwrotne tylko dla części notatek (np. chcesz uczyć się najważniejszych informacji tylko z kart odwrotnych lub, gdy dla niektórych notatek karta podwójna po prostu nie ma sensu), możesz użyć do tego celu typu notatki Podstawowy (z opcjonalną odwrotną kartą). Ten typ notatki stworzy standardową kartę jeśli wypełnisz tylko dwa pierwsze pola. Aby uzyskać również kartę odwrotną wystarczyć wpisać dowolny znak do trzeciego pola o nazwie Dodaj rewers. Należy podkreślić, że zawartość ostatniego pola nie będzie wyświetlana na kartach podczas powtórki.
 
-Card Generation & Deletion
+Generowanie i usuwanie kart
 --------------------------
 
-Anki will not create cards with empty front sides. Thus if “My Field”
-was empty, and one card’s front template included only that field, the
-card would not be created.
+Anki nie wygeneruje żadnej karty jeżeli jej przód będzie pusty. Przykładowo jeżeli w podstawowym typie notatki pole Przód będzie puste, a szablon przodu będzie zawierał tylko to pole, to karta nie zostanie wygenerowana.
 
-If no cards can be created because all of the cards would have empty
-front sides, then the Add Notes window will warn you and not allow the
-note to be added until at least one card would be generated.
+W takim przypadku w oknie Dodaj pojawi się ostrzeżenie, o tym, że karta nie powstanie dopóki pole to nie zostanie wypełnione informacją.
 
-When you edit a previously added note, Anki will automatically create
-extra cards if they were previously blank but no longer are. If your
-edits have made some cards blank when they previously were not, however,
-Anki will not delete them immediately, as that could lead to accidental
-data loss. To remove the empty cards, go to Tools → Empty Cards in the
-main window. You will be shown a list of empty cards and be given the
-option to delete them.
+Po edycji wcześniej dodanej notatki Anki utworzy automatycznie dodatkowe karty, jeśli były one wcześniej puste, ale już nie są. Jesli twoje zmiany sprawiły, że karty, które wczesniej nie były puste takie się stałym Anki nie usunie ich od razu ponieważ mogłoby to prowadzić do utraty danych. Aby usunąć puste karty, wejdź w oknie głównym do Narzędzia → Puste karty. Zostanie pokazana lista pustych kart z opcją ich usunięcia.
 
-Because of the way that card generation works, it is not possible to
-manually delete individual cards, as they would just end up being recreated
-the next time the note was edited. Instead, you should make the
-relevant conditional replacement fields empty and then use the Empty
-Cards option.
+Nie ma możliwości usuwania ręcznie pojedynczych kart, ponieważ i tak zostałyby one odtworzone w momencie kolejnej edycji notatki. Zamiast tego, możesz usunąć informacje z pól warunkowego zastępowania (niektórych pól), a następnie użyć opcji "Puste Karty".
 
-Anki does not consider special fields or non-field text for the purposes
-of card generation. Thus if your front template looked like the
-following, no card would be generated if Country was empty:
 
-    Where is {{Country}} on the map?
+Anki przy generowaniu kart nie uwzględnia pól specjalnych oraz zwykłego tekstu, który nie jest odnośnikiem do pola, to znaczy, że na ich podstawie nie zostaną stworzone żadne nowe karty. Przykładowo jeżeli pole "Kraj" w szablonie przodu w poniższym przykładzie będzie puste, to karta nie powstanie, pomimo tego, że szablon zawiera jeszcze zwykły tekst "Gdzie na mapie znajduje się":
 
-Selective Card Generation
+    Gdzie na mapie znajduje się {{Kraj}}?
+
+Selektywne generowanie kart
 -------------------------
 
 Sometimes you may want to generate extra cards for only some of your
