@@ -1,146 +1,115 @@
-# Field Replacements
+# Zastępowanie pól
 
-## Basic Replacements
+## Podstawy zastępowania pól
 
-The most basic template looks something like this:
+Podstawowy szablon wygląda w następujący sposób:
 
-    {{Front}}
+    {{Przód}}
 
-When you place text within curly brackets, Anki looks for a field by
-that name, and replaces the text with the actual content of the field.
+Gdy w nawiasy klamrowe wpiszesz jakiś tekst, Anki uzna to za odniesienie do któregoś z istniejących pól o tej samej nazwie. Przy wyświetlaniu danej karty zastąpi ten tekst zawartością danego pola.
 
-Field names are case sensitive. If you have a field named `Front`,
-writing `{{front}}` will not work properly.
+W nazwach pól brana jest pod uwagę wielkość liter. Jeśli masz pole nazwane `Przód`, wpisanie `{{przód}}` nie zadziała.
 
-Your templates are not limited to a list of fields. You can also include
-arbitrary text on your templates. For example, if you’re studying
-capital cities, and you’ve created a note type with a “Country” field,
-you might create a front template like this:
+W szablonach możesz umieścić odwołania do dowolnej liczby pól. Możesz w nich również umieszczać możesz dowolny tekst. Na przykład, jesli uczysz się stolic państw i utworzyłeś typ notatki z polem "Kraj", możesz zmodyfikować szablon przodu, aby wyglądał w nastepujący sposób:
 
-    What's the capital city of {{Country}}?
+    Jaka jest stolica {{Kraj}}?
 
-The default back template will look something like this:
+Standardowy szablon tyłu karty wygląda w następujący sposób:
 
     {{FrontSide}}
 
     <hr id=answer>
 
-    {{Back}}
+    {{Tył}}
 
-This means “show me the text that’s on the front side, then a divider
-line, and then the Back field”.
+Kod ten należy interpretować w następujący sposób: "pokaż mi pytanie, narysuj linię i pokaż pole Tył.
 
-The 'id=answer' part tells Anki where the divider is between the
-question and the answer. This allows Anki to automatically scroll to the
-spot where the answer starts when you press 'show answer' on a long card
-(especially useful on mobile devices with small screens). If you don’t
-want a horizontal line at the beginning of the answer, you can use
-another HTML element such as a paragraph or div instead.
+Kod "id=answer" daje znać Anki, gdzie znajduje się granica miedzy pytaniem i odpowiedzią. Umożliwia to Anki na automatyczne przewijanie do miejsca, gdzie znajduje się odpowiedź, gdy naciśniej przycisk "pokaż odpowiedź" na długiej karcie (szczególnie przydatne na urządzeniach mobilnych z małymi ekranami). Jeśli nie chcesz, aby pozioma linia wyświetlała się na początku odpowiedzi, możesz użyć innego elementu HTML takiego jak akapit lub komenda "div".
 
-## Newlines
+## Nowy wiersz
 
-Card templates are like web pages, which means a special command is required
-to create a new line. For example, if you wrote the following in the template:
+Szablony kart zachowują się jak strony internetowe, co oznaczą, że wymagana jest specjalna komenda, aby stworzyć nowy wiersz. Na przykład, jesli w szablonie napiszesz poniższy tekst:
 
-    one
-    two
+    jeden
+    dwa
 
-In the preview, you’d actually see:
+W podglądzie karty zobaczysz:
 
-    one two
+    jeden dwa
 
-To add a new line, you need to add a &lt;br&gt; code to the end of a
-line, like so:
+Aby dodać nową linię, wystarczy, że pomiędzy dwoma słowami wstawiamy znacznik &lt;br&gt;, jak poniżej:
 
-    one<br>
-    two
+    jeden<br>
+    dwa
 
-The br code stands for "(line) br(eak)".
+Znacznik ten pochodzi z języka HTML i jest skrótem od angielskiego wyrażenia "(line) br(eak)" czyli "łamanie wiersza".
 
-The same applies for fields. If you want to display two fields, one on
-each line, you would use
+W ten sam sposób można wyświetlać pola notatki. Jeżeli chciałbyś, żeby jedno pole znajdowało sie zaraz pod drugim:
 
-    {{Field 1}}<br>
-    {{Field 2}}
+    {{Pole 1}}<br>
+    {{Pole 2}}
 
-## Text to Speech
+## Tekst na mowę (Text to Speech - TTS)
 
-This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
-not currently support this method.
+Na funkcjonalność wymaga Anki 2.1.20, lub AnkiMobile 2.0.56. AnkiDroid obecnie nie obsługuje tej metody.
 
-To have Anki read the Front field in a US English voice, you can place
-the following in your card template:
+Aby Anki czytało pole Przód przykładowo w języki angielskim amerykańskim, możesz umiescić ponizszy tekst w szablonie karty.
 
-    {{tts en_US:Front}}
+    {{tts en_US:Przód}}
 
-On Windows, MacOS, and iOS, Anki will use the OS’s built in voices. On
-Linux, no voices are built in, but voices can be provided by add-ons,
-such as [this one](https://ankiweb.net/shared/info/391644525).
+Na systemach Windows, MacOS i iOS Anki użyje wbudowanych plików głosowych. Na Linuksie nie ma wbudowanych głosów, ale moga one być udostępnione przez dodatki takie [jak ten](https://ankiweb.net/shared/info/391644525).
 
-To see a list of all available languages/voices, place the following on
-your card template:
+Aby zobaczyć listę dostepnych języków/głosów, umiesc poniższy tekst na szablonie karty:
 
     {{tts-voices:}}
 
-If there are multiple voices that support your chosen language, you can
-specify desired voices in a list, and Anki will choose the first
-available voice. For example:
+Jeśli jest kilka dostępnych głosów dla danego języka możesz doprecyzować w liście, których głosów chcesz używać, a Anki odtworzy pierwszy dostepny głos. Przykład: 
 
     {{tts ja_JP voices=Apple_Otoya,Microsoft_Haruka:Field}}
 
-This would use Otoya when on an Apple device, and Haruka when on a
-Windows PC.
+Ta komenda sprawi, że Anki użyje głosu Otoya na urządzeniu Apple, a głosu Haruka na urządzniu Windows PC. 
 
-Specifing a different speed is possible in some TTS implementations:
+Ustawienie innej  szybkości odtwarzania jest możliwe w niektórych wersjach TTS:
 
     {{tts fr_FR speed=0.8:SomeField}}
 
-Both speed and voices are optional, but the language must be included.
+Umieszczanie informacji o szybkości i głosach nie jest wymagane, jednak trzeba umieścić kod języka.
 
-On a Mac, you can customize the available voices:
+Na Makach możesz dostosować dostepne głosy
 
-- Open the System Preferences screen.
+- Otwórz "Preferencje systemowe"
 
-- Click on Accessibility.
+- Kliknij na "Dostępność"
 
-- Click on Speech.
+- Kliknij na "Mowa"
 
-- Click on the system voice dropdown, and choose Customize.
+- Kliknij na oknienko przy "Głos systemowy" i wybierz "Dostosuj".
 
-Some voices sound better than others, so experiment to choose the one
-you prefer. Please note that the Siri voice can only be used by Apple
-apps. Once you’ve installed new voices, you’ll need to restart Anki for
-the new voices to become available.
+Niektóre głosy brzmią lepiej od innych, wiec możesz poeksperymentować, aby znaleźc ten, który ci odpowiada. Pamiętaj o tym, ze głos Siri moze być używany tlyko przez aplikacje Apple. Po zainstalowaniu nowych głosów musisz uruchomić Anki ponownie, aby nowe głowy stały się dostępne.
 
-On Windows, some voices like Cortana can not be selected, as Microsoft
-does not make those voices available to other applications.
+Na urządzeniach z systemem Windows, niektó®e głosy takie jak Cortana nie moga zostać wybrane ponieważ Microsoft nie udostępnian ich innym aplikacjom.
 
-## Special Fields
+## Pola specjalne
 
-There are some special fields you can include in your templates:
+Istnieje kilka rodzajów pól specjalnych, których możesz użyć w szablonie:
 
-    The note's tags: {{Tags}}
+    Znacznik etykiety: {{Tags}}
 
-    The type of note: {{Type}}
+    Znacznik typu notatki: {{Type}}
 
-    The card's deck: {{Deck}}
+    Znacznik nazwy talii: {{Deck}}
 
-    The card's subdeck: {{Subdeck}}
+    Znacznik podtalii karty: {{Subdeck}}
 
-    The type of card ("Forward", etc): {{Card}}
+    Znacznik typu karty ("Przód", itp.): {{Card}}
 
-    The content of the front template
-    (only valid in back template): {{FrontSide}}
+    Znacznik zawartości przodu karty (poprawna tylko w szablonie tyłu karty): {{FrontSide}}
 
-FrontSide will not automatically play any audio that was on the front side
-of the card. If you wish to have the same audio play automatically on both
-the front and back of the card, you’ll need to manually include the audio
-fields on the back as well.
+Znacznik zawartości przodu karty FrontSide nie skopiuje na jej tył nagrania audio. Jeśli chcesz mieć to samo nagranie na przodzie i tyle karty musisz je tam ręcznie dodać.
 
-As with other fields, special field names are case sensitive - you must use
-`{{Tags}}` rather than `{{tags}}` for example.
+Tak jak z innymi polami, w polach specjalnych ważna jest wielkosć liter - musisz używac np. `{{Tags}}` zamiast `{{tags}}`.
 
-## Hint Fields
+## Pola "podpowiedzi"
 
 It’s possible to add a field to the front or back of a card, but make it
 hidden until you explicitly show it. We call this a 'hint field'. Before
