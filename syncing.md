@@ -44,13 +44,9 @@ Jeśli chcesz wymusić pełne przesłanie lub pobieranie ( na przykład poniewa�
 
 Wymuszanie synchronizacji jednokierunkowej ma wpływ tylko na synchronizację kart - pliki sa synchronizowane normalnie. Jeśli posiadasz pliki, które chcesz usunąć z AnkiWeb upewnij się, najpierw, że twoja kolekcja jest w pełni zsynchronizowana. Gdy kolekcja jest aktualna, jakiekolwiek pliki, które zostaną usunięte (np poprzez funkcję "Sprawdz pliki"), zostaną również usunięte z AnkiWeb podczas nastepnej synchronizacji.
 
-## Konflikty (język angielski) 
+## Konflikty łącznia 
 
-Because the [first sync](#setup) can only sync changes in one
-direction, if you have added different content to different devices or
-profiles before setting syncing up, content on one device will be lost
-if you overwrite it with the content from the other device. With some
-work, it is possible to manually merge data into a single collection.
+Jako, że [pierwsza synchronizacja](#setup) może synchronizować zmiany tylko w jednym kierunku, jeśli dodałeś inną zawartość do innych urządzeń lub profili przed synchronizacją, zawartość na jednym z urządzeń zostanie utracona, jeśli nadpiszesz ją zawartością z innego urządzenia. Jest możliwe również ręczne dodanie danych do pojedyńczej kolekcji. 
 
 Start by taking a backup on each device/profile, in case something goes
 wrong. With the computer version you can use File&gt;Export to export
