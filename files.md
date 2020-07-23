@@ -10,148 +10,98 @@ Pamiętaj, że Anki automatycznie optymalizuje twoją kolekcję co 2 tygodnie. D
 
 ## Lokalizacje plików
 
-On **Windows**, the latest Anki versions store your Anki files in your
-appdata folder. You can access it by opening the file manager, and
-typing `%APPDATA%\Anki2` in the location field. Older versions of Anki
-stored your Anki files in a folder called `Anki` in your `Documents`
-folder.
+W systemie **Windows**, najnowsze wersje Anki przechowują pliki w folderze appdata. Możesz się do niego dostąc poprzez włączenie menadżera plików i wpisanie `%APPDATA%\Anki2` w polu wyszukiwania. Starsze wersje Anki przechowywały pliki w folderze nazwanym `Anki`, który znajdował sie w folderze `Dokumenty` .
 
-On **Mac** computers, recent Anki versions store all their files in the
-`~/Library/Application Support/Anki2` folder. The Library folder is
-hidden by default, but can be revealed in Finder by holding down the
-option key while clicking on the Go menu. If you’re on an older Anki
-version, your Anki files will be in your `Documents/Anki` folder.
+Na komputerach **Mac**, najnowsze wersje Anki przechowują wszystkie pliki w folderze `~/Library/Application Support/Anki2`. Biblioteka jest domyślnie ukryta, ale można ją zobaczyć w Finderze poprzez przytrzymanie przycisku "Option" podczas wchodzenia do menu Go". Jeśli posiadasz zainstalowana starsza wersję anki, pliki znajdują sie w folderze `Documents/Anki`.  
 
-On **Linux**, recent Anki versions store your data in
-`~/.local/share/Anki2`, or `$XDG_DATA_HOME/Anki2` if you have set a
-custom data path. Older versions of Anki stored your files in
-`~/Documents/Anki` or `~/Anki`.
+Na systemie **Linux**, najnowsze wersje Anki przechowują twoje dane w `~/.local/share/Anki2` lub, jeśli ustawiłes własną ścieszkę w `$XDG_DATA_HOME/Anki2`. Starsze wersje Anki przechowywały pliki w `~/Documents/Anki` lub `~/Anki`
 
-Within the Anki folder, the program-level and profile-level preferences
-are stored in a file called prefs.db.
+W folderze Anki znajdują się ustawienia programu jak i ustawienia profili. Znajdują się one w folderze prefs.db. 
 
-There is also a separate folder for each profile. The folder contains:
+Istnieje równiez osobny folder dla każdego profilu. Ten folder zawiera:
 
-- Your notes, decks, cards and so on in a file called collection.anki2
+- Twoje notatki, talie, karty i tym podobne - w pliku nazwanym collection.anki2
 
-- Your audio and images in a collection.media folder
+- Twoje pliki audio i obrazy -  w folderze collection.media 
 
-- A backups folder
+- Folder z kopiami zapasowymi
 
-- Some system files
+- Niektóre pliki systemowe
 
-You should never copy or move your collection while Anki is open. Doing
-so could cause your collection to become corrupted. Please don’t move or
-modify the other files in the folder either.
+Nigdy nie powinieneś kopiować lub przenosić twojej kolekcji podczas, gdy Anki jest otwarte. Może to doprowadzić do uszkodzenia kolekcji. Nie przenoś ani nie modyfikuj równiez innych plików w tym folderze.
 
-## Startup Options
+## Opcje uruchamiania
 
-If you have made a destructive change on one computer and have an
-undamaged copy on another computer, you may wish to start Anki without
-syncing in order to use the full sync option without first downloading
-the changes. Similarly, if you are experiencing problems with Anki, you
-might want to (or might be instructed to) disable add-ons temporarily to
-see if one might be causing the problem. You can do both of these things
-by holding down the Shift key while starting Anki.
+Jeśli dokonałeś krytycznej zmiany na jednym komputerze, a na drugim posiadasz nieuszkodzoną kopię, możesz chcieć włączyć Anki bez synchronizacji, aby uzyć pełnej sycnhronizacji bez uprzedniego pobierania zmian. Podobnie, jeśli natrafisz na problemy z Anki, możesz chcieć (lub możesz zostać poinstruktowany) wyłaczyć tymczasowo dodatki, aby sprawdzić, czy któryś z nich powoduje problem. Możesz zrobić obie te rzeczy przytrzymując Shift podczas uruchamiania Anki.
 
-It is possible to specify a custom folder location during startup. This
-is an advanced feature that is primarily intended to be used with
-portable installations, and we recommend you use the default location in
-most circumstances.
+Jest możliwe ustawienie własnego folderu podczas uruchamiania. Jest to funkcja zaawansowana, stworzona głównie w celach instalacji na urządzeniu przenośnym i w wiekszości przypadków zalecamy używanie domyślnej lokacji.
 
-The syntax to specify an alternate folder is as follows:
+Wzór, aby okreslić folder alternatywy wygląda nastepująco:
 
-    anki -b /path/to/anki/folder
+    anki -b /ścieżka/do/folderu/anki
 
-- If you have multiple profiles, you can pass -p &lt;name&gt; to load
-  a specific profile.
+- Jeśli istnieje kilka profili, moższ wpisać -p &lt;nazwa profilu&gt;, aby załadowac okreslony profil.
 
-- To change the interface language, use -l &lt;iso 639-1 language
-  code&gt;, such as "-l ja" for Japanese.
+- Aby zmienić język interfejsu, użyj -l &lt;kod języka iso 639-1&gt;, na przykład "-l pl", aby ustawić język na polski. 
 
-If you always want to use a custom folder location, you can modify your
-shortcut to Anki. On Windows, right-click on the shortcut, choose
-Properties, select the Shortcut tab, and add "-b
-\\path\\to\\data\\folder" after the path to the program, which should
-leave you with something like
+Jeśli zawsze chcesz uzywac własnego folderu, możesz zmodyfikowac twój skrót do Anki. na Windowsie, kliknij prawym przyciskiem na skrót, wybierz "Właściwości", zakładke "Skrót" i dodaj "-b
+\\ścieżka\\do\\folderu\\anki, po ściezce do programu. Po wpisaniu tekst powinien wyglądać mniej więcej nastepująco:" 
 
     "C:\Program Files\Anki\anki.exe" -b "C:\AnkiDataFolder"
 
-You can also use this technique with the -l option to easily use Anki in
-different languages.
+Możesz równiez uzywać tej techniki z wyzej opisana opcją "-l", aby łatwo uzywać Anki w róznych językach.
 
-On Windows, you should use a backslash (\\) not a forward slash (/).
+Na Windowsie powinieneś używać (\\), nie zaś (/).
 
-On a Mac there is no easy way to alter the behaviour when clicking on
-the Anki icon, but it is possibile to start Anki with a custom base
-folder from a terminal:
+Na Maku nie istnieje łatwa metoda na zmianę zachowania probramu poprzez nacisniecie na ikonę Anki. Jest za to możliwe uruchomienie anki z terminala z własnym folderem:
 
     open /Applications/Anki.app --args -b ~/myankifolder
 
-Alternatively, you can define the environment variable "ANKI_BASE".
-On Windows, you can define the environment variable with:
+Alternatywnie możesz okreslić zmienną srodowiska "ANKI_BASE".
+Na Windowsie możesz okreslić zmienna środowiska poprzez:
 
     set "ANKI_BASE=C:/path/to/AnkiDataFolder"
 
-On Linux and Mac OS, you can use:
+Na systemach Linux i MacOS, możesz uzyć:
 
     export ANKI_BASE="/path/to/AnkiDataFolder"
 
-## DropBox and File Syncing
+## DropBox i synchronizacja plików 
 
-We do not recommend you sync your Anki folder directly with a
-third-party synchronization service, as it can lead to database
-corruption when files are synced while in use.
+Nie polecamy synchronizowanie folderu Anki bezpośrednio z usługami synchronizacji firm trzecich, ponieważ może to prowadzić do uszkodzenia bazy danych, gdy pliki są synchronizowane podczas użycia.
 
-If you just want to synchronize your media, you can link external
-folders into services like DropBox. Please see
-<http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders> for more
-info.
+Jeśli chcesz tylko synchronizowac pliki, możesz podłączyć zewnętrzne foldery bezpośrednio do usług takich jak DropBox. Zobacz <http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders>, aby dowiedzieć się więcej.
 
-If you wish to keep your collection in sync as well, it is strongly
-recommended that you create a script that copies your files from your
-synced folder to a local folder, launches Anki, and then copies the
-files back when Anki is closed. This will ensure that the files are
-never synchronized while they are open.
+Jeśli chcesz także mieć w taki sposób synchronizowaną kolekcję, ostro zalecamy stworzenie skryptu, który kopiuje pliki z synchronizowanego folderu do folderu lokalnego, uruchamia anki, a nastepnie kopiuje pliki z powrotem, gdy Anki jest zamknięte. Daje to pewnosć, że pliki nigdy nie sa synchronizowane gdy są otwarte
 
-## Network Filesystems
+## Sieciowe systemy plików
 
-We strongly recommend you have Anki store your files on a local hard
-disk, as network filesystems can lead to database corruption. If a
-network filesystem is your only option, regular use of Tools&gt;Check
-Database to detect corruption is recommended.
+Bardzo zalecamy, pliki byłī przechowywane na lokalnym dysku twardym, ponieważ sieciowe systemy plików moga prowadzić do uszkoczenia bazy danych. Jeśli sieciowy system plików jest twoją jedyną, zalecane jest czeste uzywanie opcji Narzędzia&gt;Sprawdź baze danych
 
-## Running from a Flash Drive
+## Uruchamianie z pendrive'a
 
-On Windows, Anki can be installed on a USB / flash drive and run as a
-portable application. The following example assumes your USB drive is
-drive G.
+Na Windowsie anki może zostac zainstalowane na pendrive'ie / dysku przenośnym i być uruchamiane jako przenośna aplikacja. Poniższy przykład zakłada, że twój pendrive to dysk G.
 
-- Copy the \\Program Files\\Anki folder to the flash drive, so you
-  have a folder like G:\\Anki.
+- Skopiuj folder \\Program Files\\Anki  na pendrive'a, tak abyś miał folder taki jak G:\\Anki.
 
-- Create a text file called G:\\anki.bat with the following text:
+- Utwórz plik tekstowy nazwany  G:\\anki.bat, zawierający nastepujący tekst:
 
 <!-- -->
 
     g:\anki\anki.exe -b g:\ankidata
 
-If you would like to prevent the black command prompt window from
-remaining open, you can instead use:
+Jesli chciałbyś, aby czarne okno konsoli nie było cały czas wyświetlane, możesz zamiast tego wpisać:
 
     start /b g:\anki\anki.exe -b g:\ankidata
 
-- Double-clicking on anki.bat should start Anki with the user data
+- Podwójne klikniecie na anki.bat powinno uruchomić Anki z danymi użytkownika przechowywanymi w
   stored in G:\\ankidata.
 
-The full path including drive letter is required - if you try using
-`\anki\anki.exe` instead you will find syncing stops working.
+Jest wymagana pełna ściezka, włącznie z literą dysku -  jesli spróbujesz wpisać `\anki\anki.exe`, synchronizacja przestanie działać.
 
-Media syncing with AnkiWeb may not work if your flash drive is formatted
-as FAT32. Please format the drive as NTFS to ensure media syncs
-correctly.
+Synchronizacja plików z AnkiWeb może nie działac, jesli twój dysk jest sformatowany jako system plików FAT32. Sformatuj dysk w systemie plików NTFS, aby miec pewnosc, że pliki synchronizują się prawidłowo.
 
-## Backups
+## Kopie zapasowe
 
 Each time your collection is closed (when closing Anki, switching
 profiles, or synchronizing your deck), Anki exports your collection into
