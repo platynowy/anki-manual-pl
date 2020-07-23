@@ -25,38 +25,31 @@ Anki przy generowaniu kart nie uwzględnia pól specjalnych oraz zwykłego tekst
 
     Gdzie na mapie znajduje się {{Kraj}}?
 
-Selektywne generowanie kart
+Generowanie kart opcjonalnych
 -------------------------
 
-Sometimes you may want to generate extra cards for only some of your
-material, such as testing your ability to recall the most important
-words of a set. You can accomplish this by adding an extra field to your
-note, and adding some text into it (such as "1") on the notes you want
-the extra card. Then in the card template, you can make the card’s
-creation depend on that field being non-empty. For more information on
-this, please see the conditional replacement section below.
+W niektórych sytuacjach możesz mieć potrzebę wygenerowania dodatkowych kart w celu nauki obcych znaczeń polski słów, ale tylko niektórych, tych przez ciebie wybranych. Aby móc stworzyć takie  opcjonalne, dla niektórych notatek, karty musisz w pierwszej kolejności dla danego typu notatki utworzyć nowe pole. Jeżeli w polu tym będzie znajdował się jakikolwiek tekst - wystarczy jedna litera lub cyfra, to zostanie wygenerowania dodatkowa karta. Następnym krokiem jest dokonanie odpowiednich zmian w szablonie notatki. Więcej informacji na ten temat znajduje się w rozdziale poświęconym poleceniom warunkowym poniżej.
 
 
-Conditional Replacement
+Polecenia warunkowe
 -----------------------
 
-It is possible to include certain text, fields, or HTML on your cards
-only if a field is empty or not empty. An example:
+W Anki istnieje możliwość dodawania do karty określonego tekstu w zależności czy w danym polu znajduje się tekst lub zxy jest puste. Przykład:
 
-    This text is always shown.
+    Ten tekst będzie zawsze widoczny
 
-    {{#FieldName}}
-        This text is only shown if FieldName has text in it
-    {{/FieldName}}
+    {{#NazwaPola}}
+        Ten tekst będzie widoczny tylko, gdy w polu NazwaPola będzie tekst.
+    {{/NazwaPola}}
 
-    {{^FieldName}}
-        This text is only shown if FieldName is empty
-    {{/FieldName}}
+    {{^NazwaPola}}
+        Ten tekst będzie widoczny tylko, gdy pole NazwaPola będzie puste.
+    {{/NazwaPola}}
 
-A real life example is only showing a label if the field is not empty:
+Przykład poniżej pokazuje etykiety, gdy pole etykiet zawiera jakąś treść:
 
     {{#Tags}}
-        Tags: {{Tags}}
+        Etykiety: {{Tags}}
     {{/Tags}}
 
 Or say you want to display a specific field in blue on the front of your
