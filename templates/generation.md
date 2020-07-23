@@ -52,85 +52,66 @@ Przykład poniżej pokazuje etykiety, gdy pole etykiet zawiera jakąś treść:
         Etykiety: {{Tags}}
     {{/Tags}}
 
-Or say you want to display a specific field in blue on the front of your
-card if there are extra notes on the back (perhaps the fact that there
-are notes serves as a reminder that you should spend more time thinking
-about the answer). You can style the field as follows:
+Lub założmy, że chcesz wyświetlać okreslone okręslone pole w kolorze niebieskiem na przodzie karty, jesli istnieją dodatkowe notatki na tyle (fakt, ze istnieja dodatkowe notatki może słuzyć jako przypomnienie, ze powinienes spędzić wiecej czasu nad zastanowieniem się nad powiedzią). Możesz wystylizować pole w następujący sposób:
 
-    {{#Notes}}
+    {{#Notatki}}
         <span style="color:blue;">
-    {{/Notes}}
+    {{/Notatki}}
     
-    {{FieldToFormat}}
+    {{Pole do sformatowania}}
     
-    {{#Notes}}
+    {{#Notatki}}
         </span>
-    {{/Notes}}
+    {{/Notatki}}
 
-You can also use conditional replacement to control which cards are
-generated. This works since Anki will not generate
-cards which would have a blank front side. For
-example, consider a card with two fields on the front:
+Poleceń warunkowych możesz równiez używać, aby kontrolowac, które karty są generowane. To zadziało, jako że Anki nie generuje kart, które miałyby pustą przednia stronę. Na przykład, karta z dwoma polami na przodzie:
 
-    {{Expression}}
-    {{Notes}}
+    {{Wyrażenie}}
+    {{Notatki}}
 
-Normally a card would be generated if either the expression or notes
-field had text in it. If you only wanted a card generated if expression
-was not empty, then you could change the template to this:
+Zwykle karty zostałaby wygenerowane jesli którekolwiek pole "wyrażenia" lub "notatki" miałoby w sobie tekst. Jesli chciałbyś, żeby karta się generowała tylko jesli "Wyrażenie" nie byłoby puste, możesz zmienić szablon na nastepujący:
 
-    {{#Expression}}
-        {{Expression}}
-        {{Notes}}
-    {{/Expression}}
+    {{#Wyrażenie}}
+        {{Wyrażenie}}
+        {{Notatki}}
+    {{/Wyrażenie}}
 
-And if you wanted to require both fields, you could use two conditional
-replacements:
+Jesli chciałbyś, aby oba pola były wymagane, mógłbys użyć zastępowania warunkowego:
 
-    {{#Expression}}
-        {{#Notes}}
-            {{Expression}}
-            {{Notes}}
-        {{/Notes}}
-    {{/Expression}}
+    {{#Wyrażenie}}
+        {{#Notatki}}
+            {{Wyrażenie}}
+            {{Notatki}}
+        {{/Notatki}}
+    {{/Wyrażenie}}
 
-Keep in mind that this only works when you place the
-conditional replacement code on the *front* of the card; if you do this
-on the back, you will simply end up with cards with a blank back side.
-Similarly, since this works by checking if the front field would be
-empty, it is important to make sure you wrap the 'entire' front side in
-the conditional replacement; for instance, the following would not work
-as expected:
+Pamiętaj, że działa to tylko, gdy umiescisz kod zastepowania warunkowego na *przodzie* karty. Jesli zrobisz to w tylnej części, karty beda w niej po prostu puste. Podobnie, jako ze to działa poprzez sprawdznie, czy pole przodu jest puste, ważne jest aby upewnić się, że cała częśc przednia zostanie objęta przez kod zastepowania warunkowego. NA przykład poiniższyt przykład nie zadziałałby, jak byśmy tego oczekiwali:
 
-    {{#Expression}}
-        {{Expression}}
-    {{/Expression}}
-    {{Notes}}
+    {{#Wyrażenie}}
+        {{Wyrażenie}}
+    {{/Wyrażenie}}
+    {{Notatki}}
 
-## Limitations in older Anki versions
+## Ograniczenia w starszych wersjach Anki
 
-The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.
+Poniższe ograniczenia nie mają zastosowania Anki 2.1.28+ i AnkiMobile 2.0.64+.
 
-Older Anki versions can not used negated conditionals for card generation.
- For example, on Anki 2.1.28, the following would add a card if a field
- called AddIfEmpty is empty, and Front is non-empty:
+Wcześniejsze wersje Anki nie mogą używać negacji (negatywnych poleceń warunkowych) do wygenerowania karty.
+ Na przykład, na Anki 2.1.28, poniższy tekst dodałby kartę, jesli pole nazwane "DodajJeśliPuste" byłoby puste, a "Przód" zawierałoby jakiś tekst:
 
-     {{^AddIfEmpty}}
-         {{Front}}
-     {{/AddIfEmpty}}
+     {{^DodajJeśliPuste}}
+         {{Przód}}
+     {{/DodajJeśliPuste}}
 
- On earlier Anki versions, the negated conditional is ignored, and card
- generation will depend only on Front being non-empty.
+Na wczesniejszych wersjach Anki negacja jest ignorowane, a generowanie kart w tym przypadku zależałoby tylko od tego, czy pole "Przód" nie byłoby puste.
 
- Mixing **AND** and **OR** conditions can also cause problems on older versions.
- For example, the following ("add the card if A **OR** B **OR** C is non-empty)
- is fine:
+ Mieszanie warunków  **I** i **LUB** również może spowodowac problemy w starszych wersjach. Na przykład, poniższy tekst ("dodaj karte, jeśli A **LUB** B **LUB** C nie jest puste) jest prawidłowy:
 
      {{A}}
      {{B}}
      {{C}}
 
- And the following ("add the card if A **AND** B **AND** C are non-empty") is fine:
+ Również następny tekst("dodaj kartę jeśli A **I** B **I** C nie są puste") jest prawidłowy:
 
      {{#A}}
          {{#B}}
@@ -140,7 +121,7 @@ Older Anki versions can not used negated conditionals for card generation.
          {{/B}}
      {{/A}}
 
-But the following ("add the card if A **OR** (B **AND** C) are non-empty") will not work properly:
+Jednak poniższy ("dodaj kartę, jeśli A **LUB** (B **I** C) nie są puste") nie będzie działał poprawnie:
 
      {{A}}
      {{#B}}
@@ -149,10 +130,10 @@ But the following ("add the card if A **OR** (B **AND** C) are non-empty") will 
          {{/C}}
      {{/B}}
 
-Cloze Templates
+Szablony luki
 ---------------
 
-Please see the [cloze deletion](editing.md#cloze-deletion) section for background info.
+Zobacz rozdział o [wypełnianiu luki](editing.md#cloze-deletion), aby dowiedzieć się podstaw.
 
 The cloze note type functions differently from regular note types.
 Instead of a customizable number of card types, it has a single type
