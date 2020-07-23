@@ -109,41 +109,23 @@ Znacznik zawartości przodu karty FrontSide nie skopiuje na jej tył nagrania au
 
 Tak jak z innymi polami, w polach specjalnych ważna jest wielkosć liter - musisz używac np. `{{Tags}}` zamiast `{{tags}}`.
 
-## Pola "podpowiedzi"
+## Podpowiedzi
 
-It’s possible to add a field to the front or back of a card, but make it
-hidden until you explicitly show it. We call this a 'hint field'. Before
-adding a hint, please bear in mind that the easier you make it to answer
-a question in Anki, the less likely you are to remember that question
-when you encounter it in real life. Please have a read about the
-'minimum information principle' on
-<http://www.supermemo.com/articles/20rules.htm> before proceeding.
+Anki umożliwia dodanie do przodu lub tyłu karty własnej podpowiedzi, która wyświetlana będzie tylko po kliknięciu na nią przez użytkownika. Przed dodaniem takiej podpowiedzi należy najpierw rozważyć czy ma ona sens, gdyż takie rozwiązanie znacząco ułatwia naukę. Może się ona stać mało efektywna i trudniej będzie ci zapamiętać w przyszłości daną informację np. jeśli nie przypomnisz sobie podpowiedzi. Przed użyciem podpowiedzi zapoznaj się z podstawowymi zasadami znajdującymi się na stronie:<http://www.supermemo.com/articles/20rules.htm>.
 
-First, you’ll need to add a field to store the hint in if you have not
-already. Please see the [fields](editing.md#customizing-fields) section if you’re not sure how
-to do this.
+Aby utworzyć podpowiedź w pierwszej kolejności musisz dodać do notatki nowe pole, w którym podpowiedź będzie przechowywana. Jego nazwa nie ma znaczenia. Jeżeli nie umiesz jeszcze dodawać nowych [pól](editing.md#customizing-fields), zapoznaj się z rozdziałem na ich temat.
 
-Assuming you’ve created a field called MyField, you can tell Anki to
-include it on the card but hide it by default by adding the following to
-your template:
+Jeśli stworzyłeś już pole podpowiedzi (zakładamy, że nazywa się "Podpowiedź") możesz teraz nakazać Anki aby pole to zostało automatycznie zakryte. Do szablonu przodu dodaj następujący kod:
 
-    {{hint:MyField}}
+    {{hint:Podpowiedź}}
 
-This will show a link labeled “show hint”; when you click it, the
-content of the field will be displayed on the card. (If MyField is
-empty, nothing will be shown.)
+Kod ten pokaże link pokazujacy sie jako "pokaz podpowiedź". Kiedy na niego naciśniesz, zawartość tego pola zostanie pokazana na karcie. (Jeżeli pole Podpowiedź jest puste, nic nie zostanie wyświetlone.)
 
-If you show the hint on the question and then reveal the answer, the
-hint will be hidden again. If you want to have the hint always revealed
-when the answer is shown, you will need to remove `{{FrontSide}}` from
-your back template and manually add the fields you wish to appear.
+Jeśli odsłonisz podpowiedź, a następnie wyświetlisz odpowiedź, to podpowiedź zostanie ponownie zakryta. Jeżeli chcesz aby mimo wszystko podpowiedź cały czas pozostawała widoczna widoczna musisz usunąć `{{FrontSide}}` z szablonu tyłu i ręcznie dodać pola, które mają się pojawiać.
 
-It is not currently possible to use a hint field for audio — the audio
-will play regardless of whether you’ve clicked on the hint link.
+Nie jest obecnie możliwe w używanie dźwięku  polu podpowiedzi - dźwięk będzie się odtwarzał niezaleznie, czy odsłonięto odpowiedź.
 
-If you want to customize the appearance or behaviour, you’ll need to
-implement the hint field yourself. We can not provide any support for
-doing so, but the following code should get you started:
+Jeśli chcesz zmienić wygląd, lub zachowanie tego pola, będziesz musiał sam je zaimplementować. W tym miejscu nasza pomoc sie kończy, ale poniższy kod może być dobrym punktem wyjscia:
 
     {{#Back}}
     ﻿<a class=hint href="#"
@@ -151,169 +133,120 @@ doing so, but the following code should get you started:
     Show Back</a><div id="hint4753594160" class=hint style="display: none">{{Back}}</div>
     {{/Back}}
 
-## Dictionary Links
+## Linki do słowników
 
-You can also use field replacement to create dictionary links. Imagine
-you’re studying a language and your favourite online dictionary allows
-you to search for text using a web URL like:
+Mozesz używac zastepowania pól do tworzenia linków do słowników. Jesli na przykład uczyszsię języka, a twój ulubiony słownik umożliwia szuaknie tekstu przy uzyciu linku, takiego jak:
 
-    http://example.com/search?q=myword
+    http://przyklad.com/search?q=mojeslowo
 
-You could add an automatic link by doing the following in your template:
+Dzięki takiej standardowej formie i przy użyciu nazwy pola możesz stworzyć odnośnik do słowa w danym słowniku, który będzie automatycznie uzupełniany o zawartość pola:
 
-    {{Expression}}
+    {{Wyrażenie}}
 
-    <a href="http://example.com/search?q={{Expression}}">check in dictionary</a>
+    <a href="http://przyklad.com/search?q={{Wyrażenie}}">sprawdź w słowniku</a>
 
-The template above would allow you to search for each note’s expression
-by clicking on the link while reviewing. There is a caveat however, so
-please see the next section.
+Powyższa linijka kodu umożliwi ci sprawdzenie znaczenia danego wyrazu w słowniku podczas powtórki. W tej metodzie jest jednak pewien haczyk. Został on opisany poniżej.
 
-## HTML Stripping
+## Pomijanie HTML
 
-Like templates, fields are stored in HTML. In the dictionary link
-example above, if the expression contained the word "myword" without any
-formatting, then the HTML would be the same: "myword". But when you
-include formatting in your fields, extra HTML is included. If "myword"
-was bolded for example, the actual HTML would be
-"&lt;b&gt;myword&lt;/b&gt;".
+Podobnie jak w szablonach, w Polach również możliwe jest używanie znaczników HTML. W przykładzie powyższym, gdyby wyrażenie zawierało "mojeslowo" bez żadnego formatowania, wtedy HTML byłoby takie same - "mojeslowo". Ale gdy dodasz formatowanie do pól, dodatkowe HTML jest dołączane. Jeśli "mojeslowo" zostało na przykład pogrubione, HTML wyglądałoby tak "&lt;b&gt;mojeslowo&lt;/b&gt;".
 
-This can present a problem for things like dictionary links. In the
-above example, the dictionary link would end up being:
+Może być problemem dla linków takich jak linki do słowników. W powyższym przykładzie, link do słownika byłby taki:
 
-    <a href="http://example.com/search?q=<b>myword</b>">check in dictionary</a>
+    <a href="http://przyklad.com/search?q=<b>mojeslowo</b>">sprawdź w słowniku</a>
 
-The extra characters in the link would likely confuse the dictionary
-site, and you’re likely not to get any matches.
+W ten sposób odnośnik najpewniej nie wyświetli żadnej strony, gdyż kod HTML nie jest stosowany w adresach URL.
 
-To solve this, Anki provides the ability to strip formatting from fields
-when they are replaced. If you prefix a field name with text:, Anki will
-not include any formatting. So a dictionary link that worked even with
-formatted text would be:
+Aby rozwiązać ten problem Anki posiada funkcję pomijania kodu HTML znajdującego się w polach notatki. Jeżeli nazwę pola użytą w szablonie poprzedzisz prefiksem text:, Anki w momencie podstawiania zawartości pola do karty, pominie całkowicie jego formatowanie określone przy pomocy HTML. Kod HTML przycisku zawarty w szablonie notatki będzie zatem wyglądał w następujący sposób:
 
-    <a href="http://example.com/search?q={{text:Expression}}">check in dictionary</a>
+    <a href="http://przyklad.com/search?q={{text:Wyrażenie}}">sprawdź w słowniku</a>
 
-## Right To Left Text
+## Pisanie z prawej do lewej
 
-If you’re using a language that reads from right to left, you’ll need
-to adjust the template like so:
+Do nauki języków pisanych z prawej do lewej niezbędne jest stosowanie w szablonie następującego formatowania pól:
 
-    <div dir=rtl>{{FieldThatHasRTLTextInIt}}</div>
+    <div dir=rtl>{{PolezTekstemzPrawejdoLewej}}</div>
 
-## Media & LaTeX
+## Pliki & LaTeX
 
-Anki does not scan templates for media references, because it is slow to
-do so. This has implications for including media on the template.
+Anki nie przegląda szablonów w poszukiwaniu odnośników do plików multimedialnych oraz plików LateXa, ze względu na powolność takiego procesu. Ma to pewne następstwa przy załączaniu plików do szablonu.
 
-### Static Sounds/Images {docsify-ignore}
+### Stałe pliki audio i obrazy {docsify-ignore}
 
-If you wish to include images or sounds on your cards that are the same
-for every card (eg, a company logo at the top of each card):
+Aby dodać plik audio lub obraz, który będzie taki sam na każdej karcie (np. logo firmy w rogu każdej karty):
 
-1.  Rename the file so it starts with an underscore, eg "\_logo.jpg".
-    The underscore tells Anki that the file is used by the template and
-    it should be exported when sharing the deck.
+1.  Zmień nazwę pliku, tak żeby rozpoczynała się od znaku podkreślenia np. "\_logo.jpg". Znak ten informuje program, że plik używany jest przez szablon i powinien być eksportowany i synchronizowany podczas udostępniania talii.
 
-2.  Add a reference to the media on your front or back template, like:
+2.  Dodaj odnośnik do pliku w szablonie przodu lub tyłu, przykładowo:
 
 <!-- -->
 
     <img src="_logo.jpg">
 
-### Field References {docsify-ignore}
+### Odnośniki do pól w nazwach plików{docsify-ignore}
 
-Media references to fields are not supported. They may or may not display
-during review, and will not work when checking for unused media,
-importing/exporting, and so on. Examples that won’t work:
+Anki nie obsługuje odnośników do pól w nazwach plików. Takie pliki prawdopodobnie nie będą wyświetlane na karcie ani importowane/eksportowane do Ankiweb. Przykład błędnego zastosowania pola w nazwach plików wstawianych do kart:
 
-    <img src="{{Expression}}.jpg">
+    <img src="{{Wyrażenie}}.jpg">
 
-    [sound:{{Word}}]
+    [sound:{{Słowo}}]
 
-    [latex]{{Field 1}}[/latex]
+    [latex]{{Pole 1}}[/latex]
 
-Instead, you should include the media references in the field. Please
-see the importing section for more information.
+Jedyną możliwością jest bezpośrednie wstawienie pliku w danym polu. Plik ten powinien posiadać stałą i niezmienną nazwę. Więcej informacji na ten temat znajduje się w rozdziale dotyczącym importowania.
 
-## Checking Your Answer
+## Pisanie odpowiedzi
 
-You can watch [a video about this
-feature](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on) on
+Możesz obejrzeć [film dotyczący tej funkcji](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on) na
 YouTube.
 
-The easiest way to check your answer is to click "Basic" at the top
-left of the card adding screen, and select "Basic (type in the answer)".
+Najłatwiejszym sposobem, aby umożliwić wpisanie odpowiedzi, jest klikniecie "Podstawowa" w górnym lewym rogu na oknie dodawania karty, a naastępnie wybranie "Podstawowy (wpisywanie odpowiedzi)".
 
-If you have downloaded a shared deck and would like to type in the answer
-with it, you can modify its card template. If it has a template like:
+Jeśli pobrałes udostępnioną talie i chciałbyś wpisywać w niej odpowiedź, możesz zmodyfikować szablon jej kert. Jesli ten szablon wygląda przykładowo tak:
 
-    {{Native Word}}
+    {{Polskie słowo}}
 
     {{FrontSide}}
 
     <hr id=answer>
 
-    {{Foreign Word}}
+    {{Obce słowo}}
 
-To type in the foreign word and check if you are correct, you need to
-edit your front template so that it looks like this:
+Żeby mieć możliwość pisania w odpowiedzi musisz dokonać edycji szablonu przodu i tyłu, tak by wyglądały w ten sposób:
 
-    {{Native Word}}
-    {{type:Foreign Word}}
+    {{Polskie słowo}}
+    {{type:Obce słowo}}
 
-Note that we have added `type:` in front of the field we want to
-compare. Since FrontSide is on the back of the card, the type answer box
-will appear on the back as well.
+Zauważ, ze dodaliśmy `type:` z przodu pola, w którym chcemy wpisywać odpowiedź. Jako, że FrontSide znajduje się na tyle karty, pole wpisywana równiez sie tam pojawi.
 
-When reviewing, Anki will display a text box where you can type in the
-answer, and upon hitting enter or showing the answer, Anki will show you
-which parts you got right and which parts you got wrong. The text box’s
-font size will be the size you configured for that field (via the
-“Fields” button when editing).
+Podczas powtórki, pod pytaniem Anki wyświetli puste pole tekstowe, które służy właśnie do wpisania twojej odpowiedzi. Następnie wystarczy, że zatwierdzisz swoją odpowiedź przyciskiem Enter na klawiaturze lub Pokaż odpowiedź na ekranie nauki. Anki wskaże, które części odpowiedzi są błędne. Rozmiar czcionki w pustym polu przeznaczonym do podania odpowiedzi jest zgodnym z tym, który ustawiony jest dla tego pola w oknie "Pole…".
 
-This feature does not change how the cards are answered, so it’s still
-up to you to decide how well you remembered or not.
+Zauważ, że choć w twojej odpowiedzi mogą pojawić się błędy to nie wpływają one na ocenę karty. W dalszym ciągu sam oceniasz swoją odpowiedź. Anki nie zrobi tego automatycznie za ciebie na podstawie wpisanego tekstu.
 
-Only one typing comparison can be used on a card. If you add the above
-text multiple times, it will not work. It also only supports a single
-line, so it is not useful for comparing against a field that is
-comprised on multiple lines.
+Na karcie może być użyte tylko jedno pole tekstowe służące do wpisywania odpowiedzi. Jeżeli umieścisz ich więcej wpisywanie odpowiedzi nie zadziała poprawnie. Ponadto odpowiedź może zostać podana w polu tekstowym o wysokości tylko jednej linii, co oznacza, że nie ma sensu porównywanie odpowiedzi z kartami posiadającymi pytanie w wielu liniach.
 
-Anki uses a monospaced font for the answer comparison so that the
-“provided” and “correct” sections line up. If you wish to override the
-font for the answer comparison, you can put the following at the bottom
-of your styling section:
+Zarówno pytanie i jak i odpowiedź wyświetlane są przy użyciu czcionki o stałej szerokości znaków, dzięki czemu możliwe jest czytelne porównywanie wprowadzonych w odpowiedzi znaków z tym co jest napisane w pytaniu. Możesz również zmienić tę czcionkę. Wystarczy, że w oknie Karty…→Styl umieścisz następujący kod:
 
-    code#typeans { font-family: "myfontname"; }
+    code#typeans { font-family: "nazwa_mojej_czcionki"; }
 
-Which will affect the following HTML for the answer comparison:
+Co wpłynie na nastepujący kod HTML do porównania odpowiedzi:
 
     <code id=typeans>...</code>
 
-Advanced users can override the default type-answer colours with the css
-classes 'typeGood', 'typeBad' and 'typeMissed'. AnkiMobile supports
-'typeGood' and 'typeBad', but not 'typeMissed'.
+Bardziej zaawansowani użytkownicy mogą również zmienić kolor prostokątów oznaczających błędne i poprawne znaki. Klasy CSS odpowiedzialne za nie to "typeGood", "typeBad" i "typeMissed". Z tych komend AnkiMobile rozpoznaje "typeGood", i "typeBad", ale nie "typeMissed".'.
 
-If you wish to override the size of the typing box and don’t want to
-change the font in the Fields dialog, you can override the default
-inline style using `!important`, like so:
+Jeśli chcesz nadpisać wielkosć pola do wpisywania, ale nie chcesz zmieniać czcionki w oknie Pole, możesz nadpisac domyślny styl używając `!important`, jak poniżej: 
 
     #typeans { font-size: 50px !important; }
 
-It is also possible to type in the answer for cloze deletion cards. To
-do this, add `{{type:cloze:Text}}` to both the front and back
-template, so the back looks something like this:
+Możliwe jest również pisanie odpowiedzi w kartach z lukami. Aby to zrobić dodaj `{{type:cloze:Text}}` do obu stron szablonu. Szablon tyłu powinien wyglądać następująco:
 
-    {{cloze:Text}}
-    {{type:cloze:Text}}
-    {{Extra}}
+    {{cloze:Tekst}}
+    {{type:cloze:Tekstt}}
+    {{Dodatkowe}}
 
-Note that since the cloze type does not use FrontSide, this must be
-added to both sides on a cloze note type.
+Zauważ, że kod ten, w przeciwieństwie do standardowych kart, musi zostać dodany po obu stronach notatki (typu Luka).
 
-If there are multiple sections elided, you can separate the answers in
-the text box with a comma.
+Jesli jest wiele luk do uzupełnienia, możesz oddzielić odpowiedzi w polu tekstowym używając przecinka
 
-Type answer boxes will not appear in the ["preview"
-dialog](templates/intro.md) in the browser. When you review or look at
-the preview in the card types window, they will display.
+Pola tekstowe do wpisywania odpowiedzi nie pojawią się na [podglądzie](templates/intro.md) w przeglądarce. Pojawia sie za to, gdy uczysz się lub wciśniesz "podglad" na ekranie z typem kart.
