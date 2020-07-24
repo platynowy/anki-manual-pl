@@ -6,11 +6,11 @@
 
 ## Tłumaczenia
 
-Ta instrukcja jest tłumaczona przez wolontariuszy. Polskie tłumaczenie może być nieaktualne.
-
-Dostępne wersję językowe
+Ta instrukcja jest tłumaczona przez wolontariuszy. Językiem źródłowym jest język angielski, a jego tłumaczenia mogą być nieaktualne.
 
 - [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
+
+- [English](https://docs.ankiweb.net/#/)
 
 - [Deutsch](http://www.dennisproksch.de/anki)
 
@@ -20,7 +20,7 @@ Dostępne wersję językowe
 
 - [Italiano](https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm)
 
-- [Polski](https://apps.ankiweb.net/docs/manual.pl.html)
+- [Polski](https://platynowy.github.io/anki-manual/#/)
 
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
 
@@ -30,4 +30,4 @@ Dostępne wersję językowe
 
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
-Jeśli chciałbyś pomóć przetłumaczyć tę instrukcję na inny język wejdź na stronę poradnika o [Tłumaczeniu Anki](https://translating.ankiweb.net/#/anki/manual).
+Jeśli chciałbyś przetłumaczyć tę instrukcję na inny język wejdź na stronę poradnika o [tłumaczeniu Anki](https://translating.ankiweb.net/#/anki/manual).
