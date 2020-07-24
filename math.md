@@ -24,7 +24,7 @@ Aby go wypróbować:
 
 Anki oczekuje użycie zawartości MathJax w formacie TeX. Jeśli nie jesteś zaznajomiony z formatowaniem TeX, zobacz [tę ściągawkę](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference). Zauważ, że punkt 2 nie ma zastosowania w Anki - program używa `\(` oraz `\)` dla równań liniowych i `\[` i `\]` dla równań wyświetlanych.
 
-Jeśli chcesz wstawiać nowe linie w MathJax, używaj Shift+Enter zamiast samego klawisza Enter (przejście do nowej linii tylko enterem spowoduje, że nowa linia uniemożliwi poprawne działanie MathJax).
+Jeśli chcesz wstawiać nowe linie w MathJax, używaj kombinacji Shift+Enter zamiast samego klawisza Enter (przejście do nowej linii tylko enterem spowoduje, że nowa linia uniemożliwi poprawne działanie MathJax).
 
 W Anki można używać mhchem, aby renderować równania chemiczne. Zobacz w linku rozdział "chemical equations" jak i następne rozdziały, aby dowiedzieć się więcej:<https://mhchem.github.io/MathJax-mhchem/>
 
