@@ -1,7 +1,7 @@
 Wykresy i statystyki
 =====================
 
-Card Info
+Informacje o karcie
 ---------
 
 Możesz wyświetlić informację o karcie klikając na przycisk "Informacje" w pasku narzędzi podczas przeglądania. Większość pokazywanych informacji nie wymaga wytłumaczenia, oprócz:
