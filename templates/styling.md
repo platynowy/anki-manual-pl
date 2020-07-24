@@ -180,89 +180,61 @@ Możliwe jest również zastosowanie takich klas jak .gecko, .opera oraz .ie, kt
 Instalowanie czcionek
 ----------------
 
-If you’re using Anki on a work or school computer where you don’t have
-permission to install new fonts, or you’re using Anki on a mobile
-device, it’s possible to add fonts directly to Anki.
+Jeżeli Anki używasz na komuterze w pracy lub w szkole, albo na urządzeniu mobilnym, gdzie nie masz możliwości bezpośredniej instalacji czcionki w systemie, istnieje możliwość dodania czciocnki tylko do Anki, bez jej instalacji w systemie komputera czy komórki.
 
-To add a font to Anki, it must be in the TrueType format. TrueType fonts
-have a filename ending in .ttf, such as "Arial.ttf". Once you’ve located
-a TrueType font, we’ll need to add it to the media folder:
+Aby czcionka mogła zostać użyta przez Anki musi być ona zapisana w formacie TrueType. Nazwa pliku czcionki w formacie TrueType powinna posiadać końcówkę .ttf, przykładowo: "Arial.ttf". Plik ten powinien zostać umieszczony w folderze z plikami multimedialnymi:
 
-1.  Rename the file, adding an underscore at the start, so it becomes
-    like "\_arial.ttf". Adding an underscore will tell Anki that this
-    file will be used on a template, and should not be deleted when
-    checking for unused media.
+1.  Zmień nazwę pliku, tak żeby na jej początku znajdował się znak podkreślnika, przykładowo "\_arial.ttf". Podkreślnik sygnalizuje Anki, że plik ten będzie używany w szablonie i nie powinien zostać usunięty w przypadku wyszukiwaniu nieużywanych plików multimedialnych.
 
-2.  In your computer’s file browser, go to your [Anki Folder](files.md),
-    and then a folder called "User 1" (or your profile name if you’ve
-    renamed/added profiles).
+2.  W swoim systemie przejdź do [folderu Anki](files.md), a w nim znajdź  folder o nazwie "Użytkownik 1" (lub nazwę zgodną z nazwą twojego profilu w Anki).
 
-3.  Inside the folder, you should see a folder called collection.media.
-    Drag the renamed file to that folder.
+3.  Wewnątrz tego folderu znajduje się kolejny, o nazwie collection.media. Tam umieść swój plik z czcionką (pamiętaj o podkreślniku na początku nazwy pliku).
 
-After that, we need to update the template:
+Następnie zaktualizuj szablon notatki:
 
-1.  Click **Add** at the top of the main screen, and then select the
-    note type you want to change with the top left button.
+1.  Kliknij **Dodaj** w oknie głównym Anki, a następnie wybierz typ notatki, w którym zamierzasz zmienić czcionkę.
 
-2.  Click **Cards**.
+2.  Kliknij **Karty**.
 
-3.  In the styling section, add the following text to the bottom (after
-    the last "}" character), replacing "\_arial.ttf" with the name of
-    the file you copied into your media folder:
+3.  W polu Styl, na dole, dodaj następujący kod, zastępując "\_arial.ttf" nazwą czcionki, którą skopiowałeś wcześniej do folderu z plikami:
 
 ```css
 @font-face { font-family: myfont; src: url('_arial.ttf'); }
 ```
 
-Only change the "arial" part, not the "myfont" part.
+Zmień tylko częśc "arial", a nie "myfont".
 
-After that, you can either change the font for the entire card, or for
-individual fields. To change the font for the entire card, simply locate
-the font-family: line in the .card section and change the font to
-"myfont". To change the font for only certain fields, please see the
-[Field Styling](templates/styling.md) instructions above.
+Nastepnie możesz albo zmienić czcionkę całej karty, albo pojedynczych pól. Aby zmienić czcionke całej karty, znajdź linię "font-family" w sekcji .card i zmień nazwe czcionki na "myfont". Aby zmienić czcionkę pojedynczych pól, zobacz rozdział [Stylizowanie Pól](templates/styling.md) u góry.
 
-Please make sure the filenames match exactly. If the file is called
-arial.TTF and you write arial.ttf in your card templates, it will not
-work.
+Upewnij się proszę, że nazwa czcionki dokładnie zgadza się z tym co wpisałeś w kodzie. Jeżeli plik czcionki nosi nazwę arial.TTF, a w kodzie wpiszesz arial.ttf, czcionka ta nie zadziała w Anki.
 
-Night Mode
+Tryb nocny 
 ----------
 
-You can customize the way templates appear when night mode is enabled in
-the preferences screen.
+Możesz dostosować sposób wyświetlania szablonów, gdy tryb nocny jest włączony w ustawieniach.
 
-If you wanted a lighter grey background, you could use
-something like:
+Jeśli chcesz jasno-szare tło, możesz wpisać:
 
 ```css
 .card.nightMode { background-color: #555; }
 ```
 
-If you have a 'myclass' style, the following would show the text in
-yellow when night mode is enabled:
-
+Jeśli masz własny styl "myclass", poniższy kod pokaże tekst na żółyo, gdy tryb nocny będzie włączony:
 ```css
 .nightMode .myclass { color: yellow; }
 ```
 
 
-Fading and Scrolling
+Zanikanie i przewijanie
 --------------------
 
-Anki will automatically scroll to the answer by default. It looks for a
-HTML element with id=answer, and scrolls to that. You can place the id
-on a different element to adjust the scrolling position, or remove the
-id=answer to turn off scrolling.
+Domyślnie Anki automatycznie przewija do odpowiedzi. Program szuka elementu HTML zawierającego "id=answer" i przewija do miejsca, w którym się znajduje. Możesz umieścić id w innym elemencie, aby dostosować miejsce przewijania  lub usunąć "id=answer", aby je wyłączyć. 
 
-The question side of a card fades in by default. If you wish to adjust
-this delay, you can place the following at the top of your front card
-template:
+Strona z pytaniem domyslnie zanika. Jeśli chcesz dostosować opóźnienie tego zanikania, możesz umieścić następujący kod na samej górze przedniego szablonu karty:
 
     <script>qFade=100; if (typeof anki !== 'undefined') anki.qFade=qFade;</script>
 
-100 (milliseconds) is the default; set to 0 to disable fading.
+100 (milisekund) to wartość domyslna; ustaw na 0, aby wyłączyć zanikanie.
 
 Javascript
 ----------
