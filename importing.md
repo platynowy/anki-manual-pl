@@ -58,19 +58,9 @@ To przykład poprawnego pliku, gdzie pierwsza linia jest ignorowana (\#)):
 
 ### Arkusze kalkulacyjne i UTF-8
 
-If you have non-Latin characters in your file (such as accents, Japanese
-and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
-easiest way to do this is to use the free LibreOffice spreadsheet
-program instead of Excel to edit your file, as it supports UTF-8 easily,
-and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see [this forum
-post](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
-for more information.
-
-To save your spreadsheet to a file Anki can read with LibreOffice, go to
-File&gt;Save As, and then select CSV for the type of file. After
-accepting the default options, LibreOffice will save the file and you
-can then import the saved file into Anki.
+Jeśli w twoim pliku znajdują się znaki z innego alfabetu niż łaciński (np. akcenty, język japoński i tym podobne). Anki oczekuje plików zapisanych w kodowaniu UTF-8. Najłatwiejszym sposobem, aby zrobić taki plik to użycie programu arkuszy kalkulacyjnych LibreOffice zamiast Excela, aby wyedytowac plik, jako ze wspiera on łatwo UTF-8 oraz eksportuje poprawnie wieloliniową zawartość, w przeciwieństwie do Excela. Jeśli jednak chcesz użyć Excela, zobacz [ten post na forum](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
+ 
+Aby zapisać w LibreOffice arkusz kalkulacyjny do pliku, który Anki będzie w stanie odczytać idź do Plik&gt;Zapisz jako, a nastepnie wybierz CSV jako typ pliku. Po akceptacji ustawień domyslnych, LibreOffice zapisze plik, który będziesz mógł zaimportować do Anki
 
 ### HTML
 
