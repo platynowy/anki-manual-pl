@@ -180,7 +180,7 @@ Możliwe jest również zastosowanie takich klas jak .gecko, .opera oraz .ie, kt
 Instalowanie czcionek
 ----------------
 
-Jeżeli Anki używasz na komuterze w pracy lub w szkole, albo na urządzeniu mobilnym, gdzie nie masz możliwości bezpośredniej instalacji czcionki w systemie, istnieje możliwość dodania czciocnki tylko do Anki, bez jej instalacji w systemie komputera czy komórki.
+Jeżeli używasz Anki  na komuterze w pracy lub w szkole, albo na urządzeniu mobilnym, gdzie nie masz możliwości bezpośredniej instalacji czcionki w systemie, istnieje możliwość dodania czciocnki tylko do Anki, bez jej instalacji w systemie komputera czy komórki.
 
 Aby czcionka mogła zostać użyta przez Anki musi być ona zapisana w formacie TrueType. Nazwa pliku czcionki w formacie TrueType powinna posiadać końcówkę .ttf, przykładowo: "Arial.ttf". Plik ten powinien zostać umieszczony w folderze z plikami multimedialnymi:
 
@@ -239,28 +239,10 @@ Strona z pytaniem domyslnie zanika. Jeśli chcesz dostosować opóźnienie tego 
 Javascript
 ----------
 
-As Anki cards are treated like webpages, it is possible to embed some
-Javascript on your cards via the card template.
+Jako, że karty Anki są traktowane jak strony internetowe, mozliwe jest załączonie kodu Javascript do kard poprzez szablon kart.
 
-Because Javascript is an advanced feature and so many things can go
-wrong, **Javascript functionality is provided without any support or
-warranty**. We can not provide any assistance with writing Javascript,
-and can not guarantee any code you have written will continue to work
-without modification in future Anki updates. If you are not comfortable
-addressing any issues you encounter on your own, then please avoid using
-Javascript.
+Javascript jest zaawansowana funkcją i wiele rzeczy może nie działać. **Funkcjonalność ta jest dostępna bez żadnego wsparcia ani gwarancji**. Nie zapewniamy żadnego wsparcia w pisaniu Javascript, ani nie gwarantujemy, że twój kod będzie działał w przyszłych wersjach Anki bez konieczności jego modyfikacji. Jeśli nie masz ochoty na zajmowanie się samemu problemami które napotkasz, unikaj używania Javascript.
 
-Each Anki client may implement card display differently, so you will
-need to test the behaviour across platforms. A number of clients are
-implemented by keeping a long running webpage and dynamically updating
-parts of it as cards are reviewed, so your Javascript will need to
-update sections of the document using things like
-document.getElementById() rather than doing things like
-document.write().
+Każdy klient Anki może implementować pokazywanie kart inaczej, więc będziesz musiał przetestowac ich zachowanie na różnych platformach. Wielu klientów jest zaimplementowanych poprzez utrzymywanie długo działającej strony internetowej i dynamiczne jej uaktualnianie jak karty są powtarzane, więc twój kod Javascript będzie musiał aktualizowac sekcje dokumentu używając komend takich jak document.getElementById(), zamiast document.write()
 
-Functions like window.alert are also not available. Anki will write
-javascript errors to the terminal, so if you’re running on a Mac or
-Windows computer, you’ll need to manually catch the errors and write
-them to the document to see them. There is no debugger available, so to
-figure out problems you’ll need to break down your code until you
-discover which parts are causing problems.
+Funkcje takie jak window.alert równiez nie są dostepne. Anki zapisze błedy Javascript w terminalu, więc jesli korzystasz z Maka lub Windowsa, będziesz musiał ręcznie wyłapać błędy i je zapisac do dokumentu, aby je zobaczyć. Nie ma dostepnego debuggera, więc aby rozwiązac problemy będziesz musiał rozbijać twój kod, az nie odnajdziesz, które części powodują problemy 
