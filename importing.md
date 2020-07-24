@@ -1,86 +1,62 @@
-# Importing
+# Importowanie
 
-Anki can import text files, packaged Anki decks created by the export
-feature, Mnemosyne 2.0 .db files, and SuperMemo .xml files. To import a
-file, click the File menu and then "Import".
+Anki może importować pliki tekstowe, spakowasne talie Anki (stworzone poprzez wyeksporotwanie talii w Anki), pliki Mnemosyne 2.0 .db oraz pliki SuperMemo .xml. Aby zaimportować plik, opcje Plik w menu, a nastepnie "Importuj".
 
-## Text Files
+## Pliki tekstowe
 
-Any **plain text** file that contains fields separated by commas,
-semicolons or tabs can be imported into Anki, provided some conditions
-are met.
+Każdy **czysty plik tekstowy**, w którym pola oddzielone są od siebie przecinkami, średnikami lub tabulatorami może zostać zaimportowany do Anki. Aby import tych danych przebiegł prawidłowo należy spełnić następujące warunki:
 
--   The files must be plain text (myfile.txt). Other formats like
-    myfile.xls, myfile.rtf, myfile.doc must be saved as a plain text
-    file first.
+-   Plik musi być zapisany w formacie tekstowym .txt . Inne formaty plików jak .xls, .rtf, .doc muszą najpierw zostać zapisane jako plik tekstowy. (.txt)
 
--   The files must be in UTF-8 format (see below).
+-   Plik tekstowy musi być zakodowany w UTF-8 (patrz niżej).
 
--   Anki determines the number of fields in the file by looking at the
-    first (non-commented) line. Any lines in the file which have a
-    different number of fields will be ignored.
+-   Anki określa liczę pól w pliku na podstawie pierwszego wiersza pliku (nie będącego komentarzem). Wszystkie pozostałe linie, które nie posiadają tej samej liczby pól są ignorowane.
 
--   The first line also defines the separating character – if Anki finds
-    a ';' on the first line it will use that, if it finds a comma it’ll
-    use that, etc.
+-   Pierwszy wiersz definiuje również rodzaj sepratora - jeżeli Anki odnajdzie ; w pierwszym wierszu, w kolejnych również będzie poszukiwał tego sepratora, nawet jeśli wystąpi w nim przecinek lub tabulator.
 
-Fields in your text file can be mapped to any field in your notes,
-including the tags field. You can choose which field in the text file
-corresponds to which field in the note when you import.
+Pola znajdujące się w pliku tekstowym mogą zostać przekształcone w dowolne pole notatki, także w tagi. Możesz wybrać, które pole w pliku odpowiada któremu polu w notatce.
 
-When you import a text file, you can choose what deck to put the cards
-in. Keep in mind that if you have the deck override option set for one
-or more of your templates, the cards will go to that deck rather than
-the one you’ve selected.
+Podczas importu pliku tekstowego możesz oczywiście określić, do której talii zostaną zaimportowane notatki. Pamiętaj jednak, że jeśli masz włączoną opcję nadpisywania talii dla jednego lub więcej szablonów, karty zostaną dodane do talii wymuszonej przez tę opcje, a nie do tej, która wybrałeś.
 
-This is an example of a valid file:
+Przykład prawidłowego pliku:
 
     foo bar; bar baz; baz quux
-    apple; banana; grape
+    jabłko; banan; winogron
 
-There are two ways to include newlines in fields.
+Są dwa sposob, aby uwzgledniać nowe linie w polach.
 
-**Escape the multi-lines by placing the contents of the field in
-quotation marks**:
+**Unikaj wielu linii poprzez wplatanie zawartości pola w podwójne cudzysłowy**:
 
-    hello; "this is
-    a two line answer"
-    two; this is a one line one
+    cześć; "to jest
+    odpowiedź w dwóch liniach"
+    dwa; to jest odpowiedź w jednej linii
 
-Because quotes are used to mark where a field begins and ends, if you
-wish to include them inside your field, you need to replace a single
-doublequote with two doublequotes to "escape" them from the regular
-handling, like so:
+Ponieważ cudzysłowy są używane do kreslenie gdzie pole się kończy, a gdzie zaczyna, jeśli chciałbyś te cudzysłowy umieścić w polu, musisz zamienić pojedyńczy podwójny cudzysłów dwoma pojedyńczymi cudzysłowami, aby "uniknąć" traktowanie ich w zwykły sposób
 
-    field one;"field two with ""escaped quotes"" inside it"
+    pole pierwsze;"pole drugie z ""podwójnymi cudzysłowami"" w środku"
 
-When you use a spreadsheet program like Libreoffice to create the CSV
-file for you, it will automatically take care of escaping double quotes.
+Gdy używasz programów z arkuszami kalkulacyjnymi takimi jak Libreoffice, aby utworzyć plik CSV, prgoram automatycznie zajmie się powyższą sprawą.
 
-**Use HTML new lines**:
+**Używaj nowych linii HTML**:
 
-    hello; this is<br>a two line answer
-    two; this is a one line one
+    cześć; to jest<br>odpowiedź w dwóch liniach
+    dwa; to jest odpowiedź w jednej linii
 
-You need to turn on the "allow HTML in fields" checkbox in the import
-dialog for HTML newlines to work.
+Musisz włączyć opcję "zezwól na HTML w polach" w oknie importowania, aby nowe linie HTML zadziałały.
 
-Escaped multi-lines will not work correctly if you are using cloze
-deletions that span multiple lines. In this case, please use HTML
-newlines instead.
+Podwójne cudzysłowy nie będa działac poprawnie, jeśli używasz wypełniania luk, które obejmuje wiele wierszy. W tym przypadku, używaj nowych linii HTML. 
 
-You can also include tags in another field and select it as a tags field
-in the import dialog:
+Możesz równiez dołączyć etykiety w innym polu i wybrac je jako pole z etykietami w oknie importowania:
 
-    first field; second field; tags
+    pierwsze pole; drugie pole; etykiety
 
-This is an example of a valid file where the first line is ignored (\#):
+To przykład poprawnego pliku, gdzie pierwsza linia jest ignorowana (\#)):
 
-    # this is a comment and is ignored
+    # to komentarz, który jest ignorowany
     foo bar; bar baz; baz quux
-    field1; field2; field3
+    pole1; pole2; pole3
 
-### Spreadsheets and UTF-8
+### Arkusze kalkulacyjne i UTF-8
 
 If you have non-Latin characters in your file (such as accents, Japanese
 and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
@@ -113,7 +89,7 @@ include angle brackets, you may write them differently:
 
 -   For "&gt;", use "&gt;"
 
-### Importing Media
+### Importowanie plików multimedialnych
 
 If you want to include audio and pictures from a text file import, copy
 the files into the [collection.media folder](files.md). **Do not put
@@ -146,7 +122,7 @@ expensive, as each card has to be rendered, and such functionality isn’t
 obvious to shared deck users. Please use the find & replace technique
 instead.
 
-### Bulk Media
+### Masowe dodawanie plików multimedialnych
 
 Another option for importing large amounts of media at once is to use
 the [media import add-on](https://ankiweb.net/shared/info/1531997860).
@@ -157,14 +133,14 @@ the images or audio on the back. If you would like a different
 arrangement of media and filenames, you can [change the note
 type](browsing.md) of the created cards afterwards.
 
-### Adding Tags
+### Dodawanie etykiet
 
 If you want to add 'tag1' and 'tag2' to every line you’re importing, add
 the following to the top of the text file:
 
     tags:tag1 tag2
 
-### Duplicates and Updating
+### Duplikaty i aktualizowanie
 
 When importing text files, Anki uses the first field to determine if a
 note is unique. By default, if the file you are importing has a first
