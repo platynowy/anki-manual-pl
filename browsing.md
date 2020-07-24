@@ -1,45 +1,26 @@
-# Browsing
+# Przeglądarka
 
-The Browse screen allows you to search through your cards and notes, and edit
-them. It is opened by clicking on *Browse* in the main window, or by pressing
-*b* on your keyboard. It is comprised of three sections: the *sidebar* on the
-left, the *card list* on the top right, and the *current note* on the bottom
-right. By positioning the mouse between two sections, it is possible to click
-and drag to expand one section and shrink another.
+Okno przeglądarki pozwala ci przeszukiwac twoje karty i notatki oraz je edytowac. JEst otwierane poprzez klikniecie *Przeglądaj* na ekranie głównym, lub naciśnięcie *b* na klawiaturze. Składa się ono z trzech sekcji: *pasku bocznego* po lewej, *listy kart* u góry po prawej, oraz *obecnej notatki*, na dole po prawje. Ustawiając myszkę pomiędzy dwoma sekcjami możliwe jest kliknięcie i przeciąganie, przez co można zmieniac wielkość każdej z sekcji.
 
-Sidebar
+Pasek boczny
 -------
 
-The sidebar on the left allows quick access to common search terms. Clicking
-on an item will search for it.
+Pasek boczny po lewej pozwala na szybki dostęp do czesto szukanych terminów. Klikniecie na obiekcie wyszuka go.
 
-You can hold down Ctrl (Command on a Mac) while clicking in order to append
-the clicked item to the current search with an AND condition, instead of
-starting a new search. If you wanted to show learning cards that were
-also in the German deck for instance, you could click on "Learning",
-then Ctrl+click on "German".
+Możesz przytrzymać Ctrl (Command na Maku) podczas klikania, aby dodac klikany przedmiot do obecnego wyszukiwania używając warunku AND, zamiast zaczynać nowe wyszukiwanie. Jeśli chciałbyś wyszukać karty uczone które byłyby równiez w talii Niemiecki, mógłbyś kliknąć na "Uczone", a następnie Ctrl+kliknąć na "Niemiecki".
 
-You can hold down Shift to create an OR search instead of an AND. For
-example, you could click one deck, then shift-click another to show
-cards from either of the decks in the same view.
+Możesz przytrzymac Shift aby utworzyć wyszukiwanie OR zamiast AND. NA przykład, mógłbys kliknac na jedną talię, a potem kliknać z przytrzymanym shiftem na inną, aby pokazać karty z obu talii w jednym podglądzie.
 
-You can hold down Alt (Option on a Mac) in order to reverse the search
-(prepend a *-*) – for instance, to show all cards in a current deck that
-do *not* have a certain tag. Alt/option can be combined with either Ctrl
-or Shift (e.g., Ctrl-Alt-clicking will result in adding a new search
-term that is negated).
+Możesz przytrzymac Alt (Option na Maku), aby odwrócić wyszukiwanie (dodać *-*) - na przykład, abhy pokazać wszystkie karty w obecnej talii, które *nie* mają określonej etykiety. Alt/option moga być łączone z Ctrl lub shift (np. Ctrl-Alt i klikniecie spowoduje dodanie nowego wyszukiwanego terminu, który jest negowany). 
 
-To remove tags that are not used by any notes, use Tools&gt;Check
-Database from the main window.
+Aby usunąć talie, które nie są używane przez żadne notatki, wybierz z ekranu głównego  Narzedzia&gt;Sprawdź bazę danych.
 
-Searching
+Wyszukiwanie
 ---------
 
-Above the card list is a search box. You can type in various things
-there to search for cards. For information on the search syntax, please
-see the [searching section](searching.md).
+Nad listą kart znajduje się pole do wyszukiwania. Możesz wpisywać tam różne rzeczy, aby wyszukiwać karty. Aby dowiedzieć się więcej informacji, zobacz [rozdział o wyszukiwaniu] 
 
-Card List
+Lista kart
 ---------
 
 The card list displays cards that match the current search.
@@ -82,7 +63,7 @@ question part for clarity. You can also choose a [custom
 format](templates/styling.md#browser-appearance) in the card type editor instead of showing
 what would be seen during review.
 
-Current Note
+Obecna notatka
 ------------
 
 The bottom right area displays the currently selected card’s note. For
@@ -119,7 +100,7 @@ Tools&gt;Check Database from the main window.
 possible to remove individual cards, as individual cards are controlled
 by the [templates](templates/intro.md).
 
-Find and Replace
+Znajdź i zamień
 ----------------
 
 This option (Notes→Find and Replace…​) allows you to replace text in the
@@ -148,7 +129,7 @@ Will change the card to:
 A full discussion on regular expressions is outside the scope of this
 document. document. There are a number of tutorials available on the web. For a syntax guide, on Anki 2.1.28+ please see <https://docs.rs/regex/1.3.9/regex/#syntax>. For older Anki versions, please see <http://docs.python.org/library/re.html>.
 
-Finding Duplicates
+Znajdowanie duplikatów
 ------------------
 
 You can use the Notes→Find Duplicates option to search for notes that
@@ -182,7 +163,7 @@ duplicates, you may wish to instead click the Tag Duplicates button,
 which will tag all matching notes with "duplicate." You can then search
 for this tag in the browser and handle them all from the same screen.
 
-Other Menu Items
+Inne elementy menu
 ----------------
 
 Some other items in the menus:
