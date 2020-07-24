@@ -1,28 +1,22 @@
-Graphs and Statistics
+Wykresy i statystyki
 =====================
 
 Card Info
 ---------
 
-You can display information about a card by clicking the Info button in
-the toolbar while browsing. Most of the displayed information should be
-self-explanatory. A few notes:
+Możesz wyświetlić informację o karcie klikając na przycisk "Informacje" w pasku narzędzi podczas przeglądania. Większość pokazywanych informacji nie wymaga wytłumaczenia, oprócz:
 
-**Position**  
-Only shown when the card is new, it shows the order the card will appear
-in relative to other new cards. The position can be changed in the
-browser.
+**Pozycja**  
+Pokazywana tylko, gdy karta jest nowa. Pokazuje miejsce w kolejce,  do wyświetlenia karty w stosunku do innych nowych kart. Może zostać zmieniona w przeglądarce.
 
-**Interval**  
-The delay from one review to the next. Times are abbreviated; "0s, 1m,
-3h, 4d, 5mo, 6y" refers to seconds, minutes, hours, days, months and
-years respectively.
+**Przerwa**  
+Różnica między jedną powtórką, a nastepną. The delay from one review to the next. Nazwy są skrócone; "0s, 1m,
+3g, 4d, 5mc, 6r" oznacza kolejno: sekundy, minuty, godziny, dni, miesiące, lata.
 
-**Ease**  
-The approximate amount the interval will grow when you answer a review
-card with the "Good" button.
+**Łatwość**  
+Przybliżona ilość, o jaką wzrośnie przerwa po odpowiedzi "Dobra" na kartę.
 
-Statistics
+Statystyki
 ----------
 
 The statistics window is accessed by clicking on the graphs icon in the
@@ -58,28 +52,28 @@ Types of Cards
 
 The stats window uses some terms that you may not be familiar with:
 
-**Mature**  
+**Dojrzałe**  
 A mature card is one that has an interval of 21 days or greater.
 
-**Young**  
+**Młode**  
 A young card is one that has an interval of less than 21 days, but is
 not in learning.
 
-**Learn**  
+**Uczone**  
 A learning card is one that is still in learning mode (using whatever
 steps may be defined in the deck’s options).
 
-**Relearn**  
+**Uczone ponownie**  
 A relearning card is a card that you have failed in review mode, thus
 returning it to learning mode to be relearned.
 
-**Unseen**  
+**Niewidziane**  
 An unseen card is one that has been added to your collection but has not
 yet entered learning mode. Unseen cards are sometimes referred to as
 "new" cards, especially when they are in the "new" queue to be shown for
 the first time.
 
-Today
+Dzisiaj
 -----
 
 At the top of the statistics window is a brief list of textual
@@ -109,7 +103,7 @@ performance.
 The “today” statistics are unaffected by the time period selected at the
 bottom of the window.
 
-The Graphs
+Wykresy
 ----------
 
 **Forecast**  
@@ -168,7 +162,7 @@ calculate a more precise percentage, the key shows the exact number of
 cards in each section, and the total number of cards is displayed to the
 side.
 
-Manual Analysis
+Analiza ręczna
 ---------------
 
 If you’re interested in getting information from your statistics other
