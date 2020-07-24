@@ -19,148 +19,77 @@ Przybliżona ilość, o jaką wzrośnie przerwa po odpowiedzi "Dobra" na kartę.
 Statystyki
 ----------
 
-The statistics window is accessed by clicking on the graphs icon in the
-top right of the main window, or by pressing T. The statistics
-window will show statistics from the currently selected deck and any
-subdecks. If you click on "collection" on the bottom left, statystyki will be shown for your entire collection instead. On 2.1.28+, aditionaly,
- you can display graphs for arbitrary searches by adding filters in the
- search box.
+Okno statystyk dostępne jest pod przyciskiem "Statystyki" znajdującym się u góry okna głównego Anki lub za pomocą klawisza T. . Okno statystyk pokaże statystki z aktualnie wybranej talii i talii podrzędnych. Dane dotyczące całej kolekcji dostępne są po wybraniu "kolekcja" u góry okna statystyk. W Anki 2.1.28+ można również wyświetlać wykresy dla dowolnych wyszukiwań poprzez dodawanie filtrów w polu wyszukiwania.
 
-Anki 2.1.28+ introduces redesigned graphs. The old graphs are currently still
- accessible with a shift+click on the Stats button.
+Anki 2.1.28+ wprowadza nowe, przeprojektowane wykresy. Stare wykresy dalej są dostępne, poprzez przytrzymanie przycisku Shift podczas podczas otewierania statystyk (klikniecia na przycisk "Statystyki").i
 
- For Anki 2.1.28+, by default Anki will show you statistics for the previous year.
- You can change this to all history scope or deck life scope at the top. (The
-"today" section at the top is of course unaffected by this selection.)
+W Anki 2.1.28+, anki będzie domyślnie pokazywać statystyki z ostatniego roku. Możesz zmienić tę opcję na klikając na "cała historia" lub "czas życia talii" u góry. (Nie wpływa to na wygląd statystyk w sekcji "Dzisiaj") 
 
-For older versions of Anki, by default Anki will show you statistics for
- the previous month. You can change this to a year scope or deck life scope
- at the bottom. (The “today” section at the top is of course unaffected
- by this selection.)
+W starszych wersjach Anki będzie domyślnie pokazywać statystyki dla ostatniego miesiąca. Możesz zmienić to do okresu ostatniego roku lub czasu życia talii  klikając odpowiedni przycisk na dole ekranu. (Nie wpływa to na wygląd statystyk w sekcji "Dzisiaj") 
 
- Clicking on "Save PDF" will save an PDF document of the statistics to a file
-on your desktop to make it easy to share your statistics with others.
+Kliknięcie na "Zapisz jako PDF" zapisze dokument pdf ze statystykami jako plik na twoim pulpicie, aby łatwież można było udostępniać swoje statystyki z innymi.
 
-When you delete notes, their review history is maintained in Anki. It
-will not be included when looking at statistics for a specific deck (as
-Anki has no way of knowing which deck the deleted cards belonged to),
-but will be included when you look at statistics for the whole
-collection.
+Gdy usuwasz notatki, ich historia powtórek jest zatrzymywana w Anki. Nie będa one załączone  podczas przeglądania  statystyk określonej talii (jako, że Anki nie może sprawdzić do jakiej talii należała usunięta karta), jednak ich historia będzie pokazywana podczas przeglądania statystyk dla całej kolekcji.
 
-Types of Cards
+Typy kart
 --------------
 
-The stats window uses some terms that you may not be familiar with:
+W oknie Statystki czasami mogą być użyte terminy i nazwy, których jeszcze nie znasz:
 
 **Dojrzałe**  
-A mature card is one that has an interval of 21 days or greater.
+Karty, których przerwa wynosi 21 dni lub więcej.
 
 **Młode**  
-A young card is one that has an interval of less than 21 days, but is
-not in learning.
+Karta młoda to taka, której przerwa jest krótsza niż 21 dni i nie uczysz się jej, a jedynie powtarzasz.
 
 **Uczone**  
-A learning card is one that is still in learning mode (using whatever
-steps may be defined in the deck’s options).
+Karty nowe, których jeszcze się nie nauczyłeś
 
 **Uczone ponownie**  
-A relearning card is a card that you have failed in review mode, thus
-returning it to learning mode to be relearned.
+Karty dojrzałe lub młode, które w czasie powtórki otrzymały ocenę Powtórz i będziesz się ich uczył ponownie.
 
 **Niewidziane**  
-An unseen card is one that has been added to your collection but has not
-yet entered learning mode. Unseen cards are sometimes referred to as
-"new" cards, especially when they are in the "new" queue to be shown for
-the first time.
+Karty, które zostały niedawno dodane do twojej kolekcji, ale nie zostały ci jeszcze wyświetlone do nauki. Można je nazywać również kartami nowymi, zwłaszcza gdy są w kolejce nowych kart do pokazania pierwszy raz.
 
 Dzisiaj
 -----
 
-At the top of the statistics window is a brief list of textual
-statistics about the reviews that you have completed today. A “review”
-in this context is 'one answering of a card', so a card might count as
-multiple reviews if it needed to be seen multiple times, and a learning
-card answered also counts as a “review.” A couple of the stats whose
-meaning may not be immediately obvious:
+Na górze okna statystyk znajduje się krótka lista statystyk tekstowych powtórek, które ukończono dzisiaj. "Powtórka" w tym kontekście oznacza "jedną odpowiedź dla karty", więc karta może liczyć się jako kilka powtórek, jeśli była pokazana kilka razy, a karty uczone równiez sa liczone jako "powtórka". Kilka terminów, które mogą na pierwszy rzut oka być niezrozumiałe:
 
-**Again count**  
-This is the number of reviews that you have failed (i.e., pressed Again
-on). The correct percentage listed afterwards is the number of cards you
-did 'not' fail divided by the total number of cards you studied.
+**Liczba pomyłek**  
+Liczba powtórek, na które odopwiedziano błędnie (to znaczy naciśnięto przycisk "Powtórz"). Pokazywany procent to liczba kart, na które nie odpowiedziano "Powtórz" podzielona przez całkowitą liczbę kart, których się uczono.
 
-**Learn, Review, Relearn, Filtered**  
-The number of reviews that were learning cards, review cards, relearning
-cards, or studied in a filtered deck when not due.
+**Uczone, Powtarzane, Uczone ponownie, Filtrowane**  
+Liczba powtórek, które były kartami uczonymi, powtarzanymi, uczonymi ponownie lub, które nie oczekiwały, a były uczone w talii filtrowanej.
 
-The stats for the current day are not a good overall indicator of your
-learning progress; everyone has bad days and good days, and seeing that
-you got a lower percentage correct on a particular day should not be
-cause for concern. The remainder of the stats, which take longer periods
-of time into account, will give more useful information if you wish to
-try to change your study habits or scheduling settings based on your
-performance.
+Statystyki z danego dnia nie są dobrym wskaźnikiem postepów w nauce. Każdy ma lepsze i gorsze dni, a widzac, że procent poprawnych odpowiedzi jest mniejszy w danym dniu nie powinien niepokoić. Pozostałe statystyki, które biorą pod uwagę dłuższy okres czasu, będa dawały bardziej prawdziwy obraz postpępów w nauce, i będą bardziej przydatne,jeśli chciałbyś zmienic nawyki nauki lub opcje planowania bazując na twojej wydajności.
 
-The “today” statistics are unaffected by the time period selected at the
-bottom of the window.
+Na statystyki "dzisiaj" nie ma wpływu wybrany okres czasu u góry ekranu.
 
 Wykresy
 ----------
 
-**Forecast**  
-This graph shows an estimated number of reviews that will be due on a
-given day in the future if you learn no new cards and fail no cards. The
-bars and the left axis show the number of cards due on each day if you
-study all cards each day, while the line and the right axis show the
-number of cards due on that day if you don’t study at all until then.
-Note that the forecast graph does not count reviews that are currently
-overdue, so if you have a large backlog, the overdue cards will not be
-displayed.
+**Prognoza**  
+Wykres wyświetla przybliżoną liczbę kart, które będą powtarzane w przyszłości, bez uwzględnienia kart nowych i uczonych na nowo. Do osi pionowej z lewej strony odnosi się wykres słupkowy. Kolumny oznaczają liczbę kart, które zostaną wyświetlone do powtórki w kolejnych dniach. Do osi pionowej z prawej strony odnosi się wykres ciągły, na którym przedstawiona jest skumulowana liczba powtórek. Wykres prognozy nie uwzględnia kart zaległych, które nagromadziły się w wyniku np. kilkudniowej przerwy w pracy z Anki. Te karty nie są widoczne na wykresie. Aby karty zaległe były widoczne, kliknij przycisk "Zaległości".
 
-**Review Count**  
-This graph counts the number of card reviews you have done. The bars may
-correspond to days, weeks, or months, depending on the time period
-you’ve selected at the bottom of the screen. The differently colored
-blocks show how many of the cards you answered on each day were
-[mature](stats.md#types-of-cards), young, relearning, or learning cards.
-There is also a separate group for cards answered in a filtered/cram
-deck while they were not due. The line and the right axis shows the
-cumulative total for each type of review as time progresses across the
-graph (so at 0 days, it would display the number for the entire time
-period displayed on the graph).
+**Liczba powtórek**  
+Wykres przedstawia liczbę kart powtórzonych w przeszłości. Słupki mogą odpowiadać dniom, tygodniom lub miesiącom, w zależności od okresu jaki wybrałeś na u góry ekranu statystyk. Poszczególne kolory pokazują ile z kart, na które udzieliłeś odpowiedzi było [dojrzałe](stats.md#types-of-cards), młode, uczone i uczone ponownie. Jest także oddzielna grupa kart, na które udzieliłeś odpowiedzi w ramach talii filtrowanej. Prawa pionowa oś, do której przypisany jest wykres liniowy wskazuje skumulowaną liczbę odpowiedzi na karty od daty początku wykresu.
+
 
 **Review Time**  
-This graph works exactly like Review Count, except that it deals with
-the amount of time you spent on each card rather than the number of
-cards answered.
+Wykres ten należy interpretować w ten sam sposób co "Liczba powtórek", jednakże jednostką jest tutaj czas spędzony na powtórce.
 
-**Intervals**  
-This graph displays the number of cards that have a given interval (the
-delay between two reviews). The line and the right axis tell you what
-percentage of your cards have an interval of less than or equal to the
-time below that point. The time scope has a different effect on this
-graph than other graphs: rather than changing which cards or period of
-studying is included, it limits how far out the intervals are displayed
-to (so 14-month intervals are not displayed at all on a 1-year graph).
+**Przerwy**  
+Wykres pokazuje liczbę kart o określonym interwale (czyli przerwie, odsunięciu w czasie pomiędzy dwoma powtórkami). Na prawej osi wyrażono procentowo liczbę kart, które mają interwał równy lub mniejszy od wartości na tej osi. Zauważ, że pozioma oś czasu w przypadku tego wykresu okresla on, w jakim okresie czasowym w przyszłości mają byc wyświetlane przerwy, a nie jak w innych wykresach, jaki okres czaus nauki jest uwzględniany. Innymi słowy, na tym wykresie nie są przedstawione dane historyczne, ale dane o przyszłości. Wybrany okres czasu określa, jak dalekie przerwy są wyświetlane (a więc przerwa 14-sto miesięczna nie bedzie wyświetlona na wykresie obejmującym jeden rok)
 
-**Hourly Breakdown**  
-This graph shows what percentage of total reviews you have passed (i.e.,
-not pressed Again on) during given hours. The larger, darker bars and
-left axis show the success rate; the thinner, lighter bars and right
-axis show the number of reviews you’ve made at that hour (so you know
-how significant the results are).
+**Podział godzinowy**  
+Wykres przedstawia odsetek poprawnych odpowiedzi na powtarzane karty w różnych porach dnia. Większe, ciemniejsze słupki i lewa oś określają liczbę poprawnie odpowiedzianych kart w danej godzinie, zaś cieńszy, szary słupek i prawa oś odpowiadają za ogólną liczbę powtórek w danej godzinie (wiesz tym samym na ile wydajne są powtórki w poszczególnych godzinach dnia).
 
-**Answer Buttons**  
-This graph shows how many times you’ve chosen the Again, Hard, Good, or
-Easy button while studying learning/new, young, and
-[mature](stats.md#types-of-cards) cards. Anki also displays the percentage
-of correct reviews for each type of card.
+**Przyciski odpowiedzi**  
+Wykres pokazuje ile razy wybrałeś Powtórz, Trudna, Dobra i Łatwa w stosunku do kart uczonych, młodych i [dojrzałych](stats.md#types-of-cards). Anki wyświetla również procent poprawnych odpowiedzi dla każdego typu kart.
 
-**Cards Types**  
-This pie chart shows what percentage of your deck or collection consists
-of mature, unseen, young/learn, and suspended cards. If you wish to
-calculate a more precise percentage, the key shows the exact number of
-cards in each section, and the total number of cards is displayed to the
-side.
+**Typy kart**  
+Ten Wykres przedstawia udział procentowy kart dojrzałych, niewidzianych, młodych/uczonych i zawieszonych w twojej talii. Po najechaniu  myszką na wykres widoczna jest dokładna liczba kart każdego z typów, jeżeli chciałbyś dokładniej policzyć te wartości. Liczba wszystkich kart w talii dostępna jest równiez po najechaniu myszą na wykres.
 
 Analiza ręczna
 ---------------
