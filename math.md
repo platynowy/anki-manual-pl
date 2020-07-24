@@ -16,23 +16,25 @@ Aby go wypróbować:
 
 2.  Zaznacz ten tekst.
 
-3.  Klknij w edytorze przycisk pierwszy po prawej i wybierz z menu "liniowy MathJax". Anki zmieni tekst, przez co będzie wyglądał tak:
+3.  Klknij w edytorze przycisk pierwszy po prawej i wybierz z menu "liniowy MathJax". Anki zmieni tekst, przez co będzie wyglądał on tak:
 
         \(\sqrt{x}\)
 
-4.  Jesli naciśniesz przycisk Karty…​, zobaczysz podgląd tego, jak równanie pojawi się na karcie podczas nauki.
+4.  Jeśli naciśniesz przycisk Karty…​, zobaczysz podgląd tego, jak równanie pojawi się na karcie podczas nauki.
 
-Anki oczekuje użycie zawartości MathJax w formacie TeX. Jeśli nie jesteś zaznajomiony z formatowaniem TeX, zobacz [tę ściągawkę](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference). Zauważ, że punkt 2 nie ma zastosowania w Anki - program używa `\(` oraz `\)` dla równań liniowych oraz `\[` i `\]` dla równań wyświetlanych.
+Anki oczekuje użycie zawartości MathJax w formacie TeX. Jeśli nie jesteś zaznajomiony z formatowaniem TeX, zobacz [tę ściągawkę](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference). Zauważ, że punkt 2 nie ma zastosowania w Anki - program używa `\(` oraz `\)` dla równań liniowych i `\[` i `\]` dla równań wyświetlanych.
 
 Jeśli chcesz wstawiać nowe linie w MathJax, używaj Shift+Enter zamiast samego klawisza Enter (przejście do nowej linii tylko enterem spowoduje, że nowa linia uniemożliwi poprawne działanie MathJax).
 
-W Anki można używać mhchem, aby renderować równaia chemiczne. Zobacz sekcję "chemical equations" jak i następne sekcje, aby dowiedzieć się więcej:<https://mhchem.github.io/MathJax-mhchem/>
+W Anki można używać mhchem, aby renderować równania chemiczne. Zobacz w linku rozdział "chemical equations" jak i następne rozdziały, aby dowiedzieć się więcej:<https://mhchem.github.io/MathJax-mhchem/>
 
 ## LaTeX 
 
-LaTeX to systen składu tekstu, przydatny do wprowadzania równań na przykład matematycznych, chemicznych lub notatcji muzycznej. W Anki oferuje w pewnym stopniu wsparcie dla LaTeX, przez co możesz wpisywac kod LaTeX w swoich kartach. Kiedy powtarzasz karte Anki odczyta LaTeX i pokaże wygenerowany obraz.
+LaTeX to oprogramowanie do składu tekstu, przydatne do wprowadzania równań, na przykład matematycznych, chemicznych lub notatcji muzycznej. Anki oferuje w pewnym stopniu wsparcie dla LaTeX, przez co możesz wpisywać kod LaTeX w swoich kartach. Kiedy powtarzasz karte Anki odczyta LaTeX i pokaże wygenerowany obraz.
 
-Jeśli chodzi o LaTeX, trzeba się bardziej wysilić przy jego konfigurowaniu, a obrazy mogą być generowane tylko na komputerowej wersji Anki. Jednak jeśli już raz zostaną one wygenerowane, mogą być pokazywane również na urządzeniach mobilnych. LaTeX jest o wiele bardziej skomplikowany, dlatego jest polecany tylko tym  użytkownikom, którym nie wystarczają funkcjonalności MathJax. Instrukcja użytkowania LaTeX w Anki jest obecnie dostępna tylko w jezyki angielskim.
+Jeśli chodzi o LaTeX, trzeba się bardziej wysilić przy jego konfigurowaniu, a obrazy mogą być generowane tylko na komputerowej wersji Anki. Jednak jeśli już raz zostaną one wygenerowane, mogą być pokazywane również na urządzeniach mobilnych. LaTeX jest o wiele bardziej skomplikowany, dlatego jest polecany tylko tym  użytkownikom, którym nie wystarczają funkcjonalności MathJax. 
+
+**Instrukcja użytkowania LaTeX w Anki nie jest obecnie dostępna w języku polskim.**
 
 ### Oczekiwana wiedza (język angielski)
 
