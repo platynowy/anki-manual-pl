@@ -130,42 +130,31 @@ Jednak poniższy ("dodaj kartę, jeśli A **LUB** (B **I** C) nie są puste") ni
          {{/C}}
      {{/B}}
 
-Szablony luki
+Szablon luki
 ---------------
 
 Zobacz rozdział o [wypełnianiu luki](editing.md#cloze-deletion), aby dowiedzieć się podstaw.
 
-The cloze note type functions differently from regular note types.
-Instead of a customizable number of card types, it has a single type
-which is shared by all cloze deletions on a note.
+Budowa notatki typu luka różni się od budowy notatki standardowego typu. Zamiast pewnej liczby kart generowanych na podstawie notatki mamy tutaj do czynienia z tylko jedną kartą. Co więcej, wszystkie karty z luką generowane są na podstawie tego samego szablonu notatki.
 
-As mentioned in the card generation section above, generation of regular
-cards depends on one or more fields on the question being non-empty.
-Cloze deletion note types are generated differently:
+Jak zostało to wspomniane w rozdziale dotyczącym generowania kart, standardowe karty tworzone są na podstawie jednego lub więcej pól, przy czym pole znajdujące się w pytaniu nie może być puste. Generowanie kart wygląda trochę inaczej w przypadku notatki typu luka:
 
--  Anki looks on the front template for one or more cloze replacements,
-    like {{cloze:FieldName}}.
+-  Anki najpierw przeszukuje szablon przodu pod kątem polecenia {{cloze:NazwaPola}}.
 
--  It then looks in the FieldName field for all cloze references, like
-    {{c1::text}}.
+-  Następnie w polu NazwaPola wyszukuje luki w postaci {{c1::tekst}}.
 
--  For each separate number, a card will be generated.
+-  Na końcu dla każdej luki tworzona jest osobna karta.
 
-Because card generation functions differently for cloze deletion cards,
-{{cloze:…​}} tags can not be used with a regular note type - they
-will only function properly when used with a cloze note type.
+JAko, że generowanie kart działa inaczej dla kart typu luka, tagi {{cloze:…​}} nie moga bhyć używane ze standardowym typem notatki - bea one działały poprawnie tylko z typem notatki "luka".
 
-Conditional generation provides a special field so you can check which
-card you are rendering. If you wanted to display the "hint1" field on
-the first cloze, and "hint2" field on the second cloze for example, you
-could use the following template:
+W kartach typu luka możliwe jest również używanie poleceń warunkowych. Przykładowo dla, każdej luki możemy wstawić niezależne podpowiedzi. Aby to zrobić, w szablonie przodu powinien znaleźć się następujący kod:
 
-    {{cloze:Text}}
+    {{cloze:Tekst}}
 
     {{#c1}}
-    {{Hint1}}
+    {{Podpowiedź1}}
     {{/c1}}
 
     {{#c2}}
-    {{Hint2}}
+    {{Podpowiedź2}}
     {{/c2}}
