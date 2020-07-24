@@ -255,4 +255,4 @@ commands are prohibited even in comments, so if you’re getting this
 error but don’t think you’ve used one, please double-check any comments
 you have in your headers, templates, and cards.) If you need to use
 these commands, please add them to a system package and import that
-package as described in the previous section.
+package as described in the previous section. 
