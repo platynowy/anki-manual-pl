@@ -1,69 +1,38 @@
-Filtered Decks & Cramming
+Talie filtrowane i zakuwanie
 =========================
 
-When you study a regular deck in Anki, only a limited number of cards
-are shown: the cards Anki thinks you’re about to forget, and a daily
-limit of new cards. This is generally useful, as it ensures you don’t
-spend more time studying than necessary. But sometimes it can be useful
-to step outside of these normal limits, such as when you need to revise
-for a test, focus on particular material, and so on. To make this
-possible, Anki provides a different type of deck called a 'filtered
-deck'.
+Gdy uczysz się w Anki normalnej talii, tylko określona liczba kart jest pokazywana: karty, które według Anki właśnie masz zapomnieć oraz nowe karty według dziennego limitu. Jest to przydatne, poniewaz daje to  pewnosć, że nie będziesz się uczył dłużej, niż to konieczne. Ale czasami może okazać się przydatne uczenie się pokza domyślnymi limitami, na przykład jak musisz powtórzyć materiał na egzamin, skupić się na określonych terminach i tak dalej. Aby było to możliwe, w Anki istnieje inny typ talii nazywający się "talia filtrowana" 
 
-Filtered decks offer a lot of possibilities. They can be used for
-previewing cards, cramming cards before a test, studying particular
-tags, catching up on a backlog with a particular sort order, reviewing
-ahead of schedule, going over the day’s failed cards, and more.
+Talie filtrowane oferują wiele możliwości. Mogą być używane do podglądania kart, zakuwania ich przed testem, nauki okreslonych etykiet, nadrrabiania zaległości z okresloną kolejnością, nauki z wyprzedzeniem planowania, przeglądnięcia kart, na które odpowiedziano "Powtórz" oraz do wielu innych zastosowań.
 
-Custom Study
+Nauka własna
 ------------
 
-The easiest way to create a filtered deck is with the Custom Study
-button, which appears at the bottom of the screen when you click on a
-deck. It offers some convenient presets for common tasks like reviewing
-the cards you’ve failed that day. It will create a filtered deck called
-"Custom Study Session" and automatically open it for you.
+Najłatwiejszym sposobem na stworzenie talii filtrowanej jest uzycia przycisku Nauka własna, który pojawia sie na dole ekranu, gdy naciśniesz na talię. Oferujeon   wygodne ustawienia wstępne dla częstych zadań typu powtarzanie kart, na które odpowiedziano "Powtórz". Stworzy on talię filtrowaną nazwaną "Sesja nauki własnej" i automatycznie ją otworzy. 
 
-If an existing "Custom Study Session" deck exists, it will be emptied
-before a new one is created. If you wish to keep a custom study deck,
-you can rename it from the deck list.
+Jeśli istnieje już talia "Sesja nauki własnej", zostanie ona opróżniona przed utworzeniem nowej. Jeśli chcesz zachować talię nauki własnej, możesz zmienić jej nazwę na liście talii. 
 
-Here is a summary of each of the options:
+Oto podsumowanie działania każdej z opcji:Here is a summary of each of the options:
 
-**Increase today’s new card limit**  
-Add more new cards to the deck you are currently studying. Note that
-unlike other options, this does 'not' create a new filtered deck, it
-modifies the existing deck.
+**Zwiększenie dzisiejszego limitu nowych kart**  
+Dodaj więcej nowych kart do talii, której aktualnie się uczysz. Zauważ, że w przceciwieństwie do innych opcji, nie jest tutaj tworzona talia filtrowana, tylko jest modyfikowana jest już istniejącatalia .
 
-**Increase today’s review card limit**  
-If not all reviews due today were shown due to the daily review limit,
-this option allows you to show more of them. Like with the new cards
-option, this modifies the existing deck.
+**Zwiększenie dzisiejszego limitu przejrzanych kart**  
+Jesli nie zostały pokazane wsyzetkie powtórki ze względu na limity ustawione na dzienny limit powtórek, ta opcja umozliwia ci pokazac większą liczbę tych powtórek. Jak z opcją dotyczącą nowych kart, opcja ta modyfikuje istniejącą talię
 
-**Review forgotten cards**  
-Show all cards that you’ve answered Again (1) to within a number of days
-you specify.
+**Powtórka zapomnianych kart**  
+Pokaż wszystkie karty, na które odpowiedziałeś "Powtórz" (1) (możesz okreslić liczbę ostatnich dni, z których chcesz powtórzyć zapomniane karty).
 
-**Review ahead**  
-Show cards that will be due in the near future (a number of days you
-specify). This is useful for working through some of your older cards
-before a vacation, but it will not help with cards you have learnt
-recently. Please see the [reviewing ahead](#reviewing-ahead) section
-below for more info.
+**Powtórka z wyprzedzeniem**  
+Pokaż karty, które oczekują na powtórkę w najbliższej przyszłości (określasz liczbę dni). Opcja ta jest przydatna do przejrzenia niektórych ze starszych kart przed wakacjami, ale nie pomoże ci zapamiętać kart kart, które nauczyłeś się niedawno. Zobacz rozdział o [nauce z wyprzedzeniem](#reviewing-ahead) poniżej, aby dowiedzieć się więcej.
 
-**Preview new cards**  
-Show cards that you have recently added, without converting them to
-review cards as they are answered.
+**Podgląd nowych kart**  
+Pokaż karty, które ostatnio dodałeś, bez zmiany ich typu na karty powtarzane po odpowiedzi.
 
-**Study by card state or tag**  
-Select a certain number of cards from the current deck to study. You can
-choose to select new cards only, due cards only, or all cards; after you
-click "Choose Tags", you can also limit the selected cards by tags. If
-you wish to see all the cards in the deck (for instance, to study before
-a big test), you can set the number of cards to more than the number of
-cards in the deck.
+**Powtórka według stanu karty lub etykiety**  
+Wybierz określoną liczbe kart do nauki z  obecnej talii. Możesz uczyć sie tylko nowych kart, tylko oczekujących, lub wszystkich kart; po kliknieciu "Wybierz etykiety" możesz także zawęzić naukę do kart z okreslonymi etykietami. Jesli chcesz zobaczyć wszystkie karty znajdujace się w talii (na przykład, aby pouczyć się przed egzaminem z dużą ilością materiału), możesz ustawić liczbę kart większą, niż całkowita liczba kart znajdująca sie w tej talii.
 
-Home Decks
+Talie początkowe
 ----------
 
 When a card is moved to a filtered deck, it retains a link to the deck
@@ -92,7 +61,7 @@ remaining relearning steps will be skipped. This has been fixed in the
 [experimental
 scheduler](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21).
 
-Creating Manually
+Tworzenie ręczne
 -----------------
 
 Advanced users can create filtered decks with arbitrary search strings,
@@ -129,7 +98,7 @@ lapsed cards.
 For efficiency reasons, if your cram deck contains more than 1000 cards,
 only 1000 cards will be shown as due on the deck list and study screens.
 
-Order
+Kolejność
 -----
 
 The "cards selected by" option controls the order that cards will appear
@@ -173,7 +142,7 @@ years overdue by a week). This is useful if you have a large backlog
 that may take some time to get through and want to review the cards
 you’re most in danger of forgetting first.
 
-Steps & Returning
+Kroki i powrót
 -----------------
 
 Please see the section on [learning](studying.md#learning) as a reminder of how
@@ -191,7 +160,7 @@ The **custom steps** option allows you to override the home deck’s steps
 and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time.
 
-Counts
+Liczby
 ------
 
 In a filtered deck, reviews that were already due are displayed in the
@@ -201,7 +170,7 @@ Reviews that were not due are not scheduled like new cards however -
 Anki uses a special algorithm that takes into account how close they
 were to their normal due time when reviewed.
 
-Due Reviews
+Powtórki oczekujące
 -----------
 
 If the filtered deck includes cards that were due for review, they will
@@ -212,7 +181,7 @@ will be moved back to its home deck, and its next delay adjusted using
 the home deck’s settings. If you forget the card, it will be shown
 according to the relearning steps defined in the home deck.
 
-Reviewing Ahead
+Nauka z wyprzedzeniem
 ---------------
 
 If your search included cards that are not due, Anki will show the
@@ -247,7 +216,7 @@ when deciding the next delay, and like relearning in normal decks,
 "Good" and "Easy" differ only in the step change and not the resulting
 delay.
 
-Rescheduling
+Zmiana planu
 ------------
 
 By default, Anki will return cards to their home decks with altered
@@ -264,7 +233,7 @@ return to its home deck with its original scheduling.
 Please note that new cards are returned to the end of the new card
 queue, rather than the start of it.
 
-Catching Up
+Nadrabianie zaległości
 -----------
 
 Filtered decks can be useful for catching up when you’ve fallen behind
