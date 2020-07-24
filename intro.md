@@ -30,4 +30,4 @@ Ta instrukcja jest tłumaczona przez wolontariuszy. Językiem źródłowym jest 
 
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
-Jeśli chciałbyś przetłumaczyć tę instrukcję na inny język wejdź na stronę poradnika o [tłumaczeniu Anki](https://translating.ankiweb.net/#/anki/manual).
+Jeśli chciałbyś przetłumaczyć tę instrukcję na inny język, wejdź na stronę poradnika o [tłumaczeniu Anki](https://translating.ankiweb.net/#/anki/manual).
