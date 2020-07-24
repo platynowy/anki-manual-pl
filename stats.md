@@ -26,16 +26,25 @@ Statistics
 ----------
 
 The statistics window is accessed by clicking on the graphs icon in the
-top right of the main window, or by pressing Shift+S. The statistics
+top right of the main window, or by pressing T. The statistics
 window will show statistics from the currently selected deck and any
-subdecks. If you click on "collection" on the bottom left, statistics
-will be shown for your entire collection instead.
+subdecks. If you click on "collection" on the bottom left, statystyki will be shown for your entire collection instead. On 2.1.28+, aditionaly,
+ you can display graphs for arbitrary searches by adding filters in the
+ search box.
 
-By default Anki will show you statistics for the previous month. You can
-change this to a year scope or deck life scope at the bottom. (The
+Anki 2.1.28+ introduces redesigned graphs. The old graphs are currently still
+ accessible with a shift+click on the Stats button.
+
+ For Anki 2.1.28+, by default Anki will show you statistics for the previous year.
+ You can change this to all history scope or deck life scope at the top. (The
 "today" section at the top is of course unaffected by this selection.)
 
-Clicking on "Save Image" will save an image of the statistics to a file
+For older versions of Anki, by default Anki will show you statistics for
+ the previous month. You can change this to a year scope or deck life scope
+ at the bottom. (The “today” section at the top is of course unaffected
+ by this selection.)
+
+ Clicking on "Save PDF" will save an PDF document of the statistics to a file
 on your desktop to make it easy to share your statistics with others.
 
 When you delete notes, their review history is maintained in Anki. It
@@ -224,5 +233,5 @@ answer sides of the card before selecting an ease button.
 
 **type**  
 This is 0 for learning cards, 1 for review cards, 2 for relearn cards,
-and 3 for "cram" cards (cards being studied in a filtered deck when they
+and 3 for early "cram" cards (cards being studied in a filtered deck when they
 are not due).
