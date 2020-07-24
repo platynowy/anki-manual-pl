@@ -94,8 +94,7 @@ Jesli chciałbyś, aby czarne okno konsoli nie było cały czas wyświetlane, mo
 
     start /b g:\anki\anki.exe -b g:\ankidata
 
-- Podwójne klikniecie na anki.bat powinno uruchomić Anki z danymi użytkownika przechowywanymi w
-  stored in G:\\ankidata.
+- Podwójne kliknięcie na anki.bat powinno uruchomić Anki z danymi użytkownika przechowywanymi w G:\\ankidata.
 
 Jest wymagana pełna ściezka, włącznie z literą dysku -  jesli spróbujesz wpisać `\anki\anki.exe`, synchronizacja przestanie działać.
 
@@ -103,60 +102,40 @@ Synchronizacja plików z AnkiWeb może nie działac, jesli twój dysk jest sform
 
 ## Kopie zapasowe
 
-Each time your collection is closed (when closing Anki, switching
-profiles, or synchronizing your deck), Anki exports your collection into
-the backups folder. By default Anki will store up to 30 backups; you can
-adjust this in the [preferences](preferences.md).
+Za każdym razem, gdy twoja kolekcja jest zamykana (podczas zamykania Anki, przełączania profili lub synchronizacji talii), Anki exportuje twoją kolekcję do folderu z kopiami zapasowymi (backups). Domyslnie anki przechowuje do 30 kopii zapasowych. Możesz zmienić tę liczbe w [ustawieniach](preferences.md)
 
-Automatic backups do not protect against disk or computer failure, and
-do not extend to your media. To keep your collections safe, please
-consider making manual backups too.
+Automatyczne kopie zapasowe nie chronią przed awarią dysku lub komputera i nie przechowują plików multimedialnych. Aby chronić swoją kolekcję, rozważ tworzenie ręcznych  kopii zapasowych.
 
-The easiest way to make a manual backup is to use the File&gt;Export
-menu item to export all decks with scheduling and media information
-included, which will save your data to a .colpkg file.
+Najłatwiejszym sposobem utworzenia ręcznej kopii zapasowej jest wejście w menu Plik&gt;Eksportuj, aby wyeksportować wszystkie talie włącznie z  planowaniem i plikami. Plik zawierający twoje dane będzie plikiem .colpkg.
 
-If you want to back up multiple profiles and your add-ons as well, you
+Jesli chcesz utworzyć kopie zapasowe kilku profili oraz dodatków, możesz zrobić kopię [folderu Anki](files.md). Upewnij się najpierw, że Anki jest zamknięte, jako, że kopie zapasowe mogą być uszkodzone, jesli się je uruchomi, gdy Anki jest otwarte (?) If you want to back up multiple profiles and your add-ons as well, you
 can make a complete copy of your [Anki folder](files.md). Please make sure
 you close Anki first, as backups may be corrupt if run while Anki is
 open.
 
-To restore from an automatic backup:
+Aby przywrócić z automatycznej kopii zapasowej:
 
-1.  From the File menu, select Switch Profile to show the Profiles
-    window.
+1.  Z menu "Plik", wybierz "Przełącz Profil", aby pokazać ekran z profilami
 
-2.  Select the profile you wish to restore on the left.
+2.  Wybierz po lewej profil, w którym chcesz przywrócić kopię zapasową.
 
-3.  Click the Open Backup…​ button.
+3.  Klknij na "Otwórz kopię zapasową…​".
 
-4.  Choose Yes and the available backups will appear.
+4.  Wybierz "Tak", pojawią się dostepne kopie zapasowe.
 
-5.  Open a backup based on the date you wish to restore to.
+5.  Otwórz kopię zapasową z dnia, do którego chcesz przywrócić kolekcję.
 
-6.  Check that that the backup that was restored was the one you
-    intended. If you wish to try a different backup, return to step 1.
+6.  Sprawdź, czy kopia zapasowa, do której przywróciłeś swoją kolekcję na pewno była tą, do której chciałeś przywrócić. Jeśli chcesz spróbować z inną kopią zapasową, powróć do kroku 1.
 
-7.  Anki has disabled automatic syncing and backups while you check the
-    backup. When you’re happy with the backup you’ve selected, quit Anki
-    and start it again to return to the normal behaviour.
+7.  Anki wyłączyło automatyczną synchronizację i kopie zapasowe podczas, gdy sprawdzasz kopię zapasową. Jeśli wybrałeś odpowiednią kopię zapasową, zamknij Anki i uruchom ponownie, aby przywrócić normane zachowanie.
 
-Anki also logs deleted notes to a text file called deleted.txt in your
-profile folder. These notes are in a text format that can be read by
-File&gt;Import, though please note the import feature only supports a
-single note type at one time, so if you have deleted notes from
-different note types, you’ll need to split the file into separate files
-for each note type first.
+Anki równiez prowadzi dziennik usuniętych notatek, zapisuje go w pliku tekstowym nazwanym deleted.txt w folderze profili. Te notatki sa w formacie, który może zostać odczytany przez Plik&gt;Importuj. Jednak pamiętaj, że funkcja "Import"uj obsługuje tylko jeden typ notatki na raz, więc jeśli masz usunięte notatki z różnych typów notatek, bedziesz musiał najpierw rozdzielic plik na kilka innych plików,po jednym dla każdego typu notatki. 
 
-## Inaccessible Harddisk
+## Niedostępny dysk twardy
 
-If Anki can’t write to files in the [Anki folder](files.md), a message
-will be displayed on startup saying that Anki can’t write to the
-harddisk, and Anki will close. If you’re unsure how to fix the
-permissions, please contact someone near you who is knowledgable about
-computers and can help you out.
+Jeśli Anki nie może zapisywać plików w [folderze Anki](files.md), przy starcue pojawi się wiadomość, że Anki nie może zapisywać plików na dysku twardym, po czym program się wyłączy. Jeśli nie jesteś pewien jak naprawić pozwolenia, skontaktuj się z kimś z twojego otoczenia, kto dysponuje wiedzą komputerową i będzie mógł Ci pomóc.
 
-## Permissions of Temp Folder
+## Uprawnienia do folderu tymczasowego
 
 Anki uses the system’s temporary folder to store temporary data. If the
 permissions of this folder have been changed from the default settings
@@ -181,7 +160,7 @@ knowledgeable about Windows if you are not sure.
     default W7 install the control will actually be inherited from
     c:\\users\\your-username.
 
-## Corrupt Collections
+## Uszkodzone kolekcje
 
 Anki uses a file format that is robust against program and computer
 crashes, but it’s still possible for your collection to become corrupt
@@ -246,7 +225,7 @@ Make sure you use temp.file - do not put collection.anki2 on the right,
 or you will blank out the file. When you’re done, proceed to the final
 step.
 
-**Final Step**
+**Ostatni krok**
 
 Check that you didn’t get an error message, and that temp.file is not
 empty. The procedure optimizes the collection in the process, so it’s
