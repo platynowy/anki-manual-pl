@@ -1,10 +1,10 @@
 # Wyszukiwanie
 
-Zarówno przeglądarka jak i talie filtrowane używają w anki wspólnej metody wyszukiwania określonych kart/notatek.
+Zarówno przeglądarka jak i talie filtrowane używają w Anki wspólnej metody wyszukiwania określonych kart/notatek.
 
 ## Proste wyszukiwania 
 
-Gdy wpiszesz coś w wyszkiwarce Anki wyszukuje we wszystkich polach notatek, ale nie w atykietach (później w tej cześci nauczysz się jak wyszukiwać etykiety) Kilka przykładów:
+Gdy wpiszesz coś w wyszkiwarce, Anki wyszukuje we wszystkich polach notatek, ale nie w dtykietach (później w tej cześci nauczysz się jak wyszukiwać etykiety) Kilka przykładów:
 
 `lot`  
 wyszukuje słowa "lot" - wyniki wyświetlą również słówka takie jak "lotem" oraz "nalot".
@@ -28,10 +28,10 @@ wyszukuje notatki bez słów "kot" oraz "mysz".
 jak wyżej.
 
 `"ten kot"`  
-wyszukuje notatki, które zawierają w sobie dokładnie takie wyrażenie -> "ten kot" funkcja wyszuka np. "tamten kot", jednak nie pojawią wyniki takie jak "kot tamten".
+wyszukuje notatki, które zawierają w sobie dokładnie takie wyrażenie -> "ten kot". Funkcja wyszuka np. "tamten kot", jednak nie pojawią wyniki takie jak "kot tamten".
 
 `-"ten kot"`  
-wyszukuje notatki, które nie zawierają w sobie dokładnie takiego wyrażenua -> "ten kot".
+wyszukuje notatki, które nie zawierają w sobie dokładnie takiego wyrażenia -> "ten kot".
 
 `k_t`  
 wyszukuje notatki z k, &lt;dowolną literą&gt;, t, takie jak kit, kat, kot, i tak dalej.
@@ -52,37 +52,37 @@ Z powyższych przykładów wynika, że:
 
 - Szukane słowa zawsze są oddzielone spacją
 
-- Kiedy podanych zostanie kilka warunków wyszukiwania, Anki bedzie szukać notatek, które spełniają wszystkie warunki (niewidoczne "and" pomiędzy każdym wyrażeniem). W Anki 2.1.24+ oraz AnkiMobile 2.0.60+ możesz te ukryte "and" wpisywać, jeśli chcesz - "lot and kot" jest tym samym co "lot kot". Starsze wersje anki traktują "and" jako normalne słowo do wyszukania. 
+- Kiedy podanych zostanie kilka warunków wyszukiwania, Anki bedzie szukać notatek, które spełniają wszystkie warunki (niewidoczne "and" pomiędzy każdym wyrażeniem). Jeśli chcesz,W Anki 2.1.24+ oraz AnkiMobile 2.0.60+ możesz te ukryte "and" wpisywać - "lot and kot" jest tym samym co "lot kot". Starsze wersje Anki traktują "and" jako normalne słowo do wyszukania. 
 
-- Możesz używać "or" jeśli potrzebujesz, zeby tylko jedno z wyrażeń zostało znalezione.
+- Możesz używać "or" jeśli chcesz, żeby tylko jedno z wyrażeń zostało znalezione.
 
 - Możesz dodać przed wyrażeniem znak minus, aby znaleźć notatki, które nie spełniają kryteriów.
 
 - Jeśli twoje wyszukiwanie zawiera spację lub nawias, zamknij je w cytatach. Możesz w nich umieścić
   `"całe:wyszukiwanie"`, lub tylko `część:"po dwókropku"`.
 
-- Możesz grupowac pojecia, które wyszukujes poprzez wstawianie ich do nawiasów, tak jak w przykładzie **lot (kot or mysz)**. Jest to dosć istotne podczas łączenia wyszukiwań OR oraz AND - w przykładzie z nawiasami zostaną wyszukane "lot kot" lub "lot mysz", podczas gdy bez tych Anki szukałoby "lot and kot" lub "mysz". 
+- Możesz grupować pojęcia, które wyszukujesz, poprzez wstawianie ich do nawiasów, tak jak w przykładzie **lot (kot or mysz)**. Jest to dosyć istotne podczas łączenia wyszukiwań OR oraz AND - w przykładzie z nawiasami zostaną wyszukane "lot kot" lub "lot mysz", podczas gdy bez nich Anki szukałoby "lot and kot" lub "mysz". 
 
-- Anki jest w stanie wyszukiwać uwzględniając formatowaniem tylko w skonfigurowanym [polu sortowania](editing.md#customizing-fields). Jeśli na przykład dodasz "**przy**kład" do jednego z twoich pól, nie zostanie ono znalezione podczas wyszukiwania "przykład", chyba że to pole jest polem sortowania. Jesli słowo nie jest sformatowane lub formatowanie nie zmienia się w środku słowa Anki będzie w stanie je znaleźć niezaleznie od pola. 
+- Anki jest w stanie wyszukiwać uwzględniając formatowanie tylko w skonfigurowanym [polu sortowania](editing.md#customizing-fields). Jeśli na przykład dodasz "**przy**kład" do jednego z twoich pól, nie zostanie ono znalezione podczas wyszukiwania "przykład", chyba, że to pole jest polem sortowania. Gdy słowo nie jest sformatowane lub formatowanie nie zmienia się w środku, słowa Anki będzie w stanie je znaleźć niezaleznie od pola. 
 
 ## Zawężanie wyszukiwania do pola
 
 Możesz równiez wyszukać tak, aby wyniki zostały znalezione tylko jeśli określone pole zawiera jakiś tekst. W przeciwieństwie do wyszukiwań u góry, szukanie po polu domyślnie wymaga "ścisłego dopasowania".
 
 `przód:kot`  
-wyszukuje notatki z polem Przód, w którym znajduje się dokładnie "kot". Pole, w którym znajduje sie "ten kot" nie zostanie znalezione.
+wyszukuje notatki z polem Przód, w którym znajduje się dokładnie "kot". Pole, w którym znajduje się "ten kot" nie zostanie znalezione.
 
 `przód:*kot*`  
 wyszukuje notatki z polem Przód, które zawiera gdzieś słowo "kot".
 
 `przód:`  
-wyszukuje notatki, które zawierają puste pole o nazwie Przód
+wyszukuje notatki, które zawierają puste pole Przód.
 
 `przód:_*`  
 wyszukuje notatki, które zawierają pole Przód, które nie jest puste.
 
 `przód:*`  
-wyszukuje notatki, które zawierają Pole przód, niezalznie czy jest coś w nim napisane 
+wyszukuje notatki, które zawierają Pole przód, niezależnie czy jest coś w nim napisane 
 
 `pr*:text`
 wyszukuje notatki w polu zaczynającym sie na "pr". Wymaga Anki 2.1.24+ lub AnkiMobile 2.1.60+.
@@ -96,18 +96,18 @@ wyszukuje notatki z etykietą "zwierze"
 wyszukuje notatki bez etykiet
 
 `tag:zwi*`  
-wyszukuje notastki z etykietami, które zaczynają się na zwi-.
+wyszukuje notatki z etykietami, które zaczynają się na zwi-.
 
 `deck:francuski`  
 wyszukuje karty w talii Francuski lub jej podtaliach np. Francuski::Słownictwo.
 
 `deck:francuski -deck:francuski::*`  
-znajdź karty w talii Francuski, ale nie wyszukuj w podtaliach.
+znajduje karty w talii Francuski, ale nie wyszukuje w podtaliach.
 
 `deck:"francuski słownictwo"`  
 używane, gdy w nazwie talii jest spacja
 
-`"deck:french vocab"`  
+`"deck:francuski słownictwo"`  
 też działa
 
 `deck:filtered`  
@@ -117,19 +117,19 @@ tylko talie filtrowane
 tylko talie niefiltrowane
 
 `card:forward`  
-wyszukuje karty przednich
+wyszukuje kart przednich
 
 `card:1`  
-wyszukuje karty po numerze szablonu np. aby znaleźć drugie wypełnianie dla karty, wpisałbyś card:2
+wyszukuje karty po numerze szablonu np. aby znaleźć drugie wypełnianie luki dla karty, wpisałbyś card:2
 
 `note:basic`  
 wyszukuje kart z podstawowym typem notatki
 
-## Ignorowanie akcentów/łączenie znaków
+## Ignorowanie akcentów i łączenia znaków
 
 Wymaga Anki 2.1.24+ lub AnkiMobile 2.0.60+.
 
-Możesz użyć `nc:` aby usunąć łączenie znaków. Przykładowo:
+Możesz użyć `nc:` aby ignorować akcenty i łączenie znaków. Przykładowo:
 
 `nc:uber`  
 wyszukuje notatki  "uber", "über", "Über" i tak dalej.
@@ -137,13 +137,13 @@ wyszukuje notatki  "uber", "über", "Über" i tak dalej.
 `nc:は`  
 wyszukuje "は", "ば", oraz "ぱ"
 
-Wyszukiwania, które ignorują łączenie znaków są wolniejsze niż standardowe wyszukiwania.
+Wyszukiwania, które ignorują łączenie znaków i akcenty są wolniejsze niż standardowe wyszukiwania.
 
 ## Wyrażenia regularne
 
-Anki 2.1.24+ oraz AnkiMobile 2.0.60+ umozliwiają wyszukiwanie w notatkach za pomocą "wyrazeń regularnych", standardowy i skuteczny sposób wyszukiwania informacji w tekście.
+Anki 2.1.24+ oraz AnkiMobile 2.0.60+ umozliwiają wyszukiwanie w notatkach za pomocą "wyrazeń regularnych". Jest to standardowy i skuteczny sposób wyszukiwania informacji w tekście.
 
-Zaczanij wyszukiwanie od `re:`,aby wyszukac przy pomocy wyrażenia regularnego. Kilka przykładów:
+Zaczanij wyszukiwanie od `re:`, aby wyszukać przy pomocy wyrażenia regularnego. Kilka przykładów:
 
 `"re:(niektóre|inne).*rzecz"`  
 wyszukuje notatki zawierające "niektóre" lub "inne", po nich znajdujące się 0 lub więcej znaków, a nastepnie "rzecz".
@@ -151,20 +151,20 @@ wyszukuje notatki zawierające "niektóre" lub "inne", po nich znajdujące się 
 `re:\d{3}`  
 wyszukuje notatki, które są złożone z 3 cyfr w rzędzie.
 
-Wyrażenia regularne moga również być limitowane do określonego pola. Zauważ, że w odróżnieniu od normalnych wyszukiwań w określonym polu, wyrażenia regularne wnie wymagają w polach ścisłego dopasowania. Przykładowo:
+Wyrażenia regularne mogą  być również limitowane do określonego pola. Zauważ, że w odróżnieniu od normalnych wyszukiwań w określonym polu, wyrażenia regularne nie wymagają w polach ścisłego dopasowania. Przykładowo:
 
 `przód:re:[a-c]1`  
-wyszukuje duże jak i małe litery a1, B1 lub c1, która pojawiają sie gdziekolwiek w polu "Przód".
+wyszukuje duże jak i małe litery a1, B1 lub c1, które pojawiają sie gdziekolwiek w polu "Przód".
 
 `przód:re:^[a-c]1$`  
 jak wyżej, ale nie wyszukają, jeśli przed a1/b1/c1 pojawi się jakikolwiek tekst.
-Możesz dowiedzieć się więcej o wyrażeniach regularnych tutaj:https://regexone.com/lesson/introduction_abcs.
+Możesz dowiedzieć się więcej o wyrażeniach regularnych tutaj: https://regexone.com/lesson/introduction_abcs.
 
-Kilka rzeczy, na które trzeba zwrócic uwagę:
+Kilka rzeczy, na które trzeba zwrócić uwagę:
 
-- Wyszukiwanie domyślnie nie bierze pod uwage wielkość liter; użyj (?-i) na początku, aby brac pod uwagę wielkość liter w wyszukiwaniach.
-- Niektóry tekst jak spacje albo nowe linie mogą być pokazane inaczej w HTML - możesz użyć edytora HTML w oknie edycji aby zobaczyć niewidoczną zawartość HTML
-- Aby dowiedzieć się szczegółów o wsparciu Anki dla wyrażeń regularnych, zobacz nastepujaca dokumentację: https://docs.rs/regex/1.3.9/regex/#syntax
+- Wyszukiwanie domyślnie nie bierze pod uwagę wielkość liter; wpisz (?-i) na początku, aby brać pod uwagę wielkość liter w wyszukiwaniach.
+- Niektóry tekst jak spacje albo nowe linie mogą być pokazane inaczej w HTML - możesz użyć edytora HTML w oknie edycji, aby zobaczyć niewidoczną zawartość HTML
+- Aby dowiedzieć się szczegółów o wsparciu Anki dla wyrażeń regularnych, zobacz następującą dokumentację: https://docs.rs/regex/1.3.9/regex/#syntax
 
 ## Stan karty
 
@@ -172,7 +172,7 @@ Kilka rzeczy, na które trzeba zwrócic uwagę:
 karty powtórkowe i karty uczone oczekujące na naukę
 
 `is:new`  
-nowe karty
+karty nowe
 
 `is:learn`  
 karty uczone
@@ -186,7 +186,7 @@ karty, które zostały ręcznie zawieszone
 `is:buried`  
 karty, które zostały zakopane [automatycznie](studying.md#siblings-and-burying) lub ręcznie.
 
-Karty - pomyłki zliczają się do kilku z tych kategorii więc może okazac się przydatne połączenie tych wyszukiwań aby otrzymać bardziej precyzyjne wyniki:
+Karty - pomyłki zliczają się do kilku z tych kategorii, więc może okazać się przydatne połączenie tych wyszukiwań, aby otrzymać bardziej precyzyjne wyniki:
 
 `is:learn is:review`  
 pomyłki oraz karty oczekujące na ponowną naukę 
@@ -195,7 +195,7 @@ pomyłki oraz karty oczekujące na ponowną naukę
 powtórki bez pomyłek
 
 `is:learn -is:review`  
-karty, które sa uczone po raz pierwszy.
+karty, które sś uczone po raz pierwszy.
 
 ## Własciwości karty
 
@@ -209,7 +209,7 @@ karty na jutro
 karty wczorajsze, na które jeszcze nie odpowiedziano
 
 `prop:due>-1 prop:due<1`  
-karty oczekujące pomiedzy dniem dzisiejszym a jutrzejszym
+karty oczekujące pomiedzy dniem wczorajszym a jutrzejszym
 
 `prop:reps<10`  
 karty, na które odpowiedziano mniej niż 10 razy
@@ -220,7 +220,7 @@ karty, które były uczone ponownie więcej niż 3 razy.
 `prop:ease!=2.5`  
 karty łatwiejsze lub trudniejsze niż domyślna wartość
 
-Miej na uwadzę, że  "due" wyszukuje tylko karty powtórkowe i karty uczone z przerwą wynosząca jeden dzień lub wiecej: karty uczone z mniejszymi przerwami takimi jak 10 minut nie są uwzgledniane.
+Miej na uwadzę, że "due" wyszukuje tylko karty powtórkowe i karty uczone z przerwą wynosząca jeden dzień lub więcej: karty uczone z mniejszymi przerwami takimi jak 10 minut nie są uwzgledniane.
 
 ## Ostatnio dodane
 
@@ -230,12 +230,12 @@ karty dodane dzisiaj
 `added:7`  
 karty dodane w ciągu ostatniego tygodnia
 
-Data dodania jest sprawdzana na podstawie daty utworzenia karty a nie daty utworzenia notatki, więc karty, które zostały wygenerowane w określonym będa brane pod uwagę nawet jeśli ich notatki zostały dodane dawno temu
+Data dodania jest sprawdzana na podstawie daty utworzenia karty a nie daty utworzenia notatki, więc karty, które zostały wygenerowane w określonym czasie będa brane pod uwagę nawet, jeśli ich notatki zostały dodane dawno temu
 
 ## Ostatnio powtarzane
 
 `rated:1`  
-karty, naktóre odpowiedziano dzisiaj
+karty, nak tóre odpowiedziano dzisiaj
 
 `rated:1:2`  
 karty, na które odpowiedziano dzisiaj Trudna (2) 
@@ -246,9 +246,9 @@ karty, na które odpowiedziano Powtórz (1) w ciągu ostatnich 7 dni
 `rated:31:4`  
 karty, na które odpowiedziano Łatwa (4) w ciągu ostatniego miesiąca
 
-Ze względu na szybkość, wyszukiwania ze względu na ocene są limitowane do 31 dni.
+Ze względu na wydajnosć, wyszukiwania ze względu na ocene są limitowane do 31 dni.
 
-## Numery ID objeku
+## Numery ID objektu
 
 `nid:123`  
 wszystkie karty notatki z numerem ID notatki 123
@@ -257,8 +257,8 @@ wszystkie karty notatki z numerem ID notatki 123
 karta z numerem ID karty 123
 
 `mid:123`  
-wyszukuje typy notatek z typem notatki z numerem ID 123.
+wyszukuje typy notatek z numerem ID typeu notatki 123.
 
-numery ID notatek i kart możesz znaleźć w oknie [informacji o karcie](stats.md) w przeglądarce. Numery ID typów notatek możesz znaleźć klikając na typ notatki w oknie przeglądarki. Te wyszukiwania moga być równiez przydatne podczas tworzenia dodatku lub innej czynności wymagającej ścisłej pracy z bazą danych.
+numery ID notatek i kart możesz znaleźć w oknie [informacji o karcie](stats.md) w przeglądarce. Numery ID typu notatki możesz znaleźć klikając na typ notatki w oknie przeglądarki. Te wyszukiwania mogą być przydatne podczas tworzenia dodatku lub innej czynności wymagającej ścisłej pracy z bazą danych.
 
-numery ID objektów nie działają w aplikacjach mobilnym i nie są obecnie stworzone do używania z taliami filtrowanymi. 
+numery ID objektu nie działają w aplikacjach mobilnych i nie są obecnie stworzone do używania z taliami filtrowanymi. 
