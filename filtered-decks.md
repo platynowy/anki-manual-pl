@@ -12,7 +12,7 @@ Najłatwiejszym sposobem na stworzenie talii filtrowanej jest uzycia przycisku N
 
 Jeśli istnieje już talia "Sesja nauki własnej", zostanie ona opróżniona przed utworzeniem nowej. Jeśli chcesz zachować talię nauki własnej, możesz zmienić jej nazwę na liście talii. 
 
-Oto podsumowanie działania każdej z opcji:Here is a summary of each of the options:
+Oto podsumowanie działania każdej z opcji:
 
 **Zwiększenie dzisiejszego limitu nowych kart**  
 Dodaj więcej nowych kart do talii, której aktualnie się uczysz. Zauważ, że w przceciwieństwie do innych opcji, nie jest tutaj tworzona talia filtrowana, tylko jest modyfikowana jest już istniejącatalia .
@@ -35,112 +35,66 @@ Wybierz określoną liczbe kart do nauki z  obecnej talii. Możesz uczyć sie ty
 Talie początkowe
 ----------
 
-When a card is moved to a filtered deck, it retains a link to the deck
-it was in previously. That previous deck is said to be the card’s 'home
-deck'.
+Gdy karta jest przenoszona do talii filtrowanej, zachowuje połączenie do miejsca, gdzie znajdowała się na początku . Ta wcześniejsza talia nazywa się "talią początkową".
 
-Cards automatically return to their home deck after they are studied in
-the filtered deck. This can be after a single review, or after multiple
-reviews, depending on your settings.
+Karty powracają automatycznie do talii poczatkowej po przejrzeniu ich w talii filtrowanej. Może to być po jednej powtórce lub kilku powtórkach, w zależności od ustawień.
 
-It is also possible to move all cards back to their home decks at once:
+Jest również możliwe przeniesienie wszystkich kart z powrotem do ich talii początkowych:
 
--   The "Empty" button in the study overview moves all cards in the
-    filtered deck back to their home deck, but does not delete the empty
-    filtered deck. This can be useful if you want to fill it again later
-    (using the Rebuild button).
+-   Przycisk "Opróżnij" na ekranie talii filtrowanej (na dole ekranu) przenosi wszystkie karty talii filtrowanej z powrotem do ich talii poczatkowych, ale nie usuwa pustej talii filtrowanej. Może to być przydatne, jeśli chcesz wypełnić ją ponownie później (używając przycisku "Przebuduj").
 
--   Deleting a filtered deck does the same thing as "Empty" does, but
-    also removes the emptied deck from the deck list. No cards are
-    deleted when you delete a filtered deck.
+-   Usuwane talii filtrowanej działa tak samo jak opcja "Opróżnij", ale usuwa równiez pustą talię z listy talii. Żadne karty nie sa usuwane, gdy usuwasz talię filtrowaną.
 
-In the current implementation, if you create, rebuild, empty or delete a
-filtered deck while cards are still in learning, they will be turned
-back into new cards. In the case of failed reviews in relearning, any
-remaining relearning steps will be skipped. This has been fixed in the
-[experimental
-scheduler](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21).
+Na chwilę obecna, jeśli stworzysz,przebudujesz, opróżnisz lub usuniesz talie filtrowana w czasie, gdy karty dalej są kartami uczonymi, zostaną one przekonwertowane z powrotem na karty nowe. W przypadku powtórek z odpowiedzią "Powtórz", które byłī uczone ponownie, jakiekolwiek pozostałe kroki zostaną pominięte. To zostało poprawione w [eksperymentalnym planiście](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21). 
 
 Tworzenie ręczne
 -----------------
 
-Advanced users can create filtered decks with arbitrary search strings,
-instead of relying on set presets. To create a filtered deck manually,
-choose Create Filtered Deck from the Tools menu.
+Uzytkownicy zaawansowani moga tworzyć karty filtrowane z dowolnymi filtrami wyszukiwania, zamiast polegać na ustawieniach wstepnych. Aby utworzyc talię filtrowaną ręcznie, wybierz "Utwórz talię filtrowaną" z menu "Narzędzia".
 
-When you click the Build button, Anki finds cards that match the
-settings you specified, and temporarily moves them from their existing
-decks into your new filtered deck for study.
+Gdy nacisniesz przycisk "Buduj", Anki znajdzie karty zgodnie z opcjami, które sprecyzowałeś i czasowo przenosi je z ich talii poczatkowych do nowo stworzonej talii filtrowanej w celu nauki.
 
-If you wish to fetch cards again using the same filter options (for
-instance, if you want to study all cards with a particular tag every
-day), you can use the Rebuild button at the bottom of the deck’s
-overview screen.
+Jeśli chciałbys ponownie zebrać karty używając tych samych opcji (na przykład, jeśli chciałbyś uczyć się wszystkich kart z określoną etykietą każdego dnia), możesz uzyc opcji Przebuduj na dole ekranu talii filtrowanej.
 
-The **search** area controls what cards Anki will gather. All of the
-searches possible in the browser are also possible for filtered decks,
-such as limiting to tags, finding cards forgotten a certain number of
-times, and so on. Please see the [searching](searching.md) section of the
-manual for more information on the different possibilities.
+Obszar **szukaj** kontroluje, jakie karty Anki doda do talii filtrowanej.Wszystkie możliwości wyszukiwania w przeglądarce są równiez możliwe do uzycia dla talii filtrowanych, jak na przykład określanie tylko do etykiet, znajdowanie określoną ilość razy zapomnianych kart i tak dalej. zobacz rozdział o [wyszukiwaniu](searching.md), aby dowiedzieć się więcej o różnych możliwościach wyszukiwania.
 
-Filtered decks can not pull in cards that are suspended, buried, or
-already in a different filtered deck. And unless you are using the
-experimental scheduler, they can not pull in cards that are in
-(re)learning. For this reason, a search in the browser may reveal cards
-that don’t end up in the filtered deck.
+Talie filtrowane nie moga zebrać kart, które sa zawieszone, zakopane lub znajdują się juz w innej tali filtrowanej. Oraz, chyba że używasz ekperymentalnego planisty, nie moga zebrać kart, które są (uczone) ponownie. Z tego powodu, wszykiwanie w przeglądarce może wykazać karty, które nie trafią do talii filtrowanej.
 
-The **limit** option controls how many cards will be gathered into the
-deck. The order you select controls both the order cards are gathered
-in, and the order they will be reviewed in. If you select "most lapses"
-and a limit of 20 for example, then Anki will show you only the 20 most
-lapsed cards.
+Opcjka **Ogranicz do** określa, ile kart zostanie zebranych do talii. Kolejność, którą wybierzesz kontroluje  zarówno kolejność kart zebranych do talii, jak i kolejność ich pokazywania. Jeśli wybierzesz "Najwięcej pomyłek" i dodasz ograniczenie na przykład 20 kart, Anki pokaże Ci 20 kart z największą ilością pomyłek.
 
-For efficiency reasons, if your cram deck contains more than 1000 cards,
-only 1000 cards will be shown as due on the deck list and study screens.
+Ze względy na wydajnośc, jeśli zakuwasz talie zawierająca wiecej niż 1000 kart, tylko 1000 kart będzie pokazanych jako oczekujące na ekranie z lista talii oraz na ekranie określonej talii.
 
 Kolejność
 -----
 
-The "cards selected by" option controls the order that cards will appear
-in. If the maximum number of cards you select is lower than the number
-of cards that match the filter criteria, Anki will exclude the cards at
-the end of this sorted list first.
+Opcja "Wybrane karty" określa kolejność z jaką pojawią się karty. Jeśli maksymalna liczba kart, które wybierzesz jest mniejsza niż liczba kart, które spełniają kryteria wyszukiwania, Anki najpierw wykluczy karty na końcu posortowanej listy.
 
-**Oldest seen first**  
-Display cards that you haven’t seen in reviews for the longest time
-first.
+**Najpierw najstarsze**  
+Najpierw wyświetl karty, których powótrek nie widziałeś od najdłuższego czasu.
 
-**Random**  
-Randomize the order of all cards that match the filter criteria (use no
-set order).
+**Losowa**  
+Przelosuj wszystkie karty, które spełniają kryteria wyszukiwania (brak określonej kolejności).
 
-**Increasing intervals**  
-Display cards that have the smallest interval first.
+**Rosnące przerwy**  
+Pokazuj najpierw karty z najkrótszymi przerwami.
 
-**Decreasing intervals**  
-Display cards that have the largest interval first.
+**Malejące przerwy**  
+Pokazuj najpierw karty z najdłuższymi przerwami.
 
-**Most lapses**  
-Display cards that you have failed the most times first.
+**Najwęcej pomyłek**  
+Pokazuj najpierw karty, na które odpowiedziałeś "Powtórz" największa ilość razy.
 
-**Order added**  
-Display cards that you added first (have the earliest creation date)
-first.
+**W kolejności dodania**  
+Pokazuj najpierw karty, które jako pierwsze dodałeś (mają najwcześniejsządatę utworzenia)
 
-**Order due**  
-Display cards with the earliest due date first.
+**W kolejności oczekiwania**  
+Pokazuj najpierw karty z najkrótszym czasem oczekiwania na powrótkę.
 
-**Latest added first**  
-Display cards that you’ve most recently added to the deck first. (This
-is the opposite of 'Order added'.)
+**Najpierw ostatnio dodane**  
+Pokazuj najpierw karty, które ostatnio dodałeś do talii (jest to przeciwieństwo opcji "w kolejnosci dodania").
 
-**Relative overdueness**  
-Display cards that are most overdue in relation to their current
-interval first (for instance, a card with a current interval of 5 days
-overdue by 2 days displays before a card with a current interval of 5
-years overdue by a week). This is useful if you have a large backlog
-that may take some time to get through and want to review the cards
-you’re most in danger of forgetting first.
+**Według wzglednego spóźnienia**  
+Pokazuje najpierw karty, które są najbardzierj spóśnione w stosunku do planowanej daty powtórki (na przykłąd karta z przerwą 5 dni spóźniona o 2 dni pojawia się przed kartą z przerwą 5 lat spóźnioną o tydzień) Przydatna opcja, jeśli masz duże zaległości, których przerobienie może zajać trochę czasu i chcesz powtórzyć najpierw karty, których prawdopodobieństwo zapomnienia jest największe)
 
 Kroki i powrót
 -----------------
@@ -156,7 +110,7 @@ Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
 
-The **custom steps** option allows you to override the home deck’s steps
+The **własne kroki** option allows you to override the home deck’s steps
 and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time.
 
