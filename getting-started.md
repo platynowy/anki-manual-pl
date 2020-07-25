@@ -125,7 +125,7 @@ Tworzy dwie karty z wprowadzonym tekstem. Pierwszą jako Przód→Tył i drugą 
 Podstawowy (z opcjonalną odwrotną kartą)  
 Tworzy kartę Przód→Tył i opcjonalnie kartę Tył→Przód. Aby włączyć kartę Tył→Przód należy wpisać jakikolwiek znak lub słowo do ostatniego pola "Dodaj rewers". Więcej informacji na ten temat znajdziesz w rozdziale o  [kartach i szablonach](templates/intro.md).
 
-Luka
+Luka <br>
 Typ notatki który ułatwia wybór tekstu i zamianę go na tekst z luką  (np. “Człowiek wylądował na księżycu w \[…​\]” roku → “Człowiek wylądował na księżycu w
 1969 roku”). Wiecej informacji na ten temat znajdiesz w rozdziale [Wypełnianie luki](editing.md#cloze-deletion).
 
