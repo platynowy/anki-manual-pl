@@ -10,7 +10,7 @@ Możesz wyświetlić informację o karcie klikając na przycisk "Informacje" w p
 Pokazywana tylko, gdy karta jest nowa. Pokazuje miejsce w kolejce,  do wyświetlenia karty w stosunku do innych nowych kart. Może zostać zmieniona w przeglądarce.
 
 **Przerwa**  
-Różnica między jedną powtórką, a nastepną. The delay from one review to the next. Nazwy są skrócone; "0s, 1m,
+Różnica między jedną powtórką, a nastepną. Nazwy są skrócone; "0s, 1m,
 3g, 4d, 5mc, 6r" oznacza kolejno: sekundy, minuty, godziny, dni, miesiące, lata.
 
 **Łatwość**  
@@ -76,7 +76,7 @@ Wykres wyświetla przybliżoną liczbę kart, które będą powtarzane w przysz�
 Wykres przedstawia liczbę kart powtórzonych w przeszłości. Słupki mogą odpowiadać dniom, tygodniom lub miesiącom, w zależności od okresu jaki wybrałeś na u góry ekranu statystyk. Poszczególne kolory pokazują ile z kart, na które udzieliłeś odpowiedzi było [dojrzałe](stats.md#types-of-cards), młode, uczone i uczone ponownie. Jest także oddzielna grupa kart, na które udzieliłeś odpowiedzi w ramach talii filtrowanej. Prawa pionowa oś, do której przypisany jest wykres liniowy wskazuje skumulowaną liczbę odpowiedzi na karty od daty początku wykresu.
 
 
-**Review Time**  
+**Czas powtórek**  
 Wykres ten należy interpretować w ten sam sposób co "Liczba powtórek", jednakże jednostką jest tutaj czas spędzony na powtórce.
 
 **Przerwy**  
