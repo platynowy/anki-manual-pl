@@ -94,7 +94,7 @@ Ten Wykres przedstawia udział procentowy kart dojrzałych, niewidzianych, młod
 Analiza ręczna
 ---------------
 
-Jeśli chciałbys uzyskać więcej informacji o statystykach, niż zapewnia Anki, można to zrobić poprzez bezpośredni dostęp do danych. JAko, że jest to skomplikowane, nie możemy zapewnić żadnego wsparcia dla tej czynności.
+Jeśli chciałbyś uzyskać więcej informacji o statystykach, niż zapewnia Anki, można to zrobić poprzez bezpośredni dostęp do danych. JAko, że jest to skomplikowane, nie możemy zapewnić żadnego wsparcia dla tej czynności.
 
 Jedną z opcji jest [napisanie dodatku](addons.md), który dodaje kolejny wykres lub wiecej szczegółów w oknie statystyk. Istnieje kilka dodatków tegotypu na AnkiWeb. Możesz je przejrzeć, żeby zobaczyć, jak one działają.
 
@@ -103,44 +103,28 @@ Bardziej skutecznym i skomplikowanym sposobem jest wyodrębnienie dziennika powt
 Najważniejszą tabelą dla statystyk jest tabela "revlog", która przechowuje wpis każdej wykonanej powtórki. Opis zawartych kolumn:
 
 **id**  
-The time at which the review was conducted, as the number of
-milliseconds that had passed since midnight UTC on January 1, 1970.
-(This is sometimes known as 'Unix epoch time', especially when in
-straight seconds instead of milliseconds.)
+Czas, w którym powtórka została przeprowadzona jako liczba milisekund, które upłynęły od północy czasu UTC, 1 stycznia 1970 roku (czasami nazywane jako czas "Unix epoch", szczególnie gdy jest wyrażony w sekundach zamiast milisekundach).
 
 **cid**  
-The ID of the card that was reviewed. You can look up this value in the
-id field of the 'cards' table to get more information about the card,
-although note that the card could have changed between when the revlog
-entry was recorded and when you are looking it up. It is also the
-millisecond timestamp of the card’s creation time.
+Numer ID karty, która została powtórzona. Możesz sprawdzić tę wartość w polu ID (id field) w tabelii "karty", aby uzyskć więcej informacji o karcie, jednak miej na uwadzę, że karta mogła zostać zmieniona pomiędzy czasem, gdy wpis do "revlog" został dodany, a kiedy ty go przeglądasz.
 
 **usn**  
-This column is used to keep track of the sync state of reviews and
-provides no useful information for analysis.
+Ta kolumna jest używana, aby śledzić stan synchronizacji powtórek i nie zawiera informacji przydatnych do analizy.
 
 **ease**  
-Which button you pressed at the end of the review (1 for Again, 4 for
-Easy).
+Jaka była ocena powtórki (1 - Powtórz, 4 - Łatwa)
 
 **ivl**  
-The new interval that the card was pushed to after the review. Positive
-values are in days; negative values are in seconds (for learning cards).
+Nowa przerwa (interwał), który został nadany po powtórce. Pozytywne wartości to dni, a wartości negatywne są wyrażone w sekundach (dla kart uczonych).
 
 **lastIvl**  
-The interval the card had before the review. Cards introduced for the
-first time have a last interval equal to the Again delay.
+Przerwa, jaką miała karta przed powtórką. Karty pokazane po raz pierwszy mają ostatnią przerwę taką samą jak czas po odpowiedzi "Powtórz".
 
 **factor**  
-The new ease factor of the card in permille (parts per thousand). If the
-ease factor is 2500, the card’s interval will be multiplied by 2.5 the
-next time you press Good.
+Nowy współczynnik łatwości dla karty, wyrażony w promilach (w systemie tysięcznym). Jeśli współczynnik łatwości wynosi 2500, przerwa karty będzie zwiększona o 2.5 przy następnej odpowiedzi "Dobra" na kartę.
 
 **time**  
-The amount of time (in milliseconds) you spent on the question and
-answer sides of the card before selecting an ease button.
+Ilość czasu (w milisekundach), które spędziłeś na stronie pytania i odpowiedzi karty przed wybranym odpowiedzi.
 
 **type**  
-This is 0 for learning cards, 1 for review cards, 2 for relearn cards,
-and 3 for early "cram" cards (cards being studied in a filtered deck when they
-are not due).
+Ta wartość wynosi 0 dla kart uczonych, 1 dla kart powrtarzanych, 2 dla kart uczonych ponownie oraz 3 dla wczesnych "zakuwanych" kart (kart, które były uczone w talii filtrowanej, podczas gdy nie oczekiwały w danym momencie na przejrzenie).
