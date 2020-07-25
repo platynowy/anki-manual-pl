@@ -64,71 +64,48 @@ Aby zapisać w LibreOffice arkusz kalkulacyjny do pliku, który Anki będzie w s
 
 ### HTML
 
-Anki can treat text imported from text files as HTML (the language used
-for web pages). This means that text with bold, italics and other
-formatting can be exported to a text file and imported again. If you
-want to include HTML formatting, you can check the "allow HTML in
-fields" checkbox when importing. You may wish to turn this off if you’re
-trying to import cards whose content contains angle brackets or other
-HTML syntax.
+Anki może traktować teksrt zaimportowany z plików tekstowych jako HTML (język uzywany do tworzenia stron internetowych). Oznacza to, że tekst z pogrubieniem, kursywą i innym formatowaniem może zostać wyeksporrtowany ponownie do pliku tekstowego, a następnie ponownie zaimportowany. Jesli chcesz załączyć formatowanie HTML, możesz zaznaczyć "dołącz HTML do plików" podczas importowania. Możesz to wyłączyć, jeśli importujesz karty, w których znajdują się nawiasy ostry lub inna składnię HTML.
 
-If you wish to use HTML for formatting your file but also wish to
-include angle brackets, you may write them differently:
+Jeśli chcesz użyć formatowania HTML do formatowania pliku, ale również chcesz załączyć nawiasy ostre, możesz je zapisać inaczej:
 
--   For "&lt;", use "&lt;"
+-   Dla "&lt;", użyj "&lt;"
 
--   For "&gt;", use "&gt;"
+-   Dla "&gt;", użyj "&gt;"
 
 ### Importowanie plików multimedialnych
 
-If you want to include audio and pictures from a text file import, copy
-the files into the [collection.media folder](files.md). **Do not put
-subdirectories in the media folder, or some features will not work.**
+Jeśli chcesz załączyć dźwięk i obrazy z importowanego pliku tekstowego, skopiuj pliki do [folderu collection.media](files.md) **Nie kopiuj podkatalogów do folderu plików, niektóre funkcje mogą nie działać, jeśli to zrobisz**
 
-After you’ve copied the files, change one of the fields in your text
-file as follows.
+Po skopiowaniu plików, zmień jedno z pól w pliku tekstowym. jak niżej:
 
-    <img src="myimage.jpg">
+    <img src="mojobraz.jpg">
 
-or
+lub
 
-    [sound:myaudio.mp3]
+    [sound:mojdzwiek.mp3]
 
-Alternatively, you can use the [find and replace](browsing.md) feature
-in the browse screen to update all the fields at once. If each field
-contains text like "myaudio", and you wish to make it play a sound,
-you’d search for (.\*) and replace it with "\[sound:\\1.mp3\]", with the
-'regular expressions' option enabled.
+Możesz też użyć opcji [znajdź i zamień](browsing.md) w oknie przeglądarki, aby zaktualizować wszystkie pola na raz. Jeśli pole zawiera tekst taki jak "mojeaudio", i chciałbyś, żeby odtwarzało ono dźwięk, szukałbyś (.\*), i zamieniłbyś to na "\[sound:\\1.mp3\]", z włączonączonymi wyrażeniami regularnymi. 
 
-When importing a text file with these references, you must make sure to
-enable the "Allow HTML" option.
+Podczas impotowania pliku tekstowego z tym sposobem, musisz się upewnić, aby włączyć opcję "zezwól na HTML".
 
-You might be tempted to do this in a template, like:
+Możesz chcieć wstawić poniższy, lub podobny  tekst w szablon:
 
-    <img src="{{field name}}">
+    <img src="{{nazwa pola}}">
 
-Anki doesn’t support this for two reasons: searching for used media is
+W Anki taka komenda nie zadziałą z dwóch powodów: wyszukiwanie używanych plików jesy wymagające, jako, że każda karta musi być wyrenderowana oraz taka funkcjonalność nie ejst jesna dla użytkowników udostępnionych talii. Zamiast tego żżyj techniki znajdź i zamień Anki doesn’t support this for two reasons: searching for used media is
 expensive, as each card has to be rendered, and such functionality isn’t
 obvious to shared deck users. Please use the find & replace technique
 instead.
 
 ### Masowe dodawanie plików multimedialnych
 
-Another option for importing large amounts of media at once is to use
-the [media import add-on](https://ankiweb.net/shared/info/1531997860).
-This add-on will automatically create notes for all files in a folder
-you select, with the filenames on the front (minus the file extension,
-so if you have a file named apple.jpg, the front would say 'apple') and
-the images or audio on the back. If you would like a different
-arrangement of media and filenames, you can [change the note
-type](browsing.md) of the created cards afterwards.
+Inną opcją importowania dużej ilości plików na raz jest [dodatek media import](https://ankiweb.net/shared/info/1531997860). Automatycznie tworzy on notatki dla wszystkich plików w folderze, z nazwami plików na przodzie (odejmując rozszerzenie, więc plik nazwany cytryna.jpg na przodzie wyglądalby jak "cytryna") oraz obrazy i dźwięk na tyle. Jeśli chciałbyś innne ułożenie plików multimedialnych oraz nazw plików, możesz [zmienić typ notatki](browsing.md) stworzonych kart po zakończonej operacji.
 
 ### Dodawanie etykiet
 
-If you want to add 'tag1' and 'tag2' to every line you’re importing, add
-the following to the top of the text file:
+Jeśli chcesz dodać "etykieta1" i "etykieta2" do każdej linii, którą importujesz, dodaj poniższy tekst na górze pliku tekstowego:
 
-    tags:tag1 tag2
+    tags:etykieta1 etykieta2
 
 ### Duplikaty i aktualizowanie
 
