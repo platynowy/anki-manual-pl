@@ -94,27 +94,13 @@ Ten Wykres przedstawia udział procentowy kart dojrzałych, niewidzianych, młod
 Analiza ręczna
 ---------------
 
-If you’re interested in getting information from your statistics other
-than what Anki provides, it is possible to access the data directly.
-Because of the complexity involved, this is not something we can provide
-any support for.
+Jeśli chciałbys uzyskać więcej informacji o statystykach, niż zapewnia Anki, można to zrobić poprzez bezpośredni dostęp do danych. JAko, że jest to skomplikowane, nie możemy zapewnić żadnego wsparcia dla tej czynności.
 
-One option is to [write an add-on](addons.md) that adds another graph or
-more details to the statistics window. There are several add-ons of this
-sort on AnkiWeb already, which you can look at to get an idea of how it
-works.
+Jedną z opcji jest [napisanie dodatku](addons.md), który dodaje kolejny wykres lub wiecej szczegółów w oknie statystyk. Istnieje kilka dodatków tegotypu na AnkiWeb. Możesz je przejrzeć, żeby zobaczyć, jak one działają.
 
-A more powerful and more complex option is to extract the review log
-information directly from Anki’s database and analyze it in an external
-program. Anki uses a database format called SQLite. There are many tools
-available for working with SQLite databases; one of the easiest to start
-with is called [SQLite Browser](http://sqlitebrowser.org/), which will
-allow you to look around the database as well as export a CSV version of
-tables for import into another program.
+Bardziej skutecznym i skomplikowanym sposobem jest wyodrębnienie dziennika powtórek bezpośrednio z dany bazych Anki i jego analiza przez zewnętrzny program. Anki używa bazy danych nazwanej "SQLite". Istnieje wiele nażędzi do pracy z bazami danych SQLite; jednym z najłatwiejszych na poczatek jest [SQLite Browser](http://sqlitebrowser.org/), który pozwoli ci przemieszczać się po bazie danych oraz eksportować wersję CSV tabeli, aby zaimportować je do innego pogramu. 
 
-The most important table for statistics is the 'revlog' table, which
-stores an entry for each review that you conduct. The columns are as
-follows:
+Najważniejszą tabelą dla statystyk jest tabela "revlog", która przechowuje wpis każdej wykonanej powtórki. Opis zawartych kolumn:
 
 **id**  
 The time at which the review was conducted, as the number of
