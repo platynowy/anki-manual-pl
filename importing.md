@@ -109,25 +109,10 @@ Jeśli chcesz dodać "etykieta1" i "etykieta2" do każdej linii, którą importu
 
 ### Duplikaty i aktualizowanie
 
-When importing text files, Anki uses the first field to determine if a
-note is unique. By default, if the file you are importing has a first
-field that matches one of the existing notes in your collection and that
-existing note is the same type as the type you’re importing, the
-existing note’s other fields will be updated based on content of the
-imported file. A drop-down box in the import screen allows you to change
-this behaviour, to either ignore duplicates completely, or import them
-as new notes instead of updating existing ones.
+Podczas importowania plików tekstowych, Anki używa pierwszego pola aby ustalić, czy notatka jest unikalna. Domyślnie, jeśli plik, który importujesz posiada pierwsze pole, które zgadza się z jedna z isniejacych notastek w twojej kolekcji i ta istniejaca notatka jest tym samym typem jak ta, która importujesz, Anki zaktualizuje reszte pól istniejącej notatki  bazujac na zaimportowanym pliku. Wysuwane menu w oknie importu pozwala zmienic to zachowanie na kompletne ignorowanie duplikatów lub importowanie ich jako nowe notatki zamaist aktualizacji już istniejących.
 
-The duplicate check is done for your 'entire collection', not just in
-the current deck. If Anki is indicating that notes have not changed when
-you expected them to be imported, please check that the notes are not
-already in your collection somewhere.
+Duplikaty są sprawdzane dla całej kolekcji, nie tylko w obecnej talii. Jeśli Anki wskazuje, że notatki nie zostały zmienione (podczas gdy oczekiwałeś, ze zostana zaimportowane) sprawdź, czy notatki nie znajdują się już gdzieś w kolekcji.
 
-If you have updating turned on and older versions of the notes you’re
-importing are already in your collection, they will be updated in place
-(in their current decks) rather than being moved to the deck you have
-set in the import dialog. If notes are updated in place, the existing
-scheduling information on all their cards will be preserved.
+Jesli masz włączone aktualizowanie notatek i starsze wersje tych notatek, które importujesz znajdują się już w twojej kolekcji, beda one aktualizowane w miejscu (w ich taliach) zamiast być przesuwane do talii, do której importujesz nowe karty. Jeśli notatki śa aktualizowane w miejscu, istniejace informacje o planowaniu w ich wszystkich kartach zostaną zachowane.
 
-For info on how duplicates are handled in .apkg files, please see the
-[Deck Packages](exporting.md) section below.
+Aby dowiedzieć się, jak Anki radzi sobie z duplikatami w plikach .apkg, zobacz rozdział o [spakowanej talii](exporting.md).
