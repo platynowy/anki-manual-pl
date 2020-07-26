@@ -64,72 +64,53 @@ U góry okna znajduje się menu. Możesz szybko uzyskac do niego dostęp poprzez
 Znajdź i zamień
 ----------------
 
-This option (Notes→Find and Replace…​) allows you to replace text in the
-notes you have selected. The regular expression option allows you to
-perform complex replacements. For example, given the following text in a
-field:
+Ta opcja (Notatki→Znajdź i zamień…​) umożliwia zamienić tekst w notatkach, które zaznaczyłeś. Dzięki Wyażeniu regularnemi można przeprowadzać zaawansowane zamienianie tekstu. Na przykład, jeśli w polu znajduje się tekst: 
 
     <img src="pic.jpg" />
 
-Searching for:
+Wyszukując:
 
     <img src="(.+?)" />
 
-and on Anki 2.1.28, replacing with:
+i w Anki 2.1.28 zamieniając na:
 
      ${1}
 
- on older Anki versions, replacing with:
+ w starszych wersjach Anki , zamieniając na:
 
     \1
 
-Will change the card to:
+Zmieni tekst w karcie na:
 
     pic.jpg
 
-A full discussion on regular expressions is outside the scope of this
-document. document. There are a number of tutorials available on the web. For a syntax guide, on Anki 2.1.28+ please see <https://docs.rs/regex/1.3.9/regex/#syntax>. For older Anki versions, please see <http://docs.python.org/library/re.html>.
+Pełny opis wyrażeń regularnych nie jest cześcią tej instrukcji. W sieci znajduje się wiele poradników. Aby dowiedzieć się o składni w 2.1.28+, zobacz:  <https://docs.rs/regex/1.3.9/regex/#syntax>. Dla starszych wersji Anki zobacz: <http://docs.python.org/library/re.html>.
 
 Znajdowanie duplikatów
 ------------------
 
-You can use the Notes→Find Duplicates option to search for notes that
-have the same content. When you open the window, Anki will look at all
-of your note types and present a list of all possible fields. If you
-want to look for duplicates in the "Back" field, you’d select it from
-the list and then click "Search".
+Możesz używać opcji Notatki→Znajdź Duplikaty, aby wyszukiwac notatki, które maja w sobie tę sma zawartość. Gdy otwierasz okno, Anki przejrzy wszystkie twoje typy notatki i wyświetli listę wszystkich możliwych pól. Jeśli chcesz szukać duplikatów w polu "Tył", wybierz je z listy, a następnie naciśnij "Szukaj".
 
-Unlike the check that happens when you add cards manually, the duplicate
-finding feature is not limited to a single note type. This means that by
-default, it will search in all note types that have the field you
-provided.
+W przeciwieństwie do sprawdzania odbywającego się przy ręcznym dodawaniu kart, opcja znajdowania duplikatów nie jest ograniczana do jednego typu notatki. to oznacza, że domyslnie będzie przszukiwać wszystkie typy notatek, które posiadają pole, które wybrałeś.
 
-The *optional limit* text box allows you to narrow down where Anki will
-look for duplicates. If you only want to search for duplicates in the
-"French Vocab" and "French Verbs" note types, you would enter:
+Opcja *opcjonalny filtr* pozwala na zawężenie, gdzie Anki ma szukać duplikatów. Jesli chcesz szukać duplikatów w typach notatek "Francuski Słownictwo" i "Francuski czasowniki", wpisałbyś: 
 
-    note:'french vocab' or note:'french verbs'
+    note:'francuski słownictwo' or note:'french czasowniki'
 
-Or you might want to look only for duplicates in a particular deck, so
-you could use:
+Lub jesli chcesz szukac duplikatów tylko w określonej talii wpisz (mojaTalia = nazwa twojej talii):
 
-    deck:'myDeck'
+    deck:'mojaTalia'
 
-The search syntax is the same as used when searching in the browser.
-Please see the [searching](searching.md) section for more information.
+Sposoby wyszukiwania są takie same jak w przeglądarce. Zobacz rozdział o [wyszukiwaniu](searching.md), aby dowiedzieć się więcej.
 
-You can click one of the links in the search results list to display the
-duplicate notes in that set. If the search brings up a large number of
-duplicates, you may wish to instead click the Tag Duplicates button,
-which will tag all matching notes with "duplicate." You can then search
-for this tag in the browser and handle them all from the same screen.
+Możesz kliknąc na jednym z linków, które pojawiły się w wynikasz wyszukiwania, aby wyświetlić zduplikowane notatki w tym zestawie. Jeśli podczas wyszukiwania znaleziono duża liczbę duplikatów, możesz kliknć przycisk "Nadaj etykiety duplikatom", który doda etykiety "duplicate" do wszystkich znalezionych notatek. Możesz wyszukiwać za pomoca tej etykiety w przegladarce, aby zając  wszystkimi dyplikatami na jednym ekranie.
 
 Inne elementy menu
 ----------------
 
 Some other items in the menus:
 
-*Reschedule* allows you to move cards to the end of the new card queue,
+*Zmień plan* allows you to move cards to the end of the new card queue,
 or reschedule them as a review card on a given date. The second option
 is useful if you have imported already-learnt material, and you want to
 start it off with higher initial intervals. For example, choosing 60 and
@@ -142,7 +123,7 @@ If you want to hide the history, you will need to export your notes as a
 text file, delete the notes, and then import the text file again,
 creating new notes.
 
-*Reposition* allows you to change the order new cards will appear in.
+*Zmień pozycję* allows you to change the order new cards will appear in.
 You can find out the existing positions by enabling the *due* column, as
 described in the card list section above. If you run the reposition
 command when multiple cards are selected, it will apply increasing
@@ -156,15 +137,15 @@ end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option
 off, 2 and 3 will get the same position number (and it will thus be
 random which one comes up first).
 
-*Change Note Type* allows you to convert the selected notes from one
+*Zmień typ notatki* allows you to convert the selected notes from one
 type to another. For example, imagine you have a Russian note type and a
 Computer note type, and you accidentally added some computer-related
 text into a Russian note. You can use this option to fix that mistake.
 The scheduling of cards is not affected.
 
-*Select Notes* takes the currently selected cards, finds their notes,
+*Wybierz notatki* takes the currently selected cards, finds their notes,
 and then selects all cards of those notes. If your notes have only one
 card, this does nothing.
 
-The *Go* menu exists to provide keyboard shortcuts to jump to various
+The *Idź* menu exists to provide keyboard shortcuts to jump to various
 parts of the browser, and to go up and down the card list.
