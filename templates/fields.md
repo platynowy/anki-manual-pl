@@ -10,11 +10,11 @@ Gdy w nawiasy klamrowe wpiszesz jakiś tekst, Anki uzna to za odniesienie do kt�
 
 W nazwach pól brana jest pod uwagę wielkość liter. Jeśli masz pole nazwane `Przód`, wpisanie `{{przód}}` nie zadziała.
 
-W szablonach możesz umieścić odwołania do dowolnej liczby pól. Możesz w nich również umieszczać możesz dowolny tekst. Na przykład, jesli uczysz się stolic państw i utworzyłeś typ notatki z polem "Kraj", możesz zmodyfikować szablon przodu, aby wyglądał w nastepujący sposób:
+W szablonach możesz umieścić odwołania do dowolnej liczby pól. Możesz w nich również umieszczać możesz dowolny tekst. Na przykład, jeźli uczysz się stolic państw i utworzyłeś typ notatki z polem "Kraj", możesz zmodyfikować szablon przodu, aby wyglądał w nastepujący sposób:
 
     Jaka jest stolica {{Kraj}}?
 
-Standardowy szablon tyłu karty wygląda w następujący sposób:
+Standardowy szablon tyłu karty wygląda tak:
 
     {{FrontSide}}
 
@@ -22,13 +22,13 @@ Standardowy szablon tyłu karty wygląda w następujący sposób:
 
     {{Tył}}
 
-Kod ten należy interpretować w następujący sposób: "pokaż mi pytanie, narysuj linię i pokaż pole Tył.
+Kod ten należy interpretować w następujący sposób: "pokaż mi pytanie, narysuj linię i pokaż pole Tył".
 
 Kod "id=answer" daje znać Anki, gdzie znajduje się granica miedzy pytaniem i odpowiedzią. Umożliwia to Anki na automatyczne przewijanie do miejsca, gdzie znajduje się odpowiedź, gdy naciśniej przycisk "pokaż odpowiedź" na długiej karcie (szczególnie przydatne na urządzeniach mobilnych z małymi ekranami). Jeśli nie chcesz, aby pozioma linia wyświetlała się na początku odpowiedzi, możesz użyć innego elementu HTML takiego jak akapit lub komenda "div".
 
 ## Nowy wiersz
 
-Szablony kart zachowują się jak strony internetowe, co oznaczą, że wymagana jest specjalna komenda, aby stworzyć nowy wiersz. Na przykład, jesli w szablonie napiszesz poniższy tekst:
+Szablony kart zachowują się jak strony internetowe, co oznacza, że wymagana jest specjalna komenda, aby stworzyć nowy wiersz. Na przykład, jeśli w szablonie napiszesz poniższy tekst:
 
     jeden
     dwa
@@ -51,27 +51,27 @@ W ten sam sposób można wyświetlać pola notatki. Jeżeli chciałbyś, żeby j
 
 ## Tekst na mowę (Text to Speech - TTS)
 
-Na funkcjonalność wymaga Anki 2.1.20, lub AnkiMobile 2.0.56. AnkiDroid obecnie nie obsługuje tej metody.
+Ta funkcjonalność wymaga Anki 2.1.20, lub AnkiMobile 2.0.56. AnkiDroid obecnie nie obsługuje tej metody.
 
-Aby Anki czytało pole Przód przykładowo w języki angielskim amerykańskim, możesz umiescić ponizszy tekst w szablonie karty.
+Aby Anki czytało pole Przód przykładowo w języku angielskim amerykańskim, możesz umiescić poniższy tekst w szablonie karty.
 
     {{tts en_US:Przód}}
 
-Na systemach Windows, MacOS i iOS Anki użyje wbudowanych plików głosowych. Na Linuksie nie ma wbudowanych głosów, ale moga one być udostępnione przez dodatki takie [jak ten](https://ankiweb.net/shared/info/391644525).
+Na systemach Windows, MacOS i iOS Anki użyje wbudowanych plików głosowych. Na Linux'ie nie ma wbudowanych głosów, ale moga one być udostępnione przez dodatki takie [jak ten](https://ankiweb.net/shared/info/391644525).
 
-Aby zobaczyć listę dostepnych języków/głosów, umiesc poniższy tekst na szablonie karty:
+Aby zobaczyć listę dostepnych języków/głosów, umieść poniższy tekst na szablonie karty:
 
     {{tts-voices:}}
 
-Jeśli jest kilka dostępnych głosów dla danego języka możesz doprecyzować w liście, których głosów chcesz używać, a Anki odtworzy pierwszy dostepny głos. Przykład: 
+Jeśli jest kilka dostępnych głosów dla danego języka możesz doprecyzować w liście, których głosów chcesz używać, a Anki odtworzy pierwszy dostępny głos. Przykład: 
 
-    {{tts ja_JP voices=Apple_Otoya,Microsoft_Haruka:Field}}
+    {{tts ja_JP voices=Apple_Otoya,Microsoft_Haruka:Pole}}
 
-Ta komenda sprawi, że Anki użyje głosu Otoya na urządzeniu Apple, a głosu Haruka na urządzniu Windows PC. 
+Ta komenda sprawi, że Anki użyje głosu Otoya na urządzeniu Apple, a głosu Haruka na urządzeniu Windows PC. 
 
-Ustawienie innej  szybkości odtwarzania jest możliwe w niektórych wersjach TTS:
+Ustawienie innej szybkości odtwarzania jest możliwe w niektórych wersjach TTS:
 
-    {{tts fr_FR speed=0.8:SomeField}}
+    {{tts fr_FR speed=0.8:JakieśPole}}
 
 Umieszczanie informacji o szybkości i głosach nie jest wymagane, jednak trzeba umieścić kod języka.
 
@@ -85,9 +85,9 @@ Na Makach możesz dostosować dostepne głosy
 
 - Kliknij na oknienko przy "Głos systemowy" i wybierz "Dostosuj".
 
-Niektóre głosy brzmią lepiej od innych, wiec możesz poeksperymentować, aby znaleźc ten, który ci odpowiada. Pamiętaj o tym, ze głos Siri moze być używany tlyko przez aplikacje Apple. Po zainstalowaniu nowych głosów musisz uruchomić Anki ponownie, aby nowe głowy stały się dostępne.
+Niektóre głosy brzmią lepiej od innych, wiec możesz poeksperymentować, aby znaleźć ten, który ci odpowiada. Pamiętaj o tym, ze głos Siri moze być używany tylko przez aplikacje Apple. Po zainstalowaniu nowych głosów musisz uruchomić Anki ponownie, aby nowe głowy stały się dostępne.
 
-Na urządzeniach z systemem Windows, niektó®e głosy takie jak Cortana nie moga zostać wybrane ponieważ Microsoft nie udostępnian ich innym aplikacjom.
+Na urządzeniach z systemem Windows, niektóre głosy takie jak Cortana nie mogą zostać wybrane, ponieważ Microsoft nie udostępnia ich innym aplikacjom.
 
 ## Pola specjalne
 
@@ -103,27 +103,27 @@ Istnieje kilka rodzajów pól specjalnych, których możesz użyć w szablonie:
 
     Znacznik typu karty ("Przód", itp.): {{Card}}
 
-    Znacznik zawartości przodu karty (poprawna tylko w szablonie tyłu karty): {{FrontSide}}
+    Znacznik zawartości przodu karty (poprawna tylko 2 szablonie tyłu): {{FrontSide}}
 
 Znacznik zawartości przodu karty FrontSide nie skopiuje na jej tył nagrania audio. Jeśli chcesz mieć to samo nagranie na przodzie i tyle karty musisz je tam ręcznie dodać.
 
-Tak jak z innymi polami, w polach specjalnych ważna jest wielkosć liter - musisz używac np. `{{Tags}}` zamiast `{{tags}}`.
+Tak jak z innymi polami, w polach specjalnych ważna jest wielkosć liter - musisz używać np. `{{Tags}}` zamiast `{{tags}}`.
 
 ## Podpowiedzi
 
-Anki umożliwia dodanie do przodu lub tyłu karty własnej podpowiedzi, która wyświetlana będzie tylko po kliknięciu na nią przez użytkownika. Przed dodaniem takiej podpowiedzi należy najpierw rozważyć czy ma ona sens, gdyż takie rozwiązanie znacząco ułatwia naukę. Może się ona stać mało efektywna i trudniej będzie ci zapamiętać w przyszłości daną informację np. jeśli nie przypomnisz sobie podpowiedzi. Przed użyciem podpowiedzi zapoznaj się z podstawowymi zasadami znajdującymi się na stronie:<http://www.supermemo.com/articles/20rules.htm>.
+Anki umożliwia dodanie do przodu lub tyłu karty własnej podpowiedzi, która wyświetlana będzie tylko po kliknięciu na nią przez użytkownika. Przed dodaniem takiej podpowiedzi należy najpierw rozważyć czy ma ona sens, gdyż takie rozwiązanie znacząco ułatwia naukę. Może się ona stać mało efektywna i trudniej będzie ci zapamiętać w przyszłości daną informację np. jeśli nie przypomnisz sobie podpowiedzi. Przed użyciem podpowiedzi zapoznaj się z podstawowymi zasadami znajdującymi się na stronie: <http://www.supermemo.com/articles/20rules.htm>.
 
-Aby utworzyć podpowiedź w pierwszej kolejności musisz dodać do notatki nowe pole, w którym podpowiedź będzie przechowywana. Jego nazwa nie ma znaczenia. Jeżeli nie umiesz jeszcze dodawać nowych [pól](editing.md#customizing-fields), zapoznaj się z rozdziałem na ich temat.
+Aby utworzyć podpowiedź, w pierwszej kolejności musisz dodać do notatki nowe pole, w którym podpowiedź będzie przechowywana. Jego nazwa nie ma znaczenia. Jeżeli nie umiesz jeszcze dodawać nowych [pól](editing.md#customizing-fields), zapoznaj się z rozdziałem na ich temat.
 
-Jeśli stworzyłeś już pole podpowiedzi (zakładamy, że nazywa się "Podpowiedź") możesz teraz nakazać Anki aby pole to zostało automatycznie zakryte. Do szablonu przodu dodaj następujący kod:
+Jeśli stworzyłeś już pole podpowiedzi (zakładamy, że nazywa się "Podpowiedź"), możesz teraz nakazać Anki aby pole to zostało automatycznie zakryte. Do szablonu przodu dodaj następujący kod:
 
     {{hint:Podpowiedź}}
 
-Kod ten pokaże link pokazujacy sie jako "pokaz podpowiedź". Kiedy na niego naciśniesz, zawartość tego pola zostanie pokazana na karcie. (Jeżeli pole Podpowiedź jest puste, nic nie zostanie wyświetlone.)
+Kod ten pokaże link pokazujacy sie jako "pokaż podpowiedź". Kiedy na niego naciśniesz, zawartość tego pola zostanie pokazana na karcie. (Jeżeli pole Podpowiedź jest puste, nic nie zostanie wyświetlone.)
 
-Jeśli odsłonisz podpowiedź, a następnie wyświetlisz odpowiedź, to podpowiedź zostanie ponownie zakryta. Jeżeli chcesz aby mimo wszystko podpowiedź cały czas pozostawała widoczna widoczna musisz usunąć `{{FrontSide}}` z szablonu tyłu i ręcznie dodać pola, które mają się pojawiać.
+Jeśli odsłonisz podpowiedź, a następnie wyświetlisz odpowiedź, to podpowiedź zostanie ponownie zakryta. Jeżeli chcesz aby mimo wszystko podpowiedź cały czas pozostawała widoczna, musisz usunąć `{{FrontSide}}` z szablonu tyłu i ręcznie dodać pola, które mają się pojawiać.
 
-Nie jest obecnie możliwe w używanie dźwięku  polu podpowiedzi - dźwięk będzie się odtwarzał niezaleznie, czy odsłonięto odpowiedź.
+Nie jest obecnie możliwe używanie dźwięku w polu podpowiedzi - dźwięk będzie się odtwarzał niezaleznie, czy odsłonięto odpowiedź.
 
 Jeśli chcesz zmienić wygląd, lub zachowanie tego pola, będziesz musiał sam je zaimplementować. W tym miejscu nasza pomoc sie kończy, ale poniższy kod może być dobrym punktem wyjscia:
 
@@ -135,7 +135,7 @@ Jeśli chcesz zmienić wygląd, lub zachowanie tego pola, będziesz musiał sam 
 
 ## Linki do słowników
 
-Mozesz używac zastepowania pól do tworzenia linków do słowników. Jesli na przykład uczyszsię języka, a twój ulubiony słownik umożliwia szuaknie tekstu przy uzyciu linku, takiego jak:
+Możesz używac zastepowania pól do tworzenia linków do słowników. Jeśli na przykład uczysz się języka, a twój ulubiony słownik umożliwia szuaknie tekstu przy uzyciu linku, takiego jak:
 
     http://przyklad.com/search?q=mojeslowo
 
@@ -151,13 +151,13 @@ Powyższa linijka kodu umożliwi ci sprawdzenie znaczenia danego wyrazu w słown
 
 Podobnie jak w szablonach, w Polach również możliwe jest używanie znaczników HTML. W przykładzie powyższym, gdyby wyrażenie zawierało "mojeslowo" bez żadnego formatowania, wtedy HTML byłoby takie same - "mojeslowo". Ale gdy dodasz formatowanie do pól, dodatkowe HTML jest dołączane. Jeśli "mojeslowo" zostało na przykład pogrubione, HTML wyglądałoby tak "&lt;b&gt;mojeslowo&lt;/b&gt;".
 
-Może być problemem dla linków takich jak linki do słowników. W powyższym przykładzie, link do słownika byłby taki:
+Może to być problemem dla linków takich jak linki do słowników. W powyższym przykładzie, link do słownika byłby taki:
 
     <a href="http://przyklad.com/search?q=<b>mojeslowo</b>">sprawdź w słowniku</a>
 
 W ten sposób odnośnik najpewniej nie wyświetli żadnej strony, gdyż kod HTML nie jest stosowany w adresach URL.
 
-Aby rozwiązać ten problem Anki posiada funkcję pomijania kodu HTML znajdującego się w polach notatki. Jeżeli nazwę pola użytą w szablonie poprzedzisz prefiksem text:, Anki w momencie podstawiania zawartości pola do karty, pominie całkowicie jego formatowanie określone przy pomocy HTML. Kod HTML przycisku zawarty w szablonie notatki będzie zatem wyglądał w następujący sposób:
+Aby rozwiązać ten problem, Anki posiada funkcję pomijania kodu HTML znajdującego się w polach notatki. Jeżeli nazwę pola użytą w szablonie poprzedzisz prefiksem text:, Anki w momencie podstawiania zawartości pola do karty, pominie całkowicie jego formatowanie określone przy pomocy HTML. Kod HTML przycisku zawarty w szablonie notatki będzie zatem wyglądał w następujący sposób:
 
     <a href="http://przyklad.com/search?q={{text:Wyrażenie}}">sprawdź w słowniku</a>
 
@@ -185,7 +185,7 @@ Aby dodać plik audio lub obraz, który będzie taki sam na każdej karcie (np. 
 
 ### Odnośniki do pól w nazwach plików{docsify-ignore}
 
-Anki nie obsługuje odnośników do pól w nazwach plików. Takie pliki prawdopodobnie nie będą wyświetlane na karcie ani importowane/eksportowane do Ankiweb. Przykład błędnego zastosowania pola w nazwach plików wstawianych do kart:
+Anki nie obsługuje odnośników do plików w polach. Takie pliki prawdopodobnie nie będą wyświetlane na karcie ani importowane/eksportowane do Ankiweb. Przykład błędnego zastosowania pola w nazwach plików wstawianych do kart:
 
     <img src="{{Wyrażenie}}.jpg">
 
@@ -200,9 +200,9 @@ Jedyną możliwością jest bezpośrednie wstawienie pliku w danym polu. Plik te
 Możesz obejrzeć [film dotyczący tej funkcji](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on) na
 YouTube.
 
-Najłatwiejszym sposobem, aby umożliwić wpisanie odpowiedzi, jest klikniecie "Podstawowa" w górnym lewym rogu na oknie dodawania karty, a naastępnie wybranie "Podstawowy (wpisywanie odpowiedzi)".
+Najłatwiejszym sposobem, aby umożliwić wpisanie odpowiedzi, jest klikniecie "Podstawowa" w górnym lewym rogu na oknie dodawania karty, a następnie wybranie "Podstawowy (wpisywanie odpowiedzi)".
 
-Jeśli pobrałes udostępnioną talie i chciałbyś wpisywać w niej odpowiedź, możesz zmodyfikować szablon jej kert. Jesli ten szablon wygląda przykładowo tak:
+Jeśli pobrałeś udostępnioną talie i chciałbyś wpisywać w niej odpowiedź, możesz zmodyfikować szablon jej kart. Gdy ten szablon wygląda przykładowo tak:
 
     {{Polskie słowo}}
 
@@ -217,13 +217,13 @@ Jeśli pobrałes udostępnioną talie i chciałbyś wpisywać w niej odpowiedź,
     {{Polskie słowo}}
     {{type:Obce słowo}}
 
-Zauważ, ze dodaliśmy `type:` z przodu pola, w którym chcemy wpisywać odpowiedź. Jako, że FrontSide znajduje się na tyle karty, pole wpisywana równiez sie tam pojawi.
+Zauważ, ze dodaliśmy `type:` z przodu pola, w którym chcemy wpisywać odpowiedź. Jako, że FrontSide znajduje się na tyle karty, pole wpisywania równiez sie tam pojawi.
 
 Podczas powtórki, pod pytaniem Anki wyświetli puste pole tekstowe, które służy właśnie do wpisania twojej odpowiedzi. Następnie wystarczy, że zatwierdzisz swoją odpowiedź przyciskiem Enter na klawiaturze lub Pokaż odpowiedź na ekranie nauki. Anki wskaże, które części odpowiedzi są błędne. Rozmiar czcionki w pustym polu przeznaczonym do podania odpowiedzi jest zgodnym z tym, który ustawiony jest dla tego pola w oknie "Pole…".
 
-Zauważ, że choć w twojej odpowiedzi mogą pojawić się błędy to nie wpływają one na ocenę karty. W dalszym ciągu sam oceniasz swoją odpowiedź. Anki nie zrobi tego automatycznie za ciebie na podstawie wpisanego tekstu.
+Zauważ, że choć w twojej odpowiedzi mogą pojawić się błędy, to nie wpływają one na ocenę karty. W dalszym ciągu sam oceniasz swoją odpowiedź. Anki nie zrobi tego automatycznie za ciebie na podstawie wpisanego tekstu.
 
-Na karcie może być użyte tylko jedno pole tekstowe służące do wpisywania odpowiedzi. Jeżeli umieścisz ich więcej wpisywanie odpowiedzi nie zadziała poprawnie. Ponadto odpowiedź może zostać podana w polu tekstowym o wysokości tylko jednej linii, co oznacza, że nie ma sensu porównywanie odpowiedzi z kartami posiadającymi pytanie w wielu liniach.
+Na karcie może być użyte tylko jedno pole tekstowe służące do wpisywania odpowiedzi. Jeżeli umieścisz ich więcej, wpisywanie odpowiedzi nie zadziała poprawnie. Ponadto odpowiedź może zostać podana w polu tekstowym o wysokości tylko jednej linii, co oznacza, że nie ma sensu porównywanie odpowiedzi z kartami posiadającymi pytanie w wielu liniach.
 
 Zarówno pytanie i jak i odpowiedź wyświetlane są przy użyciu czcionki o stałej szerokości znaków, dzięki czemu możliwe jest czytelne porównywanie wprowadzonych w odpowiedzi znaków z tym co jest napisane w pytaniu. Możesz również zmienić tę czcionkę. Wystarczy, że w oknie Karty…→Styl umieścisz następujący kod:
 
@@ -247,6 +247,6 @@ Możliwe jest również pisanie odpowiedzi w kartach z lukami. Aby to zrobić do
 
 Zauważ, że kod ten, w przeciwieństwie do standardowych kart, musi zostać dodany po obu stronach notatki (typu Luka).
 
-Jesli jest wiele luk do uzupełnienia, możesz oddzielić odpowiedzi w polu tekstowym używając przecinka
+Jeśli jest wiele luk do uzupełnienia, możesz oddzielić odpowiedzi w polu tekstowym używając przecinka
 
-Pola tekstowe do wpisywania odpowiedzi nie pojawią się na [podglądzie](templates/intro.md) w przeglądarce. Pojawia sie za to, gdy uczysz się lub wciśniesz "podglad" na ekranie z typem kart.
+Pola tekstowe do wpisywania odpowiedzi nie pojawią się na [podglądzie](templates/intro.md) w przeglądarce. Pojawią sie za to, gdy uczysz się lub wciśniesz "podgląd" na ekranie z typem kart.
