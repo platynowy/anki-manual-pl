@@ -9,7 +9,7 @@ Pasek boczny po lewej pozwala na szybki dostęp do czesto szukanych terminów. K
 
 Możesz przytrzymać Ctrl (Command na Maku) podczas klikania, aby dodac klikany przedmiot do obecnego wyszukiwania używając warunku AND, zamiast zaczynać nowe wyszukiwanie. Jeśli chciałbyś wyszukać karty uczone które byłyby równiez w talii Niemiecki, mógłbyś kliknąć na "Uczone", a następnie Ctrl+kliknąć na "Niemiecki".
 
-Możesz przytrzymac Shift aby utworzyć wyszukiwanie OR zamiast AND. NA przykład, mógłbys kliknac na jedną talię, a potem kliknać z przytrzymanym shiftem na inną, aby pokazać karty z obu talii w jednym podglądzie.
+Możesz przytrzymac Shift aby utworzyć wyszukiwanie OR zamiast AND. Na przykład, mógłbys kliknać na jedną talię, a potem kliknać z przytrzymanym shiftem na inną, aby pokazać karty z obu talii w jednym podglądzie.
 
 Możesz przytrzymac Alt (Option na Maku), aby odwrócić wyszukiwanie (dodać *-*) - na przykład, abhy pokazać wszystkie karty w obecnej talii, które *nie* mają określonej etykiety. Alt/option moga być łączone z Ctrl lub shift (np. Ctrl-Alt i klikniecie spowoduje dodanie nowego wyszukiwanego terminu, który jest negowany). 
 
@@ -108,44 +108,19 @@ Możesz kliknąc na jednym z linków, które pojawiły się w wynikasz wyszukiwa
 Inne elementy menu
 ----------------
 
-Some other items in the menus:
+Inne elementy menu to:
 
-*Zmień plan* allows you to move cards to the end of the new card queue,
-or reschedule them as a review card on a given date. The second option
-is useful if you have imported already-learnt material, and you want to
-start it off with higher initial intervals. For example, choosing 60 and
-90 will give all the imported cards an initial interval of 2 to 3
-months.
+*Zmień plan*, umożliwia przenoszenie kart na koniec kolejki nowych kart, lub ustawienie nowej daty powtórki. Druga opcja jest przydatna, gdy zaimportowałeś  już uczony materiał i chcesz zacząć się go uczyć go z wyższymi początkowymi przerwami. Na przykład, wybierając 60 i 90 nada wszystkim zaimportowanym kartą poczatkową przerwę w wysokości 2 do 3 miesiecy
 
-The card’s revision history is not cleared when rescheduling:
-rescheduling changes the current state of a card, but not its history.
-If you want to hide the history, you will need to export your notes as a
-text file, delete the notes, and then import the text file again,
-creating new notes.
+Historia zmian karty nie jest usuwana podczas zmiany planu: zmiana planu zmienia obecny stan karty, ale nie jej historię. Jeśli chcesz ukryć historię, będziesz musiał wyeksportować twoje notatki jako plik tekstowy, usunąć notatki, a nastepnie zaimportować ten plik tekstowy ponownie, tworzac nowe notatki.
 
-*Zmień pozycję* allows you to change the order new cards will appear in.
-You can find out the existing positions by enabling the *due* column, as
-described in the card list section above. If you run the reposition
-command when multiple cards are selected, it will apply increasing
-numbers to each card in turn. By default the number increases by one for
-each card, but this can be adjusted by changing the "step" setting. The
-*Shift position of existing cards* option allows you to insert cards
-between currently existing ones, pushing the currently existing ones
-apart. For instance, if you have five cards and you want to move 3, 4,
-and 5 between 1 and 2, selecting this setting would cause the cards to
-end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option
-off, 2 and 3 will get the same position number (and it will thus be
-random which one comes up first).
 
-*Zmień typ notatki* allows you to convert the selected notes from one
-type to another. For example, imagine you have a Russian note type and a
-Computer note type, and you accidentally added some computer-related
-text into a Russian note. You can use this option to fix that mistake.
-The scheduling of cards is not affected.
+*Zmień pozycję* umozliwia zmienić kolejność nowych kart. Możesz dowiedzieć się obecnych pokzycji włączając kolumnę *oczekujące*, jak to zostało opisane w sekcji "lista kart". Jeśli uruchomisz tę opcję podczas gdy wybranych jest wiele kart, nada ona każdej karcie po kolei rosnące numery. Domyslnie numer zwiększa się o jeden dla każdej karty w turze, ale może to zostać zmienione zmieniając opcję "krok". 
 
-*Wybierz notatki* takes the currently selected cards, finds their notes,
-and then selects all cards of those notes. If your notes have only one
-card, this does nothing.
+Opcja *Zmień pozycję istniejacych kart* umożliwia wstawianie kart miedzy juz istniejące, wypychając już istniejace z dala od siebie. Na przykład jeśli masz 5 karti chcesz przenieść 3,4 i 5 między 1 i 2, wybranie tej opcji sprawi, że kolejnośc kart wygladałaby tak: 1, 3, 4, 5, 2. Jeśli za to wyłączyć tę opcje, 2 i 3 otrzymają taki sam numer pozycji (i ich kolejnosć pojawienia będzie losowa).
 
-The *Idź* menu exists to provide keyboard shortcuts to jump to various
-parts of the browser, and to go up and down the card list.
+*Zmień typ notatki* umożliwia przekonwertowanie wybrane notatki z jednej do drugiej. Na przykład, masz typ notatki "Rosyjski" oraz "Komputer" i przypadkowo dodałeś  tekst dodyczący komputerów do notatki "Rosyjski". Możesz to naprawić używając tej opcji. Nie ma ona wpływu na planowanie krt.
+
+*Wybierz notatki* na podstawie wybranych kart, znajduje ich notatki, a nastepnie wybiera wszystkie karty tych notatek. Jesli twoje notatki mają tylko jedną kartę, opcja ta nie zadziała.
+
+Menu *Idź* umożliwia używanie skrótów klawiszowych, aby przechodzić do róznych cześci przeglądarki, oraz żeby poruszac się w górę i w dół w liście kart.
