@@ -55,16 +55,17 @@ Na Windowsie powinieneś używać (\\), nie zaś (/).
 
 Na Maku nie istnieje łatwa metoda na zmianę zachowania probramu poprzez nacisniecie na ikonę Anki. Jest za to możliwe uruchomienie anki z terminala z własnym folderem:
 
-    open /Applications/Anki.app --args -b ~/myankifolder
+    open /Applications/Anki.app --args -b ~/mojfolderanki
 
 Alternatywnie możesz okreslić zmienną srodowiska "ANKI_BASE".
-Na Windowsie możesz okreslić zmienna środowiska poprzez:
 
-    set "ANKI_BASE=C:/path/to/AnkiDataFolder"
+Na Windowsie możesz okreslić zmienną środowiska poprzez:
+
+    set "ANKI_BASE=C:/ścieżka/do/FolderuZDanymiAnki"
 
 Na systemach Linux i MacOS, możesz uzyć:
 
-    export ANKI_BASE="/path/to/AnkiDataFolder"
+    export ANKI_BASE="/ścieżka/do/FolderuZDanymiAnki"
 
 ## DropBox i synchronizacja plików 
 
@@ -82,9 +83,9 @@ Bardzo zalecamy, pliki byłī przechowywane na lokalnym dysku twardym, ponieważ
 
 Na Windowsie anki może zostac zainstalowane na pendrive'ie / dysku przenośnym i być uruchamiane jako przenośna aplikacja. Poniższy przykład zakłada, że twój pendrive to dysk G.
 
-- Skopiuj folder \\Program Files\\Anki  na pendrive'a, tak abyś miał folder taki jak G:\\Anki.
+- Skopiuj folder \\Program Files\\Anki na pendrive'a, tak abyś miał folder taki jak G:\\Anki.
 
-- Utwórz plik tekstowy nazwany  G:\\anki.bat, zawierający nastepujący tekst:
+- Utwórz plik tekstowy nazwany G:\\anki.bat, zawierający nastepujący tekst:
 
 <!-- -->
 
@@ -137,108 +138,75 @@ Jeśli Anki nie może zapisywać plików w [folderze Anki](files.md), przy starc
 
 ## Uprawnienia do folderu tymczasowego
 
-Anki uses the system’s temporary folder to store temporary data. If the
-permissions of this folder have been changed from the default settings
-by a rogue app or buggy antivirus app, Anki will not function properly.
+Anki używa systemowego folderu tymczasowego, aby przechowywać tymaczaowe dane. Jeśli pozwolanie na ten folder zostały zmienione z domyślnych przez jakas aplikację lub błędnie aplikację antywirusową, Anki nie bedzie w stanie działać poprawnie.
 
-If you’re on a Windows 7 machine, the general steps to fix the problem
-are listed below. As this is somewhat complicated, please ask someone
-knowledgeable about Windows if you are not sure.
+Na dole znajduje się opis naprawienia tego problemu dla systemów Windows 7. Jako, ze jest to dość skomplikowane, poproś o pomoc kogoś znającego się na Windowsie, jeśli czegoś nie jesteś pewien.
 
-1.  Click on the start bar, and type in %temp% (including the percents),
-    then hit enter.
+1.  Kliknij na pasku Start i wpisz %temp% (razem z procentami), a nastepnie naciśnij enter.
 
-2.  Go up one folder, and locate the temp folder. Right click on it, and
-    choose Properties.
+2.  Cofnij się jeden folder wstecz oraz znajdź folder "temp". Kliknij na niego prawym przyciskiem i wybierz Właściwości.
 
-3.  In the security tab, click on Advanced.
+3.  W zakładce bezpieczeństwo, kliknij Zaawansowane
 
-4.  Click on the Owner tab. If you’re not listed as the owner, click the
-    button to take ownership.
+4.  Kliknij na zakładkę Właściciel. Jesli nie jesteś wymieniony jako właściciel, kliknij na przycisk, aby się nim stać.
 
-5.  On the permissions tab, ensure that you have full control. On a
-    default W7 install the control will actually be inherited from
-    c:\\users\\your-username.
+5.  W zakładce pozwolenia, upewnij się, że posiadasz pełną kontrolę On the permissions tab, ensure that you have full control. W domyślnie zainstalowanym Windows 7 kontrola będzie automatycznie nadawana dla c:\\users\\twoja-nazwa-użytkownika. 
 
 ## Uszkodzone kolekcje
 
-Anki uses a file format that is robust against program and computer
-crashes, but it’s still possible for your collection to become corrupt
-if the files are modified while Anki is open, stored on a network drive,
-or corrupted by a bug.
+Anki używa formatu plików, który jest odporny na nieoczekiwane wyłączenia programu i komputera, jednak nadal istnieje możliwość uszkoczenia kolekcji, jesli pliki są modyfikowane, gdy Anki jest otwarte, przechowywane na dysku sieciowym lub uszkodzone przez błąd.
 
-When you run Tools&gt;Check Database, you will receive a message if Anki
-detects the file has been corrupted. **The best way to recover from this
-is to restore from the most recent [automatic backup](preferences.md)**, but
-if your backup is too old, then you can attempt to repair the corruption
-instead.
+Gdy używasz opcji Narzedzia&gt;Sprawdź bazę danych, otrzymasz wiadomość, czy Anki wykryje plik, który jest uszkodzony. **Najlepszym sposobem, aby uporać się z tym problemem jest przywrócenie  najnowszej [automatycznej kopii zapasowej](preferences.md)**, jednak jesli twoja kopia zapasowa jest zbyt stara, możesz spróbować zamiast tego naprawić kolekcję.
 
-On Linux, make sure sqlite3 is installed. On a Mac, it should be
-installed already. On Windows, download
-<http://www.sqlite.org/sqlite-3_6_23.zip>.
+Na systemie Linux, upewnij się, że zainstalowany jest sqlite3. Na Maku powinien się on już znajdować. Na Windowsie pobierz <http://www.sqlite.org/sqlite-3_6_23.zip>.
 
-Next, create a backup of your collection.anki2 file, in case something
-goes wrong with the steps below.
+Nastepnie utwórz kopię zapasową pliku collection.anki2, w razie gdyby coś poszło nie tak.
 
 **Linux/OSX**
 
-Open a terminal, change to the folder your collection is located in, and
-type:
+Otwórz terminal, zmień na folder, w którym znajduje się twoja kolekcja i wpisz:
 
     sqlite3 collection.anki2 .dump > dump.txt
 
-Open the resulting dump.txt file in a text editor, and look at the final
-line. If it reads "rollback;", change it to "commit;"
+Otwórz plik dump.txt w edytorze tekstu i zobacz na ostatnią linię. Jeśli jest w niej napisane "rollback;", zmień ten tekst na "commit;".
 
-Then run the following in a terminal:
+Nastepnie uruchom nastepujący kod w terminalu:
 
     cat dump.txt | sqlite3 temp.file
 
-Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you’re done, proceed to the final
-step.
+Upewnij się, ze używasz pliku temp.file - nie wpisuj collection.anki2 po prawej, bo opróżnisz ten plik. Gdy już skończyłeś, przejdż do ostatniego kroku.
 
 **Windows**
 
-Copy the `sqlite3.exe` program and your deck to your desktop. Then go to
-**Start&gt;Run** and type in `cmd.exe`.
+Skopiuj program `sqlite3.exe` i twoją talię na pulpit. Następnie włącz Then go to
+**Start&gt;Rozpocznij** i wpisz `cmd.exe`.
 
-If you’re on a recent Windows, the command prompt may not start on your
-desktop. If you don’t see desktop displayed in the command prompt, type
-something like the following, replacing 'administrator' with your login
-name.
-
+Jeśli znajdujesz się na jednej z ostatnich wersji systemu Windows, okno komend może nie wyświetlic się na pulpicie. W przypadku, gdy nie widzisz okna komend na pulpicie, wpisz tekst poniższy, zamieniając "administrator" na nazwę użytkownika.
+    
     cd C:\Users\Administrator\Desktop
-
-Then type:
+    
+Następnie wpisz:
 
     sqlite3 collection.anki2 .dump > dump.txt
 
-Open the resulting dump.txt file in a text editor, and look at the final
-line. If it reads "rollback;", change it to "commit;"
+Otwórz plik dump.txt i edytorze tekstu i zobacz ostatnią linię. Jeśli jest w niej napisane "rollback;", zmień ten tekst na "commit;".
 
-Then run the following in a terminal:
+Następnie uruchom następujący kod w terminalu:
 
     type dump.txt | sqlite3 temp.file
 
-Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you’re done, proceed to the final
-step.
+Upewnij się, ze używasz pliku temp.file - nie wpisuj collection.anki2 po prawej, bo opróżnisz ten plik. Gdy już skończyłeś, przejdż do ostatniego kroku.
 
 **Ostatni krok**
 
-Check that you didn’t get an error message, and that temp.file is not
-empty. The procedure optimizes the collection in the process, so it’s
-normal for the new file to be somewhat smaller than the old one.
+Sprawdź, czy nie wyskoczyłą żadna wiadomosc z błędem i plik temp.file nie jest pusty. Procedura ta optymalizuje kolekcję, dlatego normalne jest, że nowy plik może mieć  mniejszą wagę od starszego.
 
-When you’ve confirmed the file is not empty:
+Jeśli upewniłeś się, ze plik nie jest pusty:
 
-- rename the original collection.anki2 file to something else
+- zmień nazwe  oryginalnego pliku collection.anki2 na coś innego.
 
-- rename temp.file to collection.anki2
+- zmień nazwę temp.file na collection.anki2
 
-- move collection.anki2 back into your collection folder, overwriting
-  the old version
+- przenieś plik collection.anki2 z powrotem do folderu kolekcji, nadpisując starszą wersję.
 
-- start Anki and go to Tools&gt;Check Database to make sure the
-  collection has been successfully restored.
+- Uruchom Anki i idź do Narzędzia&gt;Sprawdź baze danych, aby upewnić się, że kolekcja została prawidłowo naprawiona.
