@@ -23,7 +23,7 @@ Możesz dzielić się plikiem .apkg poprzez wysyłanie go e-mailem, wstawiając 
 
 Importowanie z pliku .apkg jest proste zarówno w wersji komputerowej, jak i mobilnej- wystarczy kliknąć na plik, lub go nacisnąć. W AnkiWeb nie ma jednak możliwości importowania plików .apkg, więc osoby, które otrzymały twoją talię, będą musiały zaimportować ją poprzez wersję komputerową lub mobilną.
 
-Gdy użytkownik importuje plik .apkg, karty, które już istnieją w jego kolekcji zostaną zignorowane, a dodane zostaną zaimportowane karty. Jeśli karty używają tego samego typu notatki, zmodyfikowane karty również zostaną zaktualizowane. Aby zapobiec utracie danych, karty, które zostały usunięte w nowym pliku .apkg, nie są usuwane w kolekcji użytkownika, więc jeśli z jakiegoś powodu musisz usunąć karty z talii użytkowników to musisz sam się z nimi skontaktować.
+Gdy użytkownik importuje plik .apkg, karty, które już istnieją w jego kolekcji zostaną zignorowane, a dodane zostaną zaimportowane karty. Jeśli karty używają tego samego typu notatki, zmodyfikowane karty również zostaną zaktualizowane. Aby zapobiec utracie danych, karty, które zostały usunięte w nowym pliku .apkg, nie są usuwane z kolekcji użytkownika, więc jeśli z jakiegoś powodu musisz usunąć karty z talii użytkowników to musisz sam się z nimi skontaktować.
 
 ## Udostępnianie dodatków
 
@@ -37,5 +37,5 @@ Zobacz: https://translating.ankiweb.net
 
 Kod źródłowy Anki jest dostępny na stronie <https://github.com/ankitects/anki>
 
-Przed wnoszeniem swoich poprawek zobacz w tym repozytorium plik README.contributing.
+Przed wnoszeniem swoich poprawek, zobacz w tym repozytorium plik README.contributing.
  
