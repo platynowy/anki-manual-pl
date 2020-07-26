@@ -23,82 +23,43 @@ Nad listą kart znajduje się pole do wyszukiwania. Możesz wpisywać tam różn
 Lista kart
 ---------
 
-The card list displays cards that match the current search.
+Lista kart wyświetla wyniki obecnego wyszukiwania,
 
-The columns are configurable: right click on one (or ctrl+click on a
-Mac) to choose which columns you’d like to see. You can drag columns to
-reorder them. Clicking on a column will sort by that column; click again
-to reverse the sort order. Not all columns can be sorted on.
+Kolumny można dostosować: kliknij prawym przyciskiem na jednej z nich ( lub używjaąc ctrl i kliknięcie na Maku), aby wybrać, które kolumny mają być widoczne. Możesz przeciągać kolumny, aby je uporzadkować. Kliknięcie na kolumnie spowoduje sortowanie na podstawie tej kolumny; klikniecie ponowne odwróci kolejność sortowanie. Wyników wyszukiwania nie mozna sortować na podstawie niektórych kolumn.
 
-The due column behaves differently for different types of cards. New
-cards show a number rather than a due date, which indicates the order
-the new cards will be presented in. Cards in (re)learning and reviews
-will both show a due date, but when sorting they are first grouped by
-type and then sorted by date.
+Kolumna "oczekujące" zachowuje się inaczej dla każdego typu kart. Nowe karty pokazuja numer zamiast daty, który wskazuje kolejność prezentowania nowych kart. Karty uczone (ponownie) oraz powtórki pokazują  date, jednak podczas sortowania są grupowane najpierw ze względu na typ, a nastepnie ze względu na datę.
 
-The "edited" and "changed" columns sound the same but track different
-things. "Edited" tracks the last time changes were made to the *note*
-(e.g., when the content of a field was edited), while "changed" tracks
-the last time changes were made to the *card* (e.g., when you reviewed
-the card and the review history and interval were updated).
+Kolumny "notatka zmodyfikowana" i "karta zmodyfikowana" brzmią podobnie, ale śledzą inne rzeczy. "Notatka zmodyfikowana" śledzi ostatni czas, kiedy w *notatce* dokonano zmian (np. gdy zwawartość pola została zedytowana) podczas gdy "karta zmodyfikowana" śledzi ostatni czas, kiedy w *karcie* dokonano zmian (np. gdy powtarzałeś kartę i historia powtó®ek oraz przerwa zostały zaktualizowane).
 
-When you click on a card, its note will be shown in the bottom section.
-If you drag the mouse or hold ctrl or command to select multiple cards,
-the editor will be temporarily hidden. Various operations (such as
-changing the deck) can operate on multiple cards at once.
+Gdy klikasz na karte, jej notatka zostanie pokazana w dolnej części ekranu. Jeśli przeciagniesz mysz lub przytrzymasz ctrl lub command, aby wybrac kilka kart, edytor będzie czasowo ukryty. Różne operajce (jak zmiana talii) można wykonywać na wielu kartach na raz.
 
-The background colour will change depending on the card. Marked cards
-are a shade of purple. Suspended cards are a shade of yellow. For more
-information about marked and suspended cards, please see [editing and
-more](studying.md).
+Kolor tła zmienia się w zależności od karty. Karty wyróznione są w kolorze fioletowym, karty zawieszone w koloerze żółtym. Aby dowiedzieć się więcej o kartach wyróznionych i zawieszonych, zobacz [edytowanie i więcej].(studying.md)
 
-One of the available columns is called the *sort field*. Anki allows you
-to choose one field from each type of note to be used for sorting. You
-can change the sort field by clicking on "Fields…​" in the current note
-section.
+Jedną z dostępnych kolumn jest *sortuj pole*. Anki umożliwia na wybranie jednego pola z kazdego typu notatki do sortowania. Możesz zmienić pole sortowania klikając na "Pola…​" w sekcji wybranej notatki.
 
-The question and answer columns display what you’d see on the question
-and answer while reviewing, except the answer column will strip the
-question part for clarity. You can also choose a [custom
-format](templates/styling.md#browser-appearance) in the card type editor instead of showing
-what would be seen during review.
+Kolumny pytania i odpowiedzi pokazują to, co zobaczyłbyś w  pytaniu i odpowiedzi podczas nauki, z wyjatkiem tego, że kolumna "odpowiedź" usunie cześć z. pytaniem, aby była ona czytelniejsza. Możesz równiez wybrać [własny format](templates/styling.md#browser-appearance) w edytorze typów kart, zamiast pokazywać to, zobaczyłbys w czasie nauki
 
 Obecna notatka
 ------------
 
-The bottom right area displays the currently selected card’s note. For
-more information about cards and notes, please see [the
-basics](getting-started.md). For more information on formatting buttons, please see
-[editing](editing.md).
+Na dole po prawej stronie znajduje się notatka obecnie wybranej karty. Aby dowiedzieć się więcej o kartach i notatkach, zobacz [podstawy](getting-started.md). Jeśli chcesz dowiedzieć się więcej o przyciskach formatowania, zobacz rozdział o [edytowaniu](editing.md).
 
-You can see a preview of what the currently selected card would look
-like when reviewing by clicking the "preview" button next to the search
-box. Note that this will not display any type answer fields on your
-cards, which makes it easier to preview cards quickly.
+Możesz zobaczyć podgląd tego, jak obecnie wybrana karta wyglądałby podczas powtórki, klikając na przycisk "podgląd" obok pola wyszukiwania. Zauważ, że nie wyświetli na twoich kartach żadnych pól zawierających pisanie odpowiedzi, co sprawia, że podgląd kart jest łatwiejszy.
 
 Menu
 ----
 
-Up the top of the window/screen is the menu. You can also access it quickly by
-right clicking on command+clicking on the card list area.
+U góry okna znajduje się menu. Możesz szybko uzyskac do niego dostęp poprzez kliknięcie prawym klawiszem myszy (lub command+ klikniecie prawym klawiszem myszy na Maku) na obszarze z listą kart.
 
-*Info* shows various information about the currently selected card,
-including its review history. For more information, see the
-[statistics](stats.md) section.
+*Informacje* pokazuje różne informacje o obecnie wybranej karcie, włącznie z historią powtórek. Aby dowiedzieć się więcej, zobacz rozdział o [statystykach].
 
-*Mark* and *Suspend* are documented in [editing and more](studying.md).
+*Przełącz wyróżnienie* i *Przełącz Zawieszenie* zostały opisane w rozdziale [edytowanie i więcej](studying.md).
 
-*Change Deck* allows you to move cards to a different deck. Cards can be
-placed in different decks, so if you want to move all cards in a note,
-you should first use Edit &gt; Select Notes.
+*Zmień talię* umożliwia przenoszenie kart do innej talii. Karty mogą być umieszczone w różnych taliach, więc jesli chcesz przenieść wszystkie karty w notatce, powinieneś najpierw uzyć opcji Edytuj &gt; Wybierz notatki.
 
-*Add Tags* and *Remove Tags* allow you to add or remove tags from notes
-in bulk. To remove unused tags from the list on the left, use
-Tools&gt;Check Database from the main window.
+*Dodaj etykiety* oraz *Usuń etykiety* umożliwia masowe dodawanie lub usuwanie etykiet z notatek.
 
-*Delete* removes the selected card(s) and their notes. It is not
-possible to remove individual cards, as individual cards are controlled
-by the [templates](templates/intro.md).
+*Usuń* usuwa wybraną kartę (lub karty) i ich notatki. Nie jest możliwe usuwanie pojedyńczych kart, jako, że są one pod kontrolą [szablonów](templates/intro.md). 
 
 Znajdź i zamień
 ----------------
