@@ -50,7 +50,7 @@ Na chwilę obecna, jeśli stworzysz, przebudujesz, opróżnisz lub usuniesz tali
 Tworzenie ręczne
 -----------------
 
-Uzytkownicy zaawansowani moga tworzyć karty filtrowane z dowolnymi filtrami wyszukiwania, zamiast polegać na ustawieniach wstepnych. Aby utworzyc talię filtrowaną ręcznie, wybierz "Utwórz talię filtrowaną" z menu "Narzędzia".
+Użytkownicy zaawansowani moga tworzyć karty filtrowane z dowolnymi filtrami wyszukiwania, zamiast polegać na ustawieniach wstepnych. Aby utworzyc talię filtrowaną ręcznie, wybierz "Utwórz talię filtrowaną" z menu "Narzędzia".
 
 Gdy nacisniesz przycisk "Buduj", Anki znajdzie karty zgodnie z opcjami, które sprecyzowałeś i czasowo przenosi je z ich talii poczatkowych do nowo stworzonej talii filtrowanej w celu nauki.
 
@@ -60,7 +60,7 @@ Obszar **szukaj** kontroluje, jakie karty Anki doda do talii filtrowanej.Wszystk
 
 Talie filtrowane nie moga zebrać kart, które sa zawieszone, zakopane lub znajdują się juz w innej tali filtrowanej. Oraz, chyba że używasz ekperymentalnego planisty, nie moga zebrać kart, które są (uczone) ponownie. Z tego powodu, wszykiwanie w przeglądarce może wykazać karty, które nie trafią do talii filtrowanej.
 
-Opcjka **Ogranicz do** określa, ile kart zostanie zebranych do talii. Kolejność, którą wybierzesz kontroluje  zarówno kolejność kart zebranych do talii, jak i kolejność ich pokazywania. Jeśli wybierzesz "Najwięcej pomyłek" i dodasz ograniczenie na przykład 20 kart, Anki pokaże Ci 20 kart z największą ilością pomyłek.
+Opcja **Ogranicz do** określa, ile kart zostanie zebranych do talii. Kolejność, którą wybierzesz kontroluje  zarówno kolejność kart zebranych do talii, jak i kolejność ich pokazywania. Jeśli wybierzesz "Najwięcej pomyłek" i dodasz ograniczenie na przykład 20 kart, Anki pokaże Ci 20 kart z największą ilością pomyłek.
 
 Ze względy na wydajnośc, jeśli zakuwasz talie zawierająca wiecej niż 1000 kart, tylko 1000 kart będzie pokazanych jako oczekujące na ekranie z lista talii oraz na ekranie określonej talii.
 
@@ -122,77 +122,37 @@ Powtórka z wyprzedzeniem
 
 Jeśli w twoim wyszukiwaniu zawierały się karty, które w danym momencie nie oczekiwały na powtórkę, Anki pokaże powtórki z wyprzedzeniem.
 
-Anki uses a special algorithm for these reviews that takes into account
-how early you are reviewing. If the cards were almost due to be shown,
-they will be given a new delay similar to what they would have received
-if you had reviewed them on time. If the cards are reviewed soon after
-they were scheduled however, their new delay will be similar to their
-previous delay. This calculation works on a sliding scale.
+Anki używa specjalnego algrytmu dla tych powtórek, która bierze pod uwagę, jak wcześnie powtarzasz. Jeśli karty miały za już za niedługo być pokazane, nadana im zostanie nowa przerwa do takiej, jaka dostałyby podczas powtórki według planu. Jeśli karty są powtarzane o niedługo później niż ich ostatnia powtórka, ich nowa przerwa będzie podobna do poprzedniej. Te obliczenia działają na ruchomej skali. 
 
-Because reviewing a card shortly after it is scheduled has little impact
-on scheduling (eg, a card due tomorrow with a one day interval will
-remain due tomorrow if reviewed early), **the "review ahead" custom
-study setting is not appropriate for repeated use**. If used to go
-through a week’s worth of cards before a trip, the mature cards will be
-rescheduled into the future and the new cards will remain at small
-intervals, because you don’t know them well enough for them to be
-rescheduled further. If you review ahead again the next day, all you’ll
-end up doing is going through those same new cards again, to little
-benefit.
+Następna powtórka niedługo po wcześniejszej powtórce ma mały wpływ na planowanie (np. karta oczekująca na jutro z przerwą jeden dzień dalej będzie oczekiwała na jutro w przypadku powtórzenia z wyprzedzeniem).**Opcja nauki własnej -  "powtórka z wyprzedzeniem" nie jest odpowiednia do czestego użytku**. Jeśli jest używana do przejrzenia kart z kilku tygodni przed wycieczką, karty dojrzałe bedą zaplanowane w przyszłości, a nowe karty zatrzymają małe przerwy, ponieważ nie znasz ich wystarczająco dobrze, aby nadawać im dłuższe przerwy. Jeśli powtarzasz z wyprzedzeniem ponowie następnego dnia, to jedyno co robisz to powrarzasz jeszcze raz te same karty, z małym zyskiem.
 
-Early reviews are included in the new card count rather than the review
-count, and will be shown according to the number of relearning steps
-defined in the home deck (unless you have provided custom steps). This
-means that if you have customized the number of relearning steps in the
-home deck, the non-due card may be shown more than once.
+Wczesne powtórki są dołączane do liczby nowych kart zamiast liczby powtórek i będa pokazane zgodnie z liczbą kroków dla kart uczonych ponownie, które są ustawione w talii początkowej (chyba, że ustawiłeś własne kroki). To oznacza, że jeśli zmieniłeś liczbe kroków dla kart uczonych ponownie w talii poczatkowej, karty, które nie oczekują mogą być pokazane więcej niż raz.
 
-If you have multiple steps, Anki will only consider the first answer
-when deciding the next delay, and like relearning in normal decks,
-"Good" and "Easy" differ only in the step change and not the resulting
-delay.
+Jeśli ustawiłeś wielokrotne kroki, Anki bierze pod uwagę tylko pierwszą odpowiedź podczas ustalania nowej przerwy i jak karty uczone ponownie w normalnej talii, "Dobra" i "Łatwa" różnia się tylko w liczbie kroków, a nie ostatecznej przerwie.
 
 Zmiana planu
 ------------
 
-By default, Anki will return cards to their home decks with altered
-scheduling based on your performance in the filtered deck. If you
-disable the **reschedule cards based on my answers** option, Anki will
-return the cards in the same state they were in when they were moved
-into the filtered deck. This is useful for quickly flipping through
-material.
+Anki domyślnie zwraca karty do talii początowych ze zmienioą powtórką na podstawie twoich odpowiedzi w talii filtrowanej. Jeśli wyłączysz opcję **zmień plan na podstawie odpowiedzi w tej talii**, Anki bedzie zwracać karty w tym samym stanie jak gdy zostały dodane do talii filtrowanej. Jest to przydatne do szybkiego przeglądania materiału.
 
-If you have disabled rescheduling, the "Good" and "Easy" buttons will
-display no time above them when pressing them would cause the card to
-return to its home deck with its original scheduling.
+Jeśli wyłaczyłeś wspomnianą opcję, na odpowiedziach "Dobra" i "Łatwa" nie wyświetli się czas, jako że zostaną one bez zmiany planowania.
 
-Please note that new cards are returned to the end of the new card
-queue, rather than the start of it.
+Zauważ, że nowe karty są zwracane do kolejki nowych kart, a nie na jej początek.
 
 Nadrabianie zaległości
 -----------
 
-Filtered decks can be useful for catching up when you’ve fallen behind
-in your reviews. One Anki user describes the way they use the filtered
-decks to catch up as follows:
+Talie filtrowane moga być przydatne do nadrabiania zaległości, gdy nie robiłeś powtórek przez jakiś czas. Jeden z użytkowników Anki opisał sposób, w jaki używa talii filtrowanych do nadrobienia zaległości:
 
-    I did this for a backlog of 800 cards with filtered subdecks. Worked
+    Zrobiłem to, żeby nadrobić zaległości w wysokości 800 kart. Użyłem do tego filtrowanych talii podrzędnych. Zadziałało bardzo skutecznie.
     very well for me.
     
-    Just Due filter with: "is:due prop:due>-7"
+    Filtr właśnie oczekującących: "is:due prop:due>-7"
     
-    Over Due filter with: "is:due prop:due<=-7"
+    Filtr dla oczekujących więcej niż 6 dni: "is:due prop:due<=-7"
         
-    The Just Due deck will then contain cards that became due in the past
-    week. That's the deck you should study every day as it gets the cards
-    that become due regularly. With this you can study as if there wasn't
-    any backlog.
+    Talia dla właśnie oczekujących zawiera karty, które zaczęły oczekiwać w ciągu ostatniego tygodnia. To talia, w której powinieneś uczyć się codziennie, jako że pokazuje ona karty, które regularnie stają się oczekujące. Dzieki temu możesz się uczyć, jakbyś nie miał żadnych zaległości.
     
-    The Over Due deck will contain your backlog, cards which you didn't
-    study in time. You can study them the same way you would study new
-    cards. They go back into the regular cards, so the number of overdue
-    will never grow as long as you keep your Just Due deck in check.
+    Talia dla oczekujących więcej niż 6 dni zawiera twoje zaległości, karty, których nie uczyłeś sie w terminie. Możesz się ich uczyć w ten sam sposób jak nowe karty. Wracają do kart normalnych, a więc numer kart zaległych  nie będzie rósł gtak długo jak będziesz uczył się z tej talii codziennie. 
     
-    How long it takes depends on how many overdue cards you study each day
-    in addition to the ones that become due regularly. You can still motor
-    through them when you feel like it - or you can do a specific number per
-    day like you would for new cards. Up to you.
+    To, jak długo to zajmie zależy od tego jak dużo nadrabiasz zaległości. Możesz przeglądać ich tyle ile nowych kart, lub uczyć się ich dowolną liczbę - wybór należy do ciebie.
