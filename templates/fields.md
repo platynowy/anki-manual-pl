@@ -103,7 +103,7 @@ Istnieje kilka rodzajów pól specjalnych, których możesz użyć w szablonie:
 
     Znacznik typu karty ("Przód", itp.): {{Card}}
 
-    Znacznik zawartości przodu karty (poprawna tylko 2 szablonie tyłu): {{FrontSide}}
+    Znacznik zawartości przodu karty (poprawna tylko w szablonie tyłu): {{FrontSide}}
 
 Znacznik zawartości przodu karty FrontSide nie skopiuje na jej tył nagrania audio. Jeśli chcesz mieć to samo nagranie na przodzie i tyle karty musisz je tam ręcznie dodać.
 
