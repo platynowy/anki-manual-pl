@@ -16,7 +16,7 @@ Poniżej pól notatki znajduje się pole tekstowe oznaczone jako "Etykiety", są
 
     słownictwo do_sprawdzenia
 
-…​wtedy notatka będzie posiadałą dwie etykiety
+…​wtedy notatka będzie posiadała dwie etykiety.
 
 Aby dodać notatkę do kolekcji, wypełnij najpierw pola Przód i Tył, a następnie wybierz przycisk Dodaj (u dołu okna) lub naciśnij Ctrl + Enter (Command + Enter na komputerach Mac). Razem z notatką wygeneruje się karta, która zostanie umieszczona we wcześniej wybranej przez Ciebie talii. Aby edytować wcześniej dodaną kartę, wystarczy że klikniesz przycisk Historia, co otworzy [przeglądarkę](browsing.md).
 
