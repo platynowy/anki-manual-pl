@@ -2,7 +2,7 @@
 
 Anki jest programem, który sprawia, że zapamiętywanie różnych rzeczy staje się łatwe. Posługuje się on metodą nauki, która jest dużo bardziej wydajna niż metody tradycyjne i sprawi, że spędzisz na nauce dużo mniej czasu albo w tym samym czasie co dotąd nauczysz się dużo więcej.
 
-Anki przeznaczone jest dla każdego, kto w codziennym życiu musi lub chce zapamiętać dużą ilość informacji. Program potrafi przechowywać nie tylko tekst, ale także zdjęcia, dźwięki, filmy i dane w języku LaTeX, więc jego możliwości są tak naprawdę nieograniczone. Przykładowo, Anki może śłuzyć do:
+Anki przeznaczone jest dla każdego, kto w codziennym życiu musi lub chce zapamiętać dużą ilość informacji. Program potrafi przechowywać nie tylko tekst, ale także zdjęcia, dźwięki, filmy i dane w języku LaTeX, więc jego możliwości są tak naprawdę nieograniczone. Przykładowo, Anki może słuzyć do:
 
 -   nauki języków obcych
 
