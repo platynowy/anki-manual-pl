@@ -1,36 +1,36 @@
 Talie filtrowane i zakuwanie
 =========================
 
-Gdy uczysz się w Anki normalnej talii, tylko określona liczba kart jest pokazywana: karty, które według Anki właśnie masz zapomnieć oraz nowe karty według dziennego limitu. Jest to przydatne, poniewaz daje to  pewnosć, że nie będziesz się uczył dłużej, niż to konieczne. Ale czasami może okazać się przydatne uczenie się pokza domyślnymi limitami, na przykład jak musisz powtórzyć materiał na egzamin, skupić się na określonych terminach i tak dalej. Aby było to możliwe, w Anki istnieje inny typ talii nazywający się "talia filtrowana" 
+Gdy uczysz się w Anki normalnej talii, tylko określona liczba kart jest pokazywana: karty, które według Anki właśnie masz zapomnieć oraz nowe karty, według dziennego limitu. Jest to przydatne, ponieważ daje to  pewnosć, że nie będziesz się uczył dłużej, niż to konieczne. Ale czasami może okazać się przydatna nauka pokza domyślnymi limitami, na przykład, jak musisz powtórzyć materiał na egzamin, skupić się na określonych zagadnieniach i tak dalej. Aby było to możliwe, w Anki istnieje inny typ talii nazywający się "talia filtrowana".
 
-Talie filtrowane oferują wiele możliwości. Mogą być używane do podglądania kart, zakuwania ich przed testem, nauki okreslonych etykiet, nadrrabiania zaległości z okresloną kolejnością, nauki z wyprzedzeniem planowania, przeglądnięcia kart, na które odpowiedziano "Powtórz" oraz do wielu innych zastosowań.
+Talie filtrowane oferują wiele możliwości. Mogą być używane do podglądania kart, zakuwania ich przed testem, nauki określonych etykiet, nadrabiania zaległości z okresloną kolejnością, nauki z wyprzedzeniem planowania, przeglądnięcia kart, na które odpowiedziano "Powtórz" oraz do wielu innych zastosowań.
 
 Nauka własna
 ------------
 
-Najłatwiejszym sposobem na stworzenie talii filtrowanej jest uzycia przycisku Nauka własna, który pojawia sie na dole ekranu, gdy naciśniesz na talię. Oferujeon   wygodne ustawienia wstępne dla częstych zadań typu powtarzanie kart, na które odpowiedziano "Powtórz". Stworzy on talię filtrowaną nazwaną "Sesja nauki własnej" i automatycznie ją otworzy. 
+Najłatwiejszym sposobem na stworzenie talii filtrowanej jest użycie przycisku Nauka własna, który pojawia się na dole ekranu, gdy naciśniesz na talię. Oferuje on   wygodne ustawienia wstępne dla częstych zadań typu powtarzanie kart, na które odpowiedziano "Powtórz". Stworzy on talię filtrowaną nazwaną "Sesja nauki własnej" i automatycznie ją otworzy. 
 
 Jeśli istnieje już talia "Sesja nauki własnej", zostanie ona opróżniona przed utworzeniem nowej. Jeśli chcesz zachować talię nauki własnej, możesz zmienić jej nazwę na liście talii. 
 
 Oto podsumowanie działania każdej z opcji:
 
 **Zwiększenie dzisiejszego limitu nowych kart**  
-Dodaj więcej nowych kart do talii, której aktualnie się uczysz. Zauważ, że w przceciwieństwie do innych opcji, nie jest tutaj tworzona talia filtrowana, tylko jest modyfikowana jest już istniejącatalia .
+Dodaje więcej nowych kart do talii, której aktualnie się uczysz. Zauważ, że w przeciwieństwie do innych opcji, nie jest tutaj tworzona talia filtrowana, tylko jest modyfikowana jest już istniejąca talia .
 
 **Zwiększenie dzisiejszego limitu przejrzanych kart**  
-Jesli nie zostały pokazane wsyzetkie powtórki ze względu na limity ustawione na dzienny limit powtórek, ta opcja umozliwia ci pokazac większą liczbę tych powtórek. Jak z opcją dotyczącą nowych kart, opcja ta modyfikuje istniejącą talię
+Jesli nie zostały pokazane wszystkie powtórki ze względu na limity ustawione na dzienny limit powtórek, ta opcja umozliwia ci pokazać większą liczbę tych powtórek. Jak z opcją dotyczącą nowych kart, opcja ta modyfikuje istniejącą talię.
 
 **Powtórka zapomnianych kart**  
 Pokaż wszystkie karty, na które odpowiedziałeś "Powtórz" (1) (możesz okreslić liczbę ostatnich dni, z których chcesz powtórzyć zapomniane karty).
 
 **Powtórka z wyprzedzeniem**  
-Pokaż karty, które oczekują na powtórkę w najbliższej przyszłości (określasz liczbę dni). Opcja ta jest przydatna do przejrzenia niektórych ze starszych kart przed wakacjami, ale nie pomoże ci zapamiętać kart kart, które nauczyłeś się niedawno. Zobacz rozdział o [nauce z wyprzedzeniem](#reviewing-ahead) poniżej, aby dowiedzieć się więcej.
+Pokaż karty, które oczekują na powtórkę w najbliższej przyszłości (określając liczbę dni). Opcja ta jest przydatna do przejrzenia niektórych ze starszych kart przed wakacjami, ale nie pomoże ci zapamiętać kart, które nauczyłeś się niedawno. Zobacz rozdział o [nauce z wyprzedzeniem](#reviewing-ahead) poniżej, aby dowiedzieć się więcej.
 
 **Podgląd nowych kart**  
 Pokaż karty, które ostatnio dodałeś, bez zmiany ich typu na karty powtarzane po odpowiedzi.
 
 **Powtórka według stanu karty lub etykiety**  
-Wybierz określoną liczbe kart do nauki z  obecnej talii. Możesz uczyć sie tylko nowych kart, tylko oczekujących, lub wszystkich kart; po kliknieciu "Wybierz etykiety" możesz także zawęzić naukę do kart z okreslonymi etykietami. Jesli chcesz zobaczyć wszystkie karty znajdujace się w talii (na przykład, aby pouczyć się przed egzaminem z dużą ilością materiału), możesz ustawić liczbę kart większą, niż całkowita liczba kart znajdująca sie w tej talii.
+Wybierz określoną liczbe kart do nauki z  obecnej talii. Możesz uczyć sie tylko nowych kart, tylko oczekujących, lub wszystkich kart; po kliknięciu "Wybierz etykiety" możesz także zawęzić naukę do kart z określonymi etykietami. Jeśli chcesz zobaczyć wszystkie karty znajdujace się w talii (na przykład, aby pouczyć się przed egzaminem z dużej ilościi materiału), możesz ustawić liczbę kart większą, niż całkowita liczba kart znajdująca sie w talii.
 
 Talie początkowe
 ----------
@@ -45,7 +45,7 @@ Jest również możliwe przeniesienie wszystkich kart z powrotem do ich talii po
 
 -   Usuwane talii filtrowanej działa tak samo jak opcja "Opróżnij", ale usuwa równiez pustą talię z listy talii. Żadne karty nie sa usuwane, gdy usuwasz talię filtrowaną.
 
-Na chwilę obecna, jeśli stworzysz,przebudujesz, opróżnisz lub usuniesz talie filtrowana w czasie, gdy karty dalej są kartami uczonymi, zostaną one przekonwertowane z powrotem na karty nowe. W przypadku powtórek z odpowiedzią "Powtórz", które byłī uczone ponownie, jakiekolwiek pozostałe kroki zostaną pominięte. To zostało poprawione w [eksperymentalnym planiście](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21). 
+Na chwilę obecna, jeśli stworzysz, przebudujesz, opróżnisz lub usuniesz talię filtrowaną w czasie, gdy karty dalej są kartami uczonymi, zostaną one przekonwertowane z powrotem na karty nowe. W przypadku powtórek z odpowiedzią "Powtórz", które były uczone ponownie, jakiekolwiek pozostałe kroki zostaną pominięte. To zostało poprawione w [eksperymentalnym planiście](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21). 
 
 Tworzenie ręczne
 -----------------
@@ -99,47 +99,28 @@ Pokazuje najpierw karty, które są najbardzierj spóśnione w stosunku do plano
 Kroki i powrót
 -----------------
 
-Please see the section on [learning](studying.md#learning) as a reminder of how
-steps work.
+Zobacz rozdział o kartach [uczonych](studying.md#learning), aby przypomnieć sobie, jak działają kroki.
 
-By default, Anki will use the steps of a card’s home deck. If a new card
-would normally be reviewed twice when being learnt, the same thing will
-happen when you study it in a filtered deck.
+Domyślnie, Anki będzie uzywać kroków ustawionych w talii początkowej karty. Jeśli nowa jest zwykle powtarzana dwa razy podczas nauki, powtórka bedzie przebiegała tak samo podczas nauki w talii filtrowanej.
 
-Cards return to their home deck when (re)learning is complete. Thus if
-you have 3 learning steps, a new card will return to its home deck upon
-three presses of "Good" or a single press of "Easy".
+Karta powracają do swojej talii poczatkowej, kiedy (ponowna) nauka jest zakończona. A więc, jeśli masz ustawione 3 kroki dla kart uczonych, nowa karta powróci do swojej talii poczatkowej po trzech odpowiedziach "Dobra", lub jednej "Łatwa".
 
-The **własne kroki** option allows you to override the home deck’s steps
-and provide your own steps instead. The provided steps apply to both
-cards being learnt, lapsed reviews, and reviews ahead of time.
+Opcja **własne kroki** umożliwia nadpisać kroki talii poczatkowej i wprowadzić własne. Wprowadzone kroki mają wpływ zarówno na karty uczone, powtórki, na które źle odpowiedziano oraz na naukę z wyprzedzeniem.
 
 Liczby
 ------
 
-In a filtered deck, reviews that were already due are displayed in the
-review count as normal. Learning cards and non-due reviews are counted
-in the new card count, due to how the underlying implementation works.
-Reviews that were not due are not scheduled like new cards however -
-Anki uses a special algorithm that takes into account how close they
-were to their normal due time when reviewed.
+W talii filtrowanej, powtórki, które już oczekiwały są pokazane w liczniku powtórek, są pokazywane jak zwykle. Karty uczone i powtórki, które nie oczekiwały, są liczone w nowej liczbie kart, ze wzgeldu na to, jak została ta opcja została technicznie wdrożona. Powtórki, które nie oczekiwały na powtórkę nie są jednak planowane jak nowe karty - Anki uzywa specjalnego algorytmu, który bierze pod uwagę jak blisko znajdowały się dnia swojej planowanej powtórki .
 
 Powtórki oczekujące
 -----------
 
-If the filtered deck includes cards that were due for review, they will
-be shown like they would have been in their original deck - they appear
-in the review card count at the bottom of the screen, and there are four
-choices for how well you remembered. Upon a correct answer, the card
-will be moved back to its home deck, and its next delay adjusted using
-the home deck’s settings. If you forget the card, it will be shown
-according to the relearning steps defined in the home deck.
+Jeśli w talii filtrowanej znajdują się karty, które oczekiwały na powtórkę, beda one pokazane tak jak w normalnej talii - pojawiają się w liczniku kart powtarzanych na dole ekranu i są cztery opcje odpowiedzi. Po poprawnej odpowiedzi, karta zsotania przeniesiona do talii początkowej, a jej następna powtórka zostanie obliczona na podstawie opcji talii początkowej. Jeśli zapomnisz karty, bedzie ona pokazana zgodnie z krokami dla kart uczonych ponownie ustalonymi w talii początkowej.
 
-Nauka z wyprzedzeniem
+Powtórka z wyprzedzeniem
 ---------------
 
-If your search included cards that are not due, Anki will show the
-reviews ahead of time.
+Jeśli w twoim wyszukiwaniu zawierały się karty, które w danym momencie nie oczekiwały na powtórkę, Anki pokaże powtórki z wyprzedzeniem.
 
 Anki uses a special algorithm for these reviews that takes into account
 how early you are reviewing. If the cards were almost due to be shown,
