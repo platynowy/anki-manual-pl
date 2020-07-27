@@ -77,7 +77,7 @@ Jeśli chcesz także mieć w taki sposób synchronizowaną kolekcję, szczególn
 
 ## Sieciowe systemy plików
 
-Bardzo zalecamy, pliki byłī przechowywane na lokalnym dysku twardym, ponieważ sieciowe systemy plików moga prowadzić do uszkoczenia bazy danych. Jeśli sieciowy system plików jest twoją jedyną, zalecane jest częste używanie opcji Narzędzia&gt;Sprawdź bazę danych.
+Bardzo zalecamy, by pliki były przechowywane na lokalnym dysku twardym, ponieważ sieciowe systemy plików moga prowadzić do uszkodzenia bazy danych. Jeśli sieciowy system plików jest twoją jedyną możliwością, zalecamy częste używanie opcji Narzędzia&gt;Sprawdź bazę danych.
 
 ## Uruchamianie z pendrive'a
 
