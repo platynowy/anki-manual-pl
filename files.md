@@ -16,7 +16,7 @@ Na komputerach **Mac**, najnowsze wersje Anki przechowują wszystkie pliki w fol
 
 Na systemie **Linux**, najnowsze wersje Anki przechowują twoje dane w `~/.local/share/Anki2` lub, jeśli ustawiłes własną ścieszkę, w `$XDG_DATA_HOME/Anki2`. Starsze wersje Anki przechowywały pliki w `~/Documents/Anki` lub `~/Anki`
 
-W folderze Anki znajdują się ustawienia programu jak i ustawienia profili (folderze prefs.db.).
+W folderze Anki znajdują się ustawienia programu jak i ustawienia profili (w folderze prefs.db.).
 
 Istnieje również osobny folder dla każdego profilu. Ten folder zawiera:
 
