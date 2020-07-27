@@ -31,7 +31,7 @@ Kolumna "oczekujące" zachowuje się inaczej dla każdego typu kart. Przy Nowych
 
 Kolumny "notatka zmodyfikowana" i "karta zmodyfikowana" brzmią podobnie, ale są odpowiedzialne za inne funkcje. "Notatka zmodyfikowana" śledzi ostatni czas, kiedy w *notatce* dokonano zmian (np. gdy zwawartość pola została zedytowana), podczas gdy "karta zmodyfikowana" śledzi ostatni czas, kiedy w *karcie* dokonano zmian (np. gdy powtarzałeś kartę i historia powtórek oraz przerwa zostały zaktualizowane).
 
-Gdy klikasz na karte, jej notatka zostanie pokazana w dolnej części ekranu. Jeśli przeciagniesz mysą lub przytrzymasz ctrl (command), aby wybrać kilka kart, edytor będzie czasowo ukryty. Różne operajce (jak zmiana talii) można wykonywać na wielu kartach na raz.
+Gdy klikasz na karte, jej notatka zostanie pokazana w dolnej części ekranu. Jeśli przeciagniesz myszą lub przytrzymasz ctrl (command), aby wybrać kilka kart, edytor będzie czasowo ukryty. Różne operajce (jak zmiana talii) można wykonywać na wielu kartach na raz.
 
 Kolor tła zmienia się w zależności od karty. Karty wyróznione są w kolorze fioletowym, karty zawieszone w kolorze żółtym. Aby dowiedzieć się więcej o kartach wyróznionych i zawieszonych, zobacz rozdział [edytowanie i więcej](studying.md).
 
