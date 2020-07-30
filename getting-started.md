@@ -1,5 +1,9 @@
 # Jak zacząć?
 
+## Instalacja & Aktualizowanie
+
+Zobacz [oficjalną stronę Anki](https://apps.ankiweb.net), aby dowiedzieć się jak zainstalować i zaktualizować aplikację.
+
 ## Filmy instruktażowe
 
 Aby szybko wejść do świata Anki, obejrzyj te filmy instruktażowe. Zostały nagrane na poprzedniej wersji Anki, jednak podstawowe założenia dalej są aktualne. Filmy są dostępne tylko w języku angielskim. 
@@ -15,8 +19,6 @@ Aby szybko wejść do świata Anki, obejrzyj te filmy instruktażowe. Zostały n
 -   [Pisanie odpowiedzi w czasie powtórki](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
 Możesz również [pobrać te filmy](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/), jeśli Youtube nie jest dostępny w kraju, w którym przebywasz.
-
-
 
 ## Podstawy
 
