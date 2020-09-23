@@ -130,6 +130,12 @@ Jednak poniższy ("dodaj kartę, jeśli A **LUB** (B **I** C) nie są puste") ni
          {{/C}}
      {{/B}}
 
+## Dodawanie pustych notatek
+
+Kiedy dodajesz nową notatkę w anki Anki 2.1.28+ lub AnkiMobile 2.0.64+, jeśli szablony kart i pola notatek wspólnie nie generują żadnych kart, pusta karta zostanie utworzona przy użyciu pierwszego szablonu. To pozwala na dodawanie materiału nawet jeśli jest on niekompletny, a następnie zmodyfikowanie fo lub szablonu później, aby był on poprawny. Jeśli nie chcesz zachowywać pustej notatki, możesz ją usunąć używając opcji "Puste Karty".
+
+W starszych wersjach Anki, nie można zaimportować notatki lub karty jeśli nie są generowane żadne karty.
+
 Szablon luki
 ---------------
 
