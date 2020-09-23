@@ -197,9 +197,6 @@ powtórki bez pomyłek
 `is:learn -is:review`  
 karty, które są uczone po raz pierwszy.
 
-`edited:n`
-karty, których tekst notatki został zmieniony w ciągu ostatnich "n" dni. Wymaga Anki 2.1.28+ lub AnkiMobile 2.0.64+.
-
 ## Własciwości karty
 
 `prop:ivl>=10`  
@@ -225,7 +222,7 @@ karty łatwiejsze lub trudniejsze niż domyślna wartość
 
 Miej na uwadzę, że "due" wyszukuje tylko karty powtórkowe i karty uczone z przerwą wynosząca jeden dzień lub więcej: karty uczone z mniejszymi przerwami takimi jak 10 minut nie są uwzgledniane.
 
-## Ostatnio dodane
+## Ostatnio dodane/zedytowane
 
 `added:1`  
 karty dodane dzisiaj
@@ -234,6 +231,9 @@ karty dodane dzisiaj
 karty dodane w ciągu ostatniego tygodnia
 
 Data dodania jest sprawdzana na podstawie daty utworzenia karty a nie daty utworzenia notatki, więc karty, które zostały wygenerowane w określonym czasie będa brane pod uwagę nawet, jeśli ich notatki zostały dodane dawno temu
+
+`edited:n`
+karty, których tekst notatki został zmieniony w ciągu ostatnich "n" dni. Wymaga Anki 2.1.28+ lub AnkiMobile 2.0.64+.
 
 ## Ostatnio powtarzane
 
