@@ -84,7 +84,9 @@ Zmieni tekst w karcie na:
 
     pic.jpg
 
-Pełny opis wyrażeń regularnych nie jest cześcią tej instrukcji. W sieci znajduje się wiele poradników. Aby dowiedzieć się o składni w 2.1.28+, zobacz:  <https://docs.rs/regex/1.3.9/regex/#syntax>. Dla starszych wersji Anki zobacz: <http://docs.python.org/library/re.html>.
+Pełny opis wyrażeń regularnych nie jest cześcią tej instrukcji. W sieci znajduje się wiele poradników. 
+Aby dowiedzieć się o składni w 2.1.28+, zobacz:  <https://docs.rs/regex/1.3.9/regex/#syntax>. 
+Dla starszych wersji Anki zobacz: <http://docs.python.org/library/re.html>.
 
 Znajdowanie duplikatów
 ------------------
