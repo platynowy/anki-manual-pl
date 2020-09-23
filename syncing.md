@@ -16,6 +16,10 @@ Jeśli kilka osób używa Anki na jednym urządzeniu i dla każdej z tych osób 
 
 Po pierwszej synchronizacji, każda kolejna wykonywana będzie automatycznie po otwarciu lub zamknięciu kolekcji. Jeżeli jednak chcesz synchronizować kolekcję ręcznie, wyłącz opcję automatycznego sychronizowania w ustawieniach Anki.
 
+## Kolory przycisku
+
+Przycisk synchronizacji zmienia kolor na niebieski, gdy wymagana jest normalna synchronizacja. Gdy przycisk jest koloru czerwonego, zostanie przeprowadzona pełna synchronizacja.
+
 ## Pliki
 
 Anki synchronizuje dźwieki i obrazy używane przez twoje notatki. Zauważy, gdy pliki zostana dodane lub usunięte z folderu plików. Nie zauważy jednak  edycji istniejacych plików bez dodawania lub usuwania żadnych innych. Jesli chcesz, Aby Anki zauwazyło zmiany, musisz dodać lub usunąć co najmniej jeden plik.
