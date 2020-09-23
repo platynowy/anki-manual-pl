@@ -116,7 +116,7 @@ Historia zmian karty nie jest usuwana podczas zmiany planu: zmiana planu zmienia
 
 *Zmień pozycję* umozliwia zmienić kolejność nowych kart. Możesz dowiedzieć się obecnej pozycji włączając kolumnę *oczekujące*, jak to zostało opisane w sekcji "lista kart". Jeśli uruchomisz tę opcję podczas, gdy wybranych jest wiele kart, nada ona każdej karcie po kolei rosnące numery. Domyślnie numer zwiększa się o jeden dla każdej karty ale może to zostać zmienione, zmieniając opcję "krok". 
 
-Opcja *Zmień pozycję istniejacych kart* umożliwia wstawianie kart miedzy juz istniejące, wypychając już istniejace z dala od siebie. Na przykład, jeśli masz 5 kart i chcesz przenieść karty numer  3,4 i 5 między 1 i 2, wybranie tej opcji sprawi, że kolejność kart wygladałaby tak: 1, 3, 4, 5, 2. Jeśli za to wyłączysz tę opcje, 2 i 3 otrzymają taki sam numer pozycji (i ich kolejnosć pojawienia będzie losowa).
+Opcja *Zmień pozycję istniejacych kart* umożliwia wstawianie kart miedzy juz istniejące, wypychając już istniejace z dala od siebie. Na przykład, jeśli masz 5 kart i chcesz przenieść karty numer  3,4 i 5 między 1 i 2, wybranie tej opcji sprawi, że kolejność kart wygladałaby tak: 1, 3, 4, 5, 2. Jeśli za to wyłączysz tę opcje, 1 i 2 otrzymają taki sam numer pozycji (przez co nie będzie można przewidzieć, która karta z tym samym numerem pojawi się pierwsza).
 
 *Zmień typ notatki* umożliwia przekonwertowanie wybranej notatki z jednej do drugiej. Na przykład, masz typ notatki "Rosyjski" oraz "Komputer" i przypadkowo dodałeś tekst dodyczący komputerów do notatki "Rosyjski". Możesz to naprawić używając tej opcji. Nie ma ona wpływu na planowanie kart.
 
