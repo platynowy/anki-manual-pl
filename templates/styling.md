@@ -1,7 +1,6 @@
 # Stylizowanie i HTML
 
 ## Stylizowanie kart
-------------
 
 Możesz obejrzeć [film o stylizowaniu kart](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) (w języku angielskim) na YouTube.
 Ten film używa interfesju Anki 2.0, ale główne założenia pozostały takie same.
