@@ -195,7 +195,11 @@ pomyłki oraz karty oczekujące na ponowną naukę
 powtórki bez pomyłek
 
 `is:learn -is:review`  
-karty, które sś uczone po raz pierwszy.
+karty, które są uczone po raz pierwszy.
+
+`edited:n`
+
+karty, których tekst notatki został zmieniony w ciągu ostatnich "n" dni. Wymaga Anki 2.1.28+ lub AnkiMobile 2.0.64+.
 
 ## Własciwości karty
 
