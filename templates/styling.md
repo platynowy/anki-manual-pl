@@ -1,4 +1,6 @@
-Stylizowanie kart
+# Stylizowanie i HTML
+
+## Stylizowanie kart
 ------------
 
 Możesz obejrzeć [film o stylizowaniu kart](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) (w języku angielskim) na YouTube.
