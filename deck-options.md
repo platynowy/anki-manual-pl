@@ -16,7 +16,7 @@ Nowe katy
 
 Domyślnie jednostką kroków jest minuta, możliwe jest jednak ustawienie kroków wyrażonych w dniach, a więc nie tylko: 10 minut, ale również 1 dzień (1440 minut), trzy dni (4320 minut) lub 7 dni itd.
 
-Jeśli nie ma nic innego do nauki Anki pokazuje karty z wyprzedzeniem (domyślnie limit nauki z wyprzedzeniem ustawiony jest na 20 minut). Czas nauki z wyprzedzeniem można zmienić w [ustawieniach](preferences.md). Warto być świadomym tego, że w tym przypadku liczba kart oczekujacych będzie się różnić między ekranem talii a ekranem nauki. Ekran talii nie będzie liczył kart, które nie będą jeszcze gotowe, podczas gdy ekran nauki będzie brał je pod uwagę. Zostało to zrobione w ten sposób abyś wiedział, która talia wymaga twojej uwagi.
+Jeśli nie ma nic innego do nauki, Anki pokazuje karty z wyprzedzeniem (domyślnie limit nauki z wyprzedzeniem ustawiony jest na 20 minut). Czas nauki z wyprzedzeniem można zmienić w [ustawieniach](preferences.md). Warto być świadomym tego, że w tym przypadku liczba kart oczekujacych będzie się różnić między ekranem talii a ekranem nauki. Ekran talii nie będzie liczył kart, które nie będą jeszcze gotowe, podczas gdy ekran nauki będzie brał je pod uwagę. Zostało to zrobione w ten sposób abyś wiedział, która talia wymaga twojej uwagi.
 
 Anki traktuje inaczej małe kroki oraz kroki, które przekraczają granice jednego dnia. Jeśli chodzi o małe kroki, karty są pokazywane tak szybko jak nadejdzie ich pora, faworyzując inne czekające karty jak powtórki. Jest to zrobione w taki sposób abyś mógł odpowiedzieć na karty jak najbliżej chwili, kiedy powinny one zostać planowo pokazane. Inaczej sytuacja wygląda w przypadku kart przekraczających jeden dzień. Ich pokazanie jest planowane na zasadzie dni (tak samo jak jest to z powtórkami). Gdy powrócisz do nauki w dniu nastepnym, karty uczone, które są planowane na zasadzie dni, nie bedą pokazane jako pierwsze. Zostało to zrobione w ten sposób, aby pierwsza połowa sesji powtórek nie była z byt frustrująca. Zamiast tego karty są pokazywane po tym jak powtórki zostaną przejrzane. Ze względu na sposób w jaki kroki przekraczające granice jednego dnia są traktowane przez program, są one uwzględniane w liczniku powtórek, a nie uczonych kart.
 
@@ -25,7 +25,6 @@ Anki traktuje inaczej małe kroki oraz kroki, które przekraczają granice jedne
 Gdy wybierasz kolejność losową, Anki przesortuje twoje notatki, zachowując karty danej notatki blisko siebie. Karty danej notatki są pokazywane w kolejności, w jakiej wyświetlane są jej typy kart, aby bliźnięta były wprowadzane konsekwentnie. W przeciwnym przypadku karty niektórych notatek byłyby już pokazane, podczas gdy inne notatki miałyby pokazane tylko jedną lub dwie karty. Zobacz na dole opcję "zakop powiazane", aby dowiedzieć się więcej.
 
 **Nowe karty/dzień** określa, ile nowych kart będzie pokazywanych każdego dnia, kiedy otwierasz program. Jeżeli któregoś dnia ominiesz powtórkę, liczba nowych kart do nauki nie wzrośnie, codziennie pozostając na tym samym poziomie. Limit odnosi się do talii i podtalii. To oznacza, że jeżeli talia "Francuski" posiada limit 20 nowych kart dziennie, zaś "Francuski::Lekcja 1" oraz "Francuski::Lekcja 2" limit 15 nowych kart dziennie to ucząc się talii "Francuski" otrzymasz 15 kart z lekcji pierwszej i 5 kart z lekcji drugiej.
-
 
 Nauka nowych kart spowoduje tymczasowy wzrost liczby kart w dziennej powtórce. Świeży materiał musi być powtarzany częściej, w późniejszym okresie odstępy czasowe staną się dłuższe. Jeżeli każdego dnia uczysz się 20 nowych kart, możesz oczekiwać, że do codziennej powtórki będzie ok 200 kart. Liczbę tę możesz zmniejszyć wprowadzając mniejszą liczbę nowych kart lub w ogóle wyłączyć wprowadzanie nowych kart do momentu gdy spadnie liczba kart powtarzanych. Niektórzy użytkownicy Anki próbowali uczyć się setek nowych kart podczas pierwszych ich dni nauki z programem, przez co zostali przytłoczeni przez nadchodzące powtórki.
 
@@ -85,7 +84,7 @@ Nowa przerwa jest ustalana, gdy odpowiadasz "Powtórz" na kartę powtórkową, a
 
 "Minimalna przerwa" pozwala ustawić minimalny limit dla opcji powyżej. Domyślna opcja ustala, że pomyłki powinny być powtarzane jeden dzień później. Przrerwa musi wynosiź co najmniej 1 dzień.
 
-Opcja "Pijawki" ustala, co Anki ma zrobić z wykrytymi pijawkami. Zobacz rozdział o pijawkach, aby dowiedzieć się wiecej.
+Opcja "Pijawki" ustala, co Anki ma zrobić z wykrytymi pijawkami. Zobacz rozdział o [pijawkach](leeches.md), aby dowiedzieć się wiecej.
 
 Ogólne
 -------
@@ -96,7 +95,7 @@ Jeżeli zaznaczona jest opcja Pokaż czas odpowiedzi, Anki będzie wyświetlał 
 
 Domyślanie Anki automatycznie odtwarza pliki audio zarówno na przodzie jaki i tyle karty. Jeżeli odznaczysz "Automatycznie odtwórz pliki audio", Anki odtworzy plik audio dopiero w przypadku, kiedy naciśniesz przycisk powtórz dźwiek, `r` lub `F5`.
 
-"Kiedy widoczna odpowiedź, odtwórz pytanie i odpowiedź" - opcja ta określa, co dzieje się kiedy naciśniesz przycisk powtórz dźwięk, gdy pokazana jest odpowiedź. Opcja ta nie kontroluje tego, co dzieje się po pokazaniu odpowiedzi; więcej informacji na ten temat znajduje się [tym rozdziale](templates/fields.md#special-fields).
+"Zawsze dołączaj stronę pytania przy odtwarzaniu nagrania" - opcja ta określa, co dzieje się kiedy naciśniesz przycisk powtórz dźwięk, gdy pokazana jest odpowiedź. Opcja ta nie kontroluje tego, co dzieje się po pokazaniu odpowiedzi; więcej informacji na ten temat znajduje się [tym rozdziale](templates/fields.md#special-fields).
 
 Opis
 -----------
