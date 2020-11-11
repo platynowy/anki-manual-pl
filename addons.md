@@ -4,7 +4,7 @@ Funkcjonalność Anki może być zmieniana i ulepszana przy pomocy dodatków (na
 
 Aby przejrzeć liste dostępnych dodatków, wybierz w menu pozycję Narzedzia>Dodatki, a nastepnie naciśnij "Pobierz Dodatki".
 
-Wielu autorów dodatków załącza na podstronie z dodatkiem swój adres e-mail. Dlatego, jeżeli masz jakiekolwiek pytania czy wątpliwości najlepiej będzie, jeżeli skontaktujesz się bezpośrednio z nimi.
+Wielu autorów dodatków załącza na podstronie z dodatkiem swój adres e-mail. Dlatego, jeżeli masz jakiekolwiek pytania czy wątpliwości najlepiej będzie, jeżeli skontaktujesz się bezpośrednio z autorem danego dodatku.
 
 Jeżeli którykolwiek z zainstalowanych przez ciebie dodatków nie działa poprawnie, powoduje błędy, albo przez przypadek w czasie jego edycji popełniłeś jakiś błąd, zawsze masz możliwość usunięcia dodatku z Anki i ewentualnej ponownej instalacji. Aby usunąć dodatek naciśnij przycisk "Usuń" w menu z dodatkami.
 
