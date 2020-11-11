@@ -38,8 +38,4 @@ Zobacz: https://translating.ankiweb.net (język angielski)
 Kod źródłowy Anki jest dostępny na stronie <https://github.com/ankitects/anki>
 
 Przed wnoszeniem swoich poprawek, zobacz w tym repozytorium plik README.contributing.
-
-## Polskie tłumaczenie
-
-Jeśli widzisz błąd lub nieaktualną informację w polskim tłumaczeniu, możesz wnieść swoją poprawkę. Pliki polskiego tłumaczenia dostępne są na stronie <https://github.com/platynowy/anki-manual>
  
