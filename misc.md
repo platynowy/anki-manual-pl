@@ -4,7 +4,7 @@ Różne
 Skróty w menu
 --------------
 
-Aby wyświetlić skróty klawiszowe do poszczególnych elementów menu, w systemie Windows/Linus przytrzymaj klawisz alt. W nazwach menu podświetlą się wtedy litery.
+Aby wyświetlić skróty klawiszowe do poszczególnych elementów menu, w systemie Windows/Linux przytrzymaj klawisz alt. W nazwach menu podświetlą się wtedy litery.
 
 Funkcja ta nie jest dostępnach w systemie OS X, ale w opcjach systemu możliwe jest przypisanie własnych skrótów klawiszych do poszczególnych pozycji w menu kontekstowym. Zobacz <http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program>, aby dowiedzieć się więcej.
 
@@ -25,7 +25,7 @@ Command+Shift+;
 
 (klawisz command, klawisz shift oraz and średnik w tym samym czasie)
 
-Na niektórych  klawiaturach innych niż polska i angielska będziesz musiał nacisnąć ":" lub "+" zamiast ";".
+Na niektórych klawiaturach innych niż polska i angielska będziesz musiał nacisnąć ":" lub "+" zamiast ";".
 
 W oknie wiersza poleceń wklej tekst, o podanie którego zostałeś poproszony. Następnie wybierz Ctrl+Enter (Command+Return w systemie macOS). W dolnej części okna wyświetlą się pewne informacje. Są one szczególne przydatne np. w sytuacji niespodziewanych błędów. Możesz ich wtedy użyć w prośbie o pomoc na forum Anki.
 
