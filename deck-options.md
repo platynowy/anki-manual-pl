@@ -9,7 +9,7 @@ Pamiętaj, żeby dokonywać zmian tylko w ustawieniach, których działanie w pe
 
 Opcje programu nie działają wstecz. Jeśli zmienisz opcję, która określa po jakim czasie karta ma być wyświetlona po błędnej odpowiedzi, a następnie powrócisz do poczatkowych ustawień, to karty z poprzednim ustawieniem zachowają nadany im już wcześniej czas oczekiwania.
 
-Nowe katy
+Nowe karty
 ---------
 
 **Kroki** kontrolują liczbę wyświetleń nauki nowej karty i opóźnienie pomiędzy tymi wyświetleniami. Aby dowiedzieć się więcej o tym, jak działają kroki, zajrzyj do rozdziału o [nauce](studying.md#learning).
